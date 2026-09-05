@@ -1,0 +1,48 @@
+{
+  "couverture_definition": "toutes les occurrences des 13 motifs ; pas le rappel économique",
+  "entreprises": 500,
+  "extraction_version": "2.0.1",
+  "files": {
+    "filings_log.csv": {
+      "bytes": 172,
+      "sha256": "084dc1640e0374d087837157f9c857e87be8b9d2cc911182129a163be6e353b8"
+    },
+    "filings_phrases.csv": {
+      "bytes": 15513905,
+      "sha256": "bfa9771ee3584d63b81e02d2809d777d558296c1ce322dd5b77e67deb3196675"
+    },
+    "filings_termes.csv": {
+      "bytes": 254190,
+      "sha256": "f95bf619990800dd47a7385ed1190a2f42656c79eea00d802caac29328d61291"
+    }
+  },
+  "generation": "9231c3c5ff806dbf700e",
+  "non_actualises": 1,
+  "offsets_definition": "caractères du texte en cache, début inclus et fin exclue",
+  "passages": 12836,
+  "predecesseurs_verifies": {
+    "0002115436": {
+      "cik": "0000034088",
+      "motif": "Redomiciliation au 01/07/2026 ; même groupe, successeur registrant, actions 1 pour 1",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2115436/000119312526291990/d71068d8k12b.htm",
+      "verifie_le": "2026-09-05"
+    }
+  },
+  "rapports_complets": 499,
+  "schema_version": 1,
+  "vocabulaire": {
+    "apprentissage_automatique": "machine\\s+learning",
+    "calcul_accelere": "accelerated\\s+computing",
+    "calcul_haute_performance": "high[-\\s]+performance\\s+computing",
+    "centre_de_donnees": "data\\s*cent(?:er|re)",
+    "grand_modele_de_langage": "large\\s+language\\s+model|foundation\\s+model",
+    "hyperscale": "hyperscal",
+    "ia_generative": "generative\\s+ai",
+    "ia_sigle": "\\bai\\b",
+    "infrastructure_cloud": "cloud\\s+infrastructure",
+    "intelligence_artificielle": "artificial\\s+intelligence",
+    "processeur_graphique": "\\bgpus?\\b|graphics\\s+processing\\s+unit",
+    "refroidissement_liquide": "liquid\\s+cooling",
+    "reseau_de_neurones": "neural\\s+network"
+  }
+}

@@ -1,0 +1,499 @@
+rang,nom,symboles,secteur,sous_secteur,n_actifs,total,verdict,canal,degre,motif
+1,Nvidia,NVDA,Information Technology,Semiconductors,10,200,ENTRE,vend,quasi total,plateformes de calcul accelere vendues aux fournisseurs cloud et aux createurs de modeles
+2,Advanced Micro Devices,AMD,Information Technology,Semiconductors,9,197,ENTRE,vend,fort,demande forte pour les accelerateurs IA deployes par les clients hyperscale
+3,Oracle Corporation,ORCL,Information Technology,Application Software,9,111,ENTRE,depense et vend,fort,infrastructure cloud passee de 35 a 53 pourcent des revenus cloud ; premiere du classement investissement
+4,Akamai Technologies,AKAM,Information Technology,Internet Services & Infrastructure,10,60,ENTRE,vend,partiel,services d infrastructure cloud declares comme axe strategique ; inference en peripherie de reseau
+5,Intel,INTC,Information Technology,Semiconductors,8,103,ENTRE,vend,fort,demande de calcul accrue pour les systemes GPU tiree par les charges d IA generative
+6,Supermicro,SMCI,Information Technology,"Technology Hardware, Storage & Peripherals",8,115,ENTRE,vend,quasi total,transformation declaree en fournisseur complet d infrastructure de centres de donnees
+7,Equinix,EQIX,Real Estate,Data Center REITs,6,321,ENTRE,fournit,quasi total,location d espace et de puissance electrique dans ses centres de donnees
+8,Microsoft,MSFT,Information Technology,Systems Software,7,51,ENTRE,depense et vend,fort,"116 milliards d investissement, Azure, centres de donnees"
+9,Broadcom,AVGO,Information Technology,Semiconductors,7,50,ENTRE,vend,fort,accelerateurs sur mesure pour hyperscalers et createurs de modeles de pointe
+10,Marvell Technology,MRVL,Information Technology,Semiconductors,6,89,ENTRE,vend,fort,le centre de donnees est l un de ses deux marches finaux declares
+11,Cadence Design Systems,CDNS,Information Technology,Application Software,9,49,ENTRE,fournit,fort,outils de conception achetes par les fabricants de puces IA
+12,Micron Technology,MU,Information Technology,Semiconductors,6,55,ENTRE,vend,fort,division entiere dediee a la memoire pour clients hyperscale
+13,Adobe Inc.,ADBE,Information Technology,Application Software,6,51,SORT,utilise,,met de l IA dans ses produits ; un arret lui ferait economiser des couts
+14,Flex Ltd.,FLEX,Information Technology,Electronic Manufacturing Services,6,62,ENTRE,fournit,partiel,"segment dedie au calcul, a l alimentation et au refroidissement pour centres de donnees"
+15,Vertiv,VRT,Industrials,Electrical Components & Equipment,6,54,ENTRE,fournit,quasi total,alimentation et refroidissement ; les centres de donnees sont son marche final numero un
+16,Alphabet Inc. (Class A),GOOG|GOOGL,Communication Services,Interactive Media & Services,6,44,ENTRE,depense et vend,fort,augmentation significative annoncee de l investissement en infrastructure technique
+17,NetApp,NTAP,Information Technology,"Technology Hardware, Storage & Peripherals",7,31,ENTRE,vend,partiel,"stockage pour charges IA, integre aux trois grands hyperscalers"
+18,Cisco,CSCO,Information Technology,Communications Equipment,6,45,ENTRE,vend,partiel,"centres de donnees prets pour l IA, clients hyperscalers"
+19,Salesforce,CRM,Information Technology,Application Software,6,45,SORT,utilise,,IA dans le produit ; centres de donnees mentionnes comme fournisseurs et risques
+20,Hewlett Packard Enterprise,HPE,Information Technology,"Technology Hardware, Storage & Peripherals",10,54,ENTRE,vend,fort,serveurs IA et commutateurs de centres de donnees
+21,Fortinet,FTNT,Information Technology,Systems Software,6,55,SORT,utilise,,cybersecurite ; centres de donnees = ses propres locaux et lieux de deploiement
+22,Iron Mountain,IRM,Real Estate,Other Specialized REITs,5,277,ENTRE,fournit,partiel,"1340 megawatts de capacite, location aux clients hyperscale"
+23,Datadog,DDOG,Information Technology,Application Software,6,38,SORT,utilise,,surveille les infrastructures cloud sans rien fournir a la chaine
+24,GoDaddy,GDDY,Information Technology,Internet Services & Infrastructure,6,48,SORT,utilise,,hebergement ; les centres de donnees sont un cout pour elle
+25,Arista Networks,ANET,Information Technology,Communications Equipment,6,39,ENTRE,vend,fort,"reseau pour IA, cloud et centres de donnees, coeur de metier declare"
+26,Qualcomm,QCOM,Information Technology,Semiconductors,6,34,SORT,utilise,,"activite centres de donnees naissante, non materielle a ce jour"
+27,Lumentum,LITE,Information Technology,Communications Equipment,6,43,ENTRE,vend,fort,composants optiques fournis aux exploitants de centres de donnees et aux fournisseurs d infrastructure IA
+28,"Workday, Inc.",WDAY,Information Technology,Application Software,6,29,SORT,utilise,,centres de donnees mentionnes comme charge d hebergement
+29,CrowdStrike,CRWD,Information Technology,Systems Software,5,68,SORT,utilise,,cybersecurite ; heberge chez AWS
+30,Meta Platforms,META,Communication Services,Interactive Media & Services,5,63,ENTRE,depense,fort,investissements massifs en centres de donnees et infrastructure technique
+31,ServiceNow,NOW,Information Technology,Systems Software,5,39,SORT,utilise,,logiciel d entreprise ; centres de donnees = cout
+32,Western Digital,WDC,Information Technology,"Technology Hardware, Storage & Peripherals",6,23,ENTRE,vend,fort,disques haute capacite pour centres de donnees cloud
+33,Sandisk,SNDK,Information Technology,"Technology Hardware, Storage & Peripherals",5,42,ENTRE,vend,fort,marche final declare Datacenter
+34,Eaton Corporation,ETN,Industrials,Electrical Components & Equipment,5,33,ENTRE,fournit,partiel,quatre acquisitions ciblees centres de donnees ; marche final declare
+35,Johnson Controls,JCI,Industrials,Building Products,6,26,DOUTEUX,fournit,?,climatisation ; refroidissement de centres de donnees non demontre par les passages
+36,Reddit,RDDT,Communication Services,Interactive Media & Services,5,33,DOUTEUX,vend,faible,licence de donnees pour l entrainement de modeles ; faible face a la publicite
+37,Jack Henry & Associates,JKHY,Financials,Transaction & Payment Processing Services,5,20,SORT,utilise,,IA pour efficacite interne
+38,Fair Isaac,FICO,Information Technology,Application Software,5,28,SORT,utilise,,analytique et scoring ; IA dans le produit
+39,Palo Alto Networks,PANW,Information Technology,Systems Software,5,32,SORT,utilise,,cybersecurite ; centres de donnees = cout
+40,Corning Inc.,GLW,Information Technology,Electronic Components,5,27,ENTRE,vend,partiel,forte demande de fibre a l interieur et entre les centres de donnees
+41,Digital Realty,DLR,Real Estate,Data Center REITs,4,463,ENTRE,fournit,quasi total,310 centres de donnees
+42,Dover Corporation,DOV,Industrials,Industrial Machinery & Supplies & Components,5,24,ENTRE,fournit,partiel,demande accrue de refroidissement liquide pour l infrastructure de centres de donnees
+43,Ares Management,ARES,Financials,Asset Management & Custody Banks,5,61,DOUTEUX,fournit,faible,"developpement de centres de donnees en interne, une strategie parmi beaucoup d autres"
+44,CDW Corporation,CDW,Information Technology,Technology Distributors,5,19,SORT,utilise,,"revendeur informatique aux entreprises, pas a la chaine d infrastructure"
+45,American Tower,AMT,Real Estate,Telecom Tower REITs,4,220,ENTRE,fournit,partiel,segment centres de donnees declare mais minoritaire
+46,Coherent Corp.,COHR,Information Technology,Electronic Components,4,103,ENTRE,vend,fort,un de ses deux segments declares s appelle Datacenter et Communications
+47,Synopsys,SNPS,Information Technology,Application Software,6,18,ENTRE,fournit,fort,"outils de conception de puces, meme logique que Cadence"
+48,Amazon,AMZN,Consumer Discretionary,Broadline Retail,4,59,ENTRE,depense et vend,fort,AWS et investissement massif
+49,Lam Research,LRCX,Information Technology,Semiconductor Materials & Equipment,5,18,ENTRE,fournit,fort,"equipements de fabrication de puces, demande tiree par l IA et le cloud"
+50,Teradyne,TER,Information Technology,Semiconductor Materials & Equipment,5,19,ENTRE,fournit,fort,croissance du segment test tiree par une demande robuste des applications IA
+51,Generac,GNRC,Industrials,Heavy Electrical Equipment,4,52,ENTRE,fournit,partiel,tres grand marche pour l alimentation de secours cree par l investissement en centres de donnees
+52,Seagate Technology,STX,Information Technology,"Technology Hardware, Storage & Peripherals",4,40,ENTRE,vend,fort,Data Center est l un de ses deux marches finaux principaux
+53,"F5, Inc.",FFIV,Information Technology,Communications Equipment,5,14,SORT,utilise,,centres de donnees = lieu de deploiement de ses produits
+54,Equifax,EFX,Industrials,Research & Consulting Services,4,51,SORT,utilise,,donnees de credit ; IA dans le produit
+55,CoStar Group,CSGP,Real Estate,Real Estate Services,5,18,SORT,menace,,l IA generative pourrait abaisser la barriere a l entree de concurrents
+56,Broadridge Financial Solutions,BR,Industrials,Data Processing & Outsourced Services,4,36,SORT,utilise,,IA dans le produit ; centres de donnees = infrastructure propre
+57,"Block, Inc.",XYZ,Financials,Transaction & Payment Processing Services,5,23,SORT,utilise,,paiements ; plateforme IA interne
+58,Schlumberger,SLB,Energy,Oil & Gas Equipment & Services,4,22,DOUTEUX,fournit,faible,activite Data Center Solutions declaree en forte croissance mais minime face au parapetrolier
+59,Analog Devices,ADI,Information Technology,Semiconductors,6,12,DOUTEUX,vend,faible,croissance du sous marche filaire tiree par l infrastructure de centres de donnees
+60,Gartner,IT,Information Technology,IT Consulting & Other Services,5,13,SORT,menace,,l IA pourrait modifier le marche de ses offres et reduire la demande de ses clients
+61,IQVIA,IQV,Health Care,Life Sciences Tools & Services,5,20,SORT,utilise,,IA dans les services de sante
+62,Ciena,CIEN,Information Technology,Communications Equipment,4,28,ENTRE,vend,fort,clients fournisseurs cloud hyperscale ; strategie declaree autour du centre de donnees
+63,"Nasdaq, Inc.",NDAQ,Financials,Financial Exchanges & Data,5,20,SORT,utilise,,colocation boursiere sans lien avec l IA
+64,C.H. Robinson,CHRW,Industrials,Air Freight & Logistics,5,12,SORT,utilise,,IA interne pour la logistique
+65,Dell Technologies,DELL,Information Technology,"Technology Hardware, Storage & Peripherals",6,15,ENTRE,vend,fort,"segment ISG, serveurs et infrastructure IA"
+66,Veeva Systems,VEEV,Health Care,Health Care Technology,5,11,SORT,utilise,,logiciel de sante heberge chez un tiers
+67,Constellation Energy,CEG,Utilities,Electric Utilities,6,18,ENTRE,fournit,partiel,contrat de fourniture a Microsoft pour ses centres de donnees ; expansion tiree par les hyperscalers
+68,FactSet,FDS,Financials,Financial Exchanges & Data,4,17,SORT,utilise,,donnees financieres ; IA dans le produit
+69,ON Semiconductor,ON,Information Technology,Semiconductors,4,20,DOUTEUX,vend,faible,"composants de puissance, lien avec les centres de donnees non demontre par les passages"
+70,Airbnb,ABNB,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",4,20,SORT,utilise,,IA pour le service client
+71,Autodesk,ADSK,Information Technology,Application Software,4,20,SORT,menace,,l IA pourrait alterer le marche de ses produits et reduire la demande
+72,Microchip Technology,MCHP,Information Technology,Semiconductors,5,14,ENTRE,vend,partiel,portefeuille declare incluant le centre de donnees ; controleurs pour centres de donnees IA
+73,Gen Digital,GEN,Information Technology,Systems Software,4,19,SORT,utilise,,cybersecurite grand public
+74,Palantir Technologies,PLTR,Information Technology,Application Software,5,16,SORT,utilise,,"editeur de logiciel dont l IA est le produit, meme famille que Salesforce et Adobe"
+75,Expedia Group,EXPE,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",4,18,SORT,utilise,,IA pour le service client
+76,Jabil,JBL,Information Technology,Electronic Manufacturing Services,4,17,ENTRE,fournit,partiel,segment Intelligent Infrastructure dedie a l infrastructure IA
+77,Deere & Company,DE,Industrials,Agricultural & Farm Machinery,4,21,SORT,utilise,,IA embarquee dans les machines agricoles
+78,Automatic Data Processing,ADP,Industrials,Human Resource & Employment Services,4,14,SORT,utilise,,IA dans les processus de paie
+79,Verisk Analytics,VRSK,Industrials,Research & Consulting Services,4,16,SORT,utilise,,IA dans le produit ; centres de donnees = risque operationnel
+80,"Williams-Sonoma, Inc.",WSM,Consumer Discretionary,Homefurnishing Retail,4,11,SORT,menace,,l IA generative pourrait reduire les barrieres a la concurrence
+81,Corpay,CPAY,Financials,Transaction & Payment Processing Services,5,14,SORT,utilise,,modeles d apprentissage pour le credit
+82,PayPal,PYPL,Financials,Transaction & Payment Processing Services,4,20,SORT,utilise,,IA pour la fraude et le risque
+83,NiSource,NI,Utilities,Multi-Utilities,3,154,ENTRE,fournit,partiel,developpe des moyens de production dedies a ses clients centres de donnees
+84,MSCI,MSCI,Financials,Financial Exchanges & Data,4,15,SORT,utilise,,indices financiers ; cloud utilise pour reduire ses propres risques de centres de donnees
+85,CBRE Group,CBRE,Real Estate,Real Estate Services,4,19,DOUTEUX,fournit,faible,les centres de donnees figurent parmi les classes d actifs en croissance de son courtage
+86,TE Connectivity,TEL,Information Technology,Electronic Manufacturing Services,4,14,ENTRE,vend,partiel,"reseaux de donnees numeriques, 28 pourcent des ventes du segment industriel"
+87,Intuitive Surgical,ISRG,Health Care,Health Care Equipment,4,21,SORT,utilise,,"robotique chirurgicale, IA dans le produit"
+88,Zebra Technologies,ZBRA,Information Technology,Electronic Equipment & Instruments,4,11,SORT,utilise,,IA comme tendance affectant ses clients
+89,Synchrony Financial,SYF,Financials,Consumer Finance,5,14,SORT,utilise,,modeles d apprentissage pour le marketing
+90,Booking Holdings,BKNG,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",4,13,SORT,utilise,,centres de donnees = hebergement propre
+91,Baker Hughes,BKR,Energy,Oil & Gas Equipment & Services,4,13,SORT,utilise,,IA dans les solutions parapetrolieres
+92,eBay Inc.,EBAY,Consumer Discretionary,Broadline Retail,4,13,SORT,utilise,,IA pour la place de marche
+93,Visa Inc.,V,Financials,Transaction & Payment Processing Services,4,14,SORT,utilise,,IA pour la protection des paiements
+94,Blackstone Inc.,BX,Financials,Asset Management & Custody Banks,5,22,DOUTEUX,fournit,faible,"investissements immobiliers en centres de donnees, une classe d actifs parmi d autres"
+95,Axon Enterprise,AXON,Industrials,Aerospace & Defense,4,13,SORT,utilise,,IA dans les produits de securite publique
+96,Lowe's,LOW,Consumer Discretionary,Home Improvement Retail,4,9,SORT,utilise,,IA pour l efficacite operationnelle
+97,Tyler Technologies,TYL,Information Technology,Application Software,3,25,SORT,utilise,,logiciel public heberge chez AWS
+98,WEC Energy Group,WEC,Utilities,Electric Utilities,4,23,ENTRE,fournit,partiel,hors tres gros clients centres de donnees les volumes seraient plats ; discussions de fourniture en cours
+99,CME Group,CME,Financials,Financial Exchanges & Data,3,32,SORT,utilise,,centres de donnees = risque operationnel de la bourse
+100,Intercontinental Exchange,ICE,Financials,Financial Exchanges & Data,3,45,SORT,utilise,,IA pour l automatisation de ses flux
+101,Trade Desk (The),TTD,Communication Services,Advertising,3,25,SORT,utilise,,investit dans son hebergement pour ses propres capacites IA
+102,Apple Inc.,AAPL,Information Technology,"Technology Hardware, Storage & Peripherals",3,13,SORT,utilise,,mentions limitees aux risques juridiques des fonctions IA
+103,Qnity Electronics,Q,Information Technology,Semiconductor Materials & Equipment,3,23,ENTRE,fournit,fort,"materiaux et composants pour l IA et le calcul haute performance, gestion thermique"
+104,IBM,IBM,Information Technology,IT Consulting & Other Services,4,5,SORT,utilise,,conseil et logiciel ; cinq mentions seulement dans tout le document
+105,Fiserv,FISV,Financials,Transaction & Payment Processing Services,3,25,SORT,utilise,,centres de donnees = locaux operationnels
+106,Entergy,ETR,Utilities,Electric Utilities,3,116,ENTRE,fournit,partiel,contrat de fourniture d un campus de centres de donnees ou AWS est implique
+107,"Tesla, Inc.",TSLA,Consumer Discretionary,Automobile Manufacturers,3,22,ENTRE,depense,partiel,"plus de 20 milliards d investissement en 2026 tires par les initiatives IA, infrastructure de calcul et centres de donnees"
+108,Moody's Corporation,MCO,Financials,Financial Exchanges & Data,4,12,SORT,utilise,,notation et donnees ; IA dans le produit
+109,Centene Corporation,CNC,Health Care,Managed Health Care,3,26,SORT,utilise,,IA pour la gestion des couts de sante
+110,Verizon,VZ,Communication Services,Integrated Telecommunication Services,5,9,SORT,utilise,,centres de donnees = installations propres
+111,NRG Energy,NRG,Utilities,Independent Power Producers & Energy Traders,4,16,ENTRE,fournit,partiel,demande croissante des centres de donnees parmi ses gros clients
+112,Emerson Electric,EMR,Industrials,Electrical Components & Equipment,3,16,DOUTEUX,fournit,?,"mentions limitees aux risques de l IA, exposition non demontree par les passages"
+113,AppLovin,APP,Communication Services,Advertising,4,9,SORT,utilise,,moteur publicitaire fonde sur l IA
+114,Robinhood Markets,HOOD,Financials,Investment Banking & Brokerage,4,16,SORT,utilise,,IA pour le support et la fraude
+115,Quest Diagnostics,DGX,Health Care,Health Care Services,4,11,SORT,utilise,,IA pour l analyse de donnees medicales
+116,Keysight Technologies,KEYS,Information Technology,Electronic Equipment & Instruments,4,11,ENTRE,fournit,partiel,solutions pour accroitre l efficacite des grappes de calcul IA et les interconnexions
+117,Lennox International,LII,Industrials,Building Products,4,7,DOUTEUX,fournit,faible,refroidissement de centres de donnees cite dans une enumeration
+118,Quanta Services,PWR,Industrials,Construction & Engineering,3,25,ENTRE,fournit,partiel,clients hyperscalers ; demande de transport d electricite tiree par les centres de donnees
+119,Realty Income,O,Real Estate,Retail REITs,3,21,DOUTEUX,fournit,faible,"investissements en centres de donnees, nouvelle classe d actifs pour une fonciere de commerce"
+120,Global Payments,GPN,Financials,Transaction & Payment Processing Services,4,11,SORT,utilise,,IA comme tendance reglementaire et concurrentielle
+121,GE HealthCare,GEHC,Health Care,Health Care Equipment,5,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+122,Cigna,CI,Health Care,Health Care Services,4,12,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+123,First Solar,FSLR,Information Technology,Semiconductors,4,10,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+124,Uber,UBER,Industrials,Passenger Ground Transportation,3,25,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+125,Baxter International,BAX,Health Care,Health Care Equipment,4,11,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+126,Interactive Brokers,IBKR,Financials,Investment Banking & Brokerage,3,17,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+127,Cummins,CMI,Industrials,Construction Machinery & Heavy Transportation Equipment,4,10,ENTRE,fournit,partiel,forte demande pour ses produits destines aux centres de donnees sur six a huit trimestres
+128,Trimble Inc.,TRMB,Information Technology,Application Software,3,12,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+129,Ralph Lauren Corporation,RL,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",4,10,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+130,Leidos,LDOS,Industrials,Diversified Support Services,3,17,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+131,NXP Semiconductors,NXPI,Information Technology,Semiconductors,4,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+132,Colgate-Palmolive,CL,Consumer Staples,Household Products,4,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+133,Omnicom Group,OMC,Communication Services,Advertising,3,13,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+134,AES Corporation,AES,Utilities,Independent Power Producers & Energy Traders,4,18,ENTRE,fournit,fort,fournisseur de reference d energie renouvelable aux entreprises de centres de donnees
+135,GE Vernova,GEV,Industrials,Heavy Electrical Equipment,4,8,ENTRE,fournit,fort,commandes de raccordement et production electrique pour electrifier les centres de donnees
+136,Capital One,COF,Financials,Consumer Finance,5,14,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+137,American Express,AXP,Financials,Consumer Finance,4,12,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+138,FirstEnergy,FE,Utilities,Electric Utilities,3,30,ENTRE,fournit,partiel,hausse de demande et reglementation sur l interconnexion des centres de donnees IA
+139,Northern Trust,NTRS,Financials,Asset Management & Custody Banks,4,15,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+140,W. R. Berkley Corporation,WRB,Financials,Property & Casualty Insurance,3,18,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+141,HCA Healthcare,HCA,Health Care,Health Care Facilities,3,16,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+142,Marsh McLennan,MRSH,Financials,Insurance Brokers,3,16,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+143,PPL Corporation,PPL,Utilities,Electric Utilities,3,26,ENTRE,fournit,partiel,ses plans d investissement dependent de la croissance et de la viabilite des centres de donnees
+144,Cognizant,CTSH,Information Technology,IT Consulting & Other Services,4,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+145,Expeditors International,EXPD,Industrials,Air Freight & Logistics,3,8,DOUTEUX,fournit,faible,"commissionnaire de transport servant une clientele cloud, hyperscale et semi-conducteurs"
+146,Cboe Global Markets,CBOE,Financials,Financial Exchanges & Data,3,19,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+147,Texas Pacific Land Corporation,TPL,Energy,Oil & Gas Exploration & Production,3,12,ENTRE,fournit,partiel,accord strategique pour developper des campus de centres de donnees sur ses terrains
+148,Cintas,CTAS,Industrials,Diversified Support Services,3,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+149,Progressive Corporation,PGR,Financials,Property & Casualty Insurance,3,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+150,Copart,CPRT,Industrials,Diversified Support Services,3,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+151,Evergy,EVRG,Utilities,Electric Utilities,4,13,ENTRE,fournit,partiel,ses plans d investissement dependent de la viabilite des centres de donnees raccordes
+152,BlackRock,BLK,Financials,Asset Management & Custody Banks,4,11,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+153,Teledyne Technologies,TDY,Information Technology,Electronic Equipment & Instruments,4,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+154,Dollar General,DG,Consumer Staples,Consumer Staples Merchandise Retail,3,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+155,Molson Coors Beverage Company,TAP,Consumer Staples,Brewers,3,16,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+156,Thermo Fisher Scientific,TMO,Health Care,Life Sciences Tools & Services,4,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+157,Church & Dwight,CHD,Consumer Staples,Household Products,3,11,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+158,Hubbell Incorporated,HUBB,Industrials,Industrial Machinery & Supplies & Components,3,11,ENTRE,fournit,partiel,le centre de donnees figure parmi les marches finaux declares de son segment electrique
+159,Public Storage,PSA,Real Estate,Self-Storage REITs,3,10,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+160,Paychex,PAYX,Industrials,Human Resource & Employment Services,3,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+161,Halliburton,HAL,Energy,Oil & Gas Equipment & Services,3,7,DOUTEUX,fournit,faible,demande structurelle de gaz naturel tiree en partie par les centres de donnees
+162,Verisign,VRSN,Information Technology,Internet Services & Infrastructure,2,21,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+163,FedEx,FDX,Industrials,Air Freight & Logistics,3,14,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+164,Truist Financial,TFC,Financials,Diversified Banks,4,11,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+165,ResMed|,RMD,Health Care,Health Care Equipment,3,12,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+166,Henry Schein,HSIC,Health Care,Health Care Distributors,3,13,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+167,IDEX Corporation,IEX,Industrials,Industrial Machinery & Supplies & Components,3,8,ENTRE,fournit,partiel,la demande de projets lies a l IA inclut les solutions d alimentation de centres de donnees
+168,Clorox,CLX,Consumer Staples,Household Products,2,17,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+169,Apollo Global Management,APO,Financials,Asset Management & Custody Banks,5,13,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+170,Roper Technologies,ROP,Information Technology,Electronic Equipment & Instruments,4,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+171,Moderna,MRNA,Health Care,Biotechnology,3,14,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+172,T. Rowe Price,TROW,Financials,Asset Management & Custody Banks,3,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+173,Coinbase,COIN,Financials,Financial Exchanges & Data,4,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+174,AT&T,T,Communication Services,Integrated Telecommunication Services,4,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+175,Raymond James Financial,RJF,Financials,Investment Banking & Brokerage,4,10,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+176,Fox Corporation (Class A),FOX|FOXA,Communication Services,Broadcasting,3,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+177,Prologis,PLD,Real Estate,Industrial REITs,2,30,ENTRE,fournit,partiel,developpement selectif de centres de donnees dans sa strategie d infrastructure numerique
+178,Stryker Corporation,SYK,Health Care,Health Care Equipment,3,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+179,Elevance Health,ELV,Health Care,Managed Health Care,4,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+180,State Street Corporation,STT,Financials,Asset Management & Custody Banks,3,19,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+181,Mastercard,MA,Financials,Transaction & Payment Processing Services,4,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+182,HP Inc.,HPQ,Information Technology,"Technology Hardware, Storage & Peripherals",3,10,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+183,Pentair,PNR,Industrials,Industrial Machinery & Supplies & Components,2,19,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+184,"Tapestry, Inc.",TPR,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",3,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+185,Public Service Enterprise Group,PEG,Utilities,Electric Utilities,3,14,ENTRE,fournit,faible,hausse de charge anticipee et procedures d interconnexion des centres de donnees
+186,PNC Financial Services,PNC,Financials,Diversified Banks,4,12,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+187,Honeywell Technologies,HON,Industrials,Industrial Conglomerates,2,28,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+188,General Dynamics,GD,Industrials,Aerospace & Defense,4,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+189,Fortive,FTV,Industrials,Industrial Machinery & Supplies & Components,3,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+190,Dollar Tree,DLTR,Consumer Staples,Consumer Staples Merchandise Retail,2,16,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+191,Alexandria Real Estate Equities,ARE,Real Estate,Office REITs,5,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+192,Motorola Solutions,MSI,Information Technology,Communications Equipment,4,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+193,SBA Communications,SBAC,Real Estate,Telecom Tower REITs,2,20,DOUTEUX,fournit,faible,"exploration de l informatique en peripherie, au stade des intentions"
+194,Hilton Worldwide,HLT,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",4,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+195,W. W. Grainger,GWW,Industrials,Industrial Machinery & Supplies & Components,3,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+196,Trane Technologies,TT,Industrials,Building Products,3,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+197,Zimmer Biomet,ZBH,Health Care,Health Care Equipment,2,20,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+198,Labcorp,LH,Health Care,Health Care Services,3,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+199,Sysco,SYY,Consumer Staples,Food Distributors,2,24,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+200,Charles River Laboratories,CRL,Health Care,Life Sciences Tools & Services,3,10,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+201,Home Depot (The),HD,Consumer Discretionary,Home Improvement Retail,4,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+202,Skyworks Solutions,SWKS,Information Technology,Semiconductors,3,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+203,Coca-Cola Company (The),KO,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,3,12,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+204,Alliant Energy,LNT,Utilities,Electric Utilities,2,25,ENTRE,fournit,partiel,facteur de risque dedie a la croissance de la demande des clients centres de donnees
+205,Carvana,CVNA,Consumer Discretionary,Automotive Retail,3,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+206,Kenvue,KVUE,Consumer Staples,Personal Care Products,2,28,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+207,Duke Energy,DUK,Utilities,Electric Utilities,4,14,ENTRE,fournit,partiel,croissance des ventes tiree par l usage des centres de donnees ; charges hyperscale
+208,Texas Instruments,TXN,Information Technology,Semiconductors,2,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+209,Humana,HUM,Health Care,Managed Health Care,4,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+210,American International Group,AIG,Financials,Multi-line Insurance,3,16,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+211,Old Dominion,ODFL,Industrials,Cargo Ground Transportation,3,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+212,Fidelity National Information Services,FIS,Financials,Transaction & Payment Processing Services,3,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+213,A. O. Smith,AOS,Industrials,Building Products,3,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+214,3M,MMM,Industrials,Industrial Conglomerates,3,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+215,PepsiCo,PEP,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,2,17,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+216,Cencora,COR,Health Care,Health Care Distributors,3,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+217,Loews Corporation,L,Financials,Multi-line Insurance,3,11,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+218,Tractor Supply,TSCO,Consumer Discretionary,Other Specialty Retail,2,11,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+219,Stanley Black & Decker,SWK,Industrials,Industrial Machinery & Supplies & Components,2,17,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+220,Nordson Corporation,NDSN,Industrials,Industrial Machinery & Supplies & Components,3,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+221,Applied Materials,AMAT,Information Technology,Semiconductor Materials & Equipment,2,11,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+222,Aon plc,AON,Financials,Insurance Brokers,2,18,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+223,Mondelez International,MDLZ,Consumer Staples,Packaged Foods & Meats,2,16,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+224,Pinnacle West Capital,PNW,Utilities,Multi-Utilities,2,23,ENTRE,fournit,partiel,participation dans un fabricant d appareillage electrique utilise par les centres de donnees
+225,DaVita,DVA,Health Care,Health Care Services,2,18,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+226,Ventas,VTR,Real Estate,Health Care REITs,3,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+227,FedEx Freight,FDXF,Industrials,Cargo Ground Transportation,3,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+228,Invesco,IVZ,Financials,Asset Management & Custody Banks,3,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+229,Simon Property Group,SPG,Real Estate,Retail REITs,3,10,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+230,Dow Inc.,DOW,Materials,Commodity Chemicals,3,10,DOUTEUX,vend,faible,"fluide caloporteur pour refroidissement direct au processeur, produit reel mais marginal"
+231,Regions Financial Corporation,RF,Financials,Regional Banks,4,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+232,Xcel Energy,XEL,Utilities,Multi-Utilities,3,8,ENTRE,fournit,partiel,croissance rapide alimentee par l IA et les centres de donnees
+233,Travelers Companies (The),TRV,Financials,Property & Casualty Insurance,2,28,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+234,Arthur J. Gallagher & Co.,AJG,Financials,Insurance Brokers,4,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+235,KeyCorp,KEY,Financials,Regional Banks,4,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+236,Assurant,AIZ,Financials,Multi-line Insurance,3,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+237,Vulcan Materials Company,VMC,Materials,Construction Materials,3,6,DOUTEUX,fournit,faible,granulats cites parmi les usages incluant les centres de donnees
+238,CMS Energy,CMS,Utilities,Multi-Utilities,2,17,ENTRE,fournit,partiel,la demande liee a l expansion des centres de donnees pourrait avoir un effet significatif
+239,S&P Global,SPGI,Financials,Financial Exchanges & Data,3,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+240,Emcor,EME,Industrials,Construction & Engineering,2,12,ENTRE,fournit,fort,demande portee par l expansion des centres de donnees pour alimenter l IA et le cloud
+241,Ecolab,ECL,Materials,Specialty Chemicals,3,7,DOUTEUX,vend,faible,les centres de donnees figurent parmi ses marches enumeres
+242,Kimco Realty,KIM,Real Estate,Retail REITs,2,19,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+243,Xylem Inc.,XYL,Industrials,Industrial Machinery & Supplies & Components,3,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+244,McCormick & Company,MKC,Consumer Staples,Packaged Foods & Meats,2,10,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+245,Charles Schwab Corporation,SCHW,Financials,Investment Banking & Brokerage,3,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+246,Allstate,ALL,Financials,Property & Casualty Insurance,3,10,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+247,Amcor,AMCR,Materials,Paper & Plastic Packaging Products & Materials,3,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+248,Huntington Ingalls Industries,HII,Industrials,Aerospace & Defense,2,11,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+249,Genuine Parts Company,GPC,Consumer Discretionary,Distributors,2,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+250,Freeport-McMoRan,FCX,Materials,Copper,3,10,DOUTEUX,vend,faible,demande de cuivre soutenue entre autres par les centres de donnees
+251,Smurfit Westrock,SW,Materials,Paper & Plastic Packaging Products & Materials,2,13,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+252,JPMorgan Chase,JPM,Financials,Diversified Banks,4,10,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+253,Estée Lauder Companies (The),EL,Consumer Staples,Personal Care Products,4,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+254,Franklin Resources,BEN,Financials,Asset Management & Custody Banks,3,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+255,Netflix,NFLX,Communication Services,Movies & Entertainment,2,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+256,Ferguson Enterprises,FERG,Industrials,Trading Companies & Distributors,3,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+257,Diamondback Energy,FANG,Energy,Oil & Gas Exploration & Production,4,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+258,Host Hotels & Resorts,HST,Real Estate,Hotel & Resort REITs,3,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+259,Arch Capital Group,ACGL,Financials,Property & Casualty Insurance,2,21,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+260,Target Corporation,TGT,Consumer Staples,Consumer Staples Merchandise Retail,1,13,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+261,Idexx Laboratories,IDXX,Health Care,Health Care Equipment,2,11,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+262,Zoetis,ZTS,Health Care,Pharmaceuticals,3,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+263,Ameren,AEE,Utilities,Multi-Utilities,2,20,ENTRE,fournit,partiel,croissance significative de la demande provenant principalement des centres de donnees
+264,Take-Two Interactive,TTWO,Communication Services,Interactive Home Entertainment,2,10,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+265,Insulet Corporation,PODD,Health Care,Health Care Equipment,2,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+266,Accenture,ACN,Information Technology,IT Consulting & Other Services,3,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+267,Nucor,NUE,Materials,Steel,1,14,DOUTEUX,vend,faible,charpentes metalliques citees parmi des usages incluant les centres de donnees
+268,Ametek,AME,Industrials,Electrical Components & Equipment,2,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+269,Citizens Financial Group,CFG,Financials,Regional Banks,3,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+270,Allegion,ALLE,Industrials,Building Products,2,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+271,Aptiv,APTV,Consumer Discretionary,Automotive Parts & Equipment,3,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+272,Jacobs Solutions,J,Industrials,Construction & Engineering,2,11,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+273,KLA Corporation,KLAC,Information Technology,Semiconductor Materials & Equipment,3,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+274,Walt Disney Company (The),DIS,Communication Services,Movies & Entertainment,3,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+275,Warner Bros. Discovery,WBD,Communication Services,Broadcasting,3,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+276,T-Mobile US,TMUS,Communication Services,Wireless Telecommunication Services,3,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+277,Hartford (The),HIG,Financials,Property & Casualty Insurance,2,20,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+278,Regency Centers,REG,Real Estate,Retail REITs,3,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+279,General Motors,GM,Consumer Discretionary,Automobile Manufacturers,3,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+280,Solventum,SOLV,Health Care,Health Care Technology,2,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+281,Extra Space Storage,EXR,Real Estate,Self-Storage REITs,2,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+282,Starbucks,SBUX,Consumer Discretionary,Restaurants,2,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+283,Vertex Pharmaceuticals,VRTX,Health Care,Biotechnology,2,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+284,Bunge Global,BG,Consumer Staples,Agricultural Products & Services,3,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+285,Comfort Systems USA,FIX,Industrials,Construction & Engineering,2,6,ENTRE,fournit,fort,demande particulierement forte pour les centres de donnees ; specialiste du CVC de centres de donnees
+286,DoorDash,DASH,Consumer Discretionary,Specialized Consumer Services,3,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+287,Comcast,CMCSA,Communication Services,Cable & Satellite,3,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+288,Brown & Brown,BRO,Financials,Insurance Brokers,2,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+289,Erie Indemnity,ERIE,Financials,Insurance Brokers,2,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+290,CRH plc,CRH,Materials,Construction Materials,2,8,DOUTEUX,fournit,faible,materiaux de construction cites pour la reindustrialisation et les centres de donnees
+291,Vistra Corp.,VST,Utilities,Electric Utilities,3,7,ENTRE,fournit,partiel,emergence de grandes charges de centres de donnees liees a l IA
+292,Parker Hannifin,PH,Industrials,Industrial Machinery & Supplies & Components,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+293,Agilent Technologies,A,Health Care,Life Sciences Tools & Services,3,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+294,NextEra Energy,NEE,Utilities,Multi-Utilities,2,10,ENTRE,fournit,partiel,cherche a servir les grands clients tels que les centres de donnees
+295,CenterPoint Energy,CNP,Utilities,Multi-Utilities,3,8,ENTRE,fournit,partiel,forte croissance de charge attendue liee a l expansion des centres de donnees
+296,Builders FirstSource,BLDR,Industrials,Building Products,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+297,Yum! Brands,YUM,Consumer Discretionary,Restaurants,3,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+298,Align Technology,ALGN,Health Care,Health Care Supplies,2,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+299,Chipotle Mexican Grill,CMG,Consumer Discretionary,Restaurants,2,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+300,Chevron Corporation,CVX,Energy,Integrated Oil & Gas,2,9,DOUTEUX,fournit,faible,"premier projet electrique destine a des centres de donnees, au stade initial"
+301,Boston Scientific,BSX,Health Care,Health Care Equipment,3,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+302,Hasbro,HAS,Consumer Discretionary,Leisure Products,1,13,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+303,Welltower,WELL,Real Estate,Health Care REITs,3,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+304,Illinois Tool Works,ITW,Industrials,Industrial Machinery & Supplies & Components,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+305,Dominion Energy,D,Utilities,Multi-Utilities,2,16,ENTRE,fournit,partiel,investissements destines a la hausse de consommation portee par les grandes charges
+306,News Corp (Class A),NWS|NWSA,Communication Services,Publishing,3,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+307,J.B. Hunt,JBHT,Industrials,Cargo Ground Transportation,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+308,Citigroup,C,Financials,Diversified Banks,3,12,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+309,Healthpeak Properties,DOC,Real Estate,Health Care REITs,3,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+310,Williams Companies,WMB,Energy,Oil & Gas Storage & Transportation,2,11,ENTRE,fournit,partiel,projets de construction pour repondre aux besoins electriques crees par les centres de donnees
+311,Amphenol,APH,Information Technology,Electronic Components,3,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+312,Cardinal Health,CAH,Health Care,Health Care Distributors,2,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+313,Mettler Toledo,MTD,Health Care,Life Sciences Tools & Services,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+314,"Nike, Inc.",NKE,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",3,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+315,J.M. Smucker Company (The),SJM,Consumer Staples,Packaged Foods & Meats,2,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+316,Costco,COST,Consumer Staples,Consumer Staples Merchandise Retail,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+317,Carrier Global,CARR,Industrials,Building Products,2,6,DOUTEUX,fournit,faible,le centre de donnees figure dans une enumeration de marches servis
+318,Dexcom,DXCM,Health Care,Health Care Equipment,3,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+319,Crown Castle,CCI,Real Estate,Telecom Tower REITs,2,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+320,Medtronic,MDT,Health Care,Health Care Equipment,3,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+321,Bristol Myers Squibb,BMY,Health Care,Pharmaceuticals,2,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+322,EchoStar,ECHO,Communication Services,Wireless Telecommunication Services,3,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+323,Howmet Aerospace,HWM,Industrials,Aerospace & Defense,3,3,ENTRE,fournit,faible,turbines servant une demande electrique tiree par la construction de centres de donnees
+324,Constellation Brands,STZ,Consumer Staples,Distillers & Vintners,3,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+325,Valero Energy,VLO,Energy,Oil & Gas Refining & Marketing,3,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+326,Intuit,INTU,Information Technology,Application Software,2,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+327,Merck & Co.,MRK,Health Care,Pharmaceuticals,3,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+328,Casey's,CASY,Consumer Staples,Food Retail,1,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+329,Caterpillar Inc.,CAT,Industrials,Construction Machinery & Heavy Transportation Equipment,2,7,DOUTEUX,fournit,?,exposition aux groupes electrogenes de centres de donnees non demontree par les passages
+330,Johnson & Johnson,JNJ,Health Care,Pharmaceuticals,3,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+331,Northrop Grumman,NOC,Industrials,Aerospace & Defense,1,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+332,Albemarle Corporation,ALB,Materials,Specialty Chemicals,3,4,DOUTEUX,vend,faible,stockage d energie soutenu par la hausse de demande electrique des centres de donnees
+333,Morgan Stanley,MS,Financials,Investment Banking & Brokerage,2,12,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+334,Southern Company,SO,Utilities,Electric Utilities,2,20,ENTRE,fournit,partiel,contrats signes avec de nouveaux centres de donnees representant environ neuf gigawatts
+335,Pfizer,PFE,Health Care,Pharmaceuticals,3,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+336,Paccar,PCAR,Industrials,Construction Machinery & Heavy Transportation Equipment,2,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+337,"BXP, Inc.",BXP,Real Estate,Office REITs,2,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+338,Consolidated Edison,ED,Utilities,Multi-Utilities,3,4,ENTRE,fournit,faible,hausse de la demande de pointe due en partie aux centres de donnees
+339,United Parcel Service,UPS,Industrials,Air Freight & Logistics,2,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+340,Textron,TXT,Industrials,Aerospace & Defense,2,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+341,Waste Management,WM,Industrials,Environmental & Facilities Services,1,12,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+342,Kimberly-Clark,KMB,Consumer Staples,Household Products,2,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+343,GE Aerospace,GE,Industrials,Aerospace & Defense,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+344,Deckers Brands,DECK,Consumer Discretionary,Footwear,2,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+345,Invitation Homes,INVH,Real Estate,Single-Family Residential REITs,2,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+346,American Electric Power,AEP,Utilities,Electric Utilities,2,17,ENTRE,fournit,partiel,ses plans d investissement dependent de la croissance des centres de donnees raccordes
+347,Viatris,VTRS,Health Care,Pharmaceuticals,3,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+348,Waters Corporation,WAT,Health Care,Life Sciences Tools & Services,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+349,Avery Dennison,AVY,Materials,Paper & Plastic Packaging Products & Materials,2,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+350,Fastenal,FAST,Industrials,Trading Companies & Distributors,2,3,DOUTEUX,fournit,faible,les centres de donnees figurent parmi ses categories de clients
+351,LyondellBasell,LYB,Materials,Specialty Chemicals,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+352,Republic Services,RSG,Industrials,Environmental & Facilities Services,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+353,Snap-on,SNA,Industrials,Industrial Machinery & Supplies & Components,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+354,Domino's,DPZ,Consumer Discretionary,Restaurants,2,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+355,PTC Inc.,PTC,Information Technology,Application Software,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+356,Kinder Morgan,KMI,Energy,Oil & Gas Storage & Transportation,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+357,Kroger,KR,Consumer Staples,Food Retail,2,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+358,PG&E Corporation,PCG,Utilities,Multi-Utilities,2,7,ENTRE,fournit,partiel,investissements de transport pour centres de donnees ; croissance de charge attendue
+359,Lululemon Athletica,LULU,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+360,Ulta Beauty,ULTA,Consumer Discretionary,Other Specialty Retail,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+361,Steris,STE,Health Care,Health Care Equipment,2,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+362,United Rentals,URI,Industrials,Trading Companies & Distributors,2,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+363,KKR & Co.,KKR,Financials,Asset Management & Custody Banks,1,24,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+364,Sempra,SRE,Utilities,Multi-Utilities,2,11,ENTRE,fournit,partiel,le developpement de centres de donnees doit entrainer une hausse rapide des investissements reseau
+365,Procter & Gamble,PG,Consumer Staples,Personal Care Products,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+366,Weyerhaeuser,WY,Real Estate,Timber REITs,2,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+367,TJX Companies,TJX,Consumer Discretionary,Apparel Retail,1,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+368,CSX Corporation,CSX,Industrials,Rail Transportation,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+369,Philip Morris International,PM,Consumer Staples,Tobacco,1,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+370,Martin Marietta Materials,MLM,Materials,Construction Materials,2,4,DOUTEUX,fournit,faible,granulats cites parmi les usages incluant les centres de donnees
+371,Darden Restaurants,DRI,Consumer Discretionary,Restaurants,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+372,Berkshire Hathaway,BRK.B,Financials,Multi-Sector Holdings,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+373,UnitedHealth Group,UNH,Health Care,Managed Health Care,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+374,DTE Energy,DTE,Utilities,Multi-Utilities,2,5,ENTRE,fournit,partiel,construction d installations de production pour desservir des centres de donnees
+375,Rockwell Automation,ROK,Industrials,Electrical Components & Equipment,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+376,Devon Energy,DVN,Energy,Oil & Gas Exploration & Production,1,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+377,Essex Property Trust,ESS,Real Estate,Multi-Family Residential REITs,1,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+378,Willis Towers Watson,WTW,Financials,Insurance Brokers,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+379,Linde plc,LIN,Materials,Industrial Gases,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+380,Cincinnati Financial,CINF,Financials,Property & Casualty Insurance,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+381,Incyte,INCY,Health Care,Biotechnology,1,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+382,Amgen,AMGN,Health Care,Biotechnology,1,9,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+383,Prudential Financial,PRU,Financials,Life & Health Insurance,2,11,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+384,Marriott International,MAR,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+385,Gilead Sciences,GILD,Health Care,Biotechnology,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+386,Lockheed Martin,LMT,Industrials,Aerospace & Defense,1,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+387,Becton Dickinson,BDX,Health Care,Health Care Equipment,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+388,Goldman Sachs,GS,Financials,Investment Banking & Brokerage,2,8,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+389,Everest Group,EG,Financials,Reinsurance,2,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+390,Lilly (Eli),LLY,Health Care,Pharmaceuticals,1,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+391,Brown–Forman,BF.B,Consumer Staples,Distillers & Vintners,2,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+392,RTX Corporation,RTX,Industrials,Aerospace & Defense,1,7,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+393,Norfolk Southern,NSC,Industrials,Rail Transportation,2,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+394,McKesson Corporation,MCK,Health Care,Health Care Distributors,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+395,D. R. Horton,DHI,Consumer Discretionary,Homebuilding,1,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+396,Wells Fargo,WFC,Financials,Diversified Banks,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+397,Danaher Corporation,DHR,Health Care,Life Sciences Tools & Services,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+398,Monster Beverage,MNST,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,1,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+399,Oneok,OKE,Energy,Oil & Gas Storage & Transportation,2,3,ENTRE,fournit,partiel,la demande croissante des centres de donnees la positionne pour de nouveaux projets
+400,Southwest Airlines,LUV,Industrials,Passenger Airlines,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+401,Chubb Limited,CB,Financials,Property & Casualty Insurance,1,10,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+402,Kraft Heinz,KHC,Consumer Staples,Packaged Foods & Meats,2,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+403,Altria,MO,Consumer Staples,Tobacco,1,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+404,Delta Air Lines,DAL,Industrials,Passenger Airlines,2,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+405,PulteGroup,PHM,Consumer Discretionary,Homebuilding,1,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+406,MGM Resorts,MGM,Consumer Discretionary,Casinos & Gaming,2,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+407,L3Harris,LHX,Industrials,Aerospace & Defense,2,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+408,Ameriprise Financial,AMP,Financials,Asset Management & Custody Banks,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+409,Sherwin-Williams,SHW,Materials,Specialty Chemicals,2,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+410,EOG Resources,EOG,Energy,Oil & Gas Exploration & Production,2,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+411,Vivmark Residential,VMRK,Real Estate,Multi-Family Residential REITs,1,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+412,Norwegian Cruise Line Holdings,NCLH,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+413,Fifth Third Bancorp,FITB,Financials,Regional Banks,2,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+414,AutoZone,AZO,Consumer Discretionary,Automotive Retail,1,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+415,International Paper,IP,Materials,Paper & Plastic Packaging Products & Materials,2,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+416,Paramount Skydance Corporation,PSKY,Communication Services,Movies & Entertainment,2,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+417,Ross Stores,ROST,Consumer Discretionary,Apparel Retail,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+418,MetLife,MET,Financials,Life & Health Insurance,2,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+419,DuPont,DD,Industrials,Industrial Conglomerates,2,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+420,Steel Dynamics,STLD,Materials,Steel,1,3,DOUTEUX,fournit,faible,acier cite parmi des usages incluant les centres de donnees
+421,M&T Bank,MTB,Financials,Regional Banks,2,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+422,Edison International,EIX,Utilities,Electric Utilities,2,2,DOUTEUX,fournit,?,nouvelles sources de demande evoquees sans precision exploitable
+423,Biogen,BIIB,Health Care,Biotechnology,2,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+424,Royal Caribbean Group,RCL,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",1,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+425,PPG Industries,PPG,Materials,Specialty Chemicals,1,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+426,Exelon,EXC,Utilities,Electric Utilities,2,3,DOUTEUX,fournit,?,plan d investissement de 41 milliards sans attribution explicite
+427,BNY Mellon,BNY,Financials,Asset Management & Custody Banks,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+428,Ford Motor Company,F,Consumer Discretionary,Automobile Manufacturers,1,6,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+429,Masco,MAS,Industrials,Building Products,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+430,Veralto,VLTO,Industrials,Environmental & Facilities Services,1,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+431,Universal Health Services,UHS,Health Care,Health Care Facilities,1,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+432,Archer Daniels Midland,ADM,Consumer Staples,Agricultural Products & Services,1,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+433,Federal Realty Investment Trust,FRT,Real Estate,Retail REITs,1,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+434,McDonald's,MCD,Consumer Discretionary,Restaurants,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+435,Best Buy,BBY,Consumer Discretionary,Computer & Electronics Retail,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+436,O'Reilly Automotive,ORLY,Consumer Discretionary,Automotive Retail,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+437,CVS Health,CVS,Health Care,Health Care Services,1,5,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+438,Charter Communications,CHTR,Communication Services,Cable & Satellite,1,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+439,Monolithic Power Systems,MPWR,Information Technology,Semiconductors,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+440,Wabtec,WAB,Industrials,Construction Machinery & Heavy Transportation Equipment,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+441,Hormel Foods,HRL,Consumer Staples,Packaged Foods & Meats,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+442,Mid-America Apartment Communities,MAA,Real Estate,Multi-Family Residential REITs,1,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+443,Las Vegas Sands,LVS,Consumer Discretionary,Casinos & Gaming,1,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+444,General Mills,GIS,Consumer Staples,Packaged Foods & Meats,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+445,Marathon Petroleum,MPC,Energy,Oil & Gas Refining & Marketing,1,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+446,Regeneron Pharmaceuticals,REGN,Health Care,Biotechnology,1,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+447,Aflac,AFL,Financials,Life & Health Insurance,1,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+448,Hershey Company (The),HSY,Consumer Staples,Packaged Foods & Meats,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+449,TKO Group Holdings,TKO,Communication Services,Movies & Entertainment,1,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+450,Edwards Lifesciences,EW,Health Care,Health Care Equipment,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+451,EQT Corporation,EQT,Energy,Oil & Gas Exploration & Production,1,3,DOUTEUX,fournit,faible,developpement de centres de donnees cite parmi ses pistes de croissance
+452,Otis Worldwide,OTIS,Industrials,Industrial Machinery & Supplies & Components,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+453,Ingersoll Rand,IR,Industrials,Industrial Machinery & Supplies & Components,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+454,Eversource Energy,ES,Utilities,Electric Utilities,1,4,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+455,Lennar,LEN,Consumer Discretionary,Homebuilding,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+456,"NVR, Inc.",NVR,Consumer Discretionary,Homebuilding,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+457,Occidental Petroleum,OXY,Energy,Oil & Gas Exploration & Production,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+458,AbbVie,ABBV,Health Care,Biotechnology,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+459,U.S. Bancorp,USB,Financials,Diversified Banks,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+460,Air Products,APD,Materials,Industrial Gases,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+461,Globe Life,GL,Financials,Life & Health Insurance,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+462,Camden Property Trust,CPT,Real Estate,Multi-Family Residential REITs,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+463,Garmin,GRMN,Consumer Discretionary,Consumer Electronics,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+464,Targa Resources,TRGP,Energy,Oil & Gas Storage & Transportation,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+465,Phillips 66,PSX,Energy,Oil & Gas Refining & Marketing,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+466,Corteva,CTVA,Materials,Fertilizers & Agricultural Chemicals,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+467,Carnival Corporation,CCL,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+468,"Rollins, Inc.",ROL,Industrials,Environmental & Facilities Services,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+469,Newmont,NEM,Materials,Gold,1,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+470,Union Pacific Corporation,UNP,Industrials,Rail Transportation,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+471,Revvity,RVTY,Health Care,Health Care Equipment,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+472,Abbott Laboratories,ABT,Health Care,Health Care Equipment,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+473,Walmart,WMT,Consumer Staples,Consumer Staples Merchandise Retail,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+474,TransDigm Group,TDG,Industrials,Aerospace & Defense,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+475,Huntington Bancshares,HBAN,Financials,Regional Banks,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+476,Bank of America,BAC,Financials,Diversified Banks,1,3,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+477,Keurig Dr Pepper,KDP,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+478,Expand Energy,EXE,Energy,Oil & Gas Exploration & Production,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+479,United Airlines Holdings,UAL,Industrials,Passenger Airlines,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+480,Wynn Resorts,WYNN,Consumer Discretionary,Casinos & Gaming,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+481,Boeing,BA,Industrials,Aerospace & Defense,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+482,Tyson Foods,TSN,Consumer Staples,Packaged Foods & Meats,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+483,International Flavors & Fragrances,IFF,Materials,Specialty Chemicals,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+484,Vici Properties,VICI,Real Estate,Hotel & Resort REITs,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+485,Principal Financial Group,PFG,Financials,Life & Health Insurance,1,2,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+486,ConocoPhillips,COP,Energy,Oil & Gas Exploration & Production,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+487,"UDR, Inc.",UDR,Real Estate,Multi-Family Residential REITs,1,1,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+488,Bio-Techne,TECH,Health Care,Life Sciences Tools & Services,0,0,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+489,APA Corporation,APA,Energy,Oil & Gas Exploration & Production,0,0,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+490,Ball Corporation,BALL,Materials,"Metal, Glass & Plastic Containers",0,0,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+491,American Water Works,AWK,Utilities,Water Utilities,0,0,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+492,West Pharmaceutical Services,WST,Health Care,Health Care Supplies,0,0,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+493,Live Nation Entertainment,LYV,Communication Services,Movies & Entertainment,0,0,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+494,CF Industries,CF,Materials,Fertilizers & Agricultural Chemicals,0,0,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+495,Atmos Energy,ATO,Utilities,Gas Utilities,0,0,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+496,Cooper Companies (The),COO,Health Care,Health Care Supplies,0,0,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+497,Mosaic Company (The),MOS,Materials,Fertilizers & Agricultural Chemicals,0,0,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA
+498,Packaging Corporation of America,PKG,Materials,Paper & Plastic Packaging Products & Materials,0,0,SORT,,,non retenue : aucun element du rapport annuel n etablit une dependance a l investissement en IA

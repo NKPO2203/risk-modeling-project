@@ -1,0 +1,21 @@
+{
+  "verifie_le": "2026-09-05T09:55:48.673026+00:00",
+  "tests_unittest_reussis": 51,
+  "commande_tests": "python -B -m unittest discover -s tests -v",
+  "pipeline": "recalcul complet réussi ; --check-only réussi",
+  "excel": {
+    "feuilles": 5,
+    "entreprises_par_vue": 112,
+    "cellules_rapprochees_aux_entrees": 8736,
+    "formules_synthese": "totaux rapprochés",
+    "erreurs_excel": 0,
+    "cik": "texte de 10 chiffres",
+    "volets": "C2 dans les trois vues",
+    "sha256": "a44881ea990a3fc86c70e95a5ba0895f6ea3f6e0e476ce6027772fc56470da6f"
+  },
+  "archive": {
+    "fichiers_verifies": 29,
+    "integrite": "toutes les empreintes correspondent"
+  },
+  "limite": "Contrôles techniques et rapprochements déclarés, pas certification de toutes les données ni revue intégrale de tous les rapports."
+}

@@ -1,0 +1,499 @@
+cik,nom,symboles,secteur,sous_secteur,date_depot,depot,taille_texte,intelligence_artificielle,ia_sigle,ia_generative,apprentissage_automatique,centre_de_donnees,hyperscale,calcul_accelere,processeur_graphique,calcul_haute_performance,grand_modele_de_langage,reseau_de_neurones,refroidissement_liquide,infrastructure_cloud
+0000001800,Abbott Laboratories,ABT,Health Care,Health Care Equipment,2026-02-20,0001628280-26-010185,371979,1,0,0,0,0,0,0,0,0,0,0,0,0
+0000002488,Advanced Micro Devices,AMD,Information Technology,Semiconductors,2026-02-04,0000002488-26-000018,425190,2,190,9,4,98,8,1,71,3,0,0,0,1
+0000002969,Air Products,APD,Materials,Industrial Gases,2025-11-20,0000002969-25-000055,561002,2,0,0,0,0,0,0,0,0,0,0,0,0
+0000004127,Skyworks Solutions,SWKS,Information Technology,Semiconductors,2025-11-07,0000004127-25-000085,329212,1,19,1,0,4,0,0,0,0,0,0,0,0
+0000004281,Howmet Aerospace,HWM,Industrials,Aerospace & Defense,2026-02-12,0000004281-26-000012,443769,0,12,1,1,1,0,0,0,0,0,0,0,0
+0000004904,American Electric Power,AEP,Utilities,Electric Utilities,2026-02-12,0000004904-26-000013,1602130,2,14,0,0,15,0,0,0,0,0,0,0,0
+0000004962,American Express,AXP,Financials,Consumer Finance,2026-02-06,0000004962-26-000080,684008,1,45,8,1,2,0,0,0,0,0,0,0,0
+0000004977,Aflac,AFL,Financials,Life & Health Insurance,2026-02-25,0001628280-26-011402,827143,4,3,0,0,0,0,0,0,0,0,0,0,0
+0000005272,American International Group,AIG,Financials,Multi-line Insurance,2026-02-12,0000005272-26-000023,951229,13,34,2,1,0,0,0,0,0,0,0,0,0
+0000006281,Analog Devices,ADI,Information Technology,Semiconductors,2025-11-25,0000006281-25-000153,383071,5,39,0,2,2,1,0,0,1,0,0,0,1
+0000006951,Applied Materials,AMAT,Information Technology,Semiconductor Materials & Equipment,2025-12-12,0001628280-25-056742,325573,6,31,0,0,5,0,0,0,0,0,0,0,0
+0000007084,Archer Daniels Midland,ADM,Consumer Staples,Agricultural Products & Services,2026-02-17,0000007084-26-000011,417265,3,20,0,0,0,0,0,0,0,0,0,0,0
+0000008670,Automatic Data Processing,ADP,Industrials,Human Resource & Employment Services,2026-08-05,0000008670-26-000030,352866,7,70,1,1,5,0,0,0,0,0,0,0,0
+0000008818,Avery Dennison,AVY,Materials,Paper & Plastic Packaging Products & Materials,2026-02-25,0000008818-26-000015,381329,1,5,0,0,3,0,0,0,0,0,0,0,0
+0000009389,Ball Corporation,BALL,Materials,"Metal, Glass & Plastic Containers",2026-02-19,0001104659-26-017410,366523,0,2,0,0,0,0,0,0,0,0,0,0,0
+0000010456,Baxter International,BAX,Health Care,Health Care Equipment,2026-02-12,0001628280-26-007733,549846,4,25,1,5,0,0,0,0,0,0,0,0,1
+0000010795,Becton Dickinson,BDX,Health Care,Health Care Equipment,2025-11-25,0000010795-25-000099,479633,2,26,1,0,0,0,0,0,0,0,0,0,0
+0000011544,W. R. Berkley Corporation,WRB,Financials,Property & Casualty Insurance,2026-02-27,0000011544-26-000005,557125,13,15,2,3,0,0,0,0,0,0,0,0,0
+0000012927,Boeing,BA,Industrials,Aerospace & Defense,2026-01-30,0001628280-26-004357,494401,1,0,0,0,0,0,0,0,0,0,0,0,0
+0000014272,Bristol Myers Squibb,BMY,Health Care,Pharmaceuticals,2026-02-11,0000014272-26-000004,584380,6,6,0,2,0,0,0,0,0,0,0,0,0
+0000014693,Brown–Forman,BF.B,Consumer Staples,Distillers & Vintners,2026-06-12,0000014693-26-000024,334001,1,2,1,0,0,0,0,0,0,0,0,0,0
+0000016918,Constellation Brands,STZ,Consumer Staples,Distillers & Vintners,2026-04-22,0000016918-26-000011,463772,1,16,1,1,0,0,0,0,0,0,0,0,0
+0000018230,Caterpillar Inc.,CAT,Industrials,Construction Machinery & Heavy Transportation Equipment,2026-02-13,0000018230-26-000008,555438,1,1,0,0,6,0,0,0,0,0,0,0,0
+0000019617,JPMorgan Chase,JPM,Financials,Diversified Banks,2026-02-13,0001628280-26-008131,1410408,6,23,2,1,1,0,0,0,0,0,0,0,0
+0000020286,Cincinnati Financial,CINF,Financials,Property & Casualty Insurance,2026-02-23,0000020286-26-000008,687273,4,3,0,1,0,0,0,0,0,0,0,0,0
+0000021076,Clorox,CLX,Consumer Staples,Household Products,2026-08-07,0000021076-26-000034,214344,14,0,0,3,0,0,0,0,0,0,0,0,0
+0000021344,Coca-Cola Company (The),KO,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,2026-02-20,0001628280-26-010047,661253,9,0,0,2,1,0,0,0,0,0,0,0,0
+0000021665,Colgate-Palmolive,CL,Consumer Staples,Household Products,2026-02-23,0000021665-26-000006,378673,2,24,3,1,1,0,0,0,0,0,0,0,0
+0000024545,Molson Coors Beverage Company,TAP,Consumer Staples,Brewers,2026-02-18,0000024545-26-000006,598007,14,3,1,1,0,0,0,0,0,0,0,0,0
+0000024741,Corning Inc.,GLW,Information Technology,Electronic Components,2026-02-12,0000024741-26-000124,416887,5,5,2,2,13,5,0,0,0,0,0,0,0
+0000026172,Cummins,CMI,Industrials,Construction Machinery & Heavy Transportation Equipment,2026-02-10,0000026172-26-000009,511039,1,19,1,2,6,0,0,0,0,0,0,0,0
+0000027419,Target Corporation,TGT,Consumer Staples,Consumer Staples Merchandise Retail,2026-03-11,0000027419-26-000016,255498,13,2,0,0,0,0,0,0,0,0,0,0,0
+0000027904,Delta Air Lines,DAL,Industrials,Passenger Airlines,2026-02-11,0000027904-26-000013,389739,1,13,0,0,1,0,0,0,0,0,0,0,0
+0000029534,Dollar General,DG,Consumer Staples,Consumer Staples Merchandise Retail,2026-03-20,0001104659-26-032325,327714,7,0,0,1,1,0,0,0,0,0,0,0,0
+0000029905,Dover Corporation,DOV,Industrials,Industrial Machinery & Supplies & Components,2026-02-13,0000029905-26-000009,411400,7,4,0,3,8,0,0,0,1,0,0,5,0
+0000029989,Omnicom Group,OMC,Communication Services,Advertising,2026-02-20,0000029989-26-000006,379749,2,41,10,1,0,0,0,0,0,0,0,0,0
+0000031462,Ecolab,ECL,Materials,Specialty Chemicals,2026-02-23,0001104659-26-018357,521900,3,22,0,0,3,0,0,0,0,0,0,1,0
+0000031791,Revvity,RVTY,Health Care,Health Care Equipment,2026-02-24,0000031791-26-000012,362085,1,18,0,0,0,0,0,0,0,0,0,0,0
+0000032604,Emerson Electric,EMR,Industrials,Electrical Components & Equipment,2025-11-10,0000032604-25-000087,328265,13,0,0,2,1,0,0,0,0,0,0,0,0
+0000033185,Equifax,EFX,Industrials,Research & Consulting Services,2026-02-19,0000033185-26-000010,486411,39,1,0,10,1,0,0,0,0,0,0,0,1
+0000033213,EQT Corporation,EQT,Energy,Oil & Gas Exploration & Production,2026-02-18,0000033213-26-000018,661912,0,0,0,0,3,0,0,0,0,0,0,0,0
+0000034903,Federal Realty Investment Trust,FRT,Real Estate,Retail REITs,2026-02-12,0000034903-26-000017,426319,3,0,0,0,0,0,0,0,0,0,0,0,0
+0000035527,Fifth Third Bancorp,FITB,Financials,Regional Banks,2026-02-24,0000035527-26-000124,997470,3,20,0,0,1,0,0,0,0,0,0,0,0
+0000036104,U.S. Bancorp,USB,Financials,Diversified Banks,2026-02-23,0000036104-26-000011,260225,1,1,0,0,0,0,0,0,0,0,0,0,0
+0000036270,M&T Bank,MTB,Financials,Regional Banks,2026-02-18,0000036270-26-000010,699723,1,22,1,0,0,0,0,0,0,0,0,0,0
+0000037996,Ford Motor Company,F,Consumer Discretionary,Automobile Manufacturers,2026-02-11,0000037996-26-000015,751076,6,0,0,0,0,0,0,0,0,0,0,0,0
+0000038777,Franklin Resources,BEN,Financials,Asset Management & Custody Banks,2025-11-10,0000038777-25-000238,414318,2,13,2,0,1,0,0,0,0,0,0,0,0
+0000040533,General Dynamics,GD,Industrials,Aerospace & Defense,2026-01-30,0000040533-26-000006,334273,1,4,0,1,1,0,0,0,1,0,0,0,0
+0000040545,GE Aerospace,GE,Industrials,Aerospace & Defense,2026-01-29,0000040545-26-000008,459223,4,0,0,1,0,0,0,0,0,0,0,0,0
+0000040704,General Mills,GIS,Consumer Staples,Packaged Foods & Meats,2026-07-01,0001628280-26-046466,377913,2,0,0,0,0,0,0,0,0,0,0,0,0
+0000040987,Genuine Parts Company,GPC,Consumer Discretionary,Distributors,2026-02-20,0000040987-26-000003,338662,4,1,0,4,0,0,0,0,0,0,0,0,0
+0000045012,Halliburton,HAL,Energy,Oil & Gas Equipment & Services,2026-02-06,0000045012-26-000015,294181,3,1,0,1,3,0,0,0,0,0,0,0,0
+0000046080,Hasbro,HAS,Consumer Discretionary,Leisure Products,2026-02-25,0000046080-26-000011,426193,13,5,0,0,0,0,0,0,0,0,0,0,0
+0000047111,Hershey Company (The),HSY,Consumer Staples,Packaged Foods & Meats,2026-02-17,0001628280-26-008586,421029,2,7,0,0,0,0,0,0,0,0,0,0,0
+0000047217,HP Inc.,HPQ,Information Technology,"Technology Hardware, Storage & Peripherals",2025-12-10,0000047217-25-000071,482080,8,46,0,0,1,0,0,1,0,0,0,0,0
+0000048465,Hormel Foods,HRL,Consumer Staples,Packaged Foods & Meats,2025-12-05,0000048465-25-000059,360302,2,0,0,0,0,0,0,0,0,0,0,0,0
+0000048898,Hubbell Incorporated,HUBB,Industrials,Industrial Machinery & Supplies & Components,2026-02-12,0001628280-26-007500,420409,4,4,0,2,5,0,0,0,0,0,0,0,0
+0000049071,Humana,HUM,Health Care,Managed Health Care,2026-02-19,0000049071-26-000009,480791,1,13,2,1,1,0,0,0,0,0,0,0,0
+0000049196,Huntington Bancshares,HBAN,Financials,Regional Banks,2026-02-13,0000049196-26-000015,773095,2,24,0,0,0,0,0,0,0,0,0,0,0
+0000049826,Illinois Tool Works,ITW,Industrials,Industrial Machinery & Supplies & Components,2026-02-13,0000049826-26-000008,319987,4,0,0,1,0,0,0,0,0,0,0,0,0
+0000050863,Intel,INTC,Information Technology,Semiconductors,2026-01-23,0000050863-26-000011,571466,3,122,6,1,50,8,1,32,2,0,0,0,0
+0000051143,IBM,IBM,Information Technology,IT Consulting & Other Services,2026-02-24,0000051143-26-000010,211235,1,26,0,0,1,1,0,0,0,0,0,0,2
+0000051253,International Flavors & Fragrances,IFF,Materials,Specialty Chemicals,2026-02-27,0000051253-26-000006,524249,1,19,0,0,0,0,0,0,0,0,0,0,0
+0000051434,International Paper,IP,Materials,Paper & Plastic Packaging Products & Materials,2026-02-27,0000051434-26-000055,534623,1,15,0,1,0,0,0,0,0,0,0,0,0
+0000052988,Jacobs Solutions,J,Industrials,Construction & Engineering,2025-11-20,0001628280-25-053316,564968,8,23,0,3,0,0,0,0,0,0,0,0,0
+0000055785,Kimberly-Clark,KMB,Consumer Staples,Household Products,2026-02-12,0001628280-26-007567,365763,3,0,0,1,0,0,0,0,0,0,0,0,0
+0000056873,Kroger,KR,Consumer Staples,Food Retail,2026-03-31,0001104659-26-037723,416489,3,9,0,1,0,0,0,0,0,0,0,0,0
+0000059478,Lilly (Eli),LLY,Health Care,Pharmaceuticals,2026-02-12,0000059478-26-000013,419257,5,24,0,0,0,0,0,0,0,0,0,0,0
+0000060086,Loews Corporation,L,Financials,Multi-line Insurance,2026-02-10,0000060086-26-000008,692255,6,15,1,0,4,0,0,0,0,0,0,0,0
+0000060667,Lowe's,LOW,Consumer Discretionary,Home Improvement Retail,2026-03-23,0000060667-26-000029,316338,1,23,2,5,1,0,0,0,0,0,0,0,0
+0000062709,Marsh McLennan,MRSH,Financials,Insurance Brokers,2026-02-09,0000062709-26-000022,520763,5,51,10,0,0,0,0,0,0,1,0,0,0
+0000062996,Masco,MAS,Industrials,Building Products,2026-02-10,0000062996-26-000005,259583,2,0,0,0,0,0,0,0,0,0,0,0,0
+0000063754,McCormick & Company,MKC,Consumer Staples,Packaged Foods & Meats,2026-01-22,0000063754-26-000037,390500,8,0,0,2,0,0,0,0,0,0,0,0,0
+0000063908,McDonald's,MCD,Consumer Discretionary,Restaurants,2026-02-24,0000063908-26-000035,293492,2,6,0,0,0,0,0,0,0,0,0,0,0
+0000064040,S&P Global,SPGI,Financials,Financial Exchanges & Data,2026-02-11,0000064040-26-000013,596310,5,78,0,0,1,0,0,0,0,0,0,0,2
+0000064803,CVS Health,CVS,Health Care,Health Care Services,2026-02-10,0000064803-26-000010,849594,5,17,0,0,0,0,0,0,0,0,0,0,0
+0000065984,Entergy,ETR,Utilities,Electric Utilities,2026-02-19,0000065984-26-000174,2205725,8,0,0,4,104,0,0,0,0,0,0,0,0
+0000066740,3M,MMM,Industrials,Industrial Conglomerates,2026-02-03,0000066740-26-000014,557376,5,10,0,1,3,0,0,0,0,0,0,0,0
+0000068505,Motorola Solutions,MSI,Information Technology,Communications Equipment,2026-02-12,0000068505-26-000010,512031,3,71,1,0,1,0,0,0,0,0,0,0,1
+0000070858,Bank of America,BAC,Financials,Diversified Banks,2026-02-25,0000070858-26-000157,1170422,3,38,0,0,0,0,0,0,0,0,0,0,0
+0000072331,Nordson Corporation,NDSN,Industrials,Industrial Machinery & Supplies & Components,2025-12-17,0000072331-25-000144,319403,3,4,1,1,0,0,0,0,0,0,0,0,0
+0000072741,Eversource Energy,ES,Utilities,Electric Utilities,2026-02-17,0001628280-26-008461,937775,4,7,0,0,0,0,0,0,0,0,0,0,0
+0000072903,Xcel Energy,XEL,Utilities,Multi-Utilities,2026-02-25,0000072903-26-000009,560449,2,1,0,0,5,0,0,0,0,1,0,0,0
+0000072971,Wells Fargo,WFC,Financials,Diversified Banks,2026-02-24,0000072971-26-000133,89080,1,0,0,0,0,0,0,0,0,0,0,0,0
+0000073124,Northern Trust,NTRS,Financials,Asset Management & Custody Banks,2026-02-24,0000073124-26-000016,857563,5,44,4,4,2,0,0,0,0,0,0,0,0
+0000073309,Nucor,NUE,Materials,Steel,2026-02-25,0001193125-26-071575,331243,0,0,0,0,14,0,0,0,0,0,0,0,0
+0000074208,"UDR, Inc.",UDR,Real Estate,Multi-Family Residential REITs,2026-02-17,0000074208-26-000013,586806,1,0,0,0,0,0,0,0,0,0,0,0,0
+0000075362,Paccar,PCAR,Industrials,Construction Machinery & Heavy Transportation Equipment,2026-02-18,0001193125-26-057025,346836,3,4,0,1,0,0,0,0,0,0,0,0,0
+0000075677,Packaging Corporation of America,PKG,Materials,Paper & Plastic Packaging Products & Materials,2026-02-26,0001193125-26-074129,339093,0,0,0,0,0,0,0,0,0,0,0,0,0
+0000076334,Parker Hannifin,PH,Industrials,Industrial Machinery & Supplies & Components,2026-08-21,0000076334-26-000105,304791,4,0,0,0,1,0,0,0,0,0,0,0,0
+0000077360,Pentair,PNR,Industrials,Industrial Machinery & Supplies & Components,2026-02-24,0000077360-26-000007,363307,18,0,0,1,0,0,0,0,0,0,0,0,0
+0000077476,PepsiCo,PEP,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,2026-02-03,0000077476-26-000007,478212,16,0,0,1,0,0,0,0,0,0,0,0,0
+0000078003,Pfizer,PFE,Health Care,Pharmaceuticals,2026-02-26,0000078003-26-000026,742218,1,40,2,1,0,0,0,0,0,0,0,0,0
+0000079282,Brown & Brown,BRO,Financials,Insurance Brokers,2026-02-12,0001193125-26-046984,414959,1,25,6,0,0,0,0,0,0,0,0,0,0
+0000079879,PPG Industries,PPG,Materials,Specialty Chemicals,2026-02-19,0000079879-26-000046,360256,3,4,0,0,0,0,0,0,0,0,0,0,0
+0000080424,Procter & Gamble,PG,Consumer Staples,Personal Care Products,2026-08-04,0000080424-26-000103,342717,2,10,0,1,0,0,0,0,0,0,0,0,0
+0000080661,Progressive Corporation,PGR,Financials,Property & Casualty Insurance,2026-03-02,0000080661-26-000086,286928,5,20,0,1,2,0,0,0,0,0,0,0,0
+0000084839,"Rollins, Inc.",ROL,Industrials,Environmental & Facilities Services,2026-02-12,0000084839-26-000008,331753,1,9,0,0,0,0,0,0,0,0,0,0,0
+0000086312,Travelers Companies (The),TRV,Financials,Property & Casualty Insurance,2026-02-12,0000086312-26-000065,944188,27,0,0,1,0,0,0,0,0,0,0,0,0
+0000087347,Schlumberger,SLB,Energy,Oil & Gas Equipment & Services,2026-01-23,0001193125-26-021017,280777,1,10,0,2,17,2,0,0,0,0,0,0,0
+0000089800,Sherwin-Williams,SHW,Materials,Specialty Chemicals,2026-02-19,0000089800-26-000008,443415,1,6,1,0,0,0,0,0,0,0,0,0,0
+0000091142,A. O. Smith,AOS,Industrials,Building Products,2026-02-10,0000091142-26-000008,244580,2,1,0,1,1,0,0,0,0,0,0,0,0
+0000091419,J.M. Smucker Company (The),SJM,Consumer Staples,Packaged Foods & Meats,2026-06-09,0000091419-26-000050,429938,5,0,0,1,0,0,0,0,0,0,0,0,0
+0000091440,Snap-on,SNA,Industrials,Industrial Machinery & Supplies & Components,2026-02-12,0000091440-26-000045,498746,2,5,0,0,3,0,0,0,0,0,0,0,0
+0000091576,KeyCorp,KEY,Financials,Regional Banks,2026-02-23,0001628280-26-010546,853950,2,19,2,1,2,0,0,0,0,0,0,0,0
+0000092122,Southern Company,SO,Utilities,Electric Utilities,2026-02-19,0000092122-26-000006,1664711,3,0,0,0,17,0,0,0,0,0,0,0,0
+0000092230,Truist Financial,TFC,Financials,Diversified Banks,2026-02-24,0000092230-26-000030,788365,2,39,3,4,2,0,0,0,0,0,0,0,0
+0000092380,Southwest Airlines,LUV,Industrials,Passenger Airlines,2026-02-05,0000092380-26-000004,571321,1,28,2,0,0,0,0,0,0,0,0,0,0
+0000093410,Chevron Corporation,CVX,Energy,Integrated Oil & Gas,2026-02-24,0000093410-26-000078,569220,4,10,0,0,5,0,0,0,0,0,0,0,0
+0000093556,Stanley Black & Decker,SWK,Industrials,Industrial Machinery & Supplies & Components,2026-02-24,0000093556-26-000009,501244,15,0,0,2,0,0,0,0,0,0,0,0,0
+0000093751,State Street Corporation,STT,Financials,Asset Management & Custody Banks,2026-02-19,0000093751-26-000124,902685,15,0,0,2,2,0,0,0,0,0,0,0,0
+0000096021,Sysco,SYY,Consumer Staples,Food Distributors,2026-08-21,0000096021-26-000033,543544,22,2,0,2,0,0,0,0,0,0,0,0,0
+0000097210,Teradyne,TER,Information Technology,Semiconductor Materials & Equipment,2026-02-19,0001193125-26-059002,409659,7,30,0,1,8,0,0,0,2,1,0,0,0
+0000097476,Texas Instruments,TXN,Information Technology,Semiconductors,2026-02-06,0000097476-26-000059,231167,1,1,0,0,8,0,0,0,0,0,0,0,0
+0000097745,Thermo Fisher Scientific,TMO,Health Care,Life Sciences Tools & Services,2026-02-26,0000097745-26-000018,395794,2,14,1,2,1,0,0,0,0,0,0,0,0
+0000100493,Tyson Foods,TSN,Consumer Staples,Packaged Foods & Meats,2025-11-10,0000100493-25-000095,498336,1,1,0,0,0,0,0,0,0,0,0,0,0
+0000100517,United Airlines Holdings,UAL,Industrials,Passenger Airlines,2026-02-12,0000100517-26-000023,483124,1,14,0,0,0,0,0,0,0,0,0,0,0
+0000100885,Union Pacific Corporation,UNP,Industrials,Rail Transportation,2026-02-06,0000100885-26-000037,345814,1,0,0,0,0,0,0,0,0,0,0,0,0
+0000101829,RTX Corporation,RTX,Industrials,Aerospace & Defense,2026-02-06,0000101829-26-000006,606086,7,0,0,0,0,0,0,0,0,0,0,0,0
+0000104169,Walmart,WMT,Consumer Staples,Consumer Staples Merchandise Retail,2026-03-13,0000104169-26-000055,383295,1,24,0,0,0,0,0,0,0,0,0,0,0
+0000105634,Emcor,EME,Industrials,Construction & Engineering,2026-02-26,0000105634-26-000025,440314,2,7,0,0,10,0,0,0,0,0,0,0,0
+0000105770,West Pharmaceutical Services,WST,Health Care,Health Care Supplies,2026-02-17,0000105770-26-000010,337908,0,0,0,0,0,0,0,0,0,0,0,0,0
+0000106040,Western Digital,WDC,Information Technology,"Technology Hardware, Storage & Peripherals",2026-08-14,0001628280-26-057139,393409,2,49,3,1,12,4,0,0,0,0,0,0,1
+0000106535,Weyerhaeuser,WY,Real Estate,Timber REITs,2026-02-13,0001193125-26-051422,467117,2,12,0,2,0,0,0,0,0,0,0,0,0
+0000107263,Williams Companies,WMB,Energy,Oil & Gas Storage & Transportation,2026-02-24,0000107263-26-000006,755478,2,0,0,0,9,0,0,0,0,0,0,0,0
+0000109198,TJX Companies,TJX,Consumer Discretionary,Apparel Retail,2026-03-31,0000109198-26-000008,325885,5,0,0,0,0,0,0,0,0,0,0,0,0
+0000200406,Johnson & Johnson,JNJ,Health Care,Pharmaceuticals,2026-02-11,0000200406-26-000016,519750,1,10,1,1,0,0,0,0,0,0,0,0,0
+0000202058,L3Harris,LHX,Industrials,Aerospace & Defense,2026-02-12,0000202058-26-000015,411616,1,6,0,1,0,0,0,0,0,0,0,0,0
+0000217346,Textron,TXT,Industrials,Aerospace & Defense,2026-02-11,0000217346-26-000006,364654,3,0,0,1,0,0,0,0,0,0,0,0,0
+0000277135,W. W. Grainger,GWW,Industrials,Industrial Machinery & Supplies & Components,2026-02-19,0000277135-26-000011,257904,3,22,0,1,0,0,0,0,0,1,0,0,0
+0000277948,CSX Corporation,CSX,Industrials,Rail Transportation,2026-02-12,0000277948-26-000006,358272,2,0,0,0,0,0,0,0,0,0,0,0,1
+0000310158,Merck & Co.,MRK,Health Care,Pharmaceuticals,2026-02-24,0000310158-26-000063,788875,3,10,1,1,0,0,0,0,0,0,0,0,0
+0000310764,Stryker Corporation,SYK,Health Care,Health Care Equipment,2026-02-11,0000310764-26-000010,331626,5,15,1,1,0,0,0,0,0,0,0,0,0
+0000313616,Danaher Corporation,DHR,Health Care,Life Sciences Tools & Services,2026-02-24,0000313616-26-000062,539369,2,23,0,1,0,0,0,0,0,0,0,0,0
+0000313927,Church & Dwight,CHD,Consumer Staples,Household Products,2026-02-12,0001193125-26-048139,415238,6,3,1,4,0,0,0,0,0,0,0,0,0
+0000315189,Deere & Company,DE,Industrials,Agricultural & Farm Machinery,2025-12-18,0001104659-25-122321,515883,11,2,0,7,2,0,0,0,0,1,0,0,0
+0000315293,Aon plc,AON,Financials,Insurance Brokers,2026-02-13,0001628280-26-008116,536685,16,0,0,0,2,0,0,0,0,0,0,0,0
+0000316709,Charles Schwab Corporation,SCHW,Financials,Investment Banking & Brokerage,2026-02-25,0000316709-26-000009,623632,5,0,0,0,2,0,0,0,0,0,0,0,1
+0000318154,Amgen,AMGN,Health Care,Biotechnology,2026-02-13,0000318154-26-000010,697252,9,27,0,0,0,0,0,0,0,0,0,0,0
+0000319201,KLA Corporation,KLAC,Information Technology,Semiconductor Materials & Equipment,2026-08-06,0000319201-26-000027,497329,1,53,0,0,3,0,0,0,1,0,0,0,0
+0000320187,"Nike, Inc.",NKE,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",2026-07-15,0000320187-26-000088,419830,1,13,1,1,0,0,0,0,0,0,0,0,0
+0000320193,Apple Inc.,AAPL,Information Technology,"Technology Hardware, Storage & Peripherals",2025-10-31,0000320193-25-000079,220568,6,0,0,4,3,0,0,0,0,0,0,0,0
+0000320335,Globe Life,GL,Financials,Life & Health Insurance,2026-02-25,0000320335-26-000090,565312,2,2,0,0,0,0,0,0,0,0,0,0,0
+0000352541,Alliant Energy,LNT,Utilities,Electric Utilities,2026-02-20,0000352541-26-000007,602557,1,0,0,0,24,0,0,0,0,0,0,0,0
+0000352915,Universal Health Services,UHS,Health Care,Health Care Facilities,2026-02-25,0001193125-26-071676,663881,5,0,0,0,0,0,0,0,0,0,0,0,0
+0000354190,Arthur J. Gallagher & Co.,AJG,Financials,Insurance Brokers,2026-02-17,0001628280-26-008662,603116,2,44,1,1,1,0,0,0,0,0,0,0,0
+0000354950,Home Depot (The),HD,Consumer Discretionary,Home Improvement Retail,2026-03-18,0001628280-26-019436,363347,1,15,1,1,1,0,0,0,0,0,0,0,0
+0000702165,Norfolk Southern,NSC,Industrials,Rail Transportation,2026-02-09,0001628280-26-006268,334602,1,0,0,1,0,0,0,0,0,0,0,0,0
+0000707549,Lam Research,LRCX,Information Technology,Semiconductor Materials & Equipment,2026-08-07,0000707549-26-000037,374300,10,33,1,3,0,0,0,0,0,2,0,0,2
+0000711404,Cooper Companies (The),COO,Health Care,Health Care Supplies,2025-12-05,0001628280-25-055615,382456,0,0,0,0,0,0,0,0,0,0,0,0,0
+0000713676,PNC Financial Services,PNC,Financials,Diversified Banks,2026-02-20,0000713676-26-000020,992950,2,16,1,7,2,0,0,0,0,0,0,0,0
+0000715957,Dominion Energy,D,Utilities,Multi-Utilities,2026-02-23,0001193125-26-063120,1036624,3,0,0,0,13,0,0,0,0,0,0,0,0
+0000719955,"Williams-Sonoma, Inc.",WSM,Consumer Discretionary,Homefurnishing Retail,2026-03-26,0000719955-26-000059,287455,3,18,6,1,1,0,0,0,0,0,0,0,0
+0000720005,Raymond James Financial,RJF,Financials,Investment Banking & Brokerage,2025-11-25,0000720005-25-000093,775440,2,14,1,2,5,0,0,0,0,0,0,0,0
+0000721371,Cardinal Health,CAH,Health Care,Health Care Distributors,2026-08-11,0000721371-26-000038,423552,4,0,0,2,0,0,0,0,0,0,0,0,0
+0000723125,Micron Technology,MU,Information Technology,Semiconductors,2025-10-03,0000723125-25-000028,389235,3,55,2,0,41,4,0,1,4,0,0,0,0
+0000723254,Cintas,CTAS,Industrials,Diversified Support Services,2026-07-29,0000723254-26-000028,284244,5,19,1,2,0,0,0,0,0,0,0,0,0
+0000723531,Paychex,PAYX,Industrials,Human Resource & Employment Services,2026-07-17,0001193125-26-307785,354255,1,50,2,6,0,0,0,0,0,0,0,0,0
+0000726728,Realty Income,O,Real Estate,Retail REITs,2026-02-25,0000726728-26-000011,501662,4,1,0,3,14,0,0,0,0,0,0,0,0
+0000726958,Casey's,CASY,Consumer Staples,Food Retail,2026-06-22,0000726958-26-000046,229091,5,0,0,0,0,0,0,0,0,0,0,0,0
+0000728535,J.B. Hunt,JBHT,Industrials,Cargo Ground Transportation,2026-02-24,0001437749-26-005294,197596,2,8,0,0,1,0,0,0,0,0,0,0,0
+0000731766,UnitedHealth Group,UNH,Health Care,Managed Health Care,2026-03-02,0000731766-26-000062,372262,1,17,2,0,0,0,0,0,0,0,0,0,0
+0000731802,Atmos Energy,ATO,Utilities,Gas Utilities,2025-11-14,0000731802-25-000056,376177,0,0,0,0,0,0,0,0,0,0,0,0,0
+0000732712,Verizon,VZ,Communication Services,Integrated Telecommunication Services,2026-02-17,0000732712-26-000007,535555,4,17,1,1,1,0,0,0,0,0,0,0,2
+0000732717,AT&T,T,Communication Services,Integrated Telecommunication Services,2026-02-09,0000732717-26-000120,455631,3,12,1,1,0,1,0,0,0,0,0,0,0
+0000740260,Ventas,VTR,Real Estate,Health Care REITs,2026-02-06,0000740260-26-000006,603014,4,17,0,3,2,0,0,0,0,0,0,0,0
+0000745732,Ross Stores,ROST,Consumer Discretionary,Apparel Retail,2026-03-31,0000745732-26-000006,209591,2,0,0,0,0,0,0,0,0,0,0,0,0
+0000746515,Expeditors International,EXPD,Industrials,Air Freight & Logistics,2026-02-25,0001193125-26-071569,274439,4,6,0,0,2,2,0,0,0,0,0,0,0
+0000749251,Gartner,IT,Information Technology,IT Consulting & Other Services,2026-02-12,0000749251-26-000112,343269,4,33,2,4,1,0,0,0,0,2,0,0,0
+0000753308,NextEra Energy,NEE,Utilities,Multi-Utilities,2026-02-13,0000753308-26-000015,615320,6,10,0,0,4,0,0,0,0,0,0,0,0
+0000759944,Citizens Financial Group,CFG,Financials,Regional Banks,2026-02-12,0000759944-26-000028,679326,4,0,0,0,2,0,0,0,0,1,0,0,0
+0000764180,Altria,MO,Consumer Staples,Tobacco,2026-02-25,0000764180-26-000017,563848,6,0,0,0,0,0,0,0,0,0,0,0,0
+0000764478,Best Buy,BBY,Consumer Discretionary,Computer & Electronics Retail,2026-03-18,0000764478-26-000009,318510,2,19,0,0,0,0,0,0,0,0,0,0,0
+0000764622,Pinnacle West Capital,PNW,Utilities,Multi-Utilities,2026-02-25,0000764622-26-000011,711353,7,10,0,0,16,0,0,0,0,0,0,0,0
+0000765880,Healthpeak Properties,DOC,Real Estate,Health Care REITs,2026-02-03,0001628280-26-005044,764404,4,26,0,1,0,0,0,0,1,0,0,0,0
+0000766704,Welltower,WELL,Real Estate,Health Care REITs,2026-02-12,0000766704-26-000010,731292,3,29,2,1,0,0,0,0,0,0,0,0,0
+0000769397,Autodesk,ADSK,Information Technology,Application Software,2026-03-03,0000769397-26-000015,444884,9,35,0,7,3,0,0,0,0,0,0,0,1
+0000773840,Honeywell Technologies,HON,Industrials,Industrial Conglomerates,2026-02-17,0000773840-26-000013,552498,19,2,0,9,0,0,0,0,0,0,0,0,0
+0000779152,Jack Henry & Associates,JKHY,Financials,Transaction & Payment Processing Services,2026-08-28,0000779152-26-000067,270346,9,18,2,4,4,0,0,0,0,0,0,0,1
+0000783325,WEC Energy Group,WEC,Utilities,Electric Utilities,2026-02-20,0000783325-26-000018,830873,1,25,1,1,20,0,0,0,0,0,0,0,0
+0000788784,Public Service Enterprise Group,PEG,Utilities,Electric Utilities,2026-02-26,0001193125-26-077446,685097,4,16,3,0,7,0,0,0,0,0,0,0,0
+0000789019,Microsoft,MSFT,Information Technology,Systems Software,2026-07-29,0001193125-26-323660,357670,6,152,1,1,35,2,0,4,0,0,0,0,2
+0000789570,MGM Resorts,MGM,Consumer Discretionary,Casinos & Gaming,2026-02-11,0000789570-26-000018,408948,1,0,0,1,0,0,0,0,0,0,0,0,0
+0000796343,Adobe Inc.,ADBE,Information Technology,Application Software,2026-01-15,0000796343-26-000003,371127,3,159,21,4,19,0,0,0,0,3,0,0,1
+0000797468,Occidental Petroleum,OXY,Energy,Oil & Gas Exploration & Production,2026-02-18,0001628280-26-009059,493976,2,1,0,0,0,0,0,0,0,0,0,0,0
+0000798354,Fiserv,FISV,Financials,Transaction & Payment Processing Services,2026-02-19,0000798354-26-000009,463922,20,8,0,3,2,0,0,0,0,0,0,0,0
+0000804328,Qualcomm,QCOM,Information Technology,Semiconductors,2025-11-05,0000804328-25-000085,403596,4,82,9,2,13,0,0,5,0,1,0,0,0
+0000811156,CMS Energy,CMS,Utilities,Multi-Utilities,2026-02-10,0000811156-26-000004,618696,3,0,0,0,14,0,0,0,0,0,0,0,0
+0000813672,Cadence Design Systems,CDNS,Information Technology,Application Software,2026-02-19,0000813672-26-000016,479204,7,95,9,5,14,7,1,3,1,0,0,0,2
+0000814547,Fair Isaac,FICO,Information Technology,Application Software,2025-11-07,0000814547-25-000030,384983,3,30,1,10,11,0,0,0,0,0,3,0,0
+0000815097,Carnival Corporation,CCL,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2026-01-27,0000815097-26-000007,329747,1,6,0,0,0,0,0,0,0,0,0,0,0
+0000815556,Fastenal,FAST,Industrials,Trading Companies & Distributors,2026-02-05,0000815556-26-000009,291944,1,5,0,0,2,0,0,0,0,0,0,0,0
+0000820027,Ameriprise Financial,AMP,Financials,Asset Management & Custody Banks,2026-02-19,0000820027-26-000011,1036683,2,16,3,0,0,0,0,0,0,0,0,0,0
+0000820313,Amphenol,APH,Information Technology,Electronic Components,2026-02-11,0001104659-26-013549,522172,1,14,0,2,1,0,0,0,0,0,0,0,0
+0000820318,Coherent Corp.,COHR,Information Technology,Electronic Components,2026-08-14,0000820318-26-000020,418870,2,47,0,1,98,2,0,0,0,0,0,0,0
+0000821189,EOG Resources,EOG,Energy,Oil & Gas Exploration & Production,2026-02-24,0000821189-26-000054,448603,1,3,1,0,0,0,0,0,0,0,0,0,0
+0000822416,PulteGroup,PHM,Consumer Discretionary,Homebuilding,2026-02-04,0000822416-26-000007,282592,3,10,0,0,0,0,0,0,0,0,0,0,0
+0000823768,Waste Management,WM,Industrials,Environmental & Facilities Services,2026-02-09,0001104659-26-012049,611237,12,0,0,0,0,0,0,0,0,0,0,0,0
+0000827052,Edison International,EIX,Utilities,Electric Utilities,2026-02-18,0000827052-26-000012,714736,1,0,0,0,1,0,0,0,0,0,0,0,0
+0000827054,Microchip Technology,MCHP,Information Technology,Semiconductors,2026-05-21,0000827054-26-000016,481752,5,74,1,2,5,0,0,0,0,0,0,0,1
+0000829224,Starbucks,SBUX,Consumer Discretionary,Restaurants,2025-11-14,0000829224-25-000114,403148,5,0,0,2,0,0,0,0,0,0,0,0,0
+0000831001,Citigroup,C,Financials,Diversified Banks,2026-02-20,0000831001-26-000011,1507550,4,32,6,2,0,0,0,0,0,0,0,0,0
+0000831259,Freeport-McMoRan,FCX,Materials,Copper,2026-02-13,0000831259-26-000012,802409,3,11,0,1,6,0,0,0,0,0,0,0,0
+0000832101,IDEX Corporation,IEX,Industrials,Industrial Machinery & Supplies & Components,2026-02-19,0000832101-26-000003,343886,3,16,0,1,4,0,0,0,0,0,0,0,0
+0000833444,Johnson Controls,JCI,Industrials,Building Products,2025-11-14,0000833444-25-000097,507546,6,9,1,4,13,1,0,0,1,0,0,0,0
+0000842023,Bio-Techne,TECH,Health Care,Life Sciences Tools & Services,2026-08-24,0001104659-26-100322,381226,0,0,0,0,0,0,0,0,0,0,0,0,0
+0000849395,CRH plc,CRH,Materials,Construction Materials,2026-02-18,0001628280-26-009043,479960,1,5,0,0,7,0,0,0,0,0,0,0,0
+0000849399,Gen Digital,GEN,Information Technology,Systems Software,2026-05-21,0000849399-26-000017,425360,3,111,4,5,7,0,0,0,0,0,0,0,0
+0000857005,PTC Inc.,PTC,Information Technology,Application Software,2025-11-21,0001193125-25-291326,308988,2,16,0,0,0,0,0,0,0,0,0,0,1
+0000858877,Cisco,CSCO,Information Technology,Communications Equipment,2026-09-02,0000858877-26-000132,436925,3,87,2,2,21,16,0,0,0,0,0,0,1
+0000860730,HCA Healthcare,HCA,Health Care,Health Care Facilities,2026-02-10,0001193125-26-044769,520152,8,47,6,2,0,0,0,0,0,0,0,0,0
+0000860731,Tyler Technologies,TYL,Information Technology,Application Software,2026-02-18,0000860731-26-000016,336304,18,8,0,1,6,0,0,0,0,0,0,0,0
+0000864749,Trimble Inc.,TRMB,Information Technology,Application Software,2026-02-25,0000864749-26-000015,318494,2,58,6,4,0,0,0,0,0,0,0,0,0
+0000865752,Monster Beverage,MNST,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,2026-02-27,0001104659-26-020831,447460,5,6,0,0,0,0,0,0,0,0,0,0,0
+0000866374,Flex Ltd.,FLEX,Information Technology,Electronic Manufacturing Services,2026-05-20,0000866374-26-000012,477707,2,22,0,2,44,6,0,0,2,0,0,6,0
+0000866787,AutoZone,AZO,Consumer Discretionary,Automotive Retail,2025-10-27,0001104659-25-102611,310883,3,0,0,0,0,0,0,0,0,0,0,0,0
+0000872589,Regeneron Pharmaceuticals,REGN,Health Care,Biotechnology,2026-02-04,0000872589-26-000008,610943,3,6,0,0,0,0,0,0,0,0,0,0,0
+0000874716,Idexx Laboratories,IDXX,Health Care,Health Care Equipment,2026-02-20,0000874716-26-000038,513589,5,48,0,6,0,0,0,0,0,0,0,0,0
+0000874761,AES Corporation,AES,Utilities,Independent Power Producers & Energy Traders,2026-03-02,0000874761-26-000063,990928,4,14,1,0,12,1,0,0,0,0,0,0,0
+0000874766,Hartford (The),HIG,Financials,Property & Casualty Insurance,2026-02-20,0000874766-26-000012,1095306,17,0,0,3,0,0,0,0,0,0,0,0,0
+0000875045,Biogen,BIIB,Health Care,Biotechnology,2026-02-06,0000875045-26-000013,766281,1,12,0,1,0,0,0,0,0,0,0,0,0
+0000875320,Vertex Pharmaceuticals,VRTX,Health Care,Biotechnology,2026-02-13,0000875320-26-000056,470636,6,0,0,2,0,0,0,0,0,0,0,0,0
+0000877212,Zebra Technologies,ZBRA,Information Technology,Electronic Equipment & Instruments,2026-02-12,0001628280-26-007668,328829,8,22,1,1,0,0,0,0,0,1,0,0,0
+0000878927,Old Dominion,ODFL,Industrials,Cargo Ground Transportation,2026-02-24,0001193125-26-067161,242696,1,11,0,1,2,0,0,0,0,0,0,0,0
+0000879101,Kimco Realty,KIM,Real Estate,Retail REITs,2026-02-20,0001193125-26-060760,706117,18,0,0,1,0,0,0,0,0,0,0,0,0
+0000879169,Incyte,INCY,Health Care,Biotechnology,2026-02-10,0000879169-26-000010,524840,7,1,0,0,0,0,0,0,0,0,0,0,0
+0000882095,Gilead Sciences,GILD,Health Care,Biotechnology,2026-02-24,0000882095-26-000006,473316,2,7,0,1,0,0,0,0,0,0,0,0,0
+0000882184,D. R. Horton,DHI,Consumer Discretionary,Homebuilding,2025-11-19,0000882184-25-000081,434059,5,0,0,0,0,0,0,0,0,0,0,0,0
+0000882835,Roper Technologies,ROP,Information Technology,Electronic Equipment & Instruments,2026-02-24,0000882835-26-000009,294144,1,59,0,1,1,0,0,0,0,1,0,0,0
+0000883241,Synopsys,SNPS,Information Technology,Application Software,2025-12-22,0000883241-25-000028,460486,5,56,1,2,7,0,0,0,2,0,1,0,0
+0000884887,Royal Caribbean Group,RCL,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2026-02-11,0000884887-26-000007,470332,4,1,0,0,0,0,0,0,0,0,0,0,0
+0000885725,Boston Scientific,BSX,Health Care,Health Care Equipment,2026-02-17,0000885725-26-000010,483051,2,5,1,1,0,0,0,0,0,0,0,0,0
+0000886982,Goldman Sachs,GS,Financials,Investment Banking & Brokerage,2026-02-25,0000886982-26-000091,1283629,6,40,2,0,0,0,0,0,0,0,0,0,0
+0000895126,Expand Energy,EXE,Energy,Oil & Gas Exploration & Production,2026-02-18,0000895126-26-000011,455444,1,0,0,0,0,0,0,0,0,0,0,0,0
+0000895421,Morgan Stanley,MS,Financials,Investment Banking & Brokerage,2026-02-19,0000895421-26-000086,979522,11,0,0,0,1,0,0,0,0,0,0,0,0
+0000896159,Chubb Limited,CB,Financials,Property & Casualty Insurance,2026-02-27,0000896159-26-000005,929393,10,8,0,0,0,0,0,0,0,0,0,0,0
+0000896878,Intuit,INTU,Information Technology,Application Software,2025-09-03,0000896878-25-000035,448123,5,73,1,0,0,0,0,0,0,0,0,0,0
+0000898173,O'Reilly Automotive,ORLY,Consumer Discretionary,Automotive Retail,2026-02-27,0000898173-26-000009,332516,2,0,0,0,0,0,0,0,0,0,0,0,0
+0000898293,Jabil,JBL,Information Technology,Electronic Manufacturing Services,2025-10-17,0001628280-25-045293,410905,7,7,0,3,5,0,0,0,0,0,0,2,0
+0000899051,Allstate,ALL,Financials,Property & Casualty Insurance,2026-02-20,0000899051-26-000031,784380,8,0,0,0,1,0,0,0,0,1,0,0,0
+0000900075,Copart,CPRT,Industrials,Diversified Support Services,2025-09-26,0001628280-25-042946,324493,4,2,0,4,1,0,0,0,0,0,0,0,0
+0000906107,Vivmark Residential,VMRK,Real Estate,Multi-Family Residential REITs,2026-02-13,0001193125-26-051433,513371,5,6,0,0,0,0,0,0,0,0,0,0,0
+0000906163,"NVR, Inc.",NVR,Consumer Discretionary,Homebuilding,2026-02-11,0000906163-26-000018,239161,1,0,0,0,0,0,0,0,0,0,0,0,0
+0000906345,Camden Property Trust,CPT,Real Estate,Multi-Family Residential REITs,2026-02-12,0001628280-26-007697,298324,1,0,0,0,0,0,0,0,0,0,0,0,0
+0000909832,Costco,COST,Consumer Staples,Consumer Staples Merchandise Retail,2025-10-08,0000909832-25-000101,218141,2,0,0,0,1,0,0,0,0,0,0,0,0
+0000910521,Deckers Brands,DECK,Consumer Discretionary,Footwear,2026-05-22,0001628280-26-037664,367954,3,11,0,1,0,0,0,0,0,0,0,0,0
+0000910606,Regency Centers,REG,Real Estate,Retail REITs,2026-02-13,0001193125-26-051668,609483,1,23,1,4,0,0,0,0,0,0,0,0,0
+0000912595,Mid-America Apartment Communities,MAA,Real Estate,Multi-Family Residential REITs,2026-02-06,0001193125-26-041208,552846,3,0,0,0,0,0,0,0,0,0,0,0,0
+0000914208,Invesco,IVZ,Financials,Asset Management & Custody Banks,2026-02-24,0000914208-26-000079,411571,3,28,2,0,1,0,0,0,0,0,0,0,0
+0000915913,Albemarle Corporation,ALB,Materials,Specialty Chemicals,2026-02-11,0000915913-26-000018,697264,2,17,0,1,1,0,0,0,0,0,0,0,0
+0000916076,Martin Marietta Materials,MLM,Materials,Construction Materials,2026-02-19,0001193125-26-059193,480964,1,1,0,0,3,0,0,0,0,0,0,0,0
+0000916365,Tractor Supply,TSCO,Consumer Discretionary,Other Specialty Retail,2026-02-19,0000916365-26-000014,319527,9,0,0,2,0,0,0,0,0,0,0,0,0
+0000920148,Labcorp,LH,Health Care,Health Care Services,2026-02-24,0000920148-26-000111,422321,2,20,2,4,0,0,0,0,0,0,0,0,0
+0000920522,Essex Property Trust,ESS,Real Estate,Multi-Family Residential REITs,2026-02-20,0000920522-26-000003,589239,8,1,0,0,0,0,0,0,0,0,0,0,0
+0000920760,Lennar,LEN,Consumer Discretionary,Homebuilding,2026-01-28,0001628280-26-003870,477197,2,3,0,0,0,0,0,0,0,0,0,0,0
+0000922224,PPL Corporation,PPL,Utilities,Electric Utilities,2026-02-20,0000922224-26-000008,862633,6,12,0,0,17,3,0,0,0,0,0,0,0
+0000922621,Erie Indemnity,ERIE,Financials,Insurance Brokers,2026-02-23,0001628280-26-010666,356600,5,0,0,1,0,0,0,0,0,0,0,0,0
+0000927066,DaVita,DVA,Health Care,Health Care Services,2026-02-11,0000927066-26-000012,569280,14,1,0,4,0,0,0,0,0,0,0,0,0
+0000927628,Capital One,COF,Financials,Consumer Finance,2026-02-19,0000927628-26-000024,1040635,2,62,6,2,1,0,0,0,0,0,0,0,3
+0000927653,McKesson Corporation,MCK,Health Care,Health Care Distributors,2026-05-08,0000927653-26-000069,518998,1,33,0,2,0,0,0,0,0,0,0,0,0
+0000935703,Dollar Tree,DLTR,Consumer Staples,Consumer Staples Merchandise Retail,2026-03-16,0000935703-26-000025,320713,15,0,0,1,0,0,0,0,0,0,0,0,0
+0000936340,DTE Energy,DTE,Utilities,Multi-Utilities,2026-02-17,0000936340-26-000054,638781,1,0,0,0,4,0,0,0,0,0,0,0,0
+0000936395,Ciena,CIEN,Information Technology,Communications Equipment,2025-12-12,0001628280-25-056698,383414,4,34,0,0,22,0,0,1,0,1,0,0,0
+0000936468,Lockheed Martin,LMT,Industrials,Aerospace & Defense,2026-01-29,0001628280-26-004195,493390,6,0,0,0,0,0,0,0,0,0,0,0,0
+0000940944,Darden Restaurants,DRI,Consumer Discretionary,Restaurants,2026-07-24,0000940944-26-000025,363659,2,0,0,0,1,0,0,0,0,0,0,0,0
+0000943452,Wabtec,WAB,Industrials,Construction Machinery & Heavy Transportation Equipment,2026-02-13,0001628280-26-008067,360008,2,0,0,0,0,0,0,0,0,0,0,0,0
+0000943819,ResMed|,RMD,Health Care,Health Care Equipment,2026-08-13,0000943819-26-000047,513501,10,45,1,1,0,0,0,0,0,0,0,0,0
+0000946581,Take-Two Interactive,TTWO,Communication Services,Interactive Home Entertainment,2026-05-22,0001628280-26-037434,473556,7,24,0,0,3,0,0,0,0,0,0,0,0
+0000947484,Arch Capital Group,ACGL,Financials,Property & Casualty Insurance,2026-02-26,0000947484-26-000017,975547,19,83,2,0,0,0,0,0,0,0,0,0,0
+0001000228,Henry Schein,HSIC,Health Care,Health Care Distributors,2026-02-24,0001000228-26-000013,557315,6,38,4,3,0,0,0,0,0,0,0,0,0
+0001000697,Waters Corporation,WAT,Health Care,Life Sciences Tools & Services,2026-02-23,0001193125-26-062604,476578,4,23,1,0,0,0,0,0,0,0,0,0,0
+0001001250,Estée Lauder Companies (The),EL,Consumer Staples,Personal Care Products,2026-08-19,0001001250-26-000041,566689,1,18,1,1,0,0,0,0,0,1,0,0,0
+0001002047,NetApp,NTAP,Information Technology,"Technology Hardware, Storage & Peripherals",2026-06-05,0001193125-26-259683,374289,11,76,1,2,14,1,0,0,1,0,0,0,1
+0001002910,Ameren,AEE,Utilities,Multi-Utilities,2026-02-18,0001002910-26-000009,933963,7,0,0,0,13,0,0,0,0,0,0,0,0
+0001004980,PG&E Corporation,PCG,Utilities,Multi-Utilities,2026-02-12,0001004980-26-000009,729845,3,0,0,0,4,0,0,0,0,0,0,0,0
+0001013237,FactSet,FDS,Financials,Financial Exchanges & Data,2025-10-22,0001628280-25-045769,368961,2,59,1,3,11,0,0,0,0,0,0,0,0
+0001013871,NRG Energy,NRG,Utilities,Independent Power Producers & Energy Traders,2026-02-24,0001013871-26-000004,722960,2,18,1,2,11,0,0,0,0,0,0,0,0
+0001014473,Verisign,VRSN,Information Technology,Internet Services & Infrastructure,2026-02-05,0001014473-26-000006,240640,1,28,0,0,20,0,0,0,0,0,0,0,0
+0001018724,Amazon,AMZN,Consumer Discretionary,Broadline Retail,2026-02-06,0001018724-26-000004,312331,29,1,0,14,15,0,0,1,0,0,0,0,0
+0001020569,Iron Mountain,IRM,Real Estate,Other Specialized REITs,2026-02-12,0001020569-26-000013,539204,2,17,2,4,261,8,0,0,0,0,0,0,0
+0001022079,Quest Diagnostics,DGX,Health Care,Health Care Services,2026-02-26,0001022079-26-000015,502866,4,43,5,1,1,0,0,0,0,0,0,0,0
+0001022671,Steel Dynamics,STLD,Materials,Steel,2026-02-27,0001104659-26-021395,328133,0,0,0,0,3,0,0,0,0,0,0,0,0
+0001024478,Rockwell Automation,ROK,Industrials,Electrical Components & Equipment,2025-11-12,0001024478-25-000116,388197,2,11,0,1,0,0,0,0,0,0,0,0,0
+0001031296,FirstEnergy,FE,Utilities,Electric Utilities,2026-02-18,0001031296-26-000046,900260,6,2,0,0,22,0,0,2,0,0,0,0,0
+0001032208,Sempra,SRE,Utilities,Multi-Utilities,2026-02-26,0001032208-26-000010,1253820,9,0,0,0,2,0,0,0,0,0,0,0,0
+0001034054,SBA Communications,SBAC,Real Estate,Telecom Tower REITs,2026-02-27,0001034054-26-000002,426997,5,0,0,0,15,0,0,0,0,0,0,0,0
+0001035002,Valero Energy,VLO,Energy,Oil & Gas Refining & Marketing,2026-02-25,0001628280-26-011499,470570,1,6,1,0,1,0,0,0,0,0,0,0,0
+0001035267,Intuitive Surgical,ISRG,Health Care,Health Care Equipment,2026-02-03,0001035267-26-000010,620246,10,48,0,9,1,0,0,0,0,1,0,0,0
+0001035443,Alexandria Real Estate Equities,ARE,Real Estate,Office REITs,2026-01-26,0001035443-26-000013,900241,2,11,2,0,1,0,0,0,1,2,0,0,0
+0001035983,Comfort Systems USA,FIX,Industrials,Construction & Engineering,2026-02-19,0001104659-26-017530,355648,4,0,0,0,2,0,0,0,0,0,0,0,0
+0001037038,Ralph Lauren Corporation,RL,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",2026-05-21,0001628280-26-037074,518554,4,31,1,4,0,0,0,0,0,0,0,0,1
+0001037540,"BXP, Inc.",BXP,Real Estate,Office REITs,2026-02-27,0001037540-26-000006,793263,6,10,0,3,0,0,0,0,0,0,0,0,0
+0001037646,Mettler Toledo,MTD,Health Care,Life Sciences Tools & Services,2026-02-06,0001037646-26-000011,357157,2,7,0,3,0,0,0,0,0,0,0,0,0
+0001037868,Ametek,AME,Industrials,Electrical Components & Equipment,2026-02-17,0001037868-26-000016,300769,5,0,0,0,1,0,0,0,0,0,0,0,0
+0001039684,Oneok,OKE,Energy,Oil & Gas Storage & Transportation,2026-02-24,0001039684-26-000006,552611,1,0,0,0,2,0,0,0,0,0,0,0,0
+0001041061,Yum! Brands,YUM,Consumer Discretionary,Restaurants,2026-02-20,0001041061-26-000084,469365,2,15,1,1,0,0,0,0,0,0,0,0,0
+0001043277,C.H. Robinson,CHRW,Industrials,Air Freight & Logistics,2026-02-13,0001043277-26-000009,331764,3,44,2,4,2,0,0,0,0,1,0,0,0
+0001045609,Prologis,PLD,Real Estate,Industrial REITs,2026-02-13,0001193125-26-051453,522985,1,6,0,0,29,0,0,0,0,0,0,0,0
+0001045810,Nvidia,NVDA,Information Technology,Semiconductors,2026-02-25,0001045810-26-000021,360424,2,162,4,1,82,2,26,67,1,10,5,0,0
+0001047862,Consolidated Edison,ED,Utilities,Multi-Utilities,2026-02-19,0001047862-26-000031,822572,1,11,1,0,2,0,0,0,0,0,0,0,0
+0001048286,Marriott International,MAR,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2026-02-10,0001048286-26-000007,295924,1,14,1,0,0,0,0,0,0,0,0,0,0
+0001048695,"F5, Inc.",FFIV,Information Technology,Communications Equipment,2025-11-25,0001048695-25-000157,320121,3,37,0,3,6,1,0,0,0,0,0,0,1
+0001048911,FedEx,FDX,Industrials,Air Freight & Logistics,2026-07-20,0001048911-26-000105,595478,5,40,0,8,0,0,0,0,0,0,1,0,0
+0001050915,Quanta Services,PWR,Industrials,Construction & Engineering,2026-02-19,0001050915-26-000006,579553,2,1,0,0,21,2,0,0,0,0,0,0,0
+0001051470,Crown Castle,CCI,Real Estate,Telecom Tower REITs,2026-02-23,0001051470-26-000016,438276,5,4,0,1,0,0,0,0,0,0,0,0,0
+0001053507,American Tower,AMT,Real Estate,Telecom Tower REITs,2026-02-24,0001053507-26-000035,613240,4,22,0,1,214,0,0,1,0,0,0,0,0
+0001057352,CoStar Group,CSGP,Real Estate,Real Estate Services,2026-02-26,0001057352-26-000020,449421,2,71,6,3,6,0,0,0,0,1,0,0,0
+0001058090,Chipotle Mexican Grill,CMG,Consumer Discretionary,Restaurants,2026-02-04,0001058090-26-000009,252087,3,1,0,1,0,0,0,0,0,0,0,0,0
+0001058290,Cognizant,CTSH,Information Technology,IT Consulting & Other Services,2026-02-12,0001058290-26-000008,367903,3,120,0,0,1,1,0,0,0,1,0,0,0
+0001059556,Moody's Corporation,MCO,Financials,Financial Exchanges & Data,2026-02-18,0001628280-26-009136,538520,4,53,0,1,5,0,0,0,0,2,0,0,0
+0001060391,Republic Services,RSG,Industrials,Environmental & Facilities Services,2026-02-18,0001060391-26-000094,497469,4,6,0,1,0,0,0,0,0,0,0,0,0
+0001063761,Simon Property Group,SPG,Real Estate,Retail REITs,2026-02-25,0001104659-26-019419,688893,1,15,6,3,0,0,0,0,0,0,0,0,0
+0001065088,eBay Inc.,EBAY,Consumer Discretionary,Broadline Retail,2026-02-19,0001065088-26-000027,424070,2,59,1,0,9,0,0,0,0,1,0,0,0
+0001065280,Netflix,NFLX,Communication Services,Movies & Entertainment,2026-01-23,0001065280-26-000034,309181,1,8,6,0,0,0,0,0,0,0,0,0,0
+0001067701,United Rentals,URI,Industrials,Trading Companies & Distributors,2026-01-28,0001067701-26-000007,437734,2,16,0,0,2,0,0,0,0,0,0,0,0
+0001067983,Berkshire Hathaway,BRK.B,Financials,Multi-Sector Holdings,2026-03-02,0001193125-26-083899,619973,2,0,0,0,3,0,0,0,0,0,0,0,0
+0001069183,Axon Enterprise,AXON,Industrials,Aerospace & Defense,2026-02-25,0001628280-26-011360,448677,1,65,4,4,4,0,0,0,0,0,0,0,0
+0001069202,Lennox International,LII,Industrials,Building Products,2026-02-17,0001069202-26-000028,326501,3,12,2,1,1,0,0,0,0,0,0,0,0
+0001070750,Host Hotels & Resorts,HST,Real Estate,Hotel & Resort REITs,2026-02-25,0001070750-26-000054,528037,2,7,3,1,0,0,0,0,0,0,0,0,0
+0001071739,Centene Corporation,CNC,Health Care,Managed Health Care,2026-02-17,0001071739-26-000049,513074,22,4,0,3,0,0,0,0,0,1,0,0,0
+0001075531,Booking Holdings,BKNG,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2026-02-18,0001075531-26-000009,394497,2,59,2,0,8,0,0,0,0,0,0,0,1
+0001086222,Akamai Technologies,AKAM,Information Technology,Internet Services & Infrastructure,2026-02-20,0001086222-26-000022,408187,4,65,4,2,29,7,0,2,1,1,1,0,9
+0001090012,Devon Energy,DVN,Energy,Oil & Gas Exploration & Production,2026-02-18,0001193125-26-056485,366036,5,4,0,0,0,0,0,0,0,0,0,0,0
+0001090727,United Parcel Service,UPS,Industrials,Air Freight & Logistics,2026-02-17,0001628280-26-008432,536367,2,7,0,0,4,0,0,0,0,0,0,0,0
+0001090872,Agilent Technologies,A,Health Care,Life Sciences Tools & Services,2025-12-22,0001090872-25-000087,572162,3,18,1,1,0,0,0,0,0,0,0,0,0
+0001091667,Charter Communications,CHTR,Communication Services,Cable & Satellite,2026-01-30,0001091667-26-000017,523168,3,10,0,0,0,0,0,0,0,0,0,0,0
+0001093557,Dexcom,DXCM,Health Care,Health Care Equipment,2026-02-12,0001093557-26-000027,567246,1,31,0,2,1,0,0,0,0,0,0,0,0
+0001094285,Teledyne Technologies,TDY,Information Technology,Electronic Equipment & Instruments,2026-02-20,0001094285-26-000017,390516,1,24,2,1,2,0,0,0,0,0,0,0,0
+0001095073,Everest Group,EG,Financials,Reinsurance,2026-02-26,0001095073-26-000006,651159,2,6,0,0,2,0,0,0,0,0,0,0,0
+0001097149,Align Technology,ALGN,Health Care,Health Care Supplies,2026-02-27,0001097149-26-000014,440895,4,36,0,3,0,0,0,0,0,0,0,0,0
+0001097864,ON Semiconductor,ON,Information Technology,Semiconductors,2026-02-09,0001097864-26-000006,437052,1,50,1,1,17,0,0,0,0,0,0,0,0
+0001099219,MetLife,MET,Financials,Life & Health Insurance,2026-02-19,0001099219-26-000013,1479495,4,17,1,0,0,0,0,0,0,0,0,0,0
+0001099800,Edwards Lifesciences,EW,Health Care,Health Care Equipment,2026-02-25,0001099800-26-000009,425921,2,10,0,0,0,0,0,0,0,0,0,0,0
+0001100682,Charles River Laboratories,CRL,Health Care,Life Sciences Tools & Services,2026-02-18,0001100682-26-000022,543404,7,7,0,2,0,0,0,0,0,0,0,0,1
+0001101239,Equinix,EQIX,Real Estate,Data Center REITs,2026-02-11,0001101239-26-000032,538654,4,43,0,2,298,15,0,0,1,0,0,0,1
+0001103982,Mondelez International,MDLZ,Consumer Staples,Packaged Foods & Meats,2026-02-04,0001628280-26-005345,481426,10,0,0,6,0,0,0,0,0,0,0,0,0
+0001108524,Salesforce,CRM,Information Technology,Application Software,2026-03-02,0001108524-26-000060,438283,7,126,6,0,26,1,0,0,0,4,0,0,1
+0001109357,Exelon,EXC,Utilities,Electric Utilities,2026-02-12,0001109357-26-000018,1300166,2,0,0,0,1,0,0,0,0,0,0,0,0
+0001111711,NiSource,NI,Utilities,Multi-Utilities,2026-02-11,0001111711-26-000027,626316,6,0,0,1,147,0,0,0,0,0,0,0,0
+0001113169,T. Rowe Price,TROW,Financials,Asset Management & Custody Banks,2026-02-13,0001628280-26-008002,368793,3,24,3,0,2,0,0,0,0,0,0,0,0
+0001116132,"Tapestry, Inc.",TPR,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",2026-08-13,0001116132-26-000018,436705,3,31,1,5,0,0,0,0,0,0,0,0,0
+0001120193,"Nasdaq, Inc.",NDAQ,Financials,Financial Exchanges & Data,2026-02-12,0001628280-26-007703,550902,0,66,5,2,11,0,0,0,0,0,0,1,1
+0001121788,Garmin,GRMN,Consumer Discretionary,Consumer Electronics,2026-02-18,0001193125-26-056028,306178,0,0,0,0,1,0,0,0,0,0,0,0,0
+0001123360,Global Payments,GPN,Financials,Transaction & Payment Processing Services,2026-02-20,0001123360-26-000008,528696,2,26,2,4,3,0,0,0,0,0,0,0,0
+0001126328,Principal Financial Group,PFG,Financials,Life & Health Insurance,2026-02-18,0001104659-26-017031,1123254,2,5,0,0,0,0,0,0,0,0,0,0,0
+0001130310,CenterPoint Energy,CNP,Utilities,Multi-Utilities,2026-02-19,0001130310-26-000008,938314,1,33,1,0,6,0,0,0,0,0,0,0,0
+0001133421,Northrop Grumman,NOC,Industrials,Aerospace & Defense,2026-01-27,0001133421-26-000003,414203,9,0,0,0,0,0,0,0,0,0,0,0,0
+0001136869,Zimmer Biomet,ZBH,Health Care,Health Care Equipment,2026-02-20,0001193125-26-059853,452720,14,0,0,6,0,0,0,0,0,0,0,0,0
+0001136893,Fidelity National Information Services,FIS,Financials,Transaction & Payment Processing Services,2026-02-24,0001136893-26-000013,486613,1,43,0,4,3,0,0,0,0,0,0,0,0
+0001137774,Prudential Financial,PRU,Financials,Life & Health Insurance,2026-02-12,0001137774-26-000048,1595403,9,36,2,0,0,0,0,0,0,0,0,0,0
+0001137789,Seagate Technology,STX,Information Technology,"Technology Hardware, Storage & Peripherals",2026-08-04,0001137789-26-000159,378205,2,15,0,0,27,9,0,0,0,0,0,0,2
+0001138118,CBRE Group,CBRE,Real Estate,Real Estate Services,2026-02-12,0001138118-26-000005,531271,1,11,0,1,16,1,0,0,0,0,0,0,0
+0001140536,Willis Towers Watson,WTW,Financials,Insurance Brokers,2026-02-25,0001193125-26-069307,649218,3,16,2,0,0,0,0,0,0,0,0,0,0
+0001140859,Cencora,COR,Health Care,Health Care Distributors,2025-11-25,0001140859-25-000131,434062,4,23,1,0,2,0,0,0,0,0,0,0,0
+0001141391,Mastercard,MA,Financials,Transaction & Payment Processing Services,2026-02-11,0001141391-26-000013,479444,1,63,1,3,0,0,0,0,0,0,1,0,0
+0001145197,Insulet Corporation,PODD,Health Care,Health Care Equipment,2026-02-18,0001145197-26-000028,338881,3,23,4,0,0,0,0,0,0,0,0,0,0
+0001156039,Elevance Health,ELV,Health Care,Managed Health Care,2026-02-06,0001156039-26-000013,632179,3,16,1,1,3,0,0,0,0,0,0,0,0
+0001156375,CME Group,CME,Financials,Financial Exchanges & Data,2026-02-26,0001156375-26-000009,439522,21,0,0,0,10,0,0,0,1,0,0,0,0
+0001163165,ConocoPhillips,COP,Energy,Oil & Gas Exploration & Production,2026-02-17,0001163165-26-000009,573535,1,0,0,0,0,0,0,0,0,0,0,0,0
+0001164727,Newmont,NEM,Materials,Gold,2026-02-19,0001164727-26-000010,1020352,3,9,0,0,0,0,0,0,0,0,0,0,0
+0001166691,Comcast,CMCSA,Communication Services,Cable & Satellite,2026-02-03,0001628280-26-004994,432135,1,9,1,0,2,0,0,0,0,0,0,0,0
+0001174922,Wynn Resorts,WYNN,Consumer Discretionary,Casinos & Gaming,2026-03-02,0001174922-26-000013,486810,1,0,0,0,0,0,0,0,0,0,0,0,0
+0001175454,Corpay,CPAY,Financials,Transaction & Payment Processing Services,2026-02-27,0001175454-26-000018,546615,4,5,1,2,6,0,0,0,0,0,0,0,1
+0001176948,Ares Management,ARES,Financials,Asset Management & Custody Banks,2026-02-25,0001628280-26-011413,1058601,51,3,0,2,6,1,0,0,0,1,0,0,0
+0001260221,TransDigm Group,TDG,Industrials,Aerospace & Defense,2025-11-12,0001260221-25-000081,384422,1,2,0,0,0,0,0,0,0,0,0,0,0
+0001262039,Fortinet,FTNT,Information Technology,Systems Software,2026-02-25,0001262039-26-000007,546942,2,83,4,1,45,0,0,0,0,1,0,0,2
+0001267238,Assurant,AIZ,Financials,Multi-line Insurance,2026-02-19,0001267238-26-000010,663551,5,31,0,2,2,0,0,0,0,0,0,0,0
+0001274494,First Solar,FSLR,Information Technology,Semiconductors,2026-02-24,0001274494-26-000021,497887,1,22,3,1,5,0,0,0,0,0,0,0,0
+0001280452,Monolithic Power Systems,MPWR,Information Technology,Semiconductors,2026-02-27,0001437749-26-006113,357113,2,23,0,0,0,0,0,0,0,0,0,0,0
+0001281761,Regions Financial Corporation,RF,Financials,Regional Banks,2026-02-24,0001281761-26-000019,803736,1,27,2,1,3,0,0,0,0,0,0,0,0
+0001283699,T-Mobile US,TMUS,Communication Services,Wireless Telecommunication Services,2026-02-11,0001283699-26-000010,608347,2,21,0,1,3,0,0,0,0,0,0,0,0
+0001285785,Mosaic Company (The),MOS,Materials,Fertilizers & Agricultural Chemicals,2026-02-27,0001285785-26-000017,640626,0,0,0,0,0,0,0,0,0,0,0,0,0
+0001286681,Domino's,DPZ,Consumer Discretionary,Restaurants,2026-02-23,0001193125-26-062321,401887,2,10,2,0,0,0,0,0,0,0,0,0,0
+0001289490,Extra Space Storage,EXR,Real Estate,Self-Storage REITs,2026-02-20,0001289490-26-000011,338995,4,16,0,2,0,0,0,0,0,0,0,0,0
+0001297996,Digital Realty,DLR,Real Estate,Data Center REITs,2026-02-13,0001104659-26-015365,724878,4,11,0,2,421,36,0,0,0,0,0,0,0
+0001300514,Las Vegas Sands,LVS,Consumer Discretionary,Casinos & Gaming,2026-02-06,0001300514-26-000013,558182,3,0,0,0,0,0,0,0,0,0,0,0,0
+0001316835,Builders FirstSource,BLDR,Industrials,Building Products,2026-02-17,0001193125-26-054643,308512,4,9,0,1,0,0,0,0,0,0,0,0,0
+0001318605,"Tesla, Inc.",TSLA,Consumer Discretionary,Automobile Manufacturers,2026-01-29,0001628280-26-003952,429675,12,44,0,0,6,0,0,0,0,0,4,0,0
+0001321655,Palantir Technologies,PLTR,Information Technology,Application Software,2026-02-17,0001321655-26-000011,562686,6,82,3,5,1,0,0,0,0,1,0,0,0
+0001324404,CF Industries,CF,Materials,Fertilizers & Agricultural Chemicals,2026-02-25,0001324404-26-000007,566920,0,0,0,0,0,0,0,0,0,0,0,0,0
+0001324424,Expedia Group,EXPE,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2026-02-13,0001324424-26-000008,423233,4,30,1,4,9,0,0,0,0,0,0,0,0
+0001326160,Duke Energy,DUK,Utilities,Electric Utilities,2026-02-26,0001326160-26-000014,1327483,1,26,3,0,8,2,0,0,0,0,0,0,0
+0001326801,Meta Platforms,META,Communication Services,Interactive Media & Services,2026-01-29,0001628280-26-003942,535748,10,133,10,11,31,0,0,0,0,1,0,0,0
+0001327567,Palo Alto Networks,PANW,Information Technology,Systems Software,2025-08-29,0001327567-25-000027,465020,4,100,3,13,11,0,0,0,0,0,0,0,1
+0001327811,"Workday, Inc.",WDAY,Information Technology,Application Software,2026-03-06,0001327811-26-000014,396431,3,122,5,1,18,0,0,0,0,1,0,0,1
+0001335258,Live Nation Entertainment,LYV,Communication Services,Movies & Entertainment,2026-02-19,0001335258-26-000009,413182,0,0,0,0,0,0,0,0,0,0,0,0,0
+0001336920,Leidos,LDOS,Industrials,Diversified Support Services,2026-02-17,0001336920-26-000030,463586,14,35,0,2,1,0,0,0,0,0,0,0,0
+0001341439,Oracle Corporation,ORCL,Information Technology,Application Software,2026-06-22,0001193125-26-277521,461797,3,114,8,8,56,3,0,5,1,1,0,0,26
+0001373715,ServiceNow,NOW,Information Technology,Systems Software,2026-01-29,0001373715-26-000007,371850,7,134,0,5,22,1,0,0,0,0,0,0,4
+0001374310,Cboe Global Markets,CBOE,Financials,Financial Exchanges & Data,2026-02-20,0001628280-26-010013,656125,2,5,0,2,15,0,0,0,0,0,0,0,0
+0001375365,Supermicro,SMCI,Information Technology,"Technology Hardware, Storage & Peripherals",2026-08-31,0001375365-26-000022,752452,6,78,1,5,53,0,0,33,4,1,0,12,0
+0001381197,Interactive Brokers,IBKR,Financials,Investment Banking & Brokerage,2026-02-27,0001381197-26-000062,450386,1,16,1,0,15,0,0,0,0,0,0,0,0
+0001383312,Broadridge Financial Solutions,BR,Industrials,Data Processing & Outsourced Services,2026-08-04,0001628280-26-052243,425394,3,29,0,2,30,0,0,0,0,0,0,0,1
+0001385157,TE Connectivity,TEL,Information Technology,Electronic Manufacturing Services,2025-11-10,0001104659-25-109150,406301,5,15,0,3,5,0,0,0,0,0,1,0,0
+0001389170,Targa Resources,TRGP,Energy,Oil & Gas Storage & Transportation,2026-02-19,0001193125-26-059296,618446,2,0,0,0,0,0,0,0,0,0,0,0,0
+0001390777,BNY Mellon,BNY,Financials,Asset Management & Custody Banks,2026-02-25,0001390777-26-000033,249807,2,2,0,0,0,0,0,0,0,0,0,0,0
+0001393052,Veeva Systems,VEEV,Health Care,Health Care Technology,2026-03-20,0001393052-26-000014,333337,1,32,1,2,5,0,0,0,0,2,0,0,0
+0001393311,Public Storage,PSA,Real Estate,Self-Storage REITs,2026-02-12,0001628280-26-007696,382515,8,0,0,1,0,0,0,0,0,1,0,0,0
+0001393818,Blackstone Inc.,BX,Financials,Asset Management & Custody Banks,2026-02-27,0001193125-26-082531,1077346,16,61,1,1,3,1,0,0,0,0,0,0,0
+0001396009,Vulcan Materials Company,VMC,Materials,Construction Materials,2026-02-19,0001628280-26-009546,443711,1,3,0,1,4,0,0,0,0,0,0,0,0
+0001397187,Lululemon Athletica,LULU,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",2026-03-17,0001397187-26-000020,313148,1,24,2,0,0,0,0,0,0,0,0,0,0
+0001402057,CDW Corporation,CDW,Information Technology,Technology Distributors,2026-02-20,0001402057-26-000011,334170,4,34,1,0,11,2,0,0,0,0,0,0,1
+0001403161,Visa Inc.,V,Financials,Transaction & Payment Processing Services,2025-11-06,0001403161-25-000089,459581,4,56,1,4,5,0,0,0,0,0,0,0,0
+0001403568,Ulta Beauty,ULTA,Consumer Discretionary,Other Specialty Retail,2026-03-26,0001104659-26-035243,321023,0,13,2,0,1,0,0,0,0,0,0,0,0
+0001404912,KKR & Co.,KKR,Financials,Asset Management & Custody Banks,2026-02-27,0001404912-26-000007,1523537,24,0,0,0,0,0,0,0,0,0,0,0,0
+0001408198,MSCI,MSCI,Financials,Financial Exchanges & Data,2026-02-06,0001408198-26-000011,419201,2,70,5,2,6,0,0,0,0,0,0,0,0
+0001410636,American Water Works,AWK,Utilities,Water Utilities,2026-02-18,0001410636-26-000034,790435,0,0,0,0,0,0,0,0,0,0,0,0,0
+0001413329,Philip Morris International,PM,Consumer Staples,Tobacco,2026-02-06,0001628280-26-005939,604271,9,4,0,0,0,0,0,0,0,0,0,0,0
+0001413447,NXP Semiconductors,NXPI,Information Technology,Semiconductors,2026-02-19,0001413447-26-000008,420412,1,25,0,5,1,0,0,0,0,1,0,0,0
+0001415404,EchoStar,ECHO,Communication Services,Wireless Telecommunication Services,2026-03-02,0001104659-26-021817,1000065,2,0,0,2,3,0,0,0,0,0,0,0,0
+0001418135,Keurig Dr Pepper,KDP,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,2026-02-24,0001418135-26-000016,431874,1,0,0,0,0,0,0,0,0,0,0,0,0
+0001437107,Warner Bros. Discovery,WBD,Communication Services,Broadcasting,2026-02-27,0001437107-26-000020,606402,1,15,4,0,0,0,0,0,0,1,0,0,0
+0001442145,Verisk Analytics,VRSK,Industrials,Research & Consulting Services,2026-02-18,0001437749-26-004452,409924,2,16,3,3,8,0,0,0,0,0,0,0,0
+0001466258,Trane Technologies,TT,Industrials,Building Products,2026-02-05,0001628280-26-005731,416470,3,13,0,0,4,0,0,0,0,0,0,1,0
+0001467373,Accenture,ACN,Information Technology,IT Consulting & Other Services,2025-10-10,0001467373-25-000217,387736,0,81,1,0,2,0,0,0,0,1,0,0,0
+0001467858,General Motors,GM,Consumer Discretionary,Automobile Manufacturers,2026-01-27,0001467858-26-000013,514325,2,11,0,2,1,0,0,0,0,0,0,0,0
+0001474735,Generac,GNRC,Industrials,Heavy Electrical Equipment,2026-02-18,0001437749-26-004568,453864,10,1,0,1,40,1,0,0,0,0,0,0,0
+0001478242,IQVIA,IQV,Health Care,Life Sciences Tools & Services,2026-02-17,0001628280-26-008322,529453,9,67,1,3,5,0,0,0,0,2,0,0,0
+0001489393,LyondellBasell,LYB,Materials,Specialty Chemicals,2026-02-20,0001489393-26-000012,490155,3,7,2,0,0,0,0,0,0,0,0,0,0
+0001501585,Huntington Ingalls Industries,HII,Industrials,Aerospace & Defense,2026-02-05,0001501585-26-000006,438706,7,16,0,4,0,0,0,0,0,0,0,0,0
+0001506307,Kinder Morgan,KMI,Energy,Oil & Gas Storage & Transportation,2026-02-13,0001506307-26-000011,518756,4,0,0,0,1,0,0,0,0,0,0,0,0
+0001510295,Marathon Petroleum,MPC,Energy,Oil & Gas Refining & Marketing,2026-02-26,0001510295-26-000009,579534,3,3,0,0,0,0,0,0,0,0,0,0,0
+0001512673,"Block, Inc.",XYZ,Financials,Transaction & Payment Processing Services,2026-02-26,0001628280-26-012254,599639,7,52,6,2,7,0,0,0,0,1,0,0,0
+0001513761,Norwegian Cruise Line Holdings,NCLH,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2026-03-02,0001104659-26-022067,496141,1,10,1,0,0,0,0,0,0,0,0,0,0
+0001521332,Aptiv,APTV,Consumer Discretionary,Automotive Parts & Equipment,2026-02-06,0001521332-26-000009,686193,4,3,0,2,1,0,0,0,0,0,0,0,0
+0001524472,Xylem Inc.,XYL,Industrials,Industrial Machinery & Supplies & Components,2026-02-25,0001524472-26-000012,462787,4,13,1,0,1,0,0,0,0,0,0,0,0
+0001534701,Phillips 66,PSX,Energy,Oil & Gas Refining & Marketing,2026-02-20,0001534701-26-000006,630964,2,0,0,0,0,0,0,0,0,0,0,0,0
+0001535527,CrowdStrike,CRWD,Information Technology,Systems Software,2026-03-05,0001535527-26-000010,555162,5,125,13,4,35,0,0,0,0,0,0,0,11
+0001539838,Diamondback Energy,FANG,Energy,Oil & Gas Exploration & Production,2026-02-25,0001539838-26-000010,608652,1,10,1,1,1,0,0,0,0,0,0,0,0
+0001543151,Uber,UBER,Industrials,Passenger Ground Transportation,2026-02-13,0001543151-26-000015,645394,4,20,0,6,15,0,0,0,0,0,0,0,0
+0001551152,AbbVie,ABBV,Health Care,Biotechnology,2026-02-20,0001551152-26-000008,501313,2,5,0,0,0,0,0,0,0,0,0,0,0
+0001551182,Eaton Corporation,ETN,Industrials,Electrical Components & Equipment,2026-02-26,0001551182-26-000007,363377,4,9,2,0,24,2,0,0,0,0,0,1,0
+0001555280,Zoetis,ZTS,Health Care,Pharmaceuticals,2026-02-12,0001555280-26-000011,542633,2,39,1,3,0,0,0,0,0,0,0,0,0
+0001559720,Airbnb,ABNB,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2026-02-12,0001559720-26-000004,442164,8,49,1,9,2,0,0,0,0,0,0,0,0
+0001561550,Datadog,DDOG,Information Technology,Application Software,2026-02-18,0001628280-26-008819,410090,9,38,2,11,3,0,0,0,0,1,0,0,12
+0001564708,News Corp (Class A),NWS|NWSA,Communication Services,Publishing,2026-08-07,0001564708-26-000175,500670,2,89,0,0,1,0,0,0,0,1,0,0,0
+0001571949,Intercontinental Exchange,ICE,Financials,Financial Exchanges & Data,2026-02-05,0001571949-26-000004,675244,27,0,0,5,13,0,0,0,0,0,0,0,0
+0001571996,Dell Technologies,DELL,Information Technology,"Technology Hardware, Storage & Peripherals",2026-03-16,0001571996-26-000008,542082,6,106,1,2,4,0,0,0,1,0,0,0,1
+0001579241,Allegion,ALLE,Industrials,Building Products,2026-02-17,0001579241-26-000007,356366,4,9,0,3,0,0,0,0,0,0,0,0,0
+0001585689,Hilton Worldwide,HLT,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2026-02-11,0001585689-26-000007,436034,2,13,0,1,1,0,0,0,0,1,0,0,0
+0001596532,Arista Networks,ANET,Information Technology,Communications Equipment,2026-02-17,0001596532-26-000013,428034,3,119,0,4,26,3,0,2,0,1,0,0,0
+0001601046,Keysight Technologies,KEYS,Information Technology,Electronic Equipment & Instruments,2025-12-17,0001601046-25-000127,511437,2,22,0,1,7,0,0,0,0,0,1,0,0
+0001601712,Synchrony Financial,SYF,Financials,Consumer Finance,2026-02-06,0001601712-26-000006,647248,8,9,1,1,3,0,0,0,0,0,0,0,1
+0001609711,GoDaddy,GDDY,Information Technology,Internet Services & Infrastructure,2026-02-25,0001609711-26-000010,518879,3,135,2,1,38,0,0,0,0,1,0,0,3
+0001613103,Medtronic,MDT,Health Care,Health Care Equipment,2026-06-18,0001628280-26-044354,568274,2,25,1,1,0,0,0,0,0,0,0,0,0
+0001633917,PayPal,PYPL,Financials,Transaction & Payment Processing Services,2026-02-03,0001633917-26-000024,535722,6,23,2,1,11,0,0,0,0,0,0,0,0
+0001633978,Lumentum,LITE,Information Technology,Communications Equipment,2026-08-17,0001628280-26-057358,563816,5,49,0,3,32,1,0,1,1,0,0,0,0
+0001637459,Kraft Heinz,KHC,Consumer Staples,Packaged Foods & Meats,2026-02-12,0001637459-26-000009,572683,2,3,0,1,0,0,0,0,0,0,0,0,0
+0001645590,Hewlett Packard Enterprise,HPE,Information Technology,"Technology Hardware, Storage & Peripherals",2025-12-18,0001645590-25-000130,752074,9,156,2,1,22,1,2,9,5,1,0,2,0
+0001652044,Alphabet Inc. (Class A),GOOG|GOOGL,Communication Services,Interactive Media & Services,2026-02-05,0001652044-26-000018,384060,3,121,2,1,31,0,0,5,0,2,0,0,0
+0001659166,Fortive,FTV,Industrials,Industrial Machinery & Supplies & Components,2026-02-25,0001659166-26-000007,399572,5,15,2,1,0,0,0,0,0,0,0,0,0
+0001666700,DuPont,DD,Industrials,Industrial Conglomerates,2026-02-17,0001666700-26-000013,607477,1,1,0,1,0,0,0,0,0,0,0,0,0
+0001671933,Trade Desk (The),TTD,Communication Services,Advertising,2026-02-27,0001671933-26-000014,423815,4,36,0,8,13,0,0,0,0,0,0,0,0
+0001674101,Vertiv,VRT,Industrials,Electrical Components & Equipment,2026-02-13,0001674101-26-000008,425895,10,22,0,0,31,7,0,0,2,0,0,3,1
+0001679788,Coinbase,COIN,Financials,Financial Exchanges & Data,2026-02-12,0001679788-26-000015,675380,1,18,1,2,5,0,0,0,0,0,0,0,0
+0001682852,Moderna,MRNA,Health Care,Biotechnology,2026-02-20,0001682852-26-000033,643862,9,44,3,2,0,0,0,0,0,0,0,0,0
+0001687229,Invitation Homes,INVH,Real Estate,Single-Family Residential REITs,2026-02-19,0001687229-26-000016,563438,1,11,5,0,0,0,0,0,0,0,0,0,0
+0001690820,Carvana,CVNA,Consumer Discretionary,Automotive Retail,2026-02-18,0001690820-26-000009,506371,5,27,3,0,1,0,0,0,0,0,0,0,0
+0001692819,Vistra Corp.,VST,Utilities,Electric Utilities,2026-02-27,0001692819-26-000006,798063,1,11,3,0,3,0,0,0,0,0,0,0,0
+0001699150,Ingersoll Rand,IR,Industrials,Industrial Machinery & Supplies & Components,2026-02-17,0001628280-26-008617,453502,2,20,0,0,0,0,0,0,0,0,0,0,0
+0001701605,Baker Hughes,BKR,Energy,Oil & Gas Equipment & Services,2026-02-05,0001701605-26-000007,411959,1,37,2,2,8,0,0,0,0,0,0,0,0
+0001705696,Vici Properties,VICI,Real Estate,Hotel & Resort REITs,2026-02-25,0001705696-26-000034,532903,1,3,0,0,0,0,0,0,0,0,0,0,0
+0001707925,Linde plc,LIN,Materials,Industrial Gases,2026-02-25,0001628280-26-011430,402758,1,1,0,0,2,0,0,0,0,0,0,0,0
+0001711269,Evergy,EVRG,Utilities,Electric Utilities,2026-02-19,0001711269-26-000017,833395,3,12,2,1,7,0,0,0,0,0,0,0,0
+0001713445,Reddit,RDDT,Communication Services,Interactive Media & Services,2026-02-06,0001713445-26-000022,441462,4,50,10,15,0,0,0,0,0,2,0,0,2
+0001730168,Broadcom,AVGO,Information Technology,Semiconductors,2025-12-18,0001730168-25-000121,399684,3,74,1,4,30,7,0,0,1,0,0,0,4
+0001739940,Cigna,CI,Health Care,Health Care Services,2026-02-26,0001739940-26-000006,592125,4,46,4,3,1,0,0,0,0,0,0,0,0
+0001744489,Walt Disney Company (The),DIS,Communication Services,Movies & Entertainment,2025-11-13,0001744489-25-000155,501467,1,8,3,0,0,0,0,0,0,1,0,0,0
+0001748790,Amcor,AMCR,Materials,Paper & Plastic Packaging Products & Materials,2026-08-14,0001748790-26-000022,472258,4,6,0,1,1,0,0,0,0,0,0,0,0
+0001751008,AppLovin,APP,Communication Services,Advertising,2026-02-19,0001751008-26-000010,406996,2,60,2,2,3,0,0,0,0,0,0,0,0
+0001751788,Dow Inc.,DOW,Materials,Commodity Chemicals,2026-02-03,0001751788-26-000018,698844,3,6,0,0,6,0,0,0,1,0,0,0,0
+0001754301,Fox Corporation (Class A),FOX|FOXA,Communication Services,Broadcasting,2026-08-06,0001628280-26-053960,423599,1,21,4,0,0,0,0,0,0,4,0,0,0
+0001755672,Corteva,CTVA,Materials,Fertilizers & Agricultural Chemicals,2026-02-12,0001755672-26-000004,652595,2,0,0,0,0,0,0,0,0,0,0,0,0
+0001757898,Steris,STE,Health Care,Health Care Equipment,2026-05-29,0001628280-26-039136,437567,3,9,1,0,0,0,0,0,0,0,0,0,0
+0001781335,Otis Worldwide,OTIS,Industrials,Industrial Machinery & Supplies & Components,2026-02-05,0001781335-26-000011,441391,2,6,0,0,0,0,0,0,0,0,0,0,0
+0001783180,Carrier Global,CARR,Industrials,Building Products,2026-02-05,0001783180-26-000008,436855,0,0,0,0,5,0,0,0,0,0,0,1,0
+0001783879,Robinhood Markets,HOOD,Financials,Investment Banking & Brokerage,2026-02-18,0001783879-26-000023,724998,2,51,3,7,0,0,0,0,0,0,0,0,4
+0001792044,Viatris,VTRS,Health Care,Pharmaceuticals,2026-02-26,0001792044-26-000013,734227,1,19,1,1,0,0,0,0,0,0,0,0,0
+0001792789,DoorDash,DASH,Consumer Discretionary,Specialized Consumer Services,2026-02-18,0001792789-26-000013,538617,2,18,0,0,1,0,0,0,0,0,0,0,2
+0001811074,Texas Pacific Land Corporation,TPL,Energy,Oil & Gas Exploration & Production,2026-02-18,0001811074-26-000018,424344,1,0,0,1,10,0,0,0,0,0,0,0,0
+0001835632,Marvell Technology,MRVL,Information Technology,Semiconductors,2026-03-11,0001835632-26-000011,482478,5,67,1,1,77,1,0,4,0,0,0,0,0
+0001841666,APA Corporation,APA,Energy,Oil & Gas Exploration & Production,2026-02-26,0001841666-26-000015,502461,0,0,0,0,0,0,0,0,0,0,0,0,0
+0001858681,Apollo Global Management,APO,Financials,Asset Management & Custody Banks,2026-02-25,0001858681-26-000013,1264663,6,34,2,2,2,0,0,0,0,1,0,0,0
+0001868275,Constellation Energy,CEG,Utilities,Electric Utilities,2026-02-24,0001868275-26-000032,691340,1,17,2,1,12,1,0,0,1,0,0,0,0
+0001932393,GE HealthCare,GEHC,Health Care,Health Care Equipment,2026-02-04,0001932393-26-000007,522418,1,54,2,3,1,0,0,0,0,0,0,0,1
+0001944048,Kenvue,KVUE,Consumer Staples,Personal Care Products,2026-02-20,0001944048-26-000030,686204,27,0,0,1,0,0,0,0,0,0,0,0,0
+0001964738,Solventum,SOLV,Health Care,Health Care Technology,2026-02-27,0001964738-26-000007,503148,4,20,0,5,0,0,0,0,0,0,0,0,0
+0001967680,Veralto,VLTO,Industrials,Environmental & Facilities Services,2026-02-20,0001967680-26-000011,390568,3,13,0,0,0,0,0,0,0,0,0,0,0
+0001973266,TKO Group Holdings,TKO,Communication Services,Movies & Entertainment,2026-02-25,0001193125-26-071651,631725,3,2,0,0,0,0,0,0,0,0,0,0,0
+0001996810,GE Vernova,GEV,Industrials,Heavy Electrical Equipment,2026-01-29,0001996810-26-000015,448285,3,6,1,0,2,2,0,0,0,0,0,0,0
+0001996862,Bunge Global,BG,Consumer Staples,Agricultural Products & Services,2026-02-19,0001628280-26-009842,643290,1,8,4,1,0,0,0,0,0,0,0,0,0
+0002005951,Smurfit Westrock,SW,Materials,Paper & Plastic Packaging Products & Materials,2026-02-27,0001628280-26-012555,551854,11,0,0,2,0,0,0,0,0,0,0,0,0
+0002011641,Ferguson Enterprises,FERG,Industrials,Trading Companies & Distributors,2025-09-26,0002011641-25-000027,346564,1,5,2,1,0,0,0,0,0,0,0,0,0
+0002012383,BlackRock,BLK,Financials,Asset Management & Custody Banks,2026-02-25,0001193125-26-071966,706896,3,36,3,1,4,0,0,0,0,0,0,0,0
+0002023554,Sandisk,SNDK,Information Technology,"Technology Hardware, Storage & Peripherals",2026-08-17,0001628280-26-057406,443265,4,43,3,1,33,0,0,0,0,0,0,0,1
+0002041610,Paramount Skydance Corporation,PSKY,Communication Services,Movies & Entertainment,2026-02-25,0002041610-26-000011,588028,1,9,0,0,0,0,0,0,0,0,0,0,1
+0002058873,Qnity Electronics,Q,Information Technology,Semiconductor Materials & Equipment,2026-02-26,0002058873-26-000010,403462,7,14,0,0,7,0,0,0,9,0,0,0,0
+0002082247,FedEx Freight,FDXF,Industrials,Cargo Ground Transportation,2026-08-05,0001628280-26-053359,477452,2,19,0,4,1,0,0,0,0,0,0,0,0

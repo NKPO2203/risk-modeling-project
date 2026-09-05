@@ -1,0 +1,17 @@
+{
+  "fichier": "sp500_constituents.csv",
+  "source_url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+  "type_de_source": "secondaire (Wikipedia), a recouper avec une source officielle",
+  "date_de_recuperation": "2026-09-04T12:09:19.549980+02:00",
+  "nombre_de_lignes": 503,
+  "colonnes": [
+    "Symbol",
+    "Security",
+    "GICS Sector",
+    "GICS Sub-Industry",
+    "Headquarters Location",
+    "Date added",
+    "CIK",
+    "Founded"
+  ]
+}

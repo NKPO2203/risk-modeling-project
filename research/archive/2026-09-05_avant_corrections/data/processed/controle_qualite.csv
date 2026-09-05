@@ -1,0 +1,739 @@
+cik,nom,symboles,secteur,annee,test,detail
+0000092230,Truist Financial,TFC,Financials,2022,aucun chiffre d affaires,
+0001393818,Blackstone Inc.,BX,Financials,2022,chiffre d affaires effondre en un an,-62%
+0000906345,Camden Property Trust,CPT,Real Estate,2017,chiffre d affaires effondre en un an,-99%
+0000815097,Carnival Corporation,CCL,Consumer Discretionary,2020,chiffre d affaires effondre en un an,-73%
+0000815097,Carnival Corporation,CCL,Consumer Discretionary,2021,chiffre d affaires effondre en un an,-66%
+0000027904,Delta Air Lines,DAL,Industrials,2020,chiffre d affaires effondre en un an,-64%
+0001666700,DuPont,DD,Industrials,2018,chiffre d affaires effondre en un an,-64%
+0001070750,Host Hotels & Resorts,HST,Real Estate,2020,chiffre d affaires effondre en un an,-70%
+0001404912,KKR & Co.,KKR,Financials,2022,chiffre d affaires effondre en un an,-65%
+0001300514,Las Vegas Sands,LVS,Consumer Discretionary,2020,chiffre d affaires effondre en un an,-76%
+0001335258,Live Nation Entertainment,LYV,Communication Services,2020,chiffre d affaires effondre en un an,-84%
+0000036270,M&T Bank,MTB,Financials,2024,chiffre d affaires effondre en un an,-84%
+0001682852,Moderna,MRNA,Health Care,2023,chiffre d affaires effondre en un an,-64%
+0001513761,Norwegian Cruise Line Holdings,NCLH,Consumer Discretionary,2020,chiffre d affaires effondre en un an,-80%
+0001413329,Philip Morris International,PM,Consumer Staples,2018,chiffre d affaires effondre en un an,-62%
+0000884887,Royal Caribbean Group,RCL,Consumer Discretionary,2020,chiffre d affaires effondre en un an,-80%
+0000100517,United Airlines Holdings,UAL,Industrials,2020,chiffre d affaires effondre en un an,-65%
+0000106040,Western Digital,WDC,Information Technology,2023,chiffre d affaires effondre en un an,-67%
+0001174922,Wynn Resorts,WYNN,Consumer Discretionary,2020,chiffre d affaires effondre en un an,-68%
+0001674101,Vertiv,VRT,Industrials,2017,chiffre d affaires nul ou negatif,0
+0001393818,Blackstone Inc.,BX,Financials,2021,chiffre d affaires plus que triple en un an,+270%
+0000815097,Carnival Corporation,CCL,Consumer Discretionary,2022,chiffre d affaires plus que triple en un an,+538%
+0001374310,Cboe Global Markets,CBOE,Financials,2017,chiffre d affaires plus que triple en un an,+217%
+0001739940,Cigna,CI,Health Care,2019,chiffre d affaires plus que triple en un an,+216%
+0001679788,Coinbase,COIN,Financials,2021,chiffre d affaires plus que triple en un an,+514%
+0001792789,DoorDash,DASH,Consumer Discretionary,2019,chiffre d affaires plus que triple en un an,+204%
+0001792789,DoorDash,DASH,Consumer Discretionary,2020,chiffre d affaires plus que triple en un an,+226%
+0001415404,EchoStar,ECHO,Communication Services,2021,chiffre d affaires plus que triple en un an,+950%
+0001404912,KKR & Co.,KKR,Financials,2021,chiffre d affaires plus que triple en un an,+284%
+0001335258,Live Nation Entertainment,LYV,Communication Services,2021,chiffre d affaires plus que triple en un an,+237%
+0001682852,Moderna,MRNA,Health Care,2020,chiffre d affaires plus que triple en un an,+1234%
+0001682852,Moderna,MRNA,Health Care,2021,chiffre d affaires plus que triple en un an,+2200%
+0001513761,Norwegian Cruise Line Holdings,NCLH,Consumer Discretionary,2022,chiffre d affaires plus que triple en un an,+648%
+0001783879,Robinhood Markets,HOOD,Financials,2020,chiffre d affaires plus que triple en un an,+245%
+0000884887,Royal Caribbean Group,RCL,Consumer Discretionary,2022,chiffre d affaires plus que triple en un an,+477%
+0001674101,Vertiv,VRT,Industrials,2018,chiffre d affaires plus que triple en un an,+inf%
+0001705696,Vici Properties,VICI,Real Estate,2018,chiffre d affaires plus que triple en un an,+379%
+0000936340,DTE Energy,DTE,Utilities,2017,dernier exercice trop ancien,2017
+0000035527,Fifth Third Bancorp,FITB,Financials,2025,dernier exercice trop ancien,2023
+0001281761,Regions Financial Corporation,RF,Financials,2021,dernier exercice trop ancien,2021
+0000906107,Vivmark Residential,VMRK,Real Estate,2019,dernier exercice trop ancien,2019
+0000072903,Xcel Energy,XEL,Utilities,2025,dernier exercice trop ancien,2018
+0000796343,Adobe Inc.,ADBE,Information Technology,2014,etiquettes de revenu en desaccord,61%
+0000796343,Adobe Inc.,ADBE,Information Technology,2015,etiquettes de revenu en desaccord,77%
+0000796343,Adobe Inc.,ADBE,Information Technology,2016,etiquettes de revenu en desaccord,86%
+0000796343,Adobe Inc.,ADBE,Information Technology,2017,etiquettes de revenu en desaccord,90%
+0001090872,Agilent Technologies,A,Health Care,2014,etiquettes de revenu en desaccord,21%
+0001090872,Agilent Technologies,A,Health Care,2015,etiquettes de revenu en desaccord,22%
+0001090872,Agilent Technologies,A,Health Care,2016,etiquettes de revenu en desaccord,23%
+0001090872,Agilent Technologies,A,Health Care,2017,etiquettes de revenu en desaccord,24%
+0001018724,Amazon,AMZN,Consumer Discretionary,2014,etiquettes de revenu en desaccord,21%
+0001018724,Amazon,AMZN,Consumer Discretionary,2015,etiquettes de revenu en desaccord,26%
+0001018724,Amazon,AMZN,Consumer Discretionary,2016,etiquettes de revenu en desaccord,30%
+0001018724,Amazon,AMZN,Consumer Discretionary,2017,etiquettes de revenu en desaccord,33%
+0000004962,American Express,AXP,Financials,2017,etiquettes de revenu en desaccord,33%
+0000004962,American Express,AXP,Financials,2018,etiquettes de revenu en desaccord,34%
+0000004962,American Express,AXP,Financials,2019,etiquettes de revenu en desaccord,35%
+0000004962,American Express,AXP,Financials,2020,etiquettes de revenu en desaccord,39%
+0000004962,American Express,AXP,Financials,2021,etiquettes de revenu en desaccord,35%
+0000004962,American Express,AXP,Financials,2022,etiquettes de revenu en desaccord,35%
+0000004962,American Express,AXP,Financials,2023,etiquettes de revenu en desaccord,38%
+0000004962,American Express,AXP,Financials,2024,etiquettes de revenu en desaccord,41%
+0000004962,American Express,AXP,Financials,2025,etiquettes de revenu en desaccord,43%
+0001053507,American Tower,AMT,Real Estate,2018,etiquettes de revenu en desaccord,93%
+0001053507,American Tower,AMT,Real Estate,2019,etiquettes de revenu en desaccord,93%
+0001053507,American Tower,AMT,Real Estate,2020,etiquettes de revenu en desaccord,94%
+0001053507,American Tower,AMT,Real Estate,2021,etiquettes de revenu en desaccord,92%
+0001053507,American Tower,AMT,Real Estate,2022,etiquettes de revenu en desaccord,91%
+0001053507,American Tower,AMT,Real Estate,2023,etiquettes de revenu en desaccord,93%
+0001053507,American Tower,AMT,Real Estate,2024,etiquettes de revenu en desaccord,92%
+0001053507,American Tower,AMT,Real Estate,2025,etiquettes de revenu en desaccord,91%
+0000007084,Archer Daniels Midland,ADM,Consumer Staples,2022,etiquettes de revenu en desaccord,73%
+0000007084,Archer Daniels Midland,ADM,Consumer Staples,2023,etiquettes de revenu en desaccord,73%
+0000007084,Archer Daniels Midland,ADM,Consumer Staples,2024,etiquettes de revenu en desaccord,72%
+0000007084,Archer Daniels Midland,ADM,Consumer Staples,2025,etiquettes de revenu en desaccord,69%
+0001176948,Ares Management,ARES,Financials,2017,etiquettes de revenu en desaccord,27%
+0001176948,Ares Management,ARES,Financials,2018,etiquettes de revenu en desaccord,21%
+0001176948,Ares Management,ARES,Financials,2019,etiquettes de revenu en desaccord,19%
+0001176948,Ares Management,ARES,Financials,2021,etiquettes de revenu en desaccord,46%
+0001176948,Ares Management,ARES,Financials,2022,etiquettes de revenu en desaccord,6%
+0001176948,Ares Management,ARES,Financials,2023,etiquettes de revenu en desaccord,11%
+0001176948,Ares Management,ARES,Financials,2025,etiquettes de revenu en desaccord,15%
+0001596532,Arista Networks,ANET,Information Technology,2014,etiquettes de revenu en desaccord,9%
+0001596532,Arista Networks,ANET,Information Technology,2015,etiquettes de revenu en desaccord,11%
+0001596532,Arista Networks,ANET,Information Technology,2016,etiquettes de revenu en desaccord,12%
+0001596532,Arista Networks,ANET,Information Technology,2017,etiquettes de revenu en desaccord,13%
+0000008670,Automatic Data Processing,ADP,Industrials,2014,etiquettes de revenu en desaccord,26%
+0000008670,Automatic Data Processing,ADP,Industrials,2015,etiquettes de revenu en desaccord,28%
+0000008670,Automatic Data Processing,ADP,Industrials,2016,etiquettes de revenu en desaccord,29%
+0000008670,Automatic Data Processing,ADP,Industrials,2017,etiquettes de revenu en desaccord,31%
+0000008670,Automatic Data Processing,ADP,Industrials,2018,etiquettes de revenu en desaccord,32%
+0001069183,Axon Enterprise,AXON,Industrials,2015,etiquettes de revenu en desaccord,6%
+0001069183,Axon Enterprise,AXON,Industrials,2016,etiquettes de revenu en desaccord,11%
+0001069183,Axon Enterprise,AXON,Industrials,2017,etiquettes de revenu en desaccord,17%
+0001701605,Baker Hughes,BKR,Energy,2015,etiquettes de revenu en desaccord,26%
+0001701605,Baker Hughes,BKR,Energy,2016,etiquettes de revenu en desaccord,28%
+0001701605,Baker Hughes,BKR,Energy,2017,etiquettes de revenu en desaccord,37%
+0001067983,Berkshire Hathaway,BRK.B,Financials,2014,etiquettes de revenu en desaccord,48%
+0001067983,Berkshire Hathaway,BRK.B,Financials,2015,etiquettes de revenu en desaccord,47%
+0001067983,Berkshire Hathaway,BRK.B,Financials,2016,etiquettes de revenu en desaccord,42%
+0001067983,Berkshire Hathaway,BRK.B,Financials,2017,etiquettes de revenu en desaccord,45%
+0001067983,Berkshire Hathaway,BRK.B,Financials,2018,etiquettes de revenu en desaccord,29%
+0001067983,Berkshire Hathaway,BRK.B,Financials,2019,etiquettes de revenu en desaccord,31%
+0001067983,Berkshire Hathaway,BRK.B,Financials,2020,etiquettes de revenu en desaccord,32%
+0001067983,Berkshire Hathaway,BRK.B,Financials,2021,etiquettes de revenu en desaccord,31%
+0001067983,Berkshire Hathaway,BRK.B,Financials,2022,etiquettes de revenu en desaccord,31%
+0001067983,Berkshire Hathaway,BRK.B,Financials,2023,etiquettes de revenu en desaccord,30%
+0001067983,Berkshire Hathaway,BRK.B,Financials,2024,etiquettes de revenu en desaccord,33%
+0001067983,Berkshire Hathaway,BRK.B,Financials,2025,etiquettes de revenu en desaccord,33%
+0000875045,Biogen,BIIB,Health Care,2014,etiquettes de revenu en desaccord,15%
+0000875045,Biogen,BIIB,Health Care,2015,etiquettes de revenu en desaccord,15%
+0000875045,Biogen,BIIB,Health Care,2016,etiquettes de revenu en desaccord,14%
+0000875045,Biogen,BIIB,Health Care,2017,etiquettes de revenu en desaccord,16%
+0002012383,BlackRock,BLK,Financials,2022,etiquettes de revenu en desaccord,38%
+0002012383,BlackRock,BLK,Financials,2023,etiquettes de revenu en desaccord,38%
+0002012383,BlackRock,BLK,Financials,2024,etiquettes de revenu en desaccord,37%
+0001512673,"Block, Inc.",XYZ,Financials,2014,etiquettes de revenu en desaccord,99%
+0001512673,"Block, Inc.",XYZ,Financials,2015,etiquettes de revenu en desaccord,99%
+0001512673,"Block, Inc.",XYZ,Financials,2016,etiquettes de revenu en desaccord,97%
+0001512673,"Block, Inc.",XYZ,Financials,2017,etiquettes de revenu en desaccord,98%
+0000012927,Boeing,BA,Industrials,2014,etiquettes de revenu en desaccord,11%
+0000012927,Boeing,BA,Industrials,2015,etiquettes de revenu en desaccord,11%
+0000012927,Boeing,BA,Industrials,2016,etiquettes de revenu en desaccord,10%
+0000012927,Boeing,BA,Industrials,2017,etiquettes de revenu en desaccord,11%
+0000885725,Boston Scientific,BSX,Health Care,2015,etiquettes de revenu en desaccord,7%
+0000885725,Boston Scientific,BSX,Health Care,2016,etiquettes de revenu en desaccord,8%
+0000014272,Bristol Myers Squibb,BMY,Health Care,2014,etiquettes de revenu en desaccord,27%
+0000014272,Bristol Myers Squibb,BMY,Health Care,2015,etiquettes de revenu en desaccord,15%
+0000014272,Bristol Myers Squibb,BMY,Health Care,2016,etiquettes de revenu en desaccord,9%
+0000014272,Bristol Myers Squibb,BMY,Health Care,2017,etiquettes de revenu en desaccord,7%
+0000014693,Brown–Forman,BF.B,Consumer Staples,2016,etiquettes de revenu en desaccord,22%
+0000014693,Brown–Forman,BF.B,Consumer Staples,2017,etiquettes de revenu en desaccord,23%
+0001996862,Bunge Global,BG,Consumer Staples,2021,etiquettes de revenu en desaccord,72%
+0001996862,Bunge Global,BG,Consumer Staples,2022,etiquettes de revenu en desaccord,69%
+0001996862,Bunge Global,BG,Consumer Staples,2023,etiquettes de revenu en desaccord,70%
+0001996862,Bunge Global,BG,Consumer Staples,2024,etiquettes de revenu en desaccord,71%
+0001996862,Bunge Global,BG,Consumer Staples,2025,etiquettes de revenu en desaccord,76%
+0001043277,C.H. Robinson,CHRW,Industrials,2014,etiquettes de revenu en desaccord,89%
+0001043277,C.H. Robinson,CHRW,Industrials,2015,etiquettes de revenu en desaccord,89%
+0001043277,C.H. Robinson,CHRW,Industrials,2016,etiquettes de revenu en desaccord,89%
+0001043277,C.H. Robinson,CHRW,Industrials,2017,etiquettes de revenu en desaccord,91%
+0000811156,CMS Energy,CMS,Utilities,2018,etiquettes de revenu en desaccord,5%
+0000927628,Capital One,COF,Financials,2018,etiquettes de revenu en desaccord,88%
+0000927628,Capital One,COF,Financials,2019,etiquettes de revenu en desaccord,87%
+0000927628,Capital One,COF,Financials,2020,etiquettes de revenu en desaccord,87%
+0000927628,Capital One,COF,Financials,2021,etiquettes de revenu en desaccord,84%
+0000927628,Capital One,COF,Financials,2022,etiquettes de revenu en desaccord,84%
+0000927628,Capital One,COF,Financials,2023,etiquettes de revenu en desaccord,85%
+0000927628,Capital One,COF,Financials,2024,etiquettes de revenu en desaccord,85%
+0000927628,Capital One,COF,Financials,2025,etiquettes de revenu en desaccord,85%
+0000018230,Caterpillar Inc.,CAT,Industrials,2014,etiquettes de revenu en desaccord,6%
+0000018230,Caterpillar Inc.,CAT,Industrials,2015,etiquettes de revenu en desaccord,6%
+0000018230,Caterpillar Inc.,CAT,Industrials,2016,etiquettes de revenu en desaccord,7%
+0000018230,Caterpillar Inc.,CAT,Industrials,2017,etiquettes de revenu en desaccord,6%
+0001071739,Centene Corporation,CNC,Health Care,2016,etiquettes de revenu en desaccord,7%
+0001071739,Centene Corporation,CNC,Health Care,2017,etiquettes de revenu en desaccord,6%
+0001071739,Centene Corporation,CNC,Health Care,2018,etiquettes de revenu en desaccord,6%
+0001071739,Centene Corporation,CNC,Health Care,2019,etiquettes de revenu en desaccord,6%
+0001071739,Centene Corporation,CNC,Health Care,2020,etiquettes de revenu en desaccord,7%
+0001071739,Centene Corporation,CNC,Health Care,2021,etiquettes de revenu en desaccord,6%
+0001071739,Centene Corporation,CNC,Health Care,2022,etiquettes de revenu en desaccord,6%
+0001071739,Centene Corporation,CNC,Health Care,2023,etiquettes de revenu en desaccord,9%
+0001071739,Centene Corporation,CNC,Health Care,2024,etiquettes de revenu en desaccord,11%
+0001071739,Centene Corporation,CNC,Health Care,2025,etiquettes de revenu en desaccord,10%
+0001130310,CenterPoint Energy,CNP,Utilities,2016,etiquettes de revenu en desaccord,24%
+0001130310,CenterPoint Energy,CNP,Utilities,2017,etiquettes de revenu en desaccord,36%
+0001100682,Charles River Laboratories,CRL,Health Care,2014,etiquettes de revenu en desaccord,61%
+0001100682,Charles River Laboratories,CRL,Health Care,2015,etiquettes de revenu en desaccord,63%
+0001100682,Charles River Laboratories,CRL,Health Care,2016,etiquettes de revenu en desaccord,67%
+0001100682,Charles River Laboratories,CRL,Health Care,2017,etiquettes de revenu en desaccord,70%
+0000936395,Ciena,CIEN,Information Technology,2014,etiquettes de revenu en desaccord,18%
+0000936395,Ciena,CIEN,Information Technology,2015,etiquettes de revenu en desaccord,18%
+0000936395,Ciena,CIEN,Information Technology,2016,etiquettes de revenu en desaccord,19%
+0000936395,Ciena,CIEN,Information Technology,2017,etiquettes de revenu en desaccord,17%
+0000858877,Cisco,CSCO,Information Technology,2014,etiquettes de revenu en desaccord,23%
+0000858877,Cisco,CSCO,Information Technology,2015,etiquettes de revenu en desaccord,23%
+0000858877,Cisco,CSCO,Information Technology,2016,etiquettes de revenu en desaccord,24%
+0000858877,Cisco,CSCO,Information Technology,2017,etiquettes de revenu en desaccord,26%
+0000759944,Citizens Financial Group,CFG,Financials,2018,etiquettes de revenu en desaccord,82%
+0000759944,Citizens Financial Group,CFG,Financials,2019,etiquettes de revenu en desaccord,82%
+0000759944,Citizens Financial Group,CFG,Financials,2020,etiquettes de revenu en desaccord,84%
+0000759944,Citizens Financial Group,CFG,Financials,2021,etiquettes de revenu en desaccord,80%
+0000759944,Citizens Financial Group,CFG,Financials,2022,etiquettes de revenu en desaccord,84%
+0000759944,Citizens Financial Group,CFG,Financials,2023,etiquettes de revenu en desaccord,85%
+0000759944,Citizens Financial Group,CFG,Financials,2024,etiquettes de revenu en desaccord,80%
+0000759944,Citizens Financial Group,CFG,Financials,2025,etiquettes de revenu en desaccord,80%
+0001163165,ConocoPhillips,COP,Energy,2014,etiquettes de revenu en desaccord,5%
+0001163165,ConocoPhillips,COP,Energy,2017,etiquettes de revenu en desaccord,11%
+0001163165,ConocoPhillips,COP,Energy,2018,etiquettes de revenu en desaccord,6%
+0001163165,ConocoPhillips,COP,Energy,2019,etiquettes de revenu en desaccord,11%
+0001163165,ConocoPhillips,COP,Energy,2020,etiquettes de revenu en desaccord,27%
+0001163165,ConocoPhillips,COP,Energy,2021,etiquettes de revenu en desaccord,25%
+0001163165,ConocoPhillips,COP,Energy,2022,etiquettes de revenu en desaccord,22%
+0001163165,ConocoPhillips,COP,Energy,2023,etiquettes de revenu en desaccord,14%
+0001163165,ConocoPhillips,COP,Energy,2024,etiquettes de revenu en desaccord,10%
+0001163165,ConocoPhillips,COP,Energy,2025,etiquettes de revenu en desaccord,12%
+0000016918,Constellation Brands,STZ,Consumer Staples,2016,etiquettes de revenu en desaccord,9%
+0000016918,Constellation Brands,STZ,Consumer Staples,2017,etiquettes de revenu en desaccord,9%
+0001868275,Constellation Energy,CEG,Utilities,2021,etiquettes de revenu en desaccord,12%
+0001868275,Constellation Energy,CEG,Utilities,2022,etiquettes de revenu en desaccord,12%
+0001868275,Constellation Energy,CEG,Utilities,2023,etiquettes de revenu en desaccord,16%
+0001868275,Constellation Energy,CEG,Utilities,2024,etiquettes de revenu en desaccord,20%
+0001868275,Constellation Energy,CEG,Utilities,2025,etiquettes de revenu en desaccord,11%
+0000900075,Copart,CPRT,Industrials,2014,etiquettes de revenu en desaccord,82%
+0000900075,Copart,CPRT,Industrials,2015,etiquettes de revenu en desaccord,86%
+0000900075,Copart,CPRT,Industrials,2016,etiquettes de revenu en desaccord,87%
+0000900075,Copart,CPRT,Industrials,2017,etiquettes de revenu en desaccord,89%
+0001051470,Crown Castle,CCI,Real Estate,2016,etiquettes de revenu en desaccord,82%
+0001051470,Crown Castle,CCI,Real Estate,2017,etiquettes de revenu en desaccord,88%
+0001051470,Crown Castle,CCI,Real Estate,2018,etiquettes de revenu en desaccord,89%
+0001051470,Crown Castle,CCI,Real Estate,2019,etiquettes de revenu en desaccord,88%
+0001051470,Crown Castle,CCI,Real Estate,2020,etiquettes de revenu en desaccord,91%
+0001051470,Crown Castle,CCI,Real Estate,2021,etiquettes de revenu en desaccord,90%
+0001051470,Crown Castle,CCI,Real Estate,2022,etiquettes de revenu en desaccord,90%
+0001051470,Crown Castle,CCI,Real Estate,2023,etiquettes de revenu en desaccord,91%
+0001051470,Crown Castle,CCI,Real Estate,2024,etiquettes de revenu en desaccord,96%
+0001051470,Crown Castle,CCI,Real Estate,2025,etiquettes de revenu en desaccord,95%
+0000313616,Danaher Corporation,DHR,Health Care,2017,etiquettes de revenu en desaccord,15%
+0000313616,Danaher Corporation,DHR,Health Care,2018,etiquettes de revenu en desaccord,14%
+0000315189,Deere & Company,DE,Industrials,2014,etiquettes de revenu en desaccord,9%
+0000315189,Deere & Company,DE,Industrials,2015,etiquettes de revenu en desaccord,11%
+0000315189,Deere & Company,DE,Industrials,2016,etiquettes de revenu en desaccord,12%
+0000315189,Deere & Company,DE,Industrials,2017,etiquettes de revenu en desaccord,13%
+0001571996,Dell Technologies,DELL,Information Technology,2014,etiquettes de revenu en desaccord,15%
+0001571996,Dell Technologies,DELL,Information Technology,2015,etiquettes de revenu en desaccord,16%
+0001571996,Dell Technologies,DELL,Information Technology,2016,etiquettes de revenu en desaccord,21%
+0001571996,Dell Technologies,DELL,Information Technology,2017,etiquettes de revenu en desaccord,26%
+0001090012,Devon Energy,DVN,Energy,2016,etiquettes de revenu en desaccord,59%
+0001090012,Devon Energy,DVN,Energy,2017,etiquettes de revenu en desaccord,46%
+0001090012,Devon Energy,DVN,Energy,2018,etiquettes de revenu en desaccord,5%
+0001090012,Devon Energy,DVN,Energy,2019,etiquettes de revenu en desaccord,7%
+0001090012,Devon Energy,DVN,Energy,2021,etiquettes de revenu en desaccord,11%
+0000715957,Dominion Energy,D,Utilities,2023,etiquettes de revenu en desaccord,6%
+0000029905,Dover Corporation,DOV,Industrials,2016,etiquettes de revenu en desaccord,11%
+0000029905,Dover Corporation,DOV,Industrials,2017,etiquettes de revenu en desaccord,13%
+0001666700,DuPont,DD,Industrials,2017,etiquettes de revenu en desaccord,81%
+0001666700,DuPont,DD,Industrials,2019,etiquettes de revenu en desaccord,28%
+0001666700,DuPont,DD,Industrials,2020,etiquettes de revenu en desaccord,45%
+0000033213,EQT Corporation,EQT,Energy,2019,etiquettes de revenu en desaccord,14%
+0000033213,EQT Corporation,EQT,Energy,2020,etiquettes de revenu en desaccord,13%
+0000033213,EQT Corporation,EQT,Energy,2021,etiquettes de revenu en desaccord,55%
+0000033213,EQT Corporation,EQT,Energy,2022,etiquettes de revenu en desaccord,38%
+0000033213,EQT Corporation,EQT,Energy,2023,etiquettes de revenu en desaccord,27%
+0001551182,Eaton Corporation,ETN,Industrials,2014,etiquettes de revenu en desaccord,100%
+0001551182,Eaton Corporation,ETN,Industrials,2015,etiquettes de revenu en desaccord,100%
+0001551182,Eaton Corporation,ETN,Industrials,2016,etiquettes de revenu en desaccord,100%
+0001415404,EchoStar,ECHO,Communication Services,2014,etiquettes de revenu en desaccord,89%
+0001415404,EchoStar,ECHO,Communication Services,2015,etiquettes de revenu en desaccord,89%
+0001415404,EchoStar,ECHO,Communication Services,2016,etiquettes de revenu en desaccord,87%
+0001415404,EchoStar,ECHO,Communication Services,2017,etiquettes de revenu en desaccord,87%
+0000920522,Essex Property Trust,ESS,Real Estate,2018,etiquettes de revenu en desaccord,99%
+0000920522,Essex Property Trust,ESS,Real Estate,2019,etiquettes de revenu en desaccord,99%
+0000920522,Essex Property Trust,ESS,Real Estate,2020,etiquettes de revenu en desaccord,99%
+0000920522,Essex Property Trust,ESS,Real Estate,2021,etiquettes de revenu en desaccord,99%
+0000920522,Essex Property Trust,ESS,Real Estate,2022,etiquettes de revenu en desaccord,99%
+0000920522,Essex Property Trust,ESS,Real Estate,2023,etiquettes de revenu en desaccord,99%
+0000920522,Essex Property Trust,ESS,Real Estate,2024,etiquettes de revenu en desaccord,99%
+0000920522,Essex Property Trust,ESS,Real Estate,2025,etiquettes de revenu en desaccord,100%
+0001289490,Extra Space Storage,EXR,Real Estate,2016,etiquettes de revenu en desaccord,96%
+0001289490,Extra Space Storage,EXR,Real Estate,2017,etiquettes de revenu en desaccord,96%
+0001289490,Extra Space Storage,EXR,Real Estate,2018,etiquettes de revenu en desaccord,97%
+0001289490,Extra Space Storage,EXR,Real Estate,2019,etiquettes de revenu en desaccord,96%
+0001289490,Extra Space Storage,EXR,Real Estate,2020,etiquettes de revenu en desaccord,96%
+0001289490,Extra Space Storage,EXR,Real Estate,2021,etiquettes de revenu en desaccord,96%
+0001289490,Extra Space Storage,EXR,Real Estate,2022,etiquettes de revenu en desaccord,96%
+0001289490,Extra Space Storage,EXR,Real Estate,2023,etiquettes de revenu en desaccord,96%
+0001289490,Extra Space Storage,EXR,Real Estate,2024,etiquettes de revenu en desaccord,96%
+0001289490,Extra Space Storage,EXR,Real Estate,2025,etiquettes de revenu en desaccord,96%
+0001048695,"F5, Inc.",FFIV,Information Technology,2014,etiquettes de revenu en desaccord,46%
+0001048695,"F5, Inc.",FFIV,Information Technology,2015,etiquettes de revenu en desaccord,48%
+0001048695,"F5, Inc.",FFIV,Information Technology,2016,etiquettes de revenu en desaccord,53%
+0001048695,"F5, Inc.",FFIV,Information Technology,2017,etiquettes de revenu en desaccord,54%
+0001048695,"F5, Inc.",FFIV,Information Technology,2018,etiquettes de revenu en desaccord,56%
+0001031296,FirstEnergy,FE,Utilities,2016,etiquettes de revenu en desaccord,27%
+0001031296,FirstEnergy,FE,Utilities,2017,etiquettes de revenu en desaccord,22%
+0000798354,Fiserv,FISV,Financials,2014,etiquettes de revenu en desaccord,83%
+0000798354,Fiserv,FISV,Financials,2015,etiquettes de revenu en desaccord,84%
+0000798354,Fiserv,FISV,Financials,2016,etiquettes de revenu en desaccord,84%
+0000798354,Fiserv,FISV,Financials,2017,etiquettes de revenu en desaccord,85%
+0000798354,Fiserv,FISV,Financials,2018,etiquettes de revenu en desaccord,85%
+0000037996,Ford Motor Company,F,Consumer Discretionary,2014,etiquettes de revenu en desaccord,6%
+0000037996,Ford Motor Company,F,Consumer Discretionary,2015,etiquettes de revenu en desaccord,6%
+0001262039,Fortinet,FTNT,Information Technology,2014,etiquettes de revenu en desaccord,53%
+0001262039,Fortinet,FTNT,Information Technology,2015,etiquettes de revenu en desaccord,53%
+0001262039,Fortinet,FTNT,Information Technology,2016,etiquettes de revenu en desaccord,57%
+0001262039,Fortinet,FTNT,Information Technology,2017,etiquettes de revenu en desaccord,61%
+0001262039,Fortinet,FTNT,Information Technology,2018,etiquettes de revenu en desaccord,63%
+0001659166,Fortive,FTV,Industrials,2016,etiquettes de revenu en desaccord,14%
+0001659166,Fortive,FTV,Industrials,2017,etiquettes de revenu en desaccord,14%
+0001659166,Fortive,FTV,Industrials,2018,etiquettes de revenu en desaccord,41%
+0000831259,Freeport-McMoRan,FCX,Materials,2014,etiquettes de revenu en desaccord,7%
+0000831259,Freeport-McMoRan,FCX,Materials,2015,etiquettes de revenu en desaccord,8%
+0000040545,GE Aerospace,GE,Industrials,2014,etiquettes de revenu en desaccord,35%
+0000040545,GE Aerospace,GE,Industrials,2015,etiquettes de revenu en desaccord,37%
+0000040545,GE Aerospace,GE,Industrials,2016,etiquettes de revenu en desaccord,37%
+0000040545,GE Aerospace,GE,Industrials,2017,etiquettes de revenu en desaccord,33%
+0000040545,GE Aerospace,GE,Industrials,2018,etiquettes de revenu en desaccord,15%
+0000040533,General Dynamics,GD,Industrials,2014,etiquettes de revenu en desaccord,37%
+0000040533,General Dynamics,GD,Industrials,2015,etiquettes de revenu en desaccord,36%
+0000040533,General Dynamics,GD,Industrials,2016,etiquettes de revenu en desaccord,38%
+0000040533,General Dynamics,GD,Industrials,2017,etiquettes de revenu en desaccord,39%
+0000040704,General Mills,GIS,Consumer Staples,2018,etiquettes de revenu en desaccord,88%
+0000040704,General Mills,GIS,Consumer Staples,2019,etiquettes de revenu en desaccord,88%
+0000040704,General Mills,GIS,Consumer Staples,2020,etiquettes de revenu en desaccord,88%
+0000040704,General Mills,GIS,Consumer Staples,2021,etiquettes de revenu en desaccord,89%
+0000040704,General Mills,GIS,Consumer Staples,2022,etiquettes de revenu en desaccord,90%
+0000040704,General Mills,GIS,Consumer Staples,2023,etiquettes de revenu en desaccord,90%
+0001467858,General Motors,GM,Consumer Discretionary,2016,etiquettes de revenu en desaccord,6%
+0001467858,General Motors,GM,Consumer Discretionary,2017,etiquettes de revenu en desaccord,8%
+0001467858,General Motors,GM,Consumer Discretionary,2018,etiquettes de revenu en desaccord,10%
+0001467858,General Motors,GM,Consumer Discretionary,2019,etiquettes de revenu en desaccord,11%
+0001467858,General Motors,GM,Consumer Discretionary,2020,etiquettes de revenu en desaccord,11%
+0001467858,General Motors,GM,Consumer Discretionary,2021,etiquettes de revenu en desaccord,11%
+0001467858,General Motors,GM,Consumer Discretionary,2022,etiquettes de revenu en desaccord,8%
+0001467858,General Motors,GM,Consumer Discretionary,2023,etiquettes de revenu en desaccord,8%
+0001467858,General Motors,GM,Consumer Discretionary,2024,etiquettes de revenu en desaccord,8%
+0001467858,General Motors,GM,Consumer Discretionary,2025,etiquettes de revenu en desaccord,9%
+0000047217,HP Inc.,HPQ,Information Technology,2014,etiquettes de revenu en desaccord,23%
+0000047217,HP Inc.,HPQ,Information Technology,2015,etiquettes de revenu en desaccord,25%
+0000045012,Halliburton,HAL,Energy,2014,etiquettes de revenu en desaccord,75%
+0000045012,Halliburton,HAL,Energy,2015,etiquettes de revenu en desaccord,72%
+0000045012,Halliburton,HAL,Energy,2016,etiquettes de revenu en desaccord,70%
+0000045012,Halliburton,HAL,Energy,2017,etiquettes de revenu en desaccord,75%
+0000874766,Hartford (The),HIG,Financials,2017,etiquettes de revenu en desaccord,93%
+0000874766,Hartford (The),HIG,Financials,2018,etiquettes de revenu en desaccord,93%
+0000874766,Hartford (The),HIG,Financials,2019,etiquettes de revenu en desaccord,93%
+0000874766,Hartford (The),HIG,Financials,2020,etiquettes de revenu en desaccord,93%
+0000874766,Hartford (The),HIG,Financials,2021,etiquettes de revenu en desaccord,93%
+0000874766,Hartford (The),HIG,Financials,2022,etiquettes de revenu en desaccord,94%
+0000874766,Hartford (The),HIG,Financials,2023,etiquettes de revenu en desaccord,94%
+0000874766,Hartford (The),HIG,Financials,2024,etiquettes de revenu en desaccord,95%
+0000874766,Hartford (The),HIG,Financials,2025,etiquettes de revenu en desaccord,95%
+0000046080,Hasbro,HAS,Consumer Discretionary,2014,etiquettes de revenu en desaccord,53%
+0000046080,Hasbro,HAS,Consumer Discretionary,2015,etiquettes de revenu en desaccord,56%
+0000046080,Hasbro,HAS,Consumer Discretionary,2022,etiquettes de revenu en desaccord,12%
+0000046080,Hasbro,HAS,Consumer Discretionary,2023,etiquettes de revenu en desaccord,12%
+0000046080,Hasbro,HAS,Consumer Discretionary,2024,etiquettes de revenu en desaccord,13%
+0000046080,Hasbro,HAS,Consumer Discretionary,2025,etiquettes de revenu en desaccord,12%
+0000765880,Healthpeak Properties,DOC,Real Estate,2017,etiquettes de revenu en desaccord,72%
+0000765880,Healthpeak Properties,DOC,Real Estate,2018,etiquettes de revenu en desaccord,88%
+0000765880,Healthpeak Properties,DOC,Real Estate,2019,etiquettes de revenu en desaccord,88%
+0000765880,Healthpeak Properties,DOC,Real Estate,2020,etiquettes de revenu en desaccord,73%
+0000765880,Healthpeak Properties,DOC,Real Estate,2021,etiquettes de revenu en desaccord,75%
+0000765880,Healthpeak Properties,DOC,Real Estate,2022,etiquettes de revenu en desaccord,76%
+0000765880,Healthpeak Properties,DOC,Real Estate,2023,etiquettes de revenu en desaccord,76%
+0000765880,Healthpeak Properties,DOC,Real Estate,2024,etiquettes de revenu en desaccord,79%
+0000765880,Healthpeak Properties,DOC,Real Estate,2025,etiquettes de revenu en desaccord,79%
+0001000228,Henry Schein,HSIC,Health Care,2017,etiquettes de revenu en desaccord,29%
+0001000228,Henry Schein,HSIC,Health Care,2018,etiquettes de revenu en desaccord,29%
+0001645590,Hewlett Packard Enterprise,HPE,Information Technology,2014,etiquettes de revenu en desaccord,65%
+0001645590,Hewlett Packard Enterprise,HPE,Information Technology,2015,etiquettes de revenu en desaccord,38%
+0001645590,Hewlett Packard Enterprise,HPE,Information Technology,2016,etiquettes de revenu en desaccord,38%
+0001645590,Hewlett Packard Enterprise,HPE,Information Technology,2017,etiquettes de revenu en desaccord,39%
+0001645590,Hewlett Packard Enterprise,HPE,Information Technology,2018,etiquettes de revenu en desaccord,37%
+0000773840,Honeywell Technologies,HON,Industrials,2014,etiquettes de revenu en desaccord,20%
+0000773840,Honeywell Technologies,HON,Industrials,2015,etiquettes de revenu en desaccord,20%
+0000773840,Honeywell Technologies,HON,Industrials,2016,etiquettes de revenu en desaccord,20%
+0000773840,Honeywell Technologies,HON,Industrials,2017,etiquettes de revenu en desaccord,20%
+0001501585,Huntington Ingalls Industries,HII,Industrials,2014,etiquettes de revenu en desaccord,18%
+0001501585,Huntington Ingalls Industries,HII,Industrials,2015,etiquettes de revenu en desaccord,19%
+0001501585,Huntington Ingalls Industries,HII,Industrials,2016,etiquettes de revenu en desaccord,20%
+0001501585,Huntington Ingalls Industries,HII,Industrials,2017,etiquettes de revenu en desaccord,25%
+0000051143,IBM,IBM,Information Technology,2014,etiquettes de revenu en desaccord,62%
+0000051143,IBM,IBM,Information Technology,2015,etiquettes de revenu en desaccord,63%
+0000051143,IBM,IBM,Information Technology,2016,etiquettes de revenu en desaccord,66%
+0000051143,IBM,IBM,Information Technology,2017,etiquettes de revenu en desaccord,66%
+0000874716,Idexx Laboratories,IDXX,Health Care,2014,etiquettes de revenu en desaccord,39%
+0000874716,Idexx Laboratories,IDXX,Health Care,2015,etiquettes de revenu en desaccord,39%
+0000874716,Idexx Laboratories,IDXX,Health Care,2016,etiquettes de revenu en desaccord,40%
+0000874716,Idexx Laboratories,IDXX,Health Care,2017,etiquettes de revenu en desaccord,40%
+0000879169,Incyte,INCY,Health Care,2014,etiquettes de revenu en desaccord,30%
+0000879169,Incyte,INCY,Health Care,2015,etiquettes de revenu en desaccord,20%
+0000879169,Incyte,INCY,Health Care,2016,etiquettes de revenu en desaccord,20%
+0000879169,Incyte,INCY,Health Care,2017,etiquettes de revenu en desaccord,22%
+0001145197,Insulet Corporation,PODD,Health Care,2021,etiquettes de revenu en desaccord,5%
+0001145197,Insulet Corporation,PODD,Health Care,2022,etiquettes de revenu en desaccord,19%
+0001381197,Interactive Brokers,IBKR,Financials,2014,etiquettes de revenu en desaccord,6%
+0001381197,Interactive Brokers,IBKR,Financials,2015,etiquettes de revenu en desaccord,5%
+0001381197,Interactive Brokers,IBKR,Financials,2016,etiquettes de revenu en desaccord,5%
+0001381197,Interactive Brokers,IBKR,Financials,2017,etiquettes de revenu en desaccord,12%
+0001381197,Interactive Brokers,IBKR,Financials,2018,etiquettes de revenu en desaccord,61%
+0001381197,Interactive Brokers,IBKR,Financials,2019,etiquettes de revenu en desaccord,67%
+0001381197,Interactive Brokers,IBKR,Financials,2020,etiquettes de revenu en desaccord,42%
+0001381197,Interactive Brokers,IBKR,Financials,2021,etiquettes de revenu en desaccord,42%
+0001381197,Interactive Brokers,IBKR,Financials,2022,etiquettes de revenu en desaccord,51%
+0001381197,Interactive Brokers,IBKR,Financials,2023,etiquettes de revenu en desaccord,64%
+0001381197,Interactive Brokers,IBKR,Financials,2024,etiquettes de revenu en desaccord,62%
+0001381197,Interactive Brokers,IBKR,Financials,2025,etiquettes de revenu en desaccord,61%
+0001571949,Intercontinental Exchange,ICE,Financials,2015,etiquettes de revenu en desaccord,29%
+0000896878,Intuit,INTU,Information Technology,2014,etiquettes de revenu en desaccord,66%
+0000896878,Intuit,INTU,Information Technology,2015,etiquettes de revenu en desaccord,73%
+0000896878,Intuit,INTU,Information Technology,2016,etiquettes de revenu en desaccord,73%
+0000896878,Intuit,INTU,Information Technology,2017,etiquettes de revenu en desaccord,74%
+0001035267,Intuitive Surgical,ISRG,Health Care,2014,etiquettes de revenu en desaccord,20%
+0001035267,Intuitive Surgical,ISRG,Health Care,2015,etiquettes de revenu en desaccord,19%
+0001035267,Intuitive Surgical,ISRG,Health Care,2016,etiquettes de revenu en desaccord,19%
+0001035267,Intuitive Surgical,ISRG,Health Care,2017,etiquettes de revenu en desaccord,19%
+0001020569,Iron Mountain,IRM,Real Estate,2018,etiquettes de revenu en desaccord,62%
+0001020569,Iron Mountain,IRM,Real Estate,2019,etiquettes de revenu en desaccord,63%
+0000779152,Jack Henry & Associates,JKHY,Financials,2014,etiquettes de revenu en desaccord,95%
+0000779152,Jack Henry & Associates,JKHY,Financials,2015,etiquettes de revenu en desaccord,96%
+0000779152,Jack Henry & Associates,JKHY,Financials,2016,etiquettes de revenu en desaccord,96%
+0000779152,Jack Henry & Associates,JKHY,Financials,2017,etiquettes de revenu en desaccord,97%
+0000833444,Johnson Controls,JCI,Industrials,2014,etiquettes de revenu en desaccord,73%
+0000833444,Johnson Controls,JCI,Industrials,2015,etiquettes de revenu en desaccord,42%
+0000833444,Johnson Controls,JCI,Industrials,2016,etiquettes de revenu en desaccord,13%
+0000833444,Johnson Controls,JCI,Industrials,2017,etiquettes de revenu en desaccord,24%
+0000833444,Johnson Controls,JCI,Industrials,2018,etiquettes de revenu en desaccord,25%
+0001404912,KKR & Co.,KKR,Financials,2016,etiquettes de revenu en desaccord,46%
+0001404912,KKR & Co.,KKR,Financials,2017,etiquettes de revenu en desaccord,57%
+0001404912,KKR & Co.,KKR,Financials,2018,etiquettes de revenu en desaccord,23%
+0001404912,KKR & Co.,KKR,Financials,2019,etiquettes de revenu en desaccord,58%
+0001404912,KKR & Co.,KKR,Financials,2020,etiquettes de revenu en desaccord,53%
+0000319201,KLA Corporation,KLAC,Information Technology,2014,etiquettes de revenu en desaccord,22%
+0000319201,KLA Corporation,KLAC,Information Technology,2015,etiquettes de revenu en desaccord,24%
+0000319201,KLA Corporation,KLAC,Information Technology,2016,etiquettes de revenu en desaccord,25%
+0000319201,KLA Corporation,KLAC,Information Technology,2017,etiquettes de revenu en desaccord,22%
+0000319201,KLA Corporation,KLAC,Information Technology,2018,etiquettes de revenu en desaccord,22%
+0001418135,Keurig Dr Pepper,KDP,Consumer Staples,2017,etiquettes de revenu en desaccord,36%
+0000091576,KeyCorp,KEY,Financials,2018,etiquettes de revenu en desaccord,80%
+0000091576,KeyCorp,KEY,Financials,2019,etiquettes de revenu en desaccord,80%
+0000091576,KeyCorp,KEY,Financials,2020,etiquettes de revenu en desaccord,79%
+0000091576,KeyCorp,KEY,Financials,2021,etiquettes de revenu en desaccord,75%
+0000091576,KeyCorp,KEY,Financials,2022,etiquettes de revenu en desaccord,78%
+0000091576,KeyCorp,KEY,Financials,2023,etiquettes de revenu en desaccord,78%
+0000091576,KeyCorp,KEY,Financials,2024,etiquettes de revenu en desaccord,64%
+0000091576,KeyCorp,KEY,Financials,2025,etiquettes de revenu en desaccord,77%
+0001601046,Keysight Technologies,KEYS,Information Technology,2014,etiquettes de revenu en desaccord,15%
+0001601046,Keysight Technologies,KEYS,Information Technology,2015,etiquettes de revenu en desaccord,16%
+0001601046,Keysight Technologies,KEYS,Information Technology,2016,etiquettes de revenu en desaccord,16%
+0001601046,Keysight Technologies,KEYS,Information Technology,2017,etiquettes de revenu en desaccord,16%
+0001506307,Kinder Morgan,KMI,Energy,2018,etiquettes de revenu en desaccord,6%
+0001506307,Kinder Morgan,KMI,Energy,2019,etiquettes de revenu en desaccord,9%
+0001506307,Kinder Morgan,KMI,Energy,2020,etiquettes de revenu en desaccord,14%
+0001506307,Kinder Morgan,KMI,Energy,2022,etiquettes de revenu en desaccord,6%
+0001506307,Kinder Morgan,KMI,Energy,2023,etiquettes de revenu en desaccord,11%
+0001506307,Kinder Morgan,KMI,Energy,2024,etiquettes de revenu en desaccord,11%
+0001506307,Kinder Morgan,KMI,Energy,2025,etiquettes de revenu en desaccord,10%
+0000202058,L3Harris,LHX,Industrials,2014,etiquettes de revenu en desaccord,36%
+0000202058,L3Harris,LHX,Industrials,2015,etiquettes de revenu en desaccord,16%
+0000202058,L3Harris,LHX,Industrials,2016,etiquettes de revenu en desaccord,20%
+0000202058,L3Harris,LHX,Industrials,2017,etiquettes de revenu en desaccord,21%
+0000936468,Lockheed Martin,LMT,Industrials,2014,etiquettes de revenu en desaccord,12%
+0000936468,Lockheed Martin,LMT,Industrials,2015,etiquettes de revenu en desaccord,14%
+0000936468,Lockheed Martin,LMT,Industrials,2016,etiquettes de revenu en desaccord,15%
+0000936468,Lockheed Martin,LMT,Industrials,2017,etiquettes de revenu en desaccord,14%
+0000060086,Loews Corporation,L,Financials,2016,etiquettes de revenu en desaccord,73%
+0000060086,Loews Corporation,L,Financials,2017,etiquettes de revenu en desaccord,71%
+0000060086,Loews Corporation,L,Financials,2018,etiquettes de revenu en desaccord,72%
+0000060086,Loews Corporation,L,Financials,2019,etiquettes de revenu en desaccord,74%
+0000060086,Loews Corporation,L,Financials,2020,etiquettes de revenu en desaccord,78%
+0000060086,Loews Corporation,L,Financials,2021,etiquettes de revenu en desaccord,86%
+0000060086,Loews Corporation,L,Financials,2022,etiquettes de revenu en desaccord,85%
+0000060086,Loews Corporation,L,Financials,2023,etiquettes de revenu en desaccord,85%
+0000060086,Loews Corporation,L,Financials,2024,etiquettes de revenu en desaccord,83%
+0000060086,Loews Corporation,L,Financials,2025,etiquettes de revenu en desaccord,83%
+0000036270,M&T Bank,MTB,Financials,2022,etiquettes de revenu en desaccord,81%
+0000036270,M&T Bank,MTB,Financials,2023,etiquettes de revenu en desaccord,85%
+0000916076,Martin Marietta Materials,MLM,Materials,2014,etiquettes de revenu en desaccord,9%
+0000916076,Martin Marietta Materials,MLM,Materials,2015,etiquettes de revenu en desaccord,8%
+0000916076,Martin Marietta Materials,MLM,Materials,2016,etiquettes de revenu en desaccord,6%
+0000916076,Martin Marietta Materials,MLM,Materials,2017,etiquettes de revenu en desaccord,6%
+0000062996,Masco,MAS,Industrials,2017,etiquettes de revenu en desaccord,21%
+0001141391,Mastercard,MA,Financials,2018,etiquettes de revenu en desaccord,32%
+0001141391,Mastercard,MA,Financials,2019,etiquettes de revenu en desaccord,32%
+0001141391,Mastercard,MA,Financials,2020,etiquettes de revenu en desaccord,35%
+0001141391,Mastercard,MA,Financials,2021,etiquettes de revenu en desaccord,37%
+0000063908,McDonald's,MCD,Consumer Discretionary,2014,etiquettes de revenu en desaccord,34%
+0000063908,McDonald's,MCD,Consumer Discretionary,2015,etiquettes de revenu en desaccord,35%
+0000063908,McDonald's,MCD,Consumer Discretionary,2016,etiquettes de revenu en desaccord,38%
+0000063908,McDonald's,MCD,Consumer Discretionary,2017,etiquettes de revenu en desaccord,44%
+0000063908,McDonald's,MCD,Consumer Discretionary,2018,etiquettes de revenu en desaccord,53%
+0001099219,MetLife,MET,Financials,2018,etiquettes de revenu en desaccord,98%
+0001099219,MetLife,MET,Financials,2019,etiquettes de revenu en desaccord,98%
+0001099219,MetLife,MET,Financials,2020,etiquettes de revenu en desaccord,98%
+0001099219,MetLife,MET,Financials,2021,etiquettes de revenu en desaccord,97%
+0001099219,MetLife,MET,Financials,2022,etiquettes de revenu en desaccord,97%
+0001099219,MetLife,MET,Financials,2023,etiquettes de revenu en desaccord,97%
+0001099219,MetLife,MET,Financials,2024,etiquettes de revenu en desaccord,97%
+0001099219,MetLife,MET,Financials,2025,etiquettes de revenu en desaccord,97%
+0000789019,Microsoft,MSFT,Information Technology,2014,etiquettes de revenu en desaccord,16%
+0000789019,Microsoft,MSFT,Information Technology,2015,etiquettes de revenu en desaccord,19%
+0000789019,Microsoft,MSFT,Information Technology,2016,etiquettes de revenu en desaccord,33%
+0000789019,Microsoft,MSFT,Information Technology,2017,etiquettes de revenu en desaccord,41%
+0000024545,Molson Coors Beverage Company,TAP,Consumer Staples,2016,etiquettes de revenu en desaccord,26%
+0000024545,Molson Coors Beverage Company,TAP,Consumer Staples,2017,etiquettes de revenu en desaccord,18%
+0000068505,Motorola Solutions,MSI,Information Technology,2014,etiquettes de revenu en desaccord,35%
+0000068505,Motorola Solutions,MSI,Information Technology,2015,etiquettes de revenu en desaccord,35%
+0000068505,Motorola Solutions,MSI,Information Technology,2016,etiquettes de revenu en desaccord,40%
+0000068505,Motorola Solutions,MSI,Information Technology,2017,etiquettes de revenu en desaccord,41%
+0001013871,NRG Energy,NRG,Utilities,2018,etiquettes de revenu en desaccord,14%
+0001013871,NRG Energy,NRG,Utilities,2019,etiquettes de revenu en desaccord,19%
+0001002047,NetApp,NTAP,Information Technology,2014,etiquettes de revenu en desaccord,40%
+0001002047,NetApp,NTAP,Information Technology,2015,etiquettes de revenu en desaccord,46%
+0001002047,NetApp,NTAP,Information Technology,2016,etiquettes de revenu en desaccord,46%
+0001002047,NetApp,NTAP,Information Technology,2017,etiquettes de revenu en desaccord,42%
+0001002047,NetApp,NTAP,Information Technology,2023,etiquettes de revenu en desaccord,10%
+0001002047,NetApp,NTAP,Information Technology,2024,etiquettes de revenu en desaccord,10%
+0001002047,NetApp,NTAP,Information Technology,2025,etiquettes de revenu en desaccord,10%
+0000073124,Northern Trust,NTRS,Financials,2017,etiquettes de revenu en desaccord,36%
+0000073124,Northern Trust,NTRS,Financials,2018,etiquettes de revenu en desaccord,37%
+0000073124,Northern Trust,NTRS,Financials,2019,etiquettes de revenu en desaccord,37%
+0000073124,Northern Trust,NTRS,Financials,2020,etiquettes de revenu en desaccord,35%
+0000073124,Northern Trust,NTRS,Financials,2021,etiquettes de revenu en desaccord,33%
+0000073124,Northern Trust,NTRS,Financials,2022,etiquettes de revenu en desaccord,34%
+0000073124,Northern Trust,NTRS,Financials,2023,etiquettes de revenu en desaccord,36%
+0000073124,Northern Trust,NTRS,Financials,2024,etiquettes de revenu en desaccord,43%
+0000073124,Northern Trust,NTRS,Financials,2025,etiquettes de revenu en desaccord,38%
+0001133421,Northrop Grumman,NOC,Industrials,2014,etiquettes de revenu en desaccord,42%
+0001133421,Northrop Grumman,NOC,Industrials,2015,etiquettes de revenu en desaccord,41%
+0001133421,Northrop Grumman,NOC,Industrials,2016,etiquettes de revenu en desaccord,40%
+0001133421,Northrop Grumman,NOC,Industrials,2017,etiquettes de revenu en desaccord,38%
+0000797468,Occidental Petroleum,OXY,Energy,2018,etiquettes de revenu en desaccord,13%
+0000797468,Occidental Petroleum,OXY,Energy,2019,etiquettes de revenu en desaccord,8%
+0001039684,Oneok,OKE,Energy,2014,etiquettes de revenu en desaccord,12%
+0001039684,Oneok,OKE,Energy,2015,etiquettes de revenu en desaccord,21%
+0001039684,Oneok,OKE,Energy,2016,etiquettes de revenu en desaccord,23%
+0001039684,Oneok,OKE,Energy,2017,etiquettes de revenu en desaccord,19%
+0001039684,Oneok,OKE,Energy,2018,etiquettes de revenu en desaccord,10%
+0001327567,Palo Alto Networks,PANW,Information Technology,2014,etiquettes de revenu en desaccord,43%
+0001327567,Palo Alto Networks,PANW,Information Technology,2015,etiquettes de revenu en desaccord,47%
+0001327567,Palo Alto Networks,PANW,Information Technology,2016,etiquettes de revenu en desaccord,51%
+0001327567,Palo Alto Networks,PANW,Information Technology,2017,etiquettes de revenu en desaccord,60%
+0001327567,Palo Alto Networks,PANW,Information Technology,2018,etiquettes de revenu en desaccord,62%
+0000077360,Pentair,PNR,Industrials,2016,etiquettes de revenu en desaccord,43%
+0000077360,Pentair,PNR,Industrials,2017,etiquettes de revenu en desaccord,42%
+0000078003,Pfizer,PFE,Health Care,2021,etiquettes de revenu en desaccord,9%
+0000078003,Pfizer,PFE,Health Care,2022,etiquettes de revenu en desaccord,9%
+0000078003,Pfizer,PFE,Health Care,2023,etiquettes de revenu en desaccord,15%
+0001413329,Philip Morris International,PM,Consumer Staples,2016,etiquettes de revenu en desaccord,64%
+0001413329,Philip Morris International,PM,Consumer Staples,2017,etiquettes de revenu en desaccord,63%
+0000080424,Procter & Gamble,PG,Consumer Staples,2014,etiquettes de revenu en desaccord,60%
+0000101829,RTX Corporation,RTX,Industrials,2014,etiquettes de revenu en desaccord,28%
+0000101829,RTX Corporation,RTX,Industrials,2015,etiquettes de revenu en desaccord,29%
+0000101829,RTX Corporation,RTX,Industrials,2016,etiquettes de revenu en desaccord,29%
+0000101829,RTX Corporation,RTX,Industrials,2017,etiquettes de revenu en desaccord,31%
+0000720005,Raymond James Financial,RJF,Financials,2023,etiquettes de revenu en desaccord,11%
+0000720005,Raymond James Financial,RJF,Financials,2024,etiquettes de revenu en desaccord,14%
+0000720005,Raymond James Financial,RJF,Financials,2025,etiquettes de revenu en desaccord,12%
+0000872589,Regeneron Pharmaceuticals,REGN,Health Care,2014,etiquettes de revenu en desaccord,38%
+0000872589,Regeneron Pharmaceuticals,REGN,Health Care,2015,etiquettes de revenu en desaccord,34%
+0000872589,Regeneron Pharmaceuticals,REGN,Health Care,2016,etiquettes de revenu en desaccord,31%
+0000872589,Regeneron Pharmaceuticals,REGN,Health Care,2017,etiquettes de revenu en desaccord,37%
+0001060391,Republic Services,RSG,Industrials,2014,etiquettes de revenu en desaccord,17%
+0001060391,Republic Services,RSG,Industrials,2015,etiquettes de revenu en desaccord,17%
+0001060391,Republic Services,RSG,Industrials,2016,etiquettes de revenu en desaccord,17%
+0001060391,Republic Services,RSG,Industrials,2017,etiquettes de revenu en desaccord,17%
+0001060391,Republic Services,RSG,Industrials,2018,etiquettes de revenu en desaccord,16%
+0001060391,Republic Services,RSG,Industrials,2019,etiquettes de revenu en desaccord,16%
+0001060391,Republic Services,RSG,Industrials,2020,etiquettes de revenu en desaccord,16%
+0001060391,Republic Services,RSG,Industrials,2021,etiquettes de revenu en desaccord,15%
+0001060391,Republic Services,RSG,Industrials,2022,etiquettes de revenu en desaccord,14%
+0001060391,Republic Services,RSG,Industrials,2023,etiquettes de revenu en desaccord,13%
+0001060391,Republic Services,RSG,Industrials,2024,etiquettes de revenu en desaccord,13%
+0001060391,Republic Services,RSG,Industrials,2025,etiquettes de revenu en desaccord,13%
+0000031791,Revvity,RVTY,Health Care,2014,etiquettes de revenu en desaccord,39%
+0000031791,Revvity,RVTY,Health Care,2015,etiquettes de revenu en desaccord,34%
+0000031791,Revvity,RVTY,Health Care,2016,etiquettes de revenu en desaccord,34%
+0000031791,Revvity,RVTY,Health Care,2017,etiquettes de revenu en desaccord,35%
+0000031791,Revvity,RVTY,Health Care,2020,etiquettes de revenu en desaccord,30%
+0001024478,Rockwell Automation,ROK,Industrials,2014,etiquettes de revenu en desaccord,10%
+0001024478,Rockwell Automation,ROK,Industrials,2015,etiquettes de revenu en desaccord,10%
+0001024478,Rockwell Automation,ROK,Industrials,2016,etiquettes de revenu en desaccord,11%
+0001024478,Rockwell Automation,ROK,Industrials,2017,etiquettes de revenu en desaccord,11%
+0001034054,SBA Communications,SBAC,Real Estate,2017,etiquettes de revenu en desaccord,94%
+0001034054,SBA Communications,SBAC,Real Estate,2018,etiquettes de revenu en desaccord,93%
+0001034054,SBA Communications,SBAC,Real Estate,2019,etiquettes de revenu en desaccord,92%
+0001034054,SBA Communications,SBAC,Real Estate,2020,etiquettes de revenu en desaccord,94%
+0001034054,SBA Communications,SBAC,Real Estate,2021,etiquettes de revenu en desaccord,91%
+0001034054,SBA Communications,SBAC,Real Estate,2022,etiquettes de revenu en desaccord,89%
+0001034054,SBA Communications,SBAC,Real Estate,2023,etiquettes de revenu en desaccord,93%
+0001034054,SBA Communications,SBAC,Real Estate,2024,etiquettes de revenu en desaccord,94%
+0001034054,SBA Communications,SBAC,Real Estate,2025,etiquettes de revenu en desaccord,91%
+0000087347,Schlumberger,SLB,Energy,2014,etiquettes de revenu en desaccord,91%
+0000087347,Schlumberger,SLB,Energy,2015,etiquettes de revenu en desaccord,89%
+0000087347,Schlumberger,SLB,Energy,2016,etiquettes de revenu en desaccord,73%
+0000087347,Schlumberger,SLB,Energy,2017,etiquettes de revenu en desaccord,72%
+0001032208,Sempra,SRE,Utilities,2018,etiquettes de revenu en desaccord,6%
+0001032208,Sempra,SRE,Utilities,2019,etiquettes de revenu en desaccord,6%
+0001032208,Sempra,SRE,Utilities,2020,etiquettes de revenu en desaccord,9%
+0001032208,Sempra,SRE,Utilities,2021,etiquettes de revenu en desaccord,9%
+0001032208,Sempra,SRE,Utilities,2023,etiquettes de revenu en desaccord,11%
+0001032208,Sempra,SRE,Utilities,2024,etiquettes de revenu en desaccord,10%
+0001032208,Sempra,SRE,Utilities,2025,etiquettes de revenu en desaccord,9%
+0000091440,Snap-on,SNA,Industrials,2014,etiquettes de revenu en desaccord,6%
+0000091440,Snap-on,SNA,Industrials,2015,etiquettes de revenu en desaccord,7%
+0000091440,Snap-on,SNA,Industrials,2016,etiquettes de revenu en desaccord,8%
+0000091440,Snap-on,SNA,Industrials,2017,etiquettes de revenu en desaccord,8%
+0000091440,Snap-on,SNA,Industrials,2018,etiquettes de revenu en desaccord,9%
+0000091440,Snap-on,SNA,Industrials,2019,etiquettes de revenu en desaccord,9%
+0000091440,Snap-on,SNA,Industrials,2020,etiquettes de revenu en desaccord,9%
+0000091440,Snap-on,SNA,Industrials,2021,etiquettes de revenu en desaccord,8%
+0000091440,Snap-on,SNA,Industrials,2022,etiquettes de revenu en desaccord,8%
+0000091440,Snap-on,SNA,Industrials,2023,etiquettes de revenu en desaccord,8%
+0000091440,Snap-on,SNA,Industrials,2024,etiquettes de revenu en desaccord,8%
+0000091440,Snap-on,SNA,Industrials,2025,etiquettes de revenu en desaccord,9%
+0000883241,Synopsys,SNPS,Information Technology,2022,etiquettes de revenu en desaccord,9%
+0001283699,T-Mobile US,TMUS,Communication Services,2014,etiquettes de revenu en desaccord,77%
+0001283699,T-Mobile US,TMUS,Communication Services,2015,etiquettes de revenu en desaccord,79%
+0001283699,T-Mobile US,TMUS,Communication Services,2016,etiquettes de revenu en desaccord,77%
+0001283699,T-Mobile US,TMUS,Communication Services,2017,etiquettes de revenu en desaccord,77%
+0000946581,Take-Two Interactive,TTWO,Communication Services,2014,etiquettes de revenu en desaccord,35%
+0000946581,Take-Two Interactive,TTWO,Communication Services,2015,etiquettes de revenu en desaccord,9%
+0001389170,Targa Resources,TRGP,Energy,2016,etiquettes de revenu en desaccord,17%
+0001389170,Targa Resources,TRGP,Energy,2017,etiquettes de revenu en desaccord,12%
+0001389170,Targa Resources,TRGP,Energy,2018,etiquettes de revenu en desaccord,11%
+0001389170,Targa Resources,TRGP,Energy,2019,etiquettes de revenu en desaccord,15%
+0001389170,Targa Resources,TRGP,Energy,2020,etiquettes de revenu en desaccord,17%
+0001389170,Targa Resources,TRGP,Energy,2021,etiquettes de revenu en desaccord,5%
+0001389170,Targa Resources,TRGP,Energy,2022,etiquettes de revenu en desaccord,5%
+0001389170,Targa Resources,TRGP,Energy,2023,etiquettes de revenu en desaccord,16%
+0001389170,Targa Resources,TRGP,Energy,2024,etiquettes de revenu en desaccord,14%
+0001094285,Teledyne Technologies,TDY,Information Technology,2014,etiquettes de revenu en desaccord,55%
+0001094285,Teledyne Technologies,TDY,Information Technology,2015,etiquettes de revenu en desaccord,56%
+0000097210,Teradyne,TER,Information Technology,2014,etiquettes de revenu en desaccord,17%
+0000097210,Teradyne,TER,Information Technology,2015,etiquettes de revenu en desaccord,18%
+0000097210,Teradyne,TER,Information Technology,2016,etiquettes de revenu en desaccord,17%
+0000097210,Teradyne,TER,Information Technology,2017,etiquettes de revenu en desaccord,16%
+0001318605,"Tesla, Inc.",TSLA,Consumer Discretionary,2014,etiquettes de revenu en desaccord,10%
+0001318605,"Tesla, Inc.",TSLA,Consumer Discretionary,2015,etiquettes de revenu en desaccord,15%
+0001318605,"Tesla, Inc.",TSLA,Consumer Discretionary,2016,etiquettes de revenu en desaccord,20%
+0001318605,"Tesla, Inc.",TSLA,Consumer Discretionary,2017,etiquettes de revenu en desaccord,27%
+0000097745,Thermo Fisher Scientific,TMO,Health Care,2014,etiquettes de revenu en desaccord,13%
+0000097745,Thermo Fisher Scientific,TMO,Health Care,2015,etiquettes de revenu en desaccord,14%
+0000097745,Thermo Fisher Scientific,TMO,Health Care,2016,etiquettes de revenu en desaccord,14%
+0000097745,Thermo Fisher Scientific,TMO,Health Care,2017,etiquettes de revenu en desaccord,17%
+0000864749,Trimble Inc.,TRMB,Information Technology,2014,etiquettes de revenu en desaccord,28%
+0000864749,Trimble Inc.,TRMB,Information Technology,2015,etiquettes de revenu en desaccord,33%
+0000864749,Trimble Inc.,TRMB,Information Technology,2016,etiquettes de revenu en desaccord,34%
+0000864749,Trimble Inc.,TRMB,Information Technology,2017,etiquettes de revenu en desaccord,34%
+0000074208,"UDR, Inc.",UDR,Real Estate,2016,etiquettes de revenu en desaccord,99%
+0000074208,"UDR, Inc.",UDR,Real Estate,2017,etiquettes de revenu en desaccord,99%
+0000074208,"UDR, Inc.",UDR,Real Estate,2018,etiquettes de revenu en desaccord,99%
+0000074208,"UDR, Inc.",UDR,Real Estate,2019,etiquettes de revenu en desaccord,99%
+0000074208,"UDR, Inc.",UDR,Real Estate,2020,etiquettes de revenu en desaccord,100%
+0000074208,"UDR, Inc.",UDR,Real Estate,2021,etiquettes de revenu en desaccord,100%
+0000074208,"UDR, Inc.",UDR,Real Estate,2022,etiquettes de revenu en desaccord,100%
+0000074208,"UDR, Inc.",UDR,Real Estate,2023,etiquettes de revenu en desaccord,100%
+0000074208,"UDR, Inc.",UDR,Real Estate,2024,etiquettes de revenu en desaccord,100%
+0000074208,"UDR, Inc.",UDR,Real Estate,2025,etiquettes de revenu en desaccord,99%
+0001403568,Ulta Beauty,ULTA,Consumer Discretionary,2015,etiquettes de revenu en desaccord,94%
+0001403568,Ulta Beauty,ULTA,Consumer Discretionary,2016,etiquettes de revenu en desaccord,93%
+0001403568,Ulta Beauty,ULTA,Consumer Discretionary,2017,etiquettes de revenu en desaccord,90%
+0001067701,United Rentals,URI,Industrials,2019,etiquettes de revenu en desaccord,78%
+0001067701,United Rentals,URI,Industrials,2020,etiquettes de revenu en desaccord,77%
+0001067701,United Rentals,URI,Industrials,2021,etiquettes de revenu en desaccord,77%
+0001067701,United Rentals,URI,Industrials,2022,etiquettes de revenu en desaccord,79%
+0001067701,United Rentals,URI,Industrials,2023,etiquettes de revenu en desaccord,76%
+0001067701,United Rentals,URI,Industrials,2024,etiquettes de revenu en desaccord,77%
+0001067701,United Rentals,URI,Industrials,2025,etiquettes de revenu en desaccord,77%
+0000731766,UnitedHealth Group,UNH,Health Care,2014,etiquettes de revenu en desaccord,97%
+0000731766,UnitedHealth Group,UNH,Health Care,2015,etiquettes de revenu en desaccord,89%
+0000731766,UnitedHealth Group,UNH,Health Care,2016,etiquettes de revenu en desaccord,86%
+0000731766,UnitedHealth Group,UNH,Health Care,2017,etiquettes de revenu en desaccord,87%
+0000732712,Verizon,VZ,Communication Services,2014,etiquettes de revenu en desaccord,91%
+0000732712,Verizon,VZ,Communication Services,2015,etiquettes de revenu en desaccord,87%
+0000732712,Verizon,VZ,Communication Services,2016,etiquettes de revenu en desaccord,86%
+0000732712,Verizon,VZ,Communication Services,2017,etiquettes de revenu en desaccord,85%
+0000875320,Vertex Pharmaceuticals,VRTX,Health Care,2014,etiquettes de revenu en desaccord,16%
+0000875320,Vertex Pharmaceuticals,VRTX,Health Care,2017,etiquettes de revenu en desaccord,13%
+0001674101,Vertiv,VRT,Industrials,2018,etiquettes de revenu en desaccord,100%
+0001674101,Vertiv,VRT,Industrials,2019,etiquettes de revenu en desaccord,100%
+0001692819,Vistra Corp.,VST,Utilities,2018,etiquettes de revenu en desaccord,7%
+0001692819,Vistra Corp.,VST,Utilities,2020,etiquettes de revenu en desaccord,5%
+0001692819,Vistra Corp.,VST,Utilities,2021,etiquettes de revenu en desaccord,32%
+0001692819,Vistra Corp.,VST,Utilities,2022,etiquettes de revenu en desaccord,12%
+0001692819,Vistra Corp.,VST,Utilities,2023,etiquettes de revenu en desaccord,7%
+0001692819,Vistra Corp.,VST,Utilities,2024,etiquettes de revenu en desaccord,14%
+0000823768,Waste Management,WM,Industrials,2014,etiquettes de revenu en desaccord,90%
+0000823768,Waste Management,WM,Industrials,2015,etiquettes de revenu en desaccord,92%
+0001000697,Waters Corporation,WAT,Health Care,2014,etiquettes de revenu en desaccord,32%
+0001000697,Waters Corporation,WAT,Health Care,2015,etiquettes de revenu en desaccord,32%
+0001000697,Waters Corporation,WAT,Health Care,2016,etiquettes de revenu en desaccord,33%
+0001000697,Waters Corporation,WAT,Health Care,2017,etiquettes de revenu en desaccord,33%
+0000766704,Welltower,WELL,Real Estate,2021,etiquettes de revenu en desaccord,33%
+0000766704,Welltower,WELL,Real Estate,2022,etiquettes de revenu en desaccord,29%
+0000766704,Welltower,WELL,Real Estate,2023,etiquettes de revenu en desaccord,28%
+0000766704,Welltower,WELL,Real Estate,2024,etiquettes de revenu en desaccord,25%
+0000766704,Welltower,WELL,Real Estate,2025,etiquettes de revenu en desaccord,22%
+0000106535,Weyerhaeuser,WY,Real Estate,2014,etiquettes de revenu en desaccord,26%
+0000106535,Weyerhaeuser,WY,Real Estate,2015,etiquettes de revenu en desaccord,26%
+0000107263,Williams Companies,WMB,Energy,2014,etiquettes de revenu en desaccord,54%
+0000107263,Williams Companies,WMB,Energy,2015,etiquettes de revenu en desaccord,70%
+0000107263,Williams Companies,WMB,Energy,2016,etiquettes de revenu en desaccord,69%
+0000107263,Williams Companies,WMB,Energy,2017,etiquettes de revenu en desaccord,66%
+0000107263,Williams Companies,WMB,Energy,2021,etiquettes de revenu en desaccord,17%
+0000107263,Williams Companies,WMB,Energy,2022,etiquettes de revenu en desaccord,38%
+0000107263,Williams Companies,WMB,Energy,2023,etiquettes de revenu en desaccord,9%
+0000107263,Williams Companies,WMB,Energy,2024,etiquettes de revenu en desaccord,17%
+0000107263,Williams Companies,WMB,Energy,2025,etiquettes de revenu en desaccord,20%
+0001041061,Yum! Brands,YUM,Consumer Discretionary,2014,etiquettes de revenu en desaccord,15%
+0001041061,Yum! Brands,YUM,Consumer Discretionary,2015,etiquettes de revenu en desaccord,42%
+0000877212,Zebra Technologies,ZBRA,Information Technology,2014,etiquettes de revenu en desaccord,10%
+0000877212,Zebra Technologies,ZBRA,Information Technology,2015,etiquettes de revenu en desaccord,14%
+0000877212,Zebra Technologies,ZBRA,Information Technology,2016,etiquettes de revenu en desaccord,14%
+0000877212,Zebra Technologies,ZBRA,Information Technology,2017,etiquettes de revenu en desaccord,13%
+0001065088,eBay Inc.,EBAY,Consumer Discretionary,2014,etiquettes de revenu en desaccord,51%
+0001051470,Crown Castle,CCI,Real Estate,2017,investissement negatif,"-1,217,000,000"
+0000906345,Camden Property Trust,CPT,Real Estate,2018,investissement superieur au chiffre d affaires,201%
+0000906345,Camden Property Trust,CPT,Real Estate,2019,investissement superieur au chiffre d affaires,198%
+0000906345,Camden Property Trust,CPT,Real Estate,2023,investissement superieur au chiffre d affaires,162%
+0000815097,Carnival Corporation,CCL,Consumer Discretionary,2021,investissement superieur au chiffre d affaires,189%
+0001513761,Norwegian Cruise Line Holdings,NCLH,Consumer Discretionary,2021,investissement superieur au chiffre d affaires,116%
+0000884887,Royal Caribbean Group,RCL,Consumer Discretionary,2021,investissement superieur au chiffre d affaires,146%
+0001559720,Airbnb,ABNB,Consumer Discretionary,2020,recherche superieure a la moitie du chiffre d affaires,81%
+0001679788,Coinbase,COIN,Financials,2022,recherche superieure a la moitie du chiffre d affaires,73%
+0000879169,Incyte,INCY,Health Care,2014,recherche superieure a la moitie du chiffre d affaires,68%
+0000879169,Incyte,INCY,Health Care,2015,recherche superieure a la moitie du chiffre d affaires,64%
+0000879169,Incyte,INCY,Health Care,2016,recherche superieure a la moitie du chiffre d affaires,53%
+0000879169,Incyte,INCY,Health Care,2017,recherche superieure a la moitie du chiffre d affaires,86%
+0000879169,Incyte,INCY,Health Care,2018,recherche superieure a la moitie du chiffre d affaires,64%
+0000879169,Incyte,INCY,Health Care,2019,recherche superieure a la moitie du chiffre d affaires,53%
+0000879169,Incyte,INCY,Health Care,2020,recherche superieure a la moitie du chiffre d affaires,83%
+0000879169,Incyte,INCY,Health Care,2024,recherche superieure a la moitie du chiffre d affaires,61%
+0000310158,Merck & Co.,MRK,Health Care,2023,recherche superieure a la moitie du chiffre d affaires,51%
+0001682852,Moderna,MRNA,Health Care,2016,recherche superieure a la moitie du chiffre d affaires,253%
+0001682852,Moderna,MRNA,Health Care,2017,recherche superieure a la moitie du chiffre d affaires,199%
+0001682852,Moderna,MRNA,Health Care,2018,recherche superieure a la moitie du chiffre d affaires,336%
+0001682852,Moderna,MRNA,Health Care,2019,recherche superieure a la moitie du chiffre d affaires,824%
+0001682852,Moderna,MRNA,Health Care,2020,recherche superieure a la moitie du chiffre d affaires,171%
+0001682852,Moderna,MRNA,Health Care,2023,recherche superieure a la moitie du chiffre d affaires,71%
+0001682852,Moderna,MRNA,Health Care,2024,recherche superieure a la moitie du chiffre d affaires,140%
+0001682852,Moderna,MRNA,Health Care,2025,recherche superieure a la moitie du chiffre d affaires,161%
+0001321655,Palantir Technologies,PLTR,Information Technology,2020,recherche superieure a la moitie du chiffre d affaires,51%
+0001713445,Reddit,RDDT,Communication Services,2022,recherche superieure a la moitie du chiffre d affaires,55%
+0001713445,Reddit,RDDT,Communication Services,2023,recherche superieure a la moitie du chiffre d affaires,55%
+0001713445,Reddit,RDDT,Communication Services,2024,recherche superieure a la moitie du chiffre d affaires,72%
+0000875320,Vertex Pharmaceuticals,VRTX,Health Care,2014,recherche superieure a la moitie du chiffre d affaires,147%
+0000875320,Vertex Pharmaceuticals,VRTX,Health Care,2015,recherche superieure a la moitie du chiffre d affaires,96%
+0000875320,Vertex Pharmaceuticals,VRTX,Health Care,2016,recherche superieure a la moitie du chiffre d affaires,62%
+0000875320,Vertex Pharmaceuticals,VRTX,Health Care,2017,recherche superieure a la moitie du chiffre d affaires,53%
+0001410636,American Water Works,AWK,Utilities,2025,trou dans la serie,"annees manquantes : [2015, 2016, 2017]"
+0001390777,BNY Mellon,BNY,Financials,2025,trou dans la serie,annees manquantes : [2016]
+0001324404,CF Industries,CF,Materials,2025,trou dans la serie,annees manquantes : [2016]
+0001326160,Duke Energy,DUK,Utilities,2025,trou dans la serie,annees manquantes : [2017]
+0000895126,Expand Energy,EXE,Energy,2025,trou dans la serie,annees manquantes : [2021]
+0000874766,Hartford (The),HIG,Financials,2025,trou dans la serie,annees manquantes : [2016]
+0000036104,U.S. Bancorp,USB,Financials,2025,trou dans la serie,"annees manquantes : [2019, 2020, 2021]"

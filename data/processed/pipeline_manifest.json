@@ -1,0 +1,42 @@
+{
+  "statut": "termine",
+  "python": "3.13.9",
+  "bibliotheques": {
+    "pandas": "3.0.0",
+    "numpy": "2.4.1",
+    "lxml": "6.0.2"
+  },
+  "entrees_sha256": {
+    "data/raw/filings_log.csv": "084dc1640e0374d087837157f9c857e87be8b9d2cc911182129a163be6e353b8",
+    "data/raw/filings_phrases.csv": "bfa9771ee3584d63b81e02d2809d777d558296c1ce322dd5b77e67deb3196675",
+    "data/raw/filings_termes.csv": "f95bf619990800dd47a7385ed1190a2f42656c79eea00d802caac29328d61291",
+    "data/raw/premieres_cotations.csv": "1c3edef427a2a38ab2f49d740e8cb026c8f22f9120e572c8838659a62b4873ac",
+    "data/raw/sec_facts_raw.csv": "5a056ba9c930e02dde8c019df4ae4f6f6ae9499b415972ab05a722631a6096c7",
+    "data/raw/sec_fetch_log.csv": "7d9ba3fec0d2f162852860c53c62b45cf95e0ceb044faae6b8f2f12c98dc78a7",
+    "data/raw/sp500_constituents.csv": "2490c658bb3437868cc51f01203ddc288981a3ad2039163809cf503c4692e7c3",
+    "data/review/decisions_selection.csv": "90f469081f3383f28edec33b2a64afce25ffd6510477c7e6f74b39ce51de5531",
+    "data/review/comptabilite_exceptions.json": "ca6a67032cf1d60e2d5861cd8e6cf1f840e4790d2bf07f44aa644553adc85349",
+    "src/build_screening_base.py": "f991d6f2c3c5b566a42ceea9189ca52784651289a7ea12e5e3859eaa97b95c29",
+    "src/build_text_ranking.py": "47a9e4cf9d5cfab5dfe2e786b0912f814e72f4faa87e34bde27f730c67cec14b",
+    "src/classification_manuelle.py": "bd299f0de0f3c63d6c08c3c834cf38c52e0c5d31dcdac0b8e1b51131be38eeef",
+    "src/controle_qualite.py": "7b91e2cfaa7aa811cbbd2634bd787554a3ae665f0a7d67db4b63a27bece64996",
+    "src/corroboration.py": "8c7bf362aaf4d49b870c6574a4be8dedd65c2031c61eef4590c873d71bb93680",
+    "src/fetch_filings_text.py": "356e2d5d676c0b3ac7584b356492e3fb709d8349ee4e8fbe7ca6feb1a99bc431",
+    "src/fetch_sec_financials.py": "818b327a255533d05478ce846edb332dadf161ebc0b3b2223406c5ae04459d91",
+    "src/run_pipeline.py": "5c160865c06297d8f339c9e1e3ab010dc56648031bb15d0bb95e97960cbd05cb",
+    "data/raw/filings_manifest.json": "c698efcea2e63b43eec36aaa64093d791cb3a551a4750bf9ad8e6902a4e7a8ef"
+  },
+  "sorties_sha256": {
+    "data/processed/classement_texte.csv": "7d90f105d8ae8d9f250faf88216eaf3898eed57b83e29f755d4023bab8b634ab",
+    "data/processed/classification_manuelle.csv": "a94fc2f546c1e5cc0d4f5fc7583414289dc3396d74d04c4cc89dd6fb493a6466",
+    "data/processed/univers_retenu.csv": "b4f897aa1e637fc71b1ef168e85a47934c09ffb6a5db7467295016c5085d193b",
+    "data/processed/base_selection.csv": "e2757cfefaf30a385552c0002da7bcc34aad3d32f4e4921255ba4df40f063dab",
+    "data/processed/base_selection_anomalies.csv": "b3fbdc938bb9e7fe36dea80d0b36c3a658d0d13b95d89209ff3b7e2724453256",
+    "data/processed/controle_qualite.csv": "3fe3fce95e75ff17f9a54099dbe859c570d65303545571ce7af48cc7ae6942c3",
+    "data/processed/corroboration.csv": "b061d16dd918d459d18c5b54c79e9acd16f2b4c94b9bb1d1a8cbc7d532468121",
+    "data/processed/corroboration_details.csv": "53019c48519cf0eac0e39790e2244ef5dc93b2a4896eb1a52de16cba2718baf9",
+    "data/processed/corroboration_sensibilite.csv": "0222e14ead41f972f5a3e9ae8ee45561e1b21f97e59cfd2effcfeac7c300eaac",
+    "data/processed/etat_projet.json": "937b822ea497c9b63a33708b4816be1e579f95d7dc0f5715f7dc5ee207ed13d3",
+    "data/processed/synthese_resultats.md": "96fe1a1677dc8b2a297363ba567940fe7fcded58af2659c2d1ae4dbcfa275cae"
+  }
+}
