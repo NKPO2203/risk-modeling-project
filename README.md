@@ -7,6 +7,7 @@ Cette étape prépare les sources, les décisions et les comptes. Elle ne calcul
 ## Lire le projet
 
 - [Contexte et état actuel](research/master_context.md)
+- [Research Charter — bloc 1 finalisé et sourcé](research/research_charter.md)
 - [Règle de sélection, version III](research/selection_rule.md)
 - [Univers et interprétation des résultats](research/univers_selection.md)
 - [Erreurs rencontrées et raisons des corrections](research/corrections_2026-09-05.md)

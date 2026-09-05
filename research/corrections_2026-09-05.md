@@ -122,3 +122,11 @@ Les décisions douteuses ou non examinables restent visibles. Les 1 636 observat
 La composition locale de l'indice reste à rapprocher d'une source officielle datée. Les prix, les performances, les portefeuilles, leurs poids et leurs scénarios n'ont pas été ajoutés à cette étape.
 
 Le prochain travail consiste à relire ces corrections et leurs preuves, puis à définir une question empirique et des portefeuilles que je pourrai réellement défendre.
+
+## XIV. J'ai donné une version définitive au bloc 1
+
+Après les corrections, le contexte maître conservait un ancien squelette du phénomène avec des chiffres laissés en blanc. Le travail documentaire avait avancé, mais je n'avais pas encore fixé le texte qui devait servir de point de départ au Research Charter. Cela entretenait une confusion entre l'état de la sélection et l'état de la rédaction du bloc 1.
+
+J'ai remplacé ce squelette par [un bloc 1 rédigé et sourcé](research_charter.md). Je distingue le constat de concentration publié par le FMI et les activités décrites dans les rapports d'Applied Materials, d'Amphenol et de Dominion Energy. Chaque source garde son périmètre : une statistique de marché ne décrit pas mon univers, et les ventes d'électricité aux centres de données ne sont pas un chiffre d'affaires exclusivement IA.
+
+Je n'ai pas ajouté de conclusion sur les rendements, les corrélations ou la qualité d'un portefeuille. Cette mise à jour finalise le cadrage documentaire ; elle ne change ni la sélection, ni les données, ni les calculs corrigés. Le contexte maître et le README renvoient désormais au charter. Le bloc 1 est terminé pour ce cadrage ; la suite consiste à construire les blocs 2 et 3.
