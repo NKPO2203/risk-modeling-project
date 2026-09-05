@@ -1,6 +1,6 @@
 # CONTEXTE MAÎTRE — PROJET "AI Concentration Risk Research"
 
-> **Version 3 — 5 septembre 2026.**
+> **Version 3.1 — 5 septembre 2026.**
 > Ce document remplace le contexte maître initial. Il est le **document de continuité principal** du projet.
 > À recoller intégralement au début de toute nouvelle conversation.
 >
@@ -16,6 +16,8 @@
 Je construis un univers documenté d'entreprises du S&P 500 exposées à la chaîne des infrastructures de calcul liées à l'IA. Cet univers servira ensuite à construire et comparer plusieurs portefeuilles. Il n'oblige pas à détenir toutes les entreprises retenues et il ne fixe aucune pondération.
 
 La règle actuelle est la version III de `research/selection_rule.md`. Les résultats se trouvent dans `research/univers_selection.md`, les corrections expliquées dans `research/corrections_2026-09-05.md`, et les chiffres recalculés dans `data/processed/etat_projet.json`.
+
+Le bloc 1, **Phenomenon of Interest**, est maintenant finalisé dans [le Research Charter](research_charter.md). Il distingue le contexte de concentration du marché et les activités documentées dans la chaîne de calcul. Les blocs 2 et 3, problème de recherche et question testable, restent à formuler.
 
 J'ai repris la sélection par CIK, la traçabilité des preuves, les différences de notions comptables et les changements de périmètre. Je distingue maintenant l'exposition documentée, le mouvement dans les comptes et la couverture des données. Je n'en déduis pas encore un risque boursier commun.
 
@@ -804,24 +806,17 @@ Je prévois des variantes de fenêtre et je présenterai leur effet, y compris s
 
 ---
 
-## 45. SQUELETTE DU BLOC 1 (Phenomenon of Interest)
+## 45. BLOC 1 FINALISÉ (Phenomenon of Interest)
 
-> **STATUT : PROPOSITION HISTORIQUE NON VALIDÉE.** Ce squelette porte sur la concentration de l'indice. Il devra être réécrit si je l'utilise dans le rapport, pour l'articuler avec l'univers économique actuellement construit. Il ne bloque plus la collecte et ne constitue pas une conclusion acquise. La valeur de N, la mesure de concentration, le point de comparaison historique et les chiffres restent à définir et à sourcer.
+**Statut : rédigé et sourcé pour le cadrage actuel, le 5 septembre 2026.** La version de référence se trouve dans [research_charter.md](research_charter.md), avec les observations, leurs sources et leurs limites de périmètre.
 
-Structure envisagée : trois observations, chacune vérifiable séparément, aucune conclusion. Les crochets sont des trous à combler par des sources primaires.
+L'ancien squelette reposait sur des poids d'indice encore non vérifiés. Il mélangeait aussi le groupe des plus grandes capitalisations et la chaîne économique plus large que j'ai ensuite documentée. Je l'ai remplacé par un constat de concentration publié par le FMI et des déclarations datées d'entreprises sur les équipements, les composants et l'électricité des infrastructures de calcul.
 
-> **Observation 1 — Concentration des poids.**
-> Dans le S&P 500, la part de capitalisation représentée par les [N] plus grandes composantes est passée de [a] % en [date] à [b] % en [date]. *(Source : S&P Dow Jones Indices.)*
->
-> **Observation 2 — Nature des entreprises concernées.**
-> Ces entreprises déclarent dans leurs documents réglementaires des dépenses d'investissement en infrastructure de calcul en forte hausse sur la période, et identifient l'intelligence artificielle comme un axe stratégique. *(Source : 10-K, 10-Q.)*
->
-> **Observation 3 — Conséquence mécanique pour l'investisseur passif.**
-> Un investisseur détenant un fonds répliquant le S&P 500 voit son exposition à ce groupe d'entreprises passer de [a] % à [b] % sans avoir modifié son allocation.
+Je garde ces observations séparées : leur coexistence n'établit ni un lien causal ni une concentration du risque dans les futurs portefeuilles. Les effectifs de ma sélection, les multiples comptables et les corrélations ne servent pas de prémisses à ce bloc.
 
-Vérification : aucun mot de jugement ; un partisan de l'hypothèse B signe les trois lignes ; chaque ligne se trace ou se cite ; l'observation 2 documente le lien IA par les fondamentaux, pas par les cours.
+Les trois tests du §39 sont explicités dans le charter. Pour les déclarations qualitatives sur les métiers, la représentation est un tableau documentaire daté ; je ne leur invente pas une courbe. Les anciennes propositions restent retraçables dans l'historique Git et les documents archivés.
 
-**Ce que ce texte ne dit pas** — et ne doit pas dire : que c'est risqué, que les corrélations ont monté, que la diversification a disparu, qu'il faut se couvrir. Tout cela relève des chapitres 6 à 10.
+La prochaine étape du charter est de formuler les blocs 2 et 3. Il n'est plus nécessaire de compléter l'ancien modèle à trous pour poursuivre.
 
 ---
 
@@ -844,6 +839,8 @@ Vérification : aucun mot de jugement ; un partisan de l'hypothèse B signe les 
 - **Chapter 1 at a Glance** (p. 1) : des chocs d'offre plus fréquents ont érodé la relation de couverture actions-obligations, augmentant le risque de désendettement simultané sur les deux classes d'actifs. **→ Appui pour le chapitre 7.**
 
 ### ⚠ Non vérifiées — à confirmer sur source primaire avant tout usage
+
+Ces pistes ne sont pas utilisées dans le bloc 1 finalisé. Elles restent disponibles si une analyse ultérieure en a besoin.
 
 - Poids combiné des 10 premières composantes du S&P 500 (chiffres vus en source secondaire : ~38-40 % en 2025-2026 ; ~18-23 % entre 1990 et 2015). **La page S&P Dow Jones Indices renvoie une erreur 403 en accès automatisé** — il faudra récupérer le *factsheet* PDF mensuel manuellement, ou passer par une autre source primaire.
 - Le chiffre « plus de 37 % » évoqué de mémoire : sans date ni définition, inutilisable. Préciser s'il s'agit du poids du secteur GICS *Information Technology*, du poids du top-10, ou d'un groupe défini par nous — ce sont trois grandeurs différentes.
@@ -873,7 +870,8 @@ J'ai dépassé le stade où aucune donnée et aucun code n'existaient. La compos
 - retraitement des notions et périmètres comptables connus, sans remplir artificiellement les lacunes ;
 - description des comptes avec dates de référence par mesure et couverture séparée ;
 - contrôles automatiques, tests et manifeste reliant les résultats à leurs entrées ;
-- documentation réécrite pour distinguer faits, choix exploratoires et hypothèses.
+- documentation réécrite pour distinguer faits, choix exploratoires et hypothèses ;
+- bloc 1 du Research Charter finalisé et sourcé, avec remplacement de l'ancien squelette au §45.
 
 Les effectifs courants doivent être lus dans `data/processed/etat_projet.json` ou dans la note sur l'univers. Les anciens nombres ne sont plus les résultats de référence.
 
@@ -891,7 +889,7 @@ Je ne suppose pas que toutes les entreprises de l'univers seront dans le même p
 
 **La prochaine étape :**
 
-Je relis les corrections et les décisions, notamment les changements de sélection et les comparaisons devenues non calculables. Ensuite je fixe la question empirique, les portefeuilles et les benchmarks. Avant un résultat historique de performance, il faudra définir les périodes, la disponibilité des informations, les règles de rebalancement et les données de prix.
+Le bloc 1 étant rédigé, je formule maintenant le problème de recherche (bloc 2), puis la question empirique (bloc 3). Je m'appuie sur la relecture des corrections et des décisions, notamment les changements de sélection et les comparaisons devenues non calculables. Je préciserai ensuite les portefeuilles et les benchmarks. Avant un résultat historique de performance, il faudra définir les périodes, la disponibilité des informations, les règles de rebalancement et les données de prix.
 
 **Ce qui n'a pas commencé :**
 
