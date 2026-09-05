@@ -216,3 +216,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Fichiers de travail locaux de la correction ; les livrables restent visibles.
+outputs/corrections_2026-09-05/.work/
+
+# ---------------------------------------------------------------------------
+# Cache local des rapports annuels : 2,5 Go de HTML et de texte bruts.
+# Il est reconstruit par `python src/fetch_filings_text.py --refresh`.
+# Ce que le depot doit conserver, ce sont les empreintes et le manifeste, qui
+# suffisent a prouver quel document a ete lu :
+#   data/raw/filings_manifest.json
+#   data/raw/filings_termes.csv  (colonnes texte_sha256 et html_sha256)
+data/raw/filings_text/
+
+# Fichiers de travail intermediaires des exports
+outputs/**/.work/

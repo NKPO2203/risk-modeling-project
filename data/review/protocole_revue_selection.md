@@ -1,0 +1,28 @@
+# Registre de sélection et portée de la revue
+
+La décision économique est identifiée par le CIK, jamais par la position dans un classement. Le registre `decisions_selection.csv` constitue une entrée persistante. Une relance de `classification_manuelle.py` applique ces décisions sans les réécrire. Le rang documentaire est recalculable : nombre de catégories lexicales actives, puis total des occurrences, puis densité pour 100 000 caractères, par ordre décroissant ; le CIK départage les égalités. Le sigle « AI » seul est extrait pour la lecture, mais exclu du classement en raison de son ambiguïté. Le rang n'est ni une probabilité d'exposition ni un score de rendement.
+
+## Critères appliqués à toutes les entreprises
+
+- `ENTRE` : offre de matériel, infrastructure ou services techniques, fourniture industrielle ou énergétique, ou engagement de capital identifié dans la chaîne des capacités de calcul et centres de données. La preuve peut établir une activité actuelle ou un engagement déjà réalisé ; la colonne `maturite_exposition` les distingue. Une simple prévision d'opportunité ne suffit pas. Le lien est économique ; sa part propre à l'IA peut rester inconnue.
+- `DOUTEUX` : lien évoqué, mais activité propre, engagement effectif ou frontière du périmètre insuffisamment établi. Les investissements financiers diversifiés et les seules intentions ne sont pas automatiquement inclus. L'inférence en périphérie et les prestations logistiques générales demandent également une décision de périmètre explicite.
+- `SORT` : les passages examinés décrivent un usage interne, une application ou un risque hors du périmètre d'infrastructure retenu. Il s'agit d'une exclusion provisoire fondée sur ces passages, jamais de la démonstration que le rapport entier ne contient aucune exposition. La décision ne prédit pas un gain en cas de recul de l'IA.
+- `A_EXAMINER` : les sources disponibles, la preuve ou la revue ne permettent pas de statuer. Ce statut est également utilisé pour toute entreprise sans décision dans le registre. Il n'existe plus d'exclusion par défaut.
+
+Le degré `non_quantifie` ne représente aucune part de chiffre d'affaires et aucun bêta. Le fait qu'un groupe serve des centres de données n'attribue pas automatiquement toute son activité à l'IA. Un secteur diversifié peut entrer sur une offre opérationnelle documentée, pas sur son seul secteur boursier.
+
+## Preuve et limites
+
+Chaque décision conserve sa citation littérale, le dépôt SEC et son URL. L'application recherche cette citation dans un passage du même CIK et dépôt, ou dans le texte intégral local après vérification de son empreinte SHA-256. Seuls les espaces et retours à la ligne sont normalisés ; du contexte supplémentaire autour de la citation est admis, aucune correspondance seulement sémantique ne l'est. L'URL doit correspondre au document courant ou à l'index SEC de ce dépôt. Une preuve qui n'est plus retrouvée fait passer la sortie à `A_EXAMINER`, tout en conservant `verdict_registre`. Le registre lui-même n'est jamais corrigé automatiquement par ce contrôle.
+
+La revue initiale du 5 septembre 2026 a été assistée par Codex et a examiné des passages ciblés pour chacun des 500 CIK, avec lectures supplémentaires pour les expositions positives et les cas ambigus. Le corpus historique était plafonné et n'extrayait pas le sigle « AI » seul. Ce travail ne constitue ni une lecture intégrale de chaque rapport ni une revue de chaque phrase du corpus. Les citations, les motifs et la colonne `limite_preuve` rendent cette restriction visible. L'ordre de lecture de l'aide de revue privilégie les passages commerciaux et d'infrastructure ; il n'affecte aucun verdict automatiquement et n'exclut aucun secteur.
+
+Le nouvel extracteur conserve le texte intégral et couvre toutes les occurrences du vocabulaire configuré. Cette couverture technique ne signifie ni que chaque rapport a été intégralement lu, ni que toutes les expositions économiques possibles emploient ce vocabulaire. Les nouveaux passages demandent une revue explicite ; télécharger un cache ne transforme pas la portée de la revue antérieure.
+
+La deuxième passe du 5 septembre a recherché, dans tous les secteurs, les passages d'infrastructure et de relation commerciale du nouveau corpus. Elle a également réexaminé les dossiers `A_EXAMINER`, les passages auparavant absents, les frontières applicatives et plusieurs contextes dans le texte complet. Les citations historiques modifiées par le balisage HTML ont été relues et remplacées par leur formulation courante. Les changements sont consignés dans `journal_revision_20260905.json` et l'opération ponctuelle `actualiser_revue_20260905.py`. Les 500 entreprises ont un dossier de revue ; cela ne signifie pas que les 12 836 passages ont tous fait l'objet d'une lecture individuelle. Le registre final de cette passe comprend 112 `ENTRE`, 39 `DOUTEUX`, 273 `SORT` provisoires et 76 `A_EXAMINER`.
+
+## Migration et maintenance
+
+`migrer_decisions_selection.py` documente la migration initiale à partir de l'archive immuable `research/archive/2026-09-05_avant_corrections`. Ses numéros historiques désignent uniquement ce cliché figé. Il refuse d'écraser un registre existant et n'appartient pas au pipeline normal. Les jugements futurs se modifient explicitement dans le registre par CIK, avec nouvelle preuve et date de revue. `ancien_rang` et `ancien_verdict` servent uniquement à suivre cette migration.
+
+Un changement de rapport, d'activité, de périmètre comptable ou de décision de sélection exige une nouvelle revue. Le contrôle de présence d'une citation vérifie la traçabilité documentaire, pas à lui seul la validité économique du jugement.

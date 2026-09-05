@@ -1,0 +1,29 @@
+{
+  "produit_le": "2026-09-05T10:07:41.727175+00:00",
+  "sources_sha256": {
+    "data\\processed\\base_selection.csv": "e2757cfefaf30a385552c0002da7bcc34aad3d32f4e4921255ba4df40f063dab",
+    "data\\raw\\sec_facts_raw.csv": "5a056ba9c930e02dde8c019df4ae4f6f6ae9499b415972ab05a722631a6096c7",
+    "data\\review\\comptabilite_exceptions.json": "ca6a67032cf1d60e2d5861cd8e6cf1f840e4790d2bf07f44aa644553adc85349"
+  },
+  "lignes_base": 5707,
+  "entreprises_base": 496,
+  "alertes": 3724,
+  "portee": "Vraisemblance et couverture ; ne certifie pas l'exactitude de tous les comptes ni la causalité IA.",
+  "par_test": {
+    "changement d'étiquette": 556,
+    "dernier exercice trop ancien": 31,
+    "entreprise sans données comptables": 4,
+    "investissement supérieur au chiffre d affaires": 16,
+    "métrique absente au dernier exercice": 34,
+    "métrique absente sur tout l historique": 286,
+    "passage depuis zéro": 5,
+    "périmètre historique non comparable": 51,
+    "périodes des métriques différentes": 1,
+    "recherche supérieure à la moitié du chiffre d affaires": 27,
+    "rupture de série à vérifier": 182,
+    "trou dans la série": 16,
+    "valeur non réconciliée": 1855,
+    "valeur négative ou ventes nulles": 2,
+    "étiquettes de revenu en désaccord": 658
+  }
+}

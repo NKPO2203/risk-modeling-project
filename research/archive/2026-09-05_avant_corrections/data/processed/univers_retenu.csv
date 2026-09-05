@@ -1,0 +1,83 @@
+rang,nom,symboles,secteur,sous_secteur,n_actifs,total,verdict,canal,degre,motif
+1,Nvidia,NVDA,Information Technology,Semiconductors,10,200,ENTRE,vend,quasi total,plateformes de calcul accelere vendues aux fournisseurs cloud et aux createurs de modeles
+2,Advanced Micro Devices,AMD,Information Technology,Semiconductors,9,197,ENTRE,vend,fort,demande forte pour les accelerateurs IA deployes par les clients hyperscale
+3,Oracle Corporation,ORCL,Information Technology,Application Software,9,111,ENTRE,depense et vend,fort,infrastructure cloud passee de 35 a 53 pourcent des revenus cloud ; premiere du classement investissement
+4,Akamai Technologies,AKAM,Information Technology,Internet Services & Infrastructure,10,60,ENTRE,vend,partiel,services d infrastructure cloud declares comme axe strategique ; inference en peripherie de reseau
+5,Intel,INTC,Information Technology,Semiconductors,8,103,ENTRE,vend,fort,demande de calcul accrue pour les systemes GPU tiree par les charges d IA generative
+6,Supermicro,SMCI,Information Technology,"Technology Hardware, Storage & Peripherals",8,115,ENTRE,vend,quasi total,transformation declaree en fournisseur complet d infrastructure de centres de donnees
+7,Equinix,EQIX,Real Estate,Data Center REITs,6,321,ENTRE,fournit,quasi total,location d espace et de puissance electrique dans ses centres de donnees
+8,Microsoft,MSFT,Information Technology,Systems Software,7,51,ENTRE,depense et vend,fort,"116 milliards d investissement, Azure, centres de donnees"
+9,Broadcom,AVGO,Information Technology,Semiconductors,7,50,ENTRE,vend,fort,accelerateurs sur mesure pour hyperscalers et createurs de modeles de pointe
+10,Marvell Technology,MRVL,Information Technology,Semiconductors,6,89,ENTRE,vend,fort,le centre de donnees est l un de ses deux marches finaux declares
+11,Cadence Design Systems,CDNS,Information Technology,Application Software,9,49,ENTRE,fournit,fort,outils de conception achetes par les fabricants de puces IA
+12,Micron Technology,MU,Information Technology,Semiconductors,6,55,ENTRE,vend,fort,division entiere dediee a la memoire pour clients hyperscale
+14,Flex Ltd.,FLEX,Information Technology,Electronic Manufacturing Services,6,62,ENTRE,fournit,partiel,"segment dedie au calcul, a l alimentation et au refroidissement pour centres de donnees"
+15,Vertiv,VRT,Industrials,Electrical Components & Equipment,6,54,ENTRE,fournit,quasi total,alimentation et refroidissement ; les centres de donnees sont son marche final numero un
+16,Alphabet Inc. (Class A),GOOG|GOOGL,Communication Services,Interactive Media & Services,6,44,ENTRE,depense et vend,fort,augmentation significative annoncee de l investissement en infrastructure technique
+17,NetApp,NTAP,Information Technology,"Technology Hardware, Storage & Peripherals",7,31,ENTRE,vend,partiel,"stockage pour charges IA, integre aux trois grands hyperscalers"
+18,Cisco,CSCO,Information Technology,Communications Equipment,6,45,ENTRE,vend,partiel,"centres de donnees prets pour l IA, clients hyperscalers"
+20,Hewlett Packard Enterprise,HPE,Information Technology,"Technology Hardware, Storage & Peripherals",10,54,ENTRE,vend,fort,serveurs IA et commutateurs de centres de donnees
+22,Iron Mountain,IRM,Real Estate,Other Specialized REITs,5,277,ENTRE,fournit,partiel,"1340 megawatts de capacite, location aux clients hyperscale"
+25,Arista Networks,ANET,Information Technology,Communications Equipment,6,39,ENTRE,vend,fort,"reseau pour IA, cloud et centres de donnees, coeur de metier declare"
+27,Lumentum,LITE,Information Technology,Communications Equipment,6,43,ENTRE,vend,fort,composants optiques fournis aux exploitants de centres de donnees et aux fournisseurs d infrastructure IA
+30,Meta Platforms,META,Communication Services,Interactive Media & Services,5,63,ENTRE,depense,fort,investissements massifs en centres de donnees et infrastructure technique
+32,Western Digital,WDC,Information Technology,"Technology Hardware, Storage & Peripherals",6,23,ENTRE,vend,fort,disques haute capacite pour centres de donnees cloud
+33,Sandisk,SNDK,Information Technology,"Technology Hardware, Storage & Peripherals",5,42,ENTRE,vend,fort,marche final declare Datacenter
+34,Eaton Corporation,ETN,Industrials,Electrical Components & Equipment,5,33,ENTRE,fournit,partiel,quatre acquisitions ciblees centres de donnees ; marche final declare
+40,Corning Inc.,GLW,Information Technology,Electronic Components,5,27,ENTRE,vend,partiel,forte demande de fibre a l interieur et entre les centres de donnees
+41,Digital Realty,DLR,Real Estate,Data Center REITs,4,463,ENTRE,fournit,quasi total,310 centres de donnees
+42,Dover Corporation,DOV,Industrials,Industrial Machinery & Supplies & Components,5,24,ENTRE,fournit,partiel,demande accrue de refroidissement liquide pour l infrastructure de centres de donnees
+45,American Tower,AMT,Real Estate,Telecom Tower REITs,4,220,ENTRE,fournit,partiel,segment centres de donnees declare mais minoritaire
+46,Coherent Corp.,COHR,Information Technology,Electronic Components,4,103,ENTRE,vend,fort,un de ses deux segments declares s appelle Datacenter et Communications
+47,Synopsys,SNPS,Information Technology,Application Software,6,18,ENTRE,fournit,fort,"outils de conception de puces, meme logique que Cadence"
+48,Amazon,AMZN,Consumer Discretionary,Broadline Retail,4,59,ENTRE,depense et vend,fort,AWS et investissement massif
+49,Lam Research,LRCX,Information Technology,Semiconductor Materials & Equipment,5,18,ENTRE,fournit,fort,"equipements de fabrication de puces, demande tiree par l IA et le cloud"
+50,Teradyne,TER,Information Technology,Semiconductor Materials & Equipment,5,19,ENTRE,fournit,fort,croissance du segment test tiree par une demande robuste des applications IA
+51,Generac,GNRC,Industrials,Heavy Electrical Equipment,4,52,ENTRE,fournit,partiel,tres grand marche pour l alimentation de secours cree par l investissement en centres de donnees
+52,Seagate Technology,STX,Information Technology,"Technology Hardware, Storage & Peripherals",4,40,ENTRE,vend,fort,Data Center est l un de ses deux marches finaux principaux
+62,Ciena,CIEN,Information Technology,Communications Equipment,4,28,ENTRE,vend,fort,clients fournisseurs cloud hyperscale ; strategie declaree autour du centre de donnees
+65,Dell Technologies,DELL,Information Technology,"Technology Hardware, Storage & Peripherals",6,15,ENTRE,vend,fort,"segment ISG, serveurs et infrastructure IA"
+67,Constellation Energy,CEG,Utilities,Electric Utilities,6,18,ENTRE,fournit,partiel,contrat de fourniture a Microsoft pour ses centres de donnees ; expansion tiree par les hyperscalers
+72,Microchip Technology,MCHP,Information Technology,Semiconductors,5,14,ENTRE,vend,partiel,portefeuille declare incluant le centre de donnees ; controleurs pour centres de donnees IA
+76,Jabil,JBL,Information Technology,Electronic Manufacturing Services,4,17,ENTRE,fournit,partiel,segment Intelligent Infrastructure dedie a l infrastructure IA
+83,NiSource,NI,Utilities,Multi-Utilities,3,154,ENTRE,fournit,partiel,developpe des moyens de production dedies a ses clients centres de donnees
+86,TE Connectivity,TEL,Information Technology,Electronic Manufacturing Services,4,14,ENTRE,vend,partiel,"reseaux de donnees numeriques, 28 pourcent des ventes du segment industriel"
+98,WEC Energy Group,WEC,Utilities,Electric Utilities,4,23,ENTRE,fournit,partiel,hors tres gros clients centres de donnees les volumes seraient plats ; discussions de fourniture en cours
+103,Qnity Electronics,Q,Information Technology,Semiconductor Materials & Equipment,3,23,ENTRE,fournit,fort,"materiaux et composants pour l IA et le calcul haute performance, gestion thermique"
+106,Entergy,ETR,Utilities,Electric Utilities,3,116,ENTRE,fournit,partiel,contrat de fourniture d un campus de centres de donnees ou AWS est implique
+107,"Tesla, Inc.",TSLA,Consumer Discretionary,Automobile Manufacturers,3,22,ENTRE,depense,partiel,"plus de 20 milliards d investissement en 2026 tires par les initiatives IA, infrastructure de calcul et centres de donnees"
+111,NRG Energy,NRG,Utilities,Independent Power Producers & Energy Traders,4,16,ENTRE,fournit,partiel,demande croissante des centres de donnees parmi ses gros clients
+116,Keysight Technologies,KEYS,Information Technology,Electronic Equipment & Instruments,4,11,ENTRE,fournit,partiel,solutions pour accroitre l efficacite des grappes de calcul IA et les interconnexions
+118,Quanta Services,PWR,Industrials,Construction & Engineering,3,25,ENTRE,fournit,partiel,clients hyperscalers ; demande de transport d electricite tiree par les centres de donnees
+127,Cummins,CMI,Industrials,Construction Machinery & Heavy Transportation Equipment,4,10,ENTRE,fournit,partiel,forte demande pour ses produits destines aux centres de donnees sur six a huit trimestres
+134,AES Corporation,AES,Utilities,Independent Power Producers & Energy Traders,4,18,ENTRE,fournit,fort,fournisseur de reference d energie renouvelable aux entreprises de centres de donnees
+135,GE Vernova,GEV,Industrials,Heavy Electrical Equipment,4,8,ENTRE,fournit,fort,commandes de raccordement et production electrique pour electrifier les centres de donnees
+138,FirstEnergy,FE,Utilities,Electric Utilities,3,30,ENTRE,fournit,partiel,hausse de demande et reglementation sur l interconnexion des centres de donnees IA
+143,PPL Corporation,PPL,Utilities,Electric Utilities,3,26,ENTRE,fournit,partiel,ses plans d investissement dependent de la croissance et de la viabilite des centres de donnees
+147,Texas Pacific Land Corporation,TPL,Energy,Oil & Gas Exploration & Production,3,12,ENTRE,fournit,partiel,accord strategique pour developper des campus de centres de donnees sur ses terrains
+151,Evergy,EVRG,Utilities,Electric Utilities,4,13,ENTRE,fournit,partiel,ses plans d investissement dependent de la viabilite des centres de donnees raccordes
+158,Hubbell Incorporated,HUBB,Industrials,Industrial Machinery & Supplies & Components,3,11,ENTRE,fournit,partiel,le centre de donnees figure parmi les marches finaux declares de son segment electrique
+167,IDEX Corporation,IEX,Industrials,Industrial Machinery & Supplies & Components,3,8,ENTRE,fournit,partiel,la demande de projets lies a l IA inclut les solutions d alimentation de centres de donnees
+177,Prologis,PLD,Real Estate,Industrial REITs,2,30,ENTRE,fournit,partiel,developpement selectif de centres de donnees dans sa strategie d infrastructure numerique
+185,Public Service Enterprise Group,PEG,Utilities,Electric Utilities,3,14,ENTRE,fournit,faible,hausse de charge anticipee et procedures d interconnexion des centres de donnees
+204,Alliant Energy,LNT,Utilities,Electric Utilities,2,25,ENTRE,fournit,partiel,facteur de risque dedie a la croissance de la demande des clients centres de donnees
+207,Duke Energy,DUK,Utilities,Electric Utilities,4,14,ENTRE,fournit,partiel,croissance des ventes tiree par l usage des centres de donnees ; charges hyperscale
+224,Pinnacle West Capital,PNW,Utilities,Multi-Utilities,2,23,ENTRE,fournit,partiel,participation dans un fabricant d appareillage electrique utilise par les centres de donnees
+232,Xcel Energy,XEL,Utilities,Multi-Utilities,3,8,ENTRE,fournit,partiel,croissance rapide alimentee par l IA et les centres de donnees
+238,CMS Energy,CMS,Utilities,Multi-Utilities,2,17,ENTRE,fournit,partiel,la demande liee a l expansion des centres de donnees pourrait avoir un effet significatif
+240,Emcor,EME,Industrials,Construction & Engineering,2,12,ENTRE,fournit,fort,demande portee par l expansion des centres de donnees pour alimenter l IA et le cloud
+263,Ameren,AEE,Utilities,Multi-Utilities,2,20,ENTRE,fournit,partiel,croissance significative de la demande provenant principalement des centres de donnees
+285,Comfort Systems USA,FIX,Industrials,Construction & Engineering,2,6,ENTRE,fournit,fort,demande particulierement forte pour les centres de donnees ; specialiste du CVC de centres de donnees
+291,Vistra Corp.,VST,Utilities,Electric Utilities,3,7,ENTRE,fournit,partiel,emergence de grandes charges de centres de donnees liees a l IA
+294,NextEra Energy,NEE,Utilities,Multi-Utilities,2,10,ENTRE,fournit,partiel,cherche a servir les grands clients tels que les centres de donnees
+295,CenterPoint Energy,CNP,Utilities,Multi-Utilities,3,8,ENTRE,fournit,partiel,forte croissance de charge attendue liee a l expansion des centres de donnees
+305,Dominion Energy,D,Utilities,Multi-Utilities,2,16,ENTRE,fournit,partiel,investissements destines a la hausse de consommation portee par les grandes charges
+310,Williams Companies,WMB,Energy,Oil & Gas Storage & Transportation,2,11,ENTRE,fournit,partiel,projets de construction pour repondre aux besoins electriques crees par les centres de donnees
+323,Howmet Aerospace,HWM,Industrials,Aerospace & Defense,3,3,ENTRE,fournit,faible,turbines servant une demande electrique tiree par la construction de centres de donnees
+334,Southern Company,SO,Utilities,Electric Utilities,2,20,ENTRE,fournit,partiel,contrats signes avec de nouveaux centres de donnees representant environ neuf gigawatts
+338,Consolidated Edison,ED,Utilities,Multi-Utilities,3,4,ENTRE,fournit,faible,hausse de la demande de pointe due en partie aux centres de donnees
+346,American Electric Power,AEP,Utilities,Electric Utilities,2,17,ENTRE,fournit,partiel,ses plans d investissement dependent de la croissance des centres de donnees raccordes
+358,PG&E Corporation,PCG,Utilities,Multi-Utilities,2,7,ENTRE,fournit,partiel,investissements de transport pour centres de donnees ; croissance de charge attendue
+364,Sempra,SRE,Utilities,Multi-Utilities,2,11,ENTRE,fournit,partiel,le developpement de centres de donnees doit entrainer une hausse rapide des investissements reseau
+374,DTE Energy,DTE,Utilities,Multi-Utilities,2,5,ENTRE,fournit,partiel,construction d installations de production pour desservir des centres de donnees
+399,Oneok,OKE,Energy,Oil & Gas Storage & Transportation,2,3,ENTRE,fournit,partiel,la demande croissante des centres de donnees la positionne pour de nouveaux projets

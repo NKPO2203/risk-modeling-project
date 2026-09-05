@@ -1,0 +1,251 @@
+{
+  "version": "2026-09-05.2",
+  "portee": "Registre borné de réconciliations documentées ; les autres lignes ne sont pas vérifiées manuellement. Les données brutes restent intactes.",
+  "exceptions": [
+    {
+      "id": "NVDA-CA-EQUIVALENCE",
+      "cik": "0001045810",
+      "type": "equivalence_etiquettes",
+      "metriques": ["chiffre_affaires"],
+      "etiquettes": ["Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax"],
+      "fin_min": "2018-01-28",
+      "fin_max": "2026-01-25",
+      "perimetre_id": "NVDA:revenu_consolide_etiquettes_rapprochees",
+      "motif": "Je rapproche les deux étiquettes du revenu consolidé NVIDIA. Le compte de résultat 2020 reprend 9714, 11716 et 10918 M$ pour les clôtures 2018, 2019 et 2020. Dans le rapport 2022, Revenues et RevenueFromContractWithCustomerExcludingAssessedTax portent exactement les mêmes contextes consolidés et montants 10918, 16675 et 26914 M$ pour les clôtures 2020, 2021 et 2022. Cette preuve autorise le raccord de notion ; elle ne neutralise pas les acquisitions économiques et ne s'étend pas automatiquement aux autres sociétés ou aux futurs exercices.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000036/nvda-20220130.htm",
+      "source_reference_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581020000010/nvda-2020x10k.htm",
+      "date_verification": "2026-09-05",
+      "valeurs_controlees": {
+        "2018-01-28": 9714000000,
+        "2019-01-27": 11716000000,
+        "2020-01-26": 10918000000,
+        "2021-01-31": 16675000000,
+        "2022-01-30": 26914000000
+      },
+      "contexts_pont_2022": [
+        {"debut": "2019-01-28", "fin": "2020-01-26", "context_ref": "i7e658446ed944264bfd1d394f96043dc_D20190128-20200126", "valeur": 10918000000},
+        {"debut": "2020-01-27", "fin": "2021-01-31", "context_ref": "i13d76b24016c4fb2be18b9caaaff9f4c_D20200127-20210131", "valeur": 16675000000},
+        {"debut": "2021-02-01", "fin": "2022-01-30", "context_ref": "i2c5e111a942340e08ad1e8d2e3b0fb71_D20210201-20220130", "valeur": 26914000000}
+      ],
+      "nature_contexts": "Entité 0001045810, USD, périodes annuelles consolidées sans axe ni membre XBRL ; les deux étiquettes ont le même contextRef dans le rapport 2022."
+    },
+    {
+      "id": "AEP-CONSTRUCTION",
+      "cik": "0000004904",
+      "type": "etiquette_imposee",
+      "metriques": [
+        "capex"
+      ],
+      "motif": "Je mesure les dépenses de construction. Le tableau de flux distingue Construction Expenditures (8453 M$ en 2025) d'Acquisitions of Generation Facilities (3453 M$). Je ne les fusionne pas et je n'appelle pas cette série total de toutes les acquisitions.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/4904/000000490426000013/aep-20251231.htm",
+      "date_verification": "2026-09-05",
+      "etiquette": "PaymentsForConstructionInProcess"
+    },
+    {
+      "id": "HWM-RESULTAT",
+      "cik": "0000004281",
+      "type": "perimetre",
+      "metriques": [
+        "chiffre_affaires",
+        "rd"
+      ],
+      "motif": "Je ne compare pas l'ancien périmètre Arconic au périmètre Howmet actuel. Les comparatifs 2018 et 2019 du compte de résultat 2020 sont présentés en activités poursuivies.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/4281/000000428121000049/arnc-20201231.htm",
+      "date_verification": "2026-09-05",
+      "fin_min_comparable": "2018-12-31",
+      "perimetre_id": "HWM:activites_poursuivies"
+    },
+    {
+      "id": "HWM-FLUX",
+      "cik": "0000004281",
+      "type": "perimetre",
+      "metriques": [
+        "capex"
+      ],
+      "motif": "Les flux historiques comprennent les activités abandonnées. Sans réconciliation séparée, je retiens seulement les exercices complets postérieurs à la scission du 1 avril 2020.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/4281/000000428121000049/arnc-20201231.htm",
+      "date_verification": "2026-09-05",
+      "fin_min_comparable": "2021-12-31",
+      "perimetre_id": "HWM:post_scission_flux"
+    },
+    {
+      "id": "WDC-RESULTAT",
+      "cik": "0000106040",
+      "type": "perimetre",
+      "metriques": [
+        "chiffre_affaires",
+        "rd"
+      ],
+      "motif": "Je conserve les comparatifs 2023 et suivants présentés après la séparation de Sandisk ; l'historique antérieur n'est pas réconcilié avec les activités poursuivies.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/106040/000010604025000038/wdc-20250627.htm",
+      "date_verification": "2026-09-05",
+      "fin_min_comparable": "2023-06-30",
+      "perimetre_id": "WDC:activites_poursuivies"
+    },
+    {
+      "id": "WDC-FLUX",
+      "cik": "0000106040",
+      "type": "perimetre",
+      "metriques": [
+        "capex"
+      ],
+      "motif": "Note 3 : les flux abandonnés sont inclus dans les flux consolidés. Je ne compare pas les flux historiques non réconciliés au seul périmètre HDD.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/106040/000010604025000038/wdc-20250627.htm",
+      "date_verification": "2026-09-05",
+      "fin_min_comparable": "2026-06-26",
+      "perimetre_id": "WDC:activites_poursuivies"
+    },
+    {
+      "id": "WDC-CAPEX-2023",
+      "cik": "0000106040",
+      "type": "reconciliation",
+      "metriques": [
+        "capex"
+      ],
+      "motif": "Je soustrais les achats PP&E des activités abandonnées (219 M$ ; Note 3) du total consolidé (821 M$ ; tableau de flux), soit 602 M$.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/106040/000010604025000038/wdc-20250627.htm",
+      "date_verification": "2026-09-05",
+      "fin": "2023-06-30",
+      "valeur_brute_attendue": 821000000,
+      "activites_abandonnees": 219000000,
+      "perimetre_id": "WDC:activites_poursuivies",
+      "depot": "0000106040-25-000038",
+      "depose_le": "2025-08-14"
+    },
+    {
+      "id": "WDC-CAPEX-2024",
+      "cik": "0000106040",
+      "type": "reconciliation",
+      "metriques": [
+        "capex"
+      ],
+      "motif": "Je soustrais les achats PP&E des activités abandonnées (166 M$ ; Note 3) du total consolidé (487 M$ ; tableau de flux), soit 321 M$.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/106040/000010604025000038/wdc-20250627.htm",
+      "date_verification": "2026-09-05",
+      "fin": "2024-06-28",
+      "valeur_brute_attendue": 487000000,
+      "activites_abandonnees": 166000000,
+      "perimetre_id": "WDC:activites_poursuivies",
+      "depot": "0000106040-25-000038",
+      "depose_le": "2025-08-14"
+    },
+    {
+      "id": "WDC-CAPEX-2025",
+      "cik": "0000106040",
+      "type": "reconciliation",
+      "metriques": [
+        "capex"
+      ],
+      "motif": "Je soustrais les achats PP&E des activités abandonnées (139 M$ ; Note 3) du total consolidé (412 M$ ; tableau de flux), soit 273 M$.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/106040/000010604025000038/wdc-20250627.htm",
+      "date_verification": "2026-09-05",
+      "fin": "2025-06-27",
+      "valeur_brute_attendue": 412000000,
+      "activites_abandonnees": 139000000,
+      "perimetre_id": "WDC:activites_poursuivies",
+      "depot": "0000106040-25-000038",
+      "depose_le": "2025-08-14"
+    },
+    {
+      "id": "MRVL-REORGANISATION",
+      "cik": "0001835632",
+      "type": "perimetre",
+      "metriques": [
+        "chiffre_affaires",
+        "capex",
+        "rd"
+      ],
+      "motif": "Le 20 avril 2021, fusion avec Inphi et réorganisation de Marvell Technology Group (CIK1058057) sous Marvell Technology Inc (CIK1835632). Ce n'est pas une scission créant une activité nouvelle. Je ne raccorde pas les deux CIK sans réconciliation du périmètre.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563221000032/mrvl-20211030.htm",
+      "date_verification": "2026-09-05",
+      "fin_min_comparable": "2023-01-28",
+      "perimetre_id": "MRVL:post_fusion_inphi"
+    },
+    {
+      "id": "CPT-REVENU",
+      "cik": "0000906345",
+      "type": "information",
+      "metriques": [
+        "chiffre_affaires"
+      ],
+      "motif": "Le revenu de contrats clients d'une foncière peut exclure les loyers. Le maximum des seules étiquettes collectées n'est pas une validation du total ; revue requise tant que le total n'est pas réconcilié.",
+      "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000906345.json",
+      "date_verification": "2026-09-05"
+    },
+    {
+      "id": "NVDA-HISTORIQUE",
+      "cik": "0001045810",
+      "type": "information",
+      "metriques": [
+        "capex"
+      ],
+      "motif": "Vérification API du 5 septembre 2026 : les achats PP&E annuels 10-K s'arrêtent en 2011 et PaymentsToAcquireProductiveAssets débute en 2021. L'absence 2014-2020 n'est pas un capex nul ; aucun chiffre n'est imputé.",
+      "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+      "date_verification": "2026-09-05"
+    }
+  ],
+  "complements": [
+    {
+      "id": "CMS-CAPEX-2023",
+      "cik": "0000811156",
+      "metric": "capex",
+      "debut": "2023-01-01",
+      "fin": "2023-12-31",
+      "valeur": 2407000000,
+      "etiquette": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "rang_preference": 0,
+      "depot": "0000811156-26-000004",
+      "depose_le": "2026-02-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/811156/000081115626000004/cms-20251231.htm",
+      "context_ref": "c-28",
+      "dimension": "us-gaap:PropertyPlantAndEquipmentByTypeAxis=cms:OngoingCapitalExpendituresMember",
+      "motif": "Je relève la ligne consolidée Capital expenditures (excludes assets placed under finance lease), absente de companyfacts car dimensionnée. Unité millions USD, signe de sortie de trésorerie présenté positif dans la métrique."
+    },
+    {
+      "id": "CMS-CAPEX-2024",
+      "cik": "0000811156",
+      "metric": "capex",
+      "debut": "2024-01-01",
+      "fin": "2024-12-31",
+      "valeur": 3018000000,
+      "etiquette": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "rang_preference": 0,
+      "depot": "0000811156-26-000004",
+      "depose_le": "2026-02-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/811156/000081115626000004/cms-20251231.htm",
+      "context_ref": "c-27",
+      "dimension": "us-gaap:PropertyPlantAndEquipmentByTypeAxis=cms:OngoingCapitalExpendituresMember",
+      "motif": "Je relève la ligne consolidée Capital expenditures (excludes assets placed under finance lease), absente de companyfacts car dimensionnée. Unité millions USD, signe de sortie de trésorerie présenté positif dans la métrique."
+    },
+    {
+      "id": "CMS-CAPEX-2025",
+      "cik": "0000811156",
+      "metric": "capex",
+      "debut": "2025-01-01",
+      "fin": "2025-12-31",
+      "valeur": 3824000000,
+      "etiquette": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "rang_preference": 0,
+      "depot": "0000811156-26-000004",
+      "depose_le": "2026-02-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/811156/000081115626000004/cms-20251231.htm",
+      "context_ref": "c-26",
+      "dimension": "us-gaap:PropertyPlantAndEquipmentByTypeAxis=cms:OngoingCapitalExpendituresMember",
+      "motif": "Je relève la ligne consolidée Capital expenditures (excludes assets placed under finance lease), absente de companyfacts car dimensionnée. Unité millions USD, signe de sortie de trésorerie présenté positif dans la métrique."
+    }
+  ],
+  "limites_collecte": [
+    {
+      "cik": "0000753308",
+      "metric": "capex",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000015/nee-20251231.htm",
+      "motif": "Je n'utilise pas le poste FPL seul pour le groupe NextEra, ni un agrégat incluant investissements indépendants et combustible comme capex pur. Total comparable non réconcilié."
+    },
+    {
+      "cik": "0000936340",
+      "metric": "capex",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/936340/000093634026000054/dte-20251231.htm",
+      "motif": "Je ne substitue pas le capex de DTE Electric au groupe DTE, ni l'agrégat capital expenditures and acquisitions au capex sans rapprochement. Absence conservée."
+    }
+  ]
+}
