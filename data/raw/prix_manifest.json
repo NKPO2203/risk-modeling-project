@@ -858,7 +858,8 @@
     "Yahoo Finance n est pas une source officielle ; ses prix ajustes sont recalcules retroactivement a chaque dividende et a chaque division.",
     "BRK.B est interroge sous le symbole BRK-B ; la correspondance figure dans la colonne symbole_yahoo.",
     "Meta Platforms ne publie pas de nombre d actions a une date dans cette interface ; seule une moyenne ponderee est disponible.",
-    "Les nombres d actions sont declares sans retraitement des divisions, contrairement aux prix."
+    "Les nombres d actions sont declares sans retraitement des divisions, contrairement aux prix.",
+    "Les metadonnees descriptives sont un etat au jour de la collecte : devise, place et denomination peuvent changer sans que les prix bougent."
   ],
   "revisions": [
     {
@@ -867,6 +868,32 @@
       "motif": "Ajout de la colonne debut, necessaire pour distinguer les moyennes ponderees trimestrielles des cumuls annuels d un meme depot. Aucune valeur anterieure modifiee ni supprimee.",
       "sha256_precedent": "51288ccca33c9b5571569c558d9e3be2553ee3738792ddffacae184791f46ad5",
       "sha256_courant": "db0bc9750edb02fbc88410cf68f9b6aded6fbe262184c991419e9cd7d0fd67b7"
+    },
+    {
+      "le": "2026-09-07T08:08:09+00:00",
+      "objet": "metadonnees_titres.csv",
+      "motif": "Fichier brut ajoute pendant la phase 2 alors que la phase de collecte etait close. La devise et la place de cotation ne figurent dans aucun fichier de prix ; la tache 18 exigeait de les recuperer. Une requete descriptive par titre, sans historique. Aucun fichier de prix n a ete modifie.",
+      "sha256_precedent": null,
+      "sha256_courant": "ebc370034c6826f85965ab899b340c321b570ebc20bf334df0f86c1803c1e025"
     }
-  ]
+  ],
+  "source_metadonnees": "Yahoo Finance, via yfinance, champ history_metadata",
+  "metadonnees": {
+    "fichier": "metadonnees_titres.csv",
+    "titres": 118,
+    "collecte_le": "2026-09-07",
+    "champs": [
+      "fichier",
+      "symbole",
+      "symbole_declare",
+      "devise",
+      "place",
+      "type",
+      "fuseau",
+      "nom",
+      "premiere_transaction",
+      "collecte_le"
+    ],
+    "sha256": "ebc370034c6826f85965ab899b340c321b570ebc20bf334df0f86c1803c1e025"
+  }
 }
