@@ -30,7 +30,15 @@ Une citation retrouvée prouve sa traçabilité. Elle ne remplace pas la discuss
 
 Ces 112 entreprises ne forment pas un portefeuille et ne sont pas destinées à être détenues ensemble. Elles constituent l'ensemble des candidats dans lequel plusieurs portefeuilles différents seront construits.
 
-La distinction est nécessaire pour la suite, parce que le sujet du projet est la concentration. Or **la concentration ne se mesure pas au nombre d'entreprises, elle se mesure aux poids**. Un portefeuille bâti sur une poignée de très grandes capitalisations tirées de cet univers serait extrêmement concentré. Un portefeuille équipondéré sur les 112, réparti sur neuf secteurs, ne le serait pas. Les deux sortent du même vivier, et c'est leur comparaison qui répondra à la question de recherche.
+La distinction est nécessaire pour la suite, parce que le sujet du projet est la concentration. Et il faut ici séparer deux notions que j'avais confondues dans une version précédente de ce document.
+
+**La concentration des poids** décrit la répartition du capital entre les lignes. Elle se calcule directement à partir des pondérations, sans aucune donnée de marché. Un portefeuille bâti sur une poignée de très grandes capitalisations affiche une concentration des poids élevée ; un portefeuille équipondéré sur les 112 affiche une concentration des poids faible.
+
+**La concentration du risque** décrit la part de la variabilité du portefeuille attribuable à un petit nombre de sources. Elle dépend des volatilités et surtout des dépendances entre titres. Elle ne se déduit pas des poids.
+
+Les deux ne coïncident pas. Un portefeuille de 112 lignes équipondérées dont les titres évoluent ensemble se comporte comme un portefeuille beaucoup plus étroit. Avec une volatilité individuelle de 30 % et une corrélation uniforme, la volatilité du portefeuille vaut 2,8 % si la corrélation est nulle, et 28,5 % si elle vaut 0,9. Les poids et leur indice de concentration sont identiques dans les deux cas. Ces valeurs illustrent le mécanisme, elles ne décrivent pas les entreprises retenues.
+
+**Je ne peux donc pas écrire qu'un portefeuille équipondéré serait diversifié.** Ce serait affirmer par avance ce que l'analyse de risque doit établir. Ce que je peux dire à ce stade : les portefeuilles issus de ce vivier différeront par leur concentration des poids, et la comparaison de leurs risques réels est l'objet de l'étape suivante.
 
 L'étalement de l'univers sur neuf secteurs n'éloigne donc pas du sujet. Il constitue au contraire un premier constat : l'exposition économique à la chaîne des infrastructures de calcul ne se limite pas à un petit nombre de grandes valeurs technologiques.
 

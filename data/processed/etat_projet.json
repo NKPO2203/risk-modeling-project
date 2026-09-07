@@ -8,21 +8,21 @@
   "passages_extraits": 12836,
   "verdicts": {
     "A_EXAMINER": 76,
-    "DOUTEUX": 39,
-    "ENTRE": 112,
+    "DOUTEUX": 38,
+    "ENTRE": 113,
     "SORT": 273
   },
   "canaux_retenus": {
     "depense": 2,
     "depense et vend": 4,
-    "fournit": 74,
+    "fournit": 75,
     "vend": 32
   },
   "degres_retenus": {
-    "non_quantifie": 112
+    "non_quantifie": 113
   },
   "maturites_retenues": {
-    "engagement_ou_developpement_documente": 17,
+    "engagement_ou_developpement_documente": 18,
     "etablie": 95
   },
   "secteurs_retenus": {
@@ -34,17 +34,17 @@
     "Information Technology": 43,
     "Materials": 7,
     "Real Estate": 7,
-    "Utilities": 21
+    "Utilities": 22
   },
   "mouvements_comptables": {
     "doublement observe": 50,
     "non evaluable": 6,
-    "progression inferieure au seuil": 55,
+    "progression inferieure au seuil": 56,
     "recul des mesures disponibles": 1
   },
   "couverture_comptable": {
     "aucune comparaison": 6,
-    "observation partielle": 48,
+    "observation partielle": 49,
     "trois mesures comparables": 58
   },
   "replis_de_reference": 40,
