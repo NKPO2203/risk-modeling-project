@@ -1,4 +1,28 @@
-# Environnement de calcul vérifié avec Python 3.12.14.
-pandas==3.0.1
-numpy==2.3.5
-lxml==6.1.1
+# Environnement de calcul, releve le 7 septembre 2026 sur la machine ayant
+# produit les fichiers du depot. Python 3.13.9.
+#
+# Les versions ci-dessous sont celles de l'environnement qui a produit les
+# fichiers du depot, relevees avec importlib.metadata.
+#
+# Une version anterieure de ce fichier declarait Python 3.12.14 et d'autres
+# numeros de versions. Un audit externe a etabli qu'il s'agissait d'un
+# environnement reellement disponible et teste, et non de valeurs inventees.
+# Le present fichier decrit l'environnement producteur ; l'existence d'un
+# second environnement fonctionnel n'est pas un defaut, mais un seul doit
+# etre declare comme reference.
+
+# Traitement des donnees, utilise partout
+pandas==3.0.0
+numpy==2.4.1
+
+# Lecture du HTML des rapports annuels
+# src/fetch_filings_text.py
+lxml==6.0.2
+
+# Interrogation des interfaces web de la SEC
+# src/fetch_sec_financials.py et les notebooks de collecte
+requests==2.32.5
+
+# Collecte des cours et des series de comparaison
+# src/collecter_prix.ipynb et src/explorer_prix.ipynb
+yfinance==1.1.0

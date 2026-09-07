@@ -15,8 +15,8 @@ Les limites et la règle de lecture figurent dans `research/selection_rule.md`.
 | Catégorie | Nombre |
 |---|---:|
 | A_EXAMINER | 76 |
-| DOUTEUX | 39 |
-| ENTRE | 112 |
+| DOUTEUX | 38 |
+| ENTRE | 113 |
 | SORT | 273 |
 
 ## canaux_retenus
@@ -25,20 +25,20 @@ Les limites et la règle de lecture figurent dans `research/selection_rule.md`.
 |---|---:|
 | depense | 2 |
 | depense et vend | 4 |
-| fournit | 74 |
+| fournit | 75 |
 | vend | 32 |
 
 ## degres_retenus
 
 | Catégorie | Nombre |
 |---|---:|
-| non_quantifie | 112 |
+| non_quantifie | 113 |
 
 ## maturites_retenues
 
 | Catégorie | Nombre |
 |---|---:|
-| engagement_ou_developpement_documente | 17 |
+| engagement_ou_developpement_documente | 18 |
 | etablie | 95 |
 
 ## secteurs_retenus
@@ -53,7 +53,7 @@ Les limites et la règle de lecture figurent dans `research/selection_rule.md`.
 | Information Technology | 43 |
 | Materials | 7 |
 | Real Estate | 7 |
-| Utilities | 21 |
+| Utilities | 22 |
 
 ## mouvements_comptables
 
@@ -61,7 +61,7 @@ Les limites et la règle de lecture figurent dans `research/selection_rule.md`.
 |---|---:|
 | doublement observe | 50 |
 | non evaluable | 6 |
-| progression inferieure au seuil | 55 |
+| progression inferieure au seuil | 56 |
 | recul des mesures disponibles | 1 |
 
 ## couverture_comptable
@@ -69,7 +69,7 @@ Les limites et la règle de lecture figurent dans `research/selection_rule.md`.
 | Catégorie | Nombre |
 |---|---:|
 | aucune comparaison | 6 |
-| observation partielle | 48 |
+| observation partielle | 49 |
 | trois mesures comparables | 58 |
 
 - replis_de_reference : 40
