@@ -99,13 +99,13 @@ Une première version de ce contrôle donnait deux résultats différents sur de
 
 Un point reste ouvert sur cette phase : le niveau manuel du protocole de seconde source, un échantillon relevé à la main sur un site public, n'a pas encore été exécuté.
 
-### Phase 3 — Décisions en voyant les données — non commencée
+### Phase 3 — Décisions en voyant les données — en cours, 3 tâches sur 10
 
-| | Tâche | |
-|---|---|---|
-| 21 | Période d'étude | A |
-| 22 | Fréquence des rendements | A |
-| 23 | Rendement total ou de prix | A |
+| | Tâche | | État |
+|---|---|---|---|
+| 21 | Période d'étude | A | **décidée** |
+| 22 | Fréquence des rendements | A | **décidée** |
+| 23 | Rendement total ou de prix | A | **décidée** |
 | 24 | Portefeuilles à construire, donc les poids | A |
 | 25 | Nombre de titres du portefeuille concentré | A |
 | 26 | Règle de rééquilibrage | A |
@@ -113,6 +113,42 @@ Un point reste ouvert sur cette phase : le niveau manuel du protocole de seconde
 | 28 | Poche de liquidités ou investissement intégral | A |
 | 29 | Coûts de transaction | A |
 | 30 | Portefeuilles par canal d'exposition | A |
+
+**Tâche 21.** Période retenue : **du 1er janvier 2000 au 4 septembre 2026**, chaque titre entrant à sa première cotation réelle, celle qui suit ses éventuelles lignes de remplissage.
+
+Quatre-vingts titres sont présents dès le premier jour, trente-trois arrivent ensuite, jamais plus de cinq la même année. La composition évolue donc, comme celle de l'indice auquel elle sera comparée.
+
+Trois raisons. La période traverse quatre régimes de tension de natures différentes, 2000-2002, 2008, mars 2020 et 2022, là où un départ en 2007 n'en aurait offert que trois. L'éclatement des valeurs technologiques de 2000 est un épisode de concentration technologique qui a mal fini, ce qui le rend directement pertinent pour un sujet portant sur la concentration technologique. Et seules trente lignes de remplissage subsistent après 2000, dans sept fichiers, toutes identifiées dans `data/processed/controle_prix.csv` et donc écartables ligne à ligne plutôt qu'en tronquant une période entière.
+
+Exiger que les 113 titres soient présents sur toute la période aurait ramené l'étude à dix mois, puisque `GEV` et `CEG`, nées de scissions récentes, ne cotent que depuis 2024 et 2022. Ce sont précisément des entreprises que le sujet vise.
+
+**Tâche 22.** Rendements **quotidiens**, soit environ 6 700 observations sur la période.
+
+Le quotidien est retenu parce qu'il se laisse agréger et que l'inverse est impossible : on passe du jour à la semaine ou au mois, jamais du mois au jour. Il donne aussi le nombre d'observations nécessaire pour parler d'événements rares, alors qu'une base mensuelle n'en offrirait que 320 et qu'un krach d'une journée y disparaîtrait.
+
+Sa faiblesse est connue et sera dite : à l'échelle du jour, une part du mouvement relève de la mécanique de marché plutôt que de l'information, et les corrélations quotidiennes sont mécaniquement plus basses que les corrélations réelles. Les résultats principaux seront donc rapportés en quotidien et en mensuel. S'ils divergent, la divergence sera expliquée et non arbitrée.
+
+**Tâche 23.** **Rendement total**, donc la colonne `Adj Close`, pour tous les calculs de performance et de risque. Les deux fonds de comparaison seront pris de la même façon ; `^GSPC`, qui est un indice de prix, ne servira que de repère de contexte et n'entrera dans aucune comparaison de performance.
+
+L'écart entre les deux mesures atteint deux points de rendement annuel en moyenne sur les 112 titres disponibles depuis 2000, six points sur Realty Income, cinq sur Southern, Duke et CenterPoint. Sur Southern, dix mille placés en janvier 2000 deviennent soixante-trois mille au cours seul et deux cent onze mille dividendes réinvestis : les deux tiers du gain sont dans les dividendes.
+
+La raison n'est pas la propreté de la mesure mais l'orientation de son erreur. L'univers contient deux populations, des fabricants de puces qui ne distribuent presque rien et des producteurs d'électricité et des foncières qui distribuent l'essentiel de leur résultat. Un portefeuille pondéré par capitalisation est dominé par les premiers et perdrait peu à ignorer les dividendes ; un portefeuille équipondéré, où les seconds pèsent autant et sont nombreux, en perdrait beaucoup. Mesurer sans les dividendes handicaperait donc systématiquement l'équipondéré, c'est à dire précisément le terme de comparaison qui sert à tester si la concentration ajoute du risque. **Le biais pointerait droit vers la conclusion recherchée.**
+
+Réserve : le rendement total suppose des dividendes réinvestis dans le titre le jour du détachement, sans impôt ni frais. Aucun investisseur n'obtient exactement cela. C'est la convention standard, comparable d'un titre à l'autre, et celle de `^SP500TR`.
+
+**Réserve écrite avant tout calcul.** Les benchmarks équipondérés ne couvrent pas le début de la période : `RSP` commence en mai 2003, `^SPXEW` en décembre 2006. Toute comparaison exigeant l'un d'eux sera restreinte à la sous-période correspondante et le dira. Ces séries ne seront pas prolongées ni reconstruites.
+
+Une première version de cette décision fixait le départ à janvier 2007 pour disposer des deux benchmarks dès le premier jour. L'auteur a objecté que l'indisponibilité d'une seule comparaison ne justifiait pas de tronquer toute l'étude. L'objection est retenue.
+
+**Tâche 24, en cours de discussion, rien de décidé.** Deux constats sont acquis.
+
+Le premier est matériel. Les nombres d'actions déclarés à la SEC commencent le 24 février 2009 et ne couvrent que 54 entreprises cette année-là. Reconstruire une capitalisation quotidienne depuis 2000 est donc impossible avec les données du dépôt, et non pas seulement difficile. Toute pondération par capitalisation portant sur nos propres portefeuilles est écartée sur la majeure partie de la période ; l'effet des poids reste mesuré par `SPY` contre `RSP`, deux fonds réels dont il n'y a rien à reconstruire.
+
+Le second est méthodologique. Une règle de sélection par la taille serait une règle de marché, étrangère au travail de l'étape 1, et elle empilerait un second anachronisme sur le premier : le dix premières capitalisations de 2000 ne contiennent pas les acteurs du calcul IA. La piste retenue construit les portefeuilles sur la classification établie à l'étape 1, canal d'exposition et niveau de maturité, qui ne demande aucun chiffre de marché et reste applicable du premier au dernier jour.
+
+Sept portefeuilles équipondérés sont à l'étude, non validés : les 113 comme thermomètre du thème, les 95 à exposition établie, les 18 à engagement documenté, puis quatre portefeuilles par maillon de chaîne, technologie, industrie, services aux collectivités et immobilier. La concentration s'y mesure par le nombre de titres détenus plutôt que par le poids, ce qui est plus proche de la question posée : un investisseur exposé au thème en détient dix ou vingt, pas cinq cents.
+
+**Discussion ouverte sur le biais de connaissance a posteriori.** L'univers est établi avec des rapports de 2026 et appliqué à des prix antérieurs. Raccourcir la période ne corrige rien, le biais tenant à la sélection et non à la longueur de l'historique. Trois issues ont été posées : commencer en 2026 et attendre, ce qui laisse zéro observation ; conserver l'historique en s'interdisant toute affirmation de performance réalisable et en ne traitant que la structure du risque ; ou refaire la sélection sur un millésime ancien, l'exercice 2018 par exemple, pour tester hors échantillon sur 2019-2026, ce qui règle le problème au prix d'une nouvelle collecte SEC complète. La deuxième issue est proposée pour maintenant, la troisième réservée pour plus tard. **Rien n'est tranché.**
 
 ### Phase 4 — Construction — non commencée
 
