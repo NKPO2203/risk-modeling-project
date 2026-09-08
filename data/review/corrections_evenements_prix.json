@@ -1,0 +1,74 @@
+[
+  {
+    "titre": "JCI",
+    "date": "2007-07-02",
+    "close_avant": 70.35396575927734,
+    "close_apres": 27.77513694763184,
+    "dividende_brut": 10.691554,
+    "facteur_avant": 0.3902296328799181,
+    "statut": "erreur_confirmee",
+    "motif": "La scission distribue une action Covidien et une action Tyco Electronics pour chaque action Tyco après regroupement 1 pour 4. Le prix antérieur ne neutralise pas cette sortie ; le pseudo-dividende de 10.691554 ne restitue pas la valeur distribuée. Réinvestissement synthétique dans le parent à la clôture : facteur 53.36 / (53.36 + 39.97 + 43.41).",
+    "source": "https://www.sec.gov/Archives/edgar/data/833444/000110465907052190/a07-17393_3ex99d1.htm",
+    "decision_le": "2026-09-08"
+  },
+  {
+    "titre": "ETN",
+    "date": "2001-01-02",
+    "close_avant": 16.310047149658203,
+    "close_apres": 16.828125,
+    "dividende_brut": 2.616,
+    "facteur_avant": 1.0,
+    "statut": "erreur_confirmee",
+    "motif": "Distribution de 1.179023 action Axcelis par action Eaton, sans dividende monétaire général à cette date. Le facteur de scission 1.152472 est déjà incorporé dans Close (65.25 / 4 = Open 16.3125 après les deux divisions ultérieures). Supprimer le second versement de 2.616 dans les espèces ; conserver le facteur de prix du fournisseur, approximation fondée sur les cours d’ouverture.",
+    "source": "https://www.sec.gov/Archives/edgar/data/1113232/000111323201500010/form10q.htm|https://investor.axcelis.com/shareholder-services/investor-faqs",
+    "decision_le": "2026-09-08"
+  },
+  {
+    "titre": "CNP",
+    "date": "2002-10-01",
+    "close_avant": 8.438429832458496,
+    "close_apres": 8.949999809265137,
+    "dividende_brut": 0.843,
+    "facteur_avant": 1.0,
+    "statut": "erreur_confirmee",
+    "motif": "Distribution de 0.788603 action Reliant Resources par action, et non un versement en dollars. Le facteur de scission 1.18624 est déjà présent dans Close. Retirer le pseudo-dividende de 0.843 des espèces pour éviter un second compte ; le facteur historique du fournisseur est conservé.",
+    "source": "https://investors.centerpointenergy.com/news-releases/news-release-details/reliant-energy-establishes-distribution-ratio",
+    "decision_le": "2026-09-08"
+  },
+  {
+    "titre": "CNP",
+    "date": "2003-01-07",
+    "close_avant": 8.550000190734863,
+    "close_apres": 8.0600004196167,
+    "dividende_brut": 0.493,
+    "facteur_avant": 0.9423594088842457,
+    "statut": "convention_non_monetaire",
+    "motif": "Distribution de 0.05 action Texas Genco par action CNP. Yahoo en donne un équivalent de 0.493 dans Dividends sans facteur de scission. Cet équivalent, dont le montant de marché reste une donnée Yahoo, est réinvesti synthétiquement dans le parent au détachement, au lieu de devenir des espèces annuelles. La richesse le jour de l’événement ne change pas.",
+    "source": "https://investors.centerpointenergy.com/corporate-transactions|https://www.sec.gov/Archives/edgar/data/1188303/000119312504152157/dprem14c.htm",
+    "decision_le": "2026-09-08"
+  },
+  {
+    "titre": "JCI",
+    "date": "2016-10-31",
+    "close_avant": 43.7599983215332,
+    "close_apres": 40.31999969482422,
+    "dividende_brut": 4.7,
+    "facteur_avant": 0.8956019539791258,
+    "statut": "convention_non_monetaire",
+    "motif": "Distribution de 0.1 action Adient par action JCI. Yahoo en donne un équivalent de 4.7 dans Dividends sans facteur de scission. Cet équivalent reste celui du fournisseur, sans certification d’un prix de liquidation à la clôture. Il est réinvesti synthétiquement dans le parent au détachement. La richesse le jour de l’événement ne change pas.",
+    "source": "https://investors.adient.com/news-releases/2016/10-31-2016",
+    "decision_le": "2026-09-08"
+  },
+  {
+    "titre": "HD",
+    "date": "2001-11-28",
+    "close_avant": 43.34999847412109,
+    "close_apres": 43.79999923706055,
+    "dividende_brut": 0.05,
+    "facteur_avant": 1.0,
+    "statut": "erreur_confirmee",
+    "motif": "Yahoo répète 0.05 dollar le lendemain du détachement officiel du 27 novembre. La table de l’émetteur ne déclare qu’un versement trimestriel, payable le 13 décembre ; le second versement est retiré en mémoire.",
+    "source": "https://ir.homedepot.com/stock-information/dividend-history",
+    "decision_le": "2026-09-08"
+  }
+]

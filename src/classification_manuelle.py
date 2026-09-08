@@ -97,6 +97,39 @@ def charger_textes_verifies(termes, racine=RACINE):
     return textes
 
 
+def charger_complements(termes, racine=RACINE):
+    """Rattache une pièce relue lorsqu'aucun document n'existe dans le cliché.
+
+    L'archive initiale reste intacte. Ce complément n'attribue aucun verdict :
+    la citation doit encore correspondre au CIK, au dépôt et à l'URL déclarés.
+    Un nouveau rapport dans le corpus oblige à reprendre la revue du complément.
+    """
+    chemin = racine / "data/review/decisions_sources_complementaires.csv"
+    if not chemin.exists():
+        return termes.copy(), {}
+    sources = pd.read_csv(chemin, dtype=str, keep_default_na=False)
+    t, textes = termes.copy(), {}
+    if sources.cik.duplicated().any():
+        raise ValueError("Plusieurs compléments pour le même CIK")
+    for s in sources.itertuples():
+        masque = t.cik.astype(str).str.zfill(10).eq(s.cik.zfill(10))
+        if masque.sum() != 1 or t.loc[masque, "depot"].fillna("").ne("").any():
+            raise ValueError("Le complément ne peut pas remplacer un rapport existant")
+        fichier = (racine / s.texte).resolve()
+        if not fichier.is_relative_to((racine / "data/review/sources_finition_2026-09-08").resolve()):
+            raise ValueError("Complément hors de son dossier de preuves")
+        contenu = fichier.read_bytes()
+        if hashlib.sha256(contenu).hexdigest() != s.texte_sha256:
+            raise ValueError("Empreinte du complément documentaire incorrecte")
+        if not s.depot or not s.source_url.startswith(
+                f"https://www.sec.gov/Archives/edgar/data/{int(s.cik)}/{s.depot.replace('-', '')}/"):
+            raise ValueError("Le CIK, le dépôt et l'URL du complément ne correspondent pas")
+        t.loc[masque, "depot"] = s.depot
+        t.loc[masque, "source_url"] = s.source_url
+        textes[(s.cik.zfill(10), s.depot)] = contenu.decode("utf-8")
+    return t, textes
+
+
 def main():
     raw, processed = RACINE / "data" / "raw", RACINE / "data" / "processed"
     def lire(path):
@@ -104,8 +137,14 @@ def main():
     classement = lire(processed / "classement_texte.csv")
     decisions = lire(REGISTRE) if REGISTRE.exists() else pd.DataFrame(columns=CHAMPS_REGISTRE)
     termes = lire(raw / "filings_termes.csv")
+    textes = charger_textes_verifies(termes)
+    termes, complements = charger_complements(termes)
+    textes.update(complements)
     r = appliquer_decisions(classement, decisions, lire(raw / "filings_phrases.csv"),
-                            termes, charger_textes_verifies(termes))
+                            termes, textes)
+    for cik, depot in complements:
+        masque = r.cik.eq(cik) & r.depot.eq(depot) & r.preuve_verifiee.eq("oui")
+        r.loc[masque, "support_verification"] = "extrait_officiel_complementaire_sha256"
     processed.mkdir(parents=True, exist_ok=True)
     r.to_csv(processed / "classification_manuelle.csv", index=False, encoding="utf-8")
     r[r.verdict == "ENTRE"].to_csv(processed / "univers_retenu.csv", index=False, encoding="utf-8")

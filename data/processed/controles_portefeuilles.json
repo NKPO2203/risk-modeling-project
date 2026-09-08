@@ -1,0 +1,13 @@
+{
+  "seances": 6709,
+  "titres": 131,
+  "entreprises": 130,
+  "series": 20,
+  "releves_mensuels": 321,
+  "lignes_poids": 258726,
+  "ecart_somme_poids": 4.440892098500626e-16,
+  "ecart_identite_quotidienne": 7.684824998577255e-16,
+  "cours_portes": 38,
+  "cout": 0.001,
+  "limite": "Identités comptables contrôlées, exactitude des prix non garantie par ces identités."
+}

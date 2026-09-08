@@ -1,8 +1,8 @@
 # AI Concentration Risk Research
 
-Je construis un univers documenté d'entreprises exposées à la chaîne des infrastructures de calcul liées à l'IA, à partir de la composition locale du S&P 500. Cet ensemble servira ensuite à construire et comparer plusieurs portefeuilles.
+Je construis et compare des portefeuilles à partir d'un univers documenté d'entreprises exposées à la chaîne des infrastructures de calcul liées à l'IA, issu de la composition locale du S&P 500.
 
-Cette étape prépare les sources, les décisions et les comptes. Elle ne calcule pas encore la performance, les corrélations ou le risque d'un portefeuille.
+L'étape 1 prépare les sources, les décisions et les comptes. L'étape 2 produit maintenant des trajectoires rétrospectives et leurs contrôles. Le [complément de vérification](research/verification_etape_2.md) donne les corrections de prix, la comparaison Nasdaq et sa couverture réelle. L'analyse des sources du risque et des couvertures reste à faire.
 
 ## Lire le projet
 
@@ -17,7 +17,7 @@ La rédaction de recherche explique mon raisonnement. Les nombres courants sont 
 
 ## Reproduire les calculs sans réseau
 
-Environnement vérifié : Python 3.12.14. Les versions de pandas, NumPy et lxml sont fixées dans `requirements.txt`. La collecte utilise la bibliothèque standard Python pour les requêtes ; les tests utilisent `unittest`.
+Environnement de référence actuel : Python 3.13.9 ; le replay de l'étape 2 a aussi été vérifié sous Python 3.12.14. Les versions des bibliothèques sont fixées dans `requirements.txt`. Les collectes SEC utilisent la bibliothèque standard Python, celle des prix utilise yfinance ; les tests utilisent `unittest`.
 
 Après installation des dépendances dans un environnement Python :
 
@@ -48,7 +48,7 @@ Le pipeline vérifie d'abord les empreintes du corpus, puis reconstruit le class
 
 Les CSV sont encodés en UTF-8. Le CIK doit être lu comme du texte de dix caractères. Une entreprise peut avoir plusieurs symboles. Dans les comptes, la clé est le CIK et la date de clôture ; l'année civile majoritaire est informative et peut se répéter.
 
-Les décisions possibles sont `ENTRE`, `SORT`, `DOUTEUX` et `A_EXAMINER`. Une absence de décision ou une preuve introuvable ne devient pas une exclusion. Les décisions sont éditées dans le registre de revue, jamais dans un classement généré.
+Le schéma accepte `ENTRE`, `SORT`, `DOUTEUX` et `A_EXAMINER`. La version close ne contient que 130 ENTRE et 370 SORT. Après lecture, une preuve insuffisante a été motivée en SORT selon la consigne de clôture. Une preuve devenue introuvable lors d’un futur recalcul est toujours remise à examiner, sans exclusion automatique. Les décisions sont éditées dans le registre de revue, jamais dans un classement généré.
 
 Les montants non rapprochés restent visibles avec un statut. Une valeur manquante n'est pas zéro. Le fichier `corroboration_details.csv` contient les montants, périodes, périmètres et sources de chaque comparaison ; `corroboration.csv` sépare le mouvement de la couverture.
 
@@ -101,8 +101,27 @@ La première date issue du fichier Yahoo existant est une date d'historique disp
 
 Les derniers rapports, la composition actuelle et les comptes retraités décrivent une photographie du projet. Ils ne constituent pas un univers historique investissable sans anticipation.
 
-Une exposition économique documentée ne démontre ni une corrélation boursière, ni une causalité entre l'IA et la croissance totale. Les cas douteux, les données absentes et les limites de comparabilité restent dans les résultats.
+Une exposition économique documentée ne démontre ni une corrélation boursière, ni une causalité entre l'IA et la croissance totale. Les motifs d’exclusion pour preuve insuffisante, les données absentes et les limites de comparabilité restent dans les résultats.
 
 Les tests contrôlent des erreurs précises et la cohérence des artefacts. Ils ne remplacent pas la lecture critique des sources et ne certifient pas l'absence de toute erreur.
 
 `main.py` et `risk_analysis.ipynb` restent les exercices initiaux du workflow, distincts du traitement de recherche dans `src/`.
+
+
+## Étape 2 : reconstruction des portefeuilles
+
+L’univers courant comprend 130 entreprises et 131 titres. Les étapes 1 et 2 sont closes pour cette version, selon la règle d’arrêt de l’auteur et sous les limites écrites. Dix groupes sont calculés dans deux modes de gestion. Le [rapport de finition](research/finition_etapes_1_et_2.md) donne les décisions, les bornes d’historique et les contrôles définitifs.
+
+Les règles courantes sont dans [Portefeuilles](research/portefeuilles.md), la progression dans [Plan du projet](research/plan_projet.md). Le notebook de construction appelle le même traitement local que ces commandes, sans collecte :
+
+```powershell
+python -B -m src.construire_portefeuilles
+python -B -m src.construire_portefeuilles --check-only
+python -B -m unittest discover -s tests -v
+```
+
+Les versions de référence sont celles de `requirements.txt`, avec Python 3.13.9 ; la version effectivement utilisée est enregistrée dans chaque manifeste. `--output` permet une reconstruction dans un autre dossier et `--cout` une sensibilité du coût unitaire. Les manifestes vérifient les fichiers locaux ; ils ne garantissent pas qu'une nouvelle interrogation de Yahoo redonnera le même cliché.
+
+Les CSV de prix, benchmarks, calendrier et métadonnées du cliché sont nécessaires à cette reconstruction. Le corpus documentaire de l'étape 1 comporte des caches locaux dont la disponibilité dans un clone doit être contrôlée séparément ; le succès local n'est pas une promesse de reconstitution du corpus intégral par une collecte future.
+
+Le carnet de collecte conserve la démarche d'acquisition, mais bloque la collecte ordinaire si le manifeste existe. Pour consulter ou recalculer le cliché, utiliser les carnets de contrôle et de construction. Les preuves brutes ne sont pas réécrites lors de ces opérations.

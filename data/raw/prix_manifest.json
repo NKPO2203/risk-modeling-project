@@ -800,6 +800,125 @@
       "debut": "2011-10-13",
       "fin": "2026-09-04",
       "sha256": "e8e1d52c194ce40225d195bddcda72b21a0542109a6688a82725e52cf56238d2"
+    },
+    {
+      "fichier": "ACN.csv",
+      "lignes": 6320,
+      "debut": "2001-07-19",
+      "fin": "2026-09-04",
+      "sha256": "08fee710a511212766f1c354a0efa2464c696f404dad14fe19f6f52649b1f6e2"
+    },
+    {
+      "fichier": "APD.csv",
+      "lignes": 11713,
+      "debut": "1980-03-17",
+      "fin": "2026-09-04",
+      "sha256": "c6ffbae0c2748a43b5de81efed5f8c20d53aa62d6076d077dda61775903547f8"
+    },
+    {
+      "fichier": "APP.csv",
+      "lignes": 1355,
+      "debut": "2021-04-15",
+      "fin": "2026-09-04",
+      "sha256": "069abe9f366f35d2045dab8902e713bee6b78aeb254be2a28816a982f6410611"
+    },
+    {
+      "fichier": "EMR.csv",
+      "lignes": 13679,
+      "debut": "1972-06-01",
+      "fin": "2026-09-04",
+      "sha256": "664d38c880da11f5e1b3fa67b09b4eb571138c2af357d51ca9b6dbb743501b5e"
+    },
+    {
+      "fichier": "EXPD.csv",
+      "lignes": 10567,
+      "debut": "1984-09-26",
+      "fin": "2026-09-04",
+      "sha256": "5425ec92ed13aa2dc1c848c45c0952679c9892e2ebce5f2a1e1f8d73996cf3af"
+    },
+    {
+      "fichier": "FSLR.csv",
+      "lignes": 4979,
+      "debut": "2006-11-17",
+      "fin": "2026-09-04",
+      "sha256": "7c598f8942c7ceb70ec2778817e17ee21daf598ce85b3ab8f7cd111f53aa62a4"
+    },
+    {
+      "fichier": "HD.csv",
+      "lignes": 11330,
+      "debut": "1981-09-22",
+      "fin": "2026-09-04",
+      "sha256": "f43785f96daf3788694dd56913a6ee264f1624eb9a0a47b3084abb3cc731d3fa"
+    },
+    {
+      "fichier": "ITW.csv",
+      "lignes": 13485,
+      "debut": "1973-03-13",
+      "fin": "2026-09-04",
+      "sha256": "4f679d36bd3f860149e6ea0dcf7d5d0d41daad599ba1fa93a3807352fb097116"
+    },
+    {
+      "fichier": "LDOS.csv",
+      "lignes": 5002,
+      "debut": "2006-10-17",
+      "fin": "2026-09-04",
+      "sha256": "c2c026901f1a835c7fd48da3208d6d460ec3eef48e895821df5c712a4af14d1e"
+    },
+    {
+      "fichier": "NDAQ.csv",
+      "lignes": 6085,
+      "debut": "2002-07-01",
+      "fin": "2026-09-04",
+      "sha256": "731afcb88735813b8ac2b11a43150eeed1d158f36e82b93659fa5b86d99143e8"
+    },
+    {
+      "fichier": "NDSN.csv",
+      "lignes": 11712,
+      "debut": "1980-03-18",
+      "fin": "2026-09-04",
+      "sha256": "eef3e0939e94be5025a663e1f1b13641fc71b99921b316b8e10bc4fed2b9f158"
+    },
+    {
+      "fichier": "NEE.csv",
+      "lignes": 13499,
+      "debut": "1973-02-21",
+      "fin": "2026-09-04",
+      "sha256": "3699ec2bcf65df0d53a5f9fa787d14dc4d7a3498f4e78a37ad7df4aa2f0380b4"
+    },
+    {
+      "fichier": "NOW.csv",
+      "lignes": 3566,
+      "debut": "2012-06-29",
+      "fin": "2026-09-04",
+      "sha256": "996270d2608f82b9d48ab4f9d2a0f41b9ebffa04358122f2b035a7c54012b597"
+    },
+    {
+      "fichier": "NXPI.csv",
+      "lignes": 4045,
+      "debut": "2010-08-06",
+      "fin": "2026-09-04",
+      "sha256": "6a88a4a291f3be51517ee758967d239452568b0f293401d331abb1da8498a636"
+    },
+    {
+      "fichier": "PH.csv",
+      "lignes": 11713,
+      "debut": "1980-03-17",
+      "fin": "2026-09-04",
+      "sha256": "6a8480242f8940cfe6727fbcd4feeb7ab1546a12f6fb72ef06f6664978f320eb"
+    },
+    {
+      "fichier": "QCOM.csv",
+      "lignes": 8743,
+      "debut": "1991-12-13",
+      "fin": "2026-09-04",
+      "sha256": "011ebc692a23b2934b7e2cfefb9c467c4033a94a3e855dfda691e501b8da74f9"
+    },
+    {
+      "fichier": "SBAC.csv",
+      "lignes": 6848,
+      "debut": "1999-06-16",
+      "fin": "2026-09-04",
+      "sha256": "804f3a01fc984b16514a58797ba974eb9b7378fde60d5eec58d3922023fd1855"
     }
   ],
   "benchmarks": [
@@ -896,12 +1015,145 @@
       "motif": "Recollecte apres l'ajout de CMS.csv : 119 titres decrits au lieu de 118.",
       "sha256_precedent": "ebc370034c6826f85965ab899b340c321b570ebc20bf334df0f86c1803c1e025",
       "sha256_courant": "f063deb634528787570de1feb272a23e4ffa9c6c2105585e5aaa1ec1862c2309"
+    },
+    {
+      "le": "2026-09-08T10:19:55.109858+00:00",
+      "objet": "17 nouveaux fichiers de prix",
+      "motif": "Clôture des 114 dossiers restants avec la règle III inchangée. Ajout uniquement des 17 nouvelles entrantes, historique complet arrêté au même cliché du 4 septembre 2026, sans réécrire les séries précédentes.",
+      "fichiers": [
+        {
+          "fichier": "ACN.csv",
+          "lignes": 6320,
+          "debut": "2001-07-19",
+          "fin": "2026-09-04",
+          "sha256": "08fee710a511212766f1c354a0efa2464c696f404dad14fe19f6f52649b1f6e2"
+        },
+        {
+          "fichier": "APD.csv",
+          "lignes": 11713,
+          "debut": "1980-03-17",
+          "fin": "2026-09-04",
+          "sha256": "c6ffbae0c2748a43b5de81efed5f8c20d53aa62d6076d077dda61775903547f8"
+        },
+        {
+          "fichier": "APP.csv",
+          "lignes": 1355,
+          "debut": "2021-04-15",
+          "fin": "2026-09-04",
+          "sha256": "069abe9f366f35d2045dab8902e713bee6b78aeb254be2a28816a982f6410611"
+        },
+        {
+          "fichier": "EMR.csv",
+          "lignes": 13679,
+          "debut": "1972-06-01",
+          "fin": "2026-09-04",
+          "sha256": "664d38c880da11f5e1b3fa67b09b4eb571138c2af357d51ca9b6dbb743501b5e"
+        },
+        {
+          "fichier": "EXPD.csv",
+          "lignes": 10567,
+          "debut": "1984-09-26",
+          "fin": "2026-09-04",
+          "sha256": "5425ec92ed13aa2dc1c848c45c0952679c9892e2ebce5f2a1e1f8d73996cf3af"
+        },
+        {
+          "fichier": "FSLR.csv",
+          "lignes": 4979,
+          "debut": "2006-11-17",
+          "fin": "2026-09-04",
+          "sha256": "7c598f8942c7ceb70ec2778817e17ee21daf598ce85b3ab8f7cd111f53aa62a4"
+        },
+        {
+          "fichier": "HD.csv",
+          "lignes": 11330,
+          "debut": "1981-09-22",
+          "fin": "2026-09-04",
+          "sha256": "f43785f96daf3788694dd56913a6ee264f1624eb9a0a47b3084abb3cc731d3fa"
+        },
+        {
+          "fichier": "ITW.csv",
+          "lignes": 13485,
+          "debut": "1973-03-13",
+          "fin": "2026-09-04",
+          "sha256": "4f679d36bd3f860149e6ea0dcf7d5d0d41daad599ba1fa93a3807352fb097116"
+        },
+        {
+          "fichier": "LDOS.csv",
+          "lignes": 5002,
+          "debut": "2006-10-17",
+          "fin": "2026-09-04",
+          "sha256": "c2c026901f1a835c7fd48da3208d6d460ec3eef48e895821df5c712a4af14d1e"
+        },
+        {
+          "fichier": "NDAQ.csv",
+          "lignes": 6085,
+          "debut": "2002-07-01",
+          "fin": "2026-09-04",
+          "sha256": "731afcb88735813b8ac2b11a43150eeed1d158f36e82b93659fa5b86d99143e8"
+        },
+        {
+          "fichier": "NDSN.csv",
+          "lignes": 11712,
+          "debut": "1980-03-18",
+          "fin": "2026-09-04",
+          "sha256": "eef3e0939e94be5025a663e1f1b13641fc71b99921b316b8e10bc4fed2b9f158"
+        },
+        {
+          "fichier": "NEE.csv",
+          "lignes": 13499,
+          "debut": "1973-02-21",
+          "fin": "2026-09-04",
+          "sha256": "3699ec2bcf65df0d53a5f9fa787d14dc4d7a3498f4e78a37ad7df4aa2f0380b4"
+        },
+        {
+          "fichier": "NOW.csv",
+          "lignes": 3566,
+          "debut": "2012-06-29",
+          "fin": "2026-09-04",
+          "sha256": "996270d2608f82b9d48ab4f9d2a0f41b9ebffa04358122f2b035a7c54012b597"
+        },
+        {
+          "fichier": "NXPI.csv",
+          "lignes": 4045,
+          "debut": "2010-08-06",
+          "fin": "2026-09-04",
+          "sha256": "6a88a4a291f3be51517ee758967d239452568b0f293401d331abb1da8498a636"
+        },
+        {
+          "fichier": "PH.csv",
+          "lignes": 11713,
+          "debut": "1980-03-17",
+          "fin": "2026-09-04",
+          "sha256": "6a8480242f8940cfe6727fbcd4feeb7ab1546a12f6fb72ef06f6664978f320eb"
+        },
+        {
+          "fichier": "QCOM.csv",
+          "lignes": 8743,
+          "debut": "1991-12-13",
+          "fin": "2026-09-04",
+          "sha256": "011ebc692a23b2934b7e2cfefb9c467c4033a94a3e855dfda691e501b8da74f9"
+        },
+        {
+          "fichier": "SBAC.csv",
+          "lignes": 6848,
+          "debut": "1999-06-16",
+          "fin": "2026-09-04",
+          "sha256": "804f3a01fc984b16514a58797ba974eb9b7378fde60d5eec58d3922023fd1855"
+        }
+      ]
+    },
+    {
+      "le": "2026-09-08T10:19:55.109858+00:00",
+      "objet": "metadonnees_titres.csv",
+      "motif": "Ajout des seules 17 nouvelles lignes ; 119 lignes antérieures conservées.",
+      "sha256_precedent": "f063deb634528787570de1feb272a23e4ffa9c6c2105585e5aaa1ec1862c2309",
+      "sha256_courant": "4fe6cf49e6e2c19cdd7f00c7a7346af55d8238b3dc57023de0fbdaa99d409385"
     }
   ],
   "source_metadonnees": "Yahoo Finance, via yfinance, champ history_metadata",
   "metadonnees": {
     "fichier": "metadonnees_titres.csv",
-    "titres": 119,
+    "titres": 136,
     "collecte_le": "2026-09-08",
     "champs": [
       "fichier",
@@ -915,6 +1167,6 @@
       "premiere_transaction",
       "collecte_le"
     ],
-    "sha256": "f063deb634528787570de1feb272a23e4ffa9c6c2105585e5aaa1ec1862c2309"
+    "sha256": "4fe6cf49e6e2c19cdd7f00c7a7346af55d8238b3dc57023de0fbdaa99d409385"
   }
 }

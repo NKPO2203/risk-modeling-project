@@ -1,21 +1,54 @@
 {
-  "verifie_le": "2026-09-05T09:55:48.673026+00:00",
-  "tests_unittest_reussis": 51,
-  "commande_tests": "python -B -m unittest discover -s tests -v",
-  "pipeline": "recalcul complet réussi ; --check-only réussi",
+  "verifie_le": "2026-09-08T10:40:03.845Z",
   "excel": {
     "feuilles": 5,
-    "entreprises_par_vue": 112,
-    "cellules_rapprochees_aux_entrees": 8736,
-    "formules_synthese": "totaux rapprochés",
-    "erreurs_excel": 0,
-    "cik": "texte de 10 chiffres",
-    "volets": "C2 dans les trois vues",
-    "sha256": "a44881ea990a3fc86c70e95a5ba0895f6ea3f6e0e476ce6027772fc56470da6f"
+    "entreprises_par_vue": 130,
+    "total_recapitulatif": 130,
+    "cellules_rapprochees_aux_entrees": 5460,
+    "controle_erreurs": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+    "apercus_verifies": 5,
+    "sha256": "3c1e5004211fcb019e0d2dd185f5ffa1a53b30d4b060ee0a4036e637f3c16539"
   },
-  "archive": {
-    "fichiers_verifies": 29,
-    "integrite": "toutes les empreintes correspondent"
-  },
-  "limite": "Contrôles techniques et rapprochements déclarés, pas certification de toutes les données ni revue intégrale de tous les rapports."
+  "controle_anterieur": {
+    "verifie_le": "2026-09-08T06:35:58.934263+00:00",
+    "tests_unittest_reussis": 92,
+    "commande_tests": "python -B -m unittest discover -s tests -v",
+    "pipeline": "Recalculs locaux et contrôles des empreintes des deux étapes réussis.",
+    "excel": {
+      "feuilles": 5,
+      "entreprises_par_vue": 113,
+      "cellules_rapprochees_aux_entrees": 8814,
+      "cms_present_dans": [
+        "Par anciennete",
+        "Par secteur",
+        "Par canal"
+      ],
+      "total_recapitulatif": 113,
+      "erreurs_excel": 0,
+      "cik": "texte de 10 chiffres",
+      "sha256": "2a06e2ad69afa9c19fd9189e253c90298a595c5ac7694ea351804295676b5a2d"
+    },
+    "controle_precedent_du_2026_09_05": {
+      "verifie_le": "2026-09-05T09:55:48.673026+00:00",
+      "tests_unittest_reussis": 51,
+      "commande_tests": "python -B -m unittest discover -s tests -v",
+      "pipeline": "recalcul complet réussi ; --check-only réussi",
+      "excel": {
+        "feuilles": 5,
+        "entreprises_par_vue": 112,
+        "cellules_rapprochees_aux_entrees": 8736,
+        "formules_synthese": "totaux rapprochés",
+        "erreurs_excel": 0,
+        "cik": "texte de 10 chiffres",
+        "volets": "C2 dans les trois vues",
+        "sha256": "a44881ea990a3fc86c70e95a5ba0895f6ea3f6e0e476ce6027772fc56470da6f"
+      },
+      "archive": {
+        "fichiers_verifies": 29,
+        "integrite": "toutes les empreintes correspondent"
+      },
+      "limite": "Contrôles techniques et rapprochements déclarés, pas certification de toutes les données ni revue intégrale de tous les rapports."
+    },
+    "limite": "Le contrôle précédent est conservé comme historique ; son empreinte ne désigne plus le classeur courant. Les rapprochements techniques ne certifient ni toutes les données ni la lecture intégrale des rapports."
+  }
 }

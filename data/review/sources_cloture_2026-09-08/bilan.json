@@ -1,0 +1,12 @@
+{
+  "clotures_communes": 144990,
+  "titres": 60,
+  "rendements_comparables": 144930,
+  "divergences_sup_10pb": 30,
+  "variations_extremes": {
+    "non_corroboré": 89,
+    "rendement_prix_concordant": 20,
+    "erreur_scission_corrigée_source_SEC": 1
+  },
+  "limite": "Cours de prix comparés ; conventions de scission, dividendes et identité examinées séparément."
+}

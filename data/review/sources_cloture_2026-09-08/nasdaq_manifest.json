@@ -1,0 +1,482 @@
+[
+  {
+    "titre": "AES",
+    "source": "https://api.nasdaq.com/api/quote/AES/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_AES.json",
+    "sha256": "a6f3da8d0adccbf22ebe76813eae725c35903f202a008bd3709815abcbbc0b77",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "AKAM",
+    "source": "https://api.nasdaq.com/api/quote/AKAM/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_AKAM.json",
+    "sha256": "11e1a7415e8b65ebe58d3eac7cfd57b23b845b502b15fdec959d10cab7958424",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "AMD",
+    "source": "https://api.nasdaq.com/api/quote/AMD/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_AMD.json",
+    "sha256": "005c178a8ceedb5d11e862d854cffe08e433498a35cbd3a2224ca1cdc31bfbb8",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "AMT",
+    "source": "https://api.nasdaq.com/api/quote/AMT/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_AMT.json",
+    "sha256": "2204fe512a97aa196166c4f2bc8d7ca574b25513fdb181721ad07198187bd1d0",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "AMZN",
+    "source": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_AMZN.json",
+    "sha256": "22bea710fc9cbae67aa29b93d08aa536c63e35317d3255ae5fd720421a3468fe",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "CBRE",
+    "source": "https://api.nasdaq.com/api/quote/CBRE/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_CBRE.json",
+    "sha256": "beb35e74f66d729b164bfcae0dc5311d96c63b3c82d971dc66e420f46fc6ae4f",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "CDNS",
+    "source": "https://api.nasdaq.com/api/quote/CDNS/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_CDNS.json",
+    "sha256": "235d14e529a2ceba6ce73fb6cb30f584dda9386c853d2bc0a036b33b1cc33460",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "CIEN",
+    "source": "https://api.nasdaq.com/api/quote/CIEN/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_CIEN.json",
+    "sha256": "cea854ccb8a37ec44155d0362b09e79ade27110a92defce4c6d0e013a0fde4d2",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "CNP",
+    "source": "https://api.nasdaq.com/api/quote/CNP/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_CNP.json",
+    "sha256": "6d636297197df54276f4af2e0b3487c8ff8b15716e251a8c132c52ba97d6b068",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "COHR",
+    "source": "https://api.nasdaq.com/api/quote/COHR/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_COHR.json",
+    "sha256": "69aadd78eebe342e8e43c15e5205e336813f4d5feebe56862ec8ed5391f48fd5",
+    "lignes": 1002,
+    "total_annonce": 1002
+  },
+  {
+    "titre": "DELL",
+    "source": "https://api.nasdaq.com/api/quote/DELL/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_DELL.json",
+    "sha256": "876e8ce5e792c2e611d94c22313f42e000dedcaa38a7685c2d10f8710a1c9993",
+    "lignes": 1937,
+    "total_annonce": 1937
+  },
+  {
+    "titre": "DTE",
+    "source": "https://api.nasdaq.com/api/quote/DTE/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_DTE.json",
+    "sha256": "deb27b3c5d2965cd0f6151f04a9fac4c8dc5ba8a755831b14d6f11c97774a2e1",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "EQIX",
+    "source": "https://api.nasdaq.com/api/quote/EQIX/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_EQIX.json",
+    "sha256": "2795cd4f61a5473f5d16c82996f9f448c769590047f33867b7d904aecafe3b1b",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "FIX",
+    "source": "https://api.nasdaq.com/api/quote/FIX/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_FIX.json",
+    "sha256": "3a29faf93af877586bb7a6be77c0982dd51460b4fc9129bda1eec2702f844db8",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "FLEX",
+    "source": "https://api.nasdaq.com/api/quote/FLEX/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_FLEX.json",
+    "sha256": "99c65e517544169aa07733b5e9890209b85a3ec7419f164ef488527a4b6c46a5",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "GLW",
+    "source": "https://api.nasdaq.com/api/quote/GLW/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_GLW.json",
+    "sha256": "0000a8c8dd7e43e8db84b972e23001cc5e2fd2c7aa705fbff68f45f5ca291182",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "HAL",
+    "source": "https://api.nasdaq.com/api/quote/HAL/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_HAL.json",
+    "sha256": "52e211343d7c787e4e76df0a8adaada439b7d5e420ee7270ed7955fa41a9c22b",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "HPE",
+    "source": "https://api.nasdaq.com/api/quote/HPE/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_HPE.json",
+    "sha256": "1dab30538faa8d6e4967039b57d9500517a568f7430e1f21e0ad732690ee528e",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "IBM",
+    "source": "https://api.nasdaq.com/api/quote/IBM/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_IBM.json",
+    "sha256": "ac238132313d64b762e1ee631a635e26d60f4cb7763b075531999229902ba851",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "JBL",
+    "source": "https://api.nasdaq.com/api/quote/JBL/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_JBL.json",
+    "sha256": "2ffe138edef53338d29a5e2f27e3374d184fb177ed0d84d6d470d6131c759734",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "JCI",
+    "source": "https://api.nasdaq.com/api/quote/JCI/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_JCI.json",
+    "sha256": "c3348fcf2a246177f539ff27cf3c1a5f44b252ae7ba0eb7abc23f9db280ab609",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "LITE",
+    "source": "https://api.nasdaq.com/api/quote/LITE/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_LITE.json",
+    "sha256": "14c7b7ecea53d0c5b7b9ca0b2736468dd2eb9a9e76c7b94ea2dffe6c0dd35780",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "MMM",
+    "source": "https://api.nasdaq.com/api/quote/MMM/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_MMM.json",
+    "sha256": "20d67eeeeba9ac4c2e9c12fe0acd1819930f70759401a5d5962e2c4f3f02114a",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "MRVL",
+    "source": "https://api.nasdaq.com/api/quote/MRVL/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_MRVL.json",
+    "sha256": "8e6d1eb9679f1f3c98ce63b10232550839d9410f714ec087ee5aab76032c2613",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "NTAP",
+    "source": "https://api.nasdaq.com/api/quote/NTAP/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_NTAP.json",
+    "sha256": "d400212204dde6d783c62f61767ba2d4a1f85c82783b419a0d88aecb93d30695",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "NVDA",
+    "source": "https://api.nasdaq.com/api/quote/NVDA/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_NVDA.json",
+    "sha256": "55a2d5ae8ac4b4c598a0d8b5f45c1ee5fd86be7038386363350399e3db165ccb",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "O",
+    "source": "https://api.nasdaq.com/api/quote/O/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_O.json",
+    "sha256": "355446df64d7c0634abd8aefa13a1601f1539ee09c88027a300ad0ea3b61a7de",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "ON",
+    "source": "https://api.nasdaq.com/api/quote/ON/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_ON.json",
+    "sha256": "e20065dfbf235fe4326b8a8d1f3861b18d6a5443ab31a6f17fe25e3f300b866a",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "ORCL",
+    "source": "https://api.nasdaq.com/api/quote/ORCL/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_ORCL.json",
+    "sha256": "7c5db8b67bd426dbbd66fde038c4257b0d8fe40c3ebde041358e8d76e62fd6be",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "PLD",
+    "source": "https://api.nasdaq.com/api/quote/PLD/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_PLD.json",
+    "sha256": "1c4aa79b98e1465c99989459f9b2fad15ae322e18c50289672530c29e1da918e",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "PWR",
+    "source": "https://api.nasdaq.com/api/quote/PWR/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_PWR.json",
+    "sha256": "f174abd8fe5e40a0c290e24fefa7ed0240b238941c5482a68af5051889b0bc85",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "RSP",
+    "source": "https://api.nasdaq.com/api/quote/RSP/historical?assetclass=etf&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_RSP.json",
+    "sha256": "fdb0cc807bc2cc140c7bb9c66bf50bf4287c4be65854f54e0cfb4f5e260b6d75",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "SMCI",
+    "source": "https://api.nasdaq.com/api/quote/SMCI/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_SMCI.json",
+    "sha256": "7d5bee4ed2f5a6ca573530af2d77683e79eaf196e716d7d2c23af913a1ef74df",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "SNDK",
+    "source": "https://api.nasdaq.com/api/quote/SNDK/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_SNDK.json",
+    "sha256": "caad1e8a25a9e7b150c6ede7fd57b99bc08c87235b526974289a5c3e4ad134c2",
+    "lignes": 392,
+    "total_annonce": 392
+  },
+  {
+    "titre": "SNPS",
+    "source": "https://api.nasdaq.com/api/quote/SNPS/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_SNPS.json",
+    "sha256": "dfe7e24917b7b9ed1a9546bb0ef0613e9157be834816c4ed38fc1dcbdb1f059e",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "SPY",
+    "source": "https://api.nasdaq.com/api/quote/SPY/historical?assetclass=etf&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_SPY.json",
+    "sha256": "393520cca6d8eaf69b63ca0c88a31e7606271d5a78e101a85b327b6d009dd32d",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "SWKS",
+    "source": "https://api.nasdaq.com/api/quote/SWKS/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_SWKS.json",
+    "sha256": "48ad08333141df2f786ec5eab00efac4f83ed968073fc378d8c76762c024c871",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "TDY",
+    "source": "https://api.nasdaq.com/api/quote/TDY/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_TDY.json",
+    "sha256": "3523f271c24f655bb18d47835d7e8138ddde45beeee38f39a844e589f48522e1",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "TSLA",
+    "source": "https://api.nasdaq.com/api/quote/TSLA/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_TSLA.json",
+    "sha256": "4f2197575bfd85a54812db0df77326992002e0e7c0cf79a265470cb354636256",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "VRT",
+    "source": "https://api.nasdaq.com/api/quote/VRT/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_VRT.json",
+    "sha256": "cb3a44254b413274618ac553698aa70273392b6e58e79803724f7b391768f6db",
+    "lignes": 2037,
+    "total_annonce": 2037
+  },
+  {
+    "titre": "WDC",
+    "source": "https://api.nasdaq.com/api/quote/WDC/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_WDC.json",
+    "sha256": "b975cf91bf4c974b8706a778c983930aab0f9a8f1ef61f59948acbd67f8bf006",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "WMB",
+    "source": "https://api.nasdaq.com/api/quote/WMB/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_WMB.json",
+    "sha256": "fbb4335394ca162dda352877e48af29d982f3d9dcf5a5b18b1489c1ec3d43545",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "XEL",
+    "source": "https://api.nasdaq.com/api/quote/XEL/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_XEL.json",
+    "sha256": "1eb1ec42efc758ae1364bfe31e9547910c548d0c8318350faf87e93277b1c3b1",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "ACN",
+    "source": "https://api.nasdaq.com/api/quote/ACN/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_ACN.json",
+    "sha256": "88534080b6276581eb1152079d7816ad74f01099ea12c2189f9f8adc5425db8d",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "APD",
+    "source": "https://api.nasdaq.com/api/quote/APD/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_APD.json",
+    "sha256": "5a39d3b380617964d6882cc714e2a8c796ca8b9df0ae05ce9937d3e6b60f11af",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "APP",
+    "source": "https://api.nasdaq.com/api/quote/APP/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_APP.json",
+    "sha256": "2deac9088987e6a0ce831cac0c630dc112a247f1d1d6ce0706860fe585ab6f7a",
+    "lignes": 1355,
+    "total_annonce": 1355
+  },
+  {
+    "titre": "EMR",
+    "source": "https://api.nasdaq.com/api/quote/EMR/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_EMR.json",
+    "sha256": "c7214d0e5ef07c9870e5cd4a3988787d927064107b8fbf517dad8cd2c4197563",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "EXPD",
+    "source": "https://api.nasdaq.com/api/quote/EXPD/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_EXPD.json",
+    "sha256": "7d61e34a87060b1f36310bc2078d340cf630fec2842637a3aa309c517ae20c47",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "FSLR",
+    "source": "https://api.nasdaq.com/api/quote/FSLR/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_FSLR.json",
+    "sha256": "6b89abe520045ed168fb9bb5fc7f2fdae8950f2c19559b6227d89f62082df893",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "HD",
+    "source": "https://api.nasdaq.com/api/quote/HD/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_HD.json",
+    "sha256": "b038ca371f162964b81fe73a2a03a523efe36a387b6adc0b92da9e4373061126",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "ITW",
+    "source": "https://api.nasdaq.com/api/quote/ITW/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_ITW.json",
+    "sha256": "3a97123f76cef60aadfa66f37db3bc1911a7de1b90841011c736a18bd1f47a60",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "LDOS",
+    "source": "https://api.nasdaq.com/api/quote/LDOS/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_LDOS.json",
+    "sha256": "f2e8a087abb136035f4e22ee15f7ff0b6d6e509e20ac50b541428557b981d5d1",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "NDAQ",
+    "source": "https://api.nasdaq.com/api/quote/NDAQ/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_NDAQ.json",
+    "sha256": "b4f6e28741be107dd0397dbaf50b6ff9322cd5d9983a8cc3dd2a610a7ce3dc20",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "NDSN",
+    "source": "https://api.nasdaq.com/api/quote/NDSN/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_NDSN.json",
+    "sha256": "f237559a5f818553afa44e11eb180fbefdf4bd23989fe955d62ab057232241b3",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "NEE",
+    "source": "https://api.nasdaq.com/api/quote/NEE/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_NEE.json",
+    "sha256": "7d3d5f60c3944adeafeac4beb78b0897708f251c01962428cb51833a06c748bd",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "NOW",
+    "source": "https://api.nasdaq.com/api/quote/NOW/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_NOW.json",
+    "sha256": "eff055ceb6484939118347ea0940642edf6a0fd98116e63bafb82ae746226d5a",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "NXPI",
+    "source": "https://api.nasdaq.com/api/quote/NXPI/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_NXPI.json",
+    "sha256": "fbde32a944eafc53c022ed0201e1470fcf17366b02f181f7717f04d09f979239",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "PH",
+    "source": "https://api.nasdaq.com/api/quote/PH/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_PH.json",
+    "sha256": "713b035a77b33447d056eba686145023360a7765c3b77bbf3e48bb5d398be8fc",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "QCOM",
+    "source": "https://api.nasdaq.com/api/quote/QCOM/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_QCOM.json",
+    "sha256": "61f5e2dd1eab8da6a01aaa5c2ea516f1af867c53dd69e26053e897fc80678bc3",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "SBAC",
+    "source": "https://api.nasdaq.com/api/quote/SBAC/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_SBAC.json",
+    "sha256": "034fc22d0a695a7d0535a147c0fb4278eb512c4ef83694d7f2b234d2486138d7",
+    "lignes": 2514,
+    "total_annonce": 2514
+  }
+]

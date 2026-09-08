@@ -1,0 +1,554 @@
+{
+  "date_utc": "2026-09-08T09:38:55.029813+00:00",
+  "modifications": [
+    {
+      "fichier": "data/processed/controles_portefeuilles.json",
+      "statut": "modifie",
+      "sha256_avant": "b1d136b654124704abc69ea3e7aa0c06a1859b99f6800b77499303644b0b4d9c",
+      "sha256_apres": "d7266fd81dbd558ac7d29a3d89ed0d5ee57204e42915e12cd47c63074e952504",
+      "octets_apres": 387
+    },
+    {
+      "fichier": "data/processed/dividendes.csv",
+      "statut": "modifie",
+      "sha256_avant": "3cd66e075baa79bffa2fa3b6e5675424fda8761c46cdbce110592f095855340a",
+      "sha256_apres": "13fa490052fc312bc64ae0292043609726accd1cc2673bcfae215e3a8a9526d4",
+      "octets_apres": 2962656
+    },
+    {
+      "fichier": "data/processed/journal_portefeuilles.csv",
+      "statut": "modifie",
+      "sha256_avant": "9f8a0952172f83dacb0735786a2f6b120e8479f2ef53a2c1df96aaca62aa927e",
+      "sha256_apres": "a0305910f18e366247ef3d72c7f810702f6a3c2081b9e6d2b81e66e7a76d6c4a",
+      "octets_apres": 16667160
+    },
+    {
+      "fichier": "data/processed/mesures_portefeuilles.csv",
+      "statut": "modifie",
+      "sha256_avant": "e677c5c2744dc592d7b99e45ebce37919955a6c744003a6df309236d9e00e809",
+      "sha256_apres": "49bd4d27ad4ddaccab02f760798217c4bf4357ce32a83ebae4af8074274fc933",
+      "octets_apres": 2193
+    },
+    {
+      "fichier": "data/processed/pipeline_portefeuilles.json",
+      "statut": "modifie",
+      "sha256_avant": "7db85321fae36291b14fc63617105fc5384374dfd000f076ff1f3c40ca46d5e9",
+      "sha256_apres": "30dc8ade799f7712deeefee1b7fd5837c25791455af0e278b110eeada01730a9",
+      "octets_apres": 16576
+    },
+    {
+      "fichier": "data/processed/poids_mensuels.csv",
+      "statut": "modifie",
+      "sha256_avant": "9c536972546cb836add072a20708e83ccf8f907f768448968c2cb5a696ef54e6",
+      "sha256_apres": "26bfedeb98bbd088b2ad0c8a42b3f53eb063777d0798c93af5d03df9375e3546",
+      "octets_apres": 9717882
+    },
+    {
+      "fichier": "data/processed/rendements_prix.csv",
+      "statut": "modifie",
+      "sha256_avant": "da8eebbc31bdc5e2393cf40631c7eef937c5b15c3b9c0b72ee2224165bf77932",
+      "sha256_apres": "f141b0550b5ca7cbd1d2f51f210fd9bb750976c35d40e9b0b4ac601661f342f8",
+      "octets_apres": 14233481
+    },
+    {
+      "fichier": "data/processed/rendements_valorisation.csv",
+      "statut": "modifie",
+      "sha256_avant": "1e2c00f53b29219a82a15270c694662db9f6042eb01e8b56937d3447126a0759",
+      "sha256_apres": "5f56420a311770286497aa179de5f8df3f113c90c2b15a0b38c1a691dace4ceb",
+      "octets_apres": 14233891
+    },
+    {
+      "fichier": "data/processed/valeurs_portefeuilles.csv",
+      "statut": "modifie",
+      "sha256_avant": "234b1e3011345dbbe028a535de7e22043f854a60a84d0af1b4a2a7659ef6f27e",
+      "sha256_apres": "e9ec203747f5bec7fcdde26250ff6c03cb45580fd47603e68d5fc08ff6c92b68",
+      "octets_apres": 2547229
+    },
+    {
+      "fichier": "data/review/corrections_evenements_prix.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "6a094195358643046160250d9ed4246a95eb7362a7b14e42cd05dfd0c857ce83",
+      "octets_apres": 3860
+    },
+    {
+      "fichier": "data/review/evenements_prix_documentes.csv",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "056715f115905fa54145cc3a28fb616bc8ce37025db70577536982168c1add2b",
+      "octets_apres": 10050
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/bilan.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "3177c6a36c7f387d8fbdee45310f5216288da7ad560078ba4dffe6b2bc9458a2",
+      "octets_apres": 384
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/comparaison_cours.csv",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "49c1bb9cda34723384f8e8e1dbaf492c78963ac8246db8a35f9fd73d4a5e4716",
+      "octets_apres": 13651924
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/couverture.csv",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "472c5e3f81573b6731311ce47f6d3aa99daca3b468b7fd1ed1bce7f9f07ff322",
+      "octets_apres": 3873
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/divergences.csv",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "6320b1588d9c1520b18d8b246ad4ab810bb1588f4851f6dfa3592c79b3b693ac",
+      "octets_apres": 3547
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/divergences_qualifiees.csv",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "c5930647685a35ff5c2a3036e49a8a015e5d96d31b3817a0df6febef3d4eaacc",
+      "octets_apres": 5582
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/impact_corrections.csv",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "3c32e9850f5627be08a305a591feba5b56843f680f2c35a1c936e8a9a60f1a87",
+      "octets_apres": 4434
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_AES.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "a6f3da8d0adccbf22ebe76813eae725c35903f202a008bd3709815abcbbc0b77",
+      "octets_apres": 301007
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_AKAM.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "11e1a7415e8b65ebe58d3eac7cfd57b23b845b502b15fdec959d10cab7958424",
+      "octets_apres": 303116
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_AMD.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "005c178a8ceedb5d11e862d854cffe08e433498a35cbd3a2224ca1cdc31bfbb8",
+      "octets_apres": 307036
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_AMT.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "2204fe512a97aa196166c4f2bc8d7ca574b25513fdb181721ad07198187bd1d0",
+      "octets_apres": 310286
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_AMZN.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "22bea710fc9cbae67aa29b93d08aa536c63e35317d3255ae5fd720421a3468fe",
+      "octets_apres": 316415
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_CBRE.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "beb35e74f66d729b164bfcae0dc5311d96c63b3c82d971dc66e420f46fc6ae4f",
+      "octets_apres": 302256
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_CDNS.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "235d14e529a2ceba6ce73fb6cb30f584dda9386c853d2bc0a036b33b1cc33460",
+      "octets_apres": 306257
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_CIEN.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "cea854ccb8a37ec44155d0362b09e79ade27110a92defce4c6d0e013a0fde4d2",
+      "octets_apres": 301046
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_CNP.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "6d636297197df54276f4af2e0b3487c8ff8b15716e251a8c132c52ba97d6b068",
+      "octets_apres": 300754
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_COHR.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "69aadd78eebe342e8e43c15e5205e336813f4d5feebe56862ec8ed5391f48fd5",
+      "octets_apres": 121158
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_DELL.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "876e8ce5e792c2e611d94c22313f42e000dedcaa38a7685c2d10f8710a1c9993",
+      "octets_apres": 239318
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_DTE.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "deb27b3c5d2965cd0f6151f04a9fac4c8dc5ba8a755831b14d6f11c97774a2e1",
+      "octets_apres": 313950
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_EQIX.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "2795cd4f61a5473f5d16c82996f9f448c769590047f33867b7d904aecafe3b1b",
+      "octets_apres": 306620
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_FIX.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "3a29faf93af877586bb7a6be77c0982dd51460b4fc9129bda1eec2702f844db8",
+      "octets_apres": 300909
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_FLEX.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "99c65e517544169aa07733b5e9890209b85a3ec7419f164ef488527a4b6c46a5",
+      "octets_apres": 311983
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_GLW.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "0000a8c8dd7e43e8db84b972e23001cc5e2fd2c7aa705fbff68f45f5ca291182",
+      "octets_apres": 301565
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_HAL.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "52e211343d7c787e4e76df0a8adaada439b7d5e420ee7270ed7955fa41a9c22b",
+      "octets_apres": 301847
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_HPE.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "1dab30538faa8d6e4967039b57d9500517a568f7430e1f21e0ad732690ee528e",
+      "octets_apres": 303477
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_IBM.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "ac238132313d64b762e1ee631a635e26d60f4cb7763b075531999229902ba851",
+      "octets_apres": 320095
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_JBL.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "2ffe138edef53338d29a5e2f27e3374d184fb177ed0d84d6d470d6131c759734",
+      "octets_apres": 302074
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_JCI.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "c3348fcf2a246177f539ff27cf3c1a5f44b252ae7ba0eb7abc23f9db280ab609",
+      "octets_apres": 302022
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_LITE.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "14c7b7ecea53d0c5b7b9ca0b2736468dd2eb9a9e76c7b94ea2dffe6c0dd35780",
+      "octets_apres": 300385
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_manifest.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "627d2f6c802a5f3df05e6199ef74e885c68cd0dc49d693b716d5866c64d61459",
+      "octets_apres": 15996
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_MMM.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "20d67eeeeba9ac4c2e9c12fe0acd1819930f70759401a5d5962e2c4f3f02114a",
+      "octets_apres": 322782
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_MRVL.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "8e6d1eb9679f1f3c98ce63b10232550839d9410f714ec087ee5aab76032c2613",
+      "octets_apres": 302662
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_NTAP.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "d400212204dde6d783c62f61767ba2d4a1f85c82783b419a0d88aecb93d30695",
+      "octets_apres": 302371
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_NVDA.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "55a2d5ae8ac4b4c598a0d8b5f45c1ee5fd86be7038386363350399e3db165ccb",
+      "octets_apres": 313967
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_O.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "355446df64d7c0634abd8aefa13a1601f1539ee09c88027a300ad0ea3b61a7de",
+      "octets_apres": 310080
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_ON.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "e20065dfbf235fe4326b8a8d1f3861b18d6a5443ab31a6f17fe25e3f300b866a",
+      "octets_apres": 301295
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_ORCL.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "7c5db8b67bd426dbbd66fde038c4257b0d8fe40c3ebde041358e8d76e62fd6be",
+      "octets_apres": 305176
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_PLD.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "1c4aa79b98e1465c99989459f9b2fad15ae322e18c50289672530c29e1da918e",
+      "octets_apres": 306123
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_PWR.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "f174abd8fe5e40a0c290e24fefa7ed0240b238941c5482a68af5051889b0bc85",
+      "octets_apres": 303538
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_RSP.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "fdb0cc807bc2cc140c7bb9c66bf50bf4287c4be65854f54e0cfb4f5e260b6d75",
+      "octets_apres": 298109
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_SMCI.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "7d5bee4ed2f5a6ca573530af2d77683e79eaf196e716d7d2c23af913a1ef74df",
+      "octets_apres": 300294
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_SNDK.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "caad1e8a25a9e7b150c6ede7fd57b99bc08c87235b526974289a5c3e4ad134c2",
+      "octets_apres": 49106
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_SNPS.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "dfe7e24917b7b9ed1a9546bb0ef0613e9157be834816c4ed38fc1dcbdb1f059e",
+      "octets_apres": 305305
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_SPY.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "393520cca6d8eaf69b63ca0c88a31e7606271d5a78e101a85b327b6d009dd32d",
+      "octets_apres": 303382
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_SWKS.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "48ad08333141df2f786ec5eab00efac4f83ed968073fc378d8c76762c024c871",
+      "octets_apres": 305065
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_TDY.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "3523f271c24f655bb18d47835d7e8138ddde45beeee38f39a844e589f48522e1",
+      "octets_apres": 305471
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_TSLA.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "4f2197575bfd85a54812db0df77326992002e0e7c0cf79a265470cb354636256",
+      "octets_apres": 318875
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_VRT.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "cb3a44254b413274618ac553698aa70273392b6e58e79803724f7b391768f6db",
+      "octets_apres": 243431
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_WDC.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "b975cf91bf4c974b8706a778c983930aab0f9a8f1ef61f59948acbd67f8bf006",
+      "octets_apres": 317031
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_WMB.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "fbb4335394ca162dda352877e48af29d982f3d9dcf5a5b18b1489c1ec3d43545",
+      "octets_apres": 301207
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_XEL.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "1eb1ec42efc758ae1364bfe31e9547910c548d0c8318350faf87e93277b1c3b1",
+      "octets_apres": 300433
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/variations_examines.csv",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "da187367b4fdcb0ff4ee5508e6f1099876968f3dd192a7b9c08a5e4803bb3e33",
+      "octets_apres": 9903
+    },
+    {
+      "fichier": "README.md",
+      "statut": "modifie",
+      "sha256_avant": "3e81171a489b5327e602546b7c6627f41e7b049e1b2ad5e05030a91c07aaeb87",
+      "sha256_apres": "3b4298af8d991f7fcc7b27f7e91d486a5c780857474c1919ecc5733c61350e3f",
+      "octets_apres": 9329
+    },
+    {
+      "fichier": "research/audit_etape_2.md",
+      "statut": "modifie",
+      "sha256_avant": "b032ae2e858c23a00705d11af18f978238fed4375280281abf9022cd7fcee8e1",
+      "sha256_apres": "ed6d9a1385c36a6aba4bd981ec147b50b609631fcc5cffc7640391c2ef633b0b",
+      "octets_apres": 335293
+    },
+    {
+      "fichier": "research/controle_donnees_prix.md",
+      "statut": "modifie",
+      "sha256_avant": "797764d2c67ec1042781aa671f88e72190f1e638b5ce5ed65fcca1dbaab6d68f",
+      "sha256_apres": "740897a3debcc15be96a3e323084952f2efe26a73a753951c1a41ba9dd554fef",
+      "octets_apres": 13439
+    },
+    {
+      "fichier": "research/master_context.md",
+      "statut": "modifie",
+      "sha256_avant": "89f5d14bbd566c782f28abdea4fcb18e2af9371603e282525b2ad92f66b688d0",
+      "sha256_apres": "9b7cb3d0039acabd1747712588f1b8de1a3f3d4ddbb965efce6c5366c7e65b22",
+      "octets_apres": 53340
+    },
+    {
+      "fichier": "research/plan_projet.md",
+      "statut": "modifie",
+      "sha256_avant": "210671ddcaffb4d63d583ad8574d59c74beca8219609b03ef55ab9f79bfb1b16",
+      "sha256_apres": "75cd75a9950d13e11a7b791c2c88501bb54690b66cfdb138e1bce09d965c1b23",
+      "octets_apres": 39562
+    },
+    {
+      "fichier": "research/portefeuilles.md",
+      "statut": "modifie",
+      "sha256_avant": "4d2311a229c72710340df221447be43cd4aeb6bc413b77ca0574d74222de11d1",
+      "sha256_apres": "6fd3ea55b2620628f065d07ba401b387315b1bf95141fc704c4cad6f5354923f",
+      "octets_apres": 21105
+    },
+    {
+      "fichier": "research/verification_etape_2.md",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "55a0e2a9e909476f3085f707deadf24c2ff5d994ad86c8079b7b5ac6ab2b7dcd",
+      "octets_apres": 32926
+    },
+    {
+      "fichier": "src/construire_portefeuille.ipynb",
+      "statut": "modifie",
+      "sha256_avant": "4bd977d18e6ad7a620f9cc510ec14149704a6d3797a16defc2235e6f7f88f98a",
+      "sha256_apres": "11cc154d4d9678c54b60c9e7ce24003a1fbfce40926e570525933c3d85d5e12b",
+      "octets_apres": 4447
+    },
+    {
+      "fichier": "src/construire_portefeuilles.py",
+      "statut": "modifie",
+      "sha256_avant": "aebcf04b0e086ca5874be0d1cbf6021de30a01864cd3a8a30b87c51eca13863c",
+      "sha256_apres": "8a9b728acd705d13db56c573c6ef828edb0011ebf92106b771283e1e4e60cd2d",
+      "octets_apres": 17577
+    },
+    {
+      "fichier": "src/corrections_prix.py",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "98195c67d65b759b1cdbfd55c2a73b48b229676dbc20a8db1e8449977778f8c6",
+      "octets_apres": 1906
+    },
+    {
+      "fichier": "src/portefeuille.py",
+      "statut": "modifie",
+      "sha256_avant": "84a7b06ce4da16d7c376011b1ef2cea8204e099622f064c0dd308387f42854c3",
+      "sha256_apres": "065ce80c2accf9a08dfc5edab65f0dcfb26a937a118186dd5cfef4f860af045c",
+      "octets_apres": 10380
+    },
+    {
+      "fichier": "src/recouper_prix.py",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "175e749883c5c7de26b7646aec2f8a451053a5b9e8b34c4b9f4943aa54627a94",
+      "octets_apres": 4698
+    },
+    {
+      "fichier": "tests/test_corrections_prix.py",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "a032a38482c124e044c4ecc2d313d786abb0f30ec5b31935f07b0a6bc4f3b795",
+      "octets_apres": 3898
+    }
+  ],
+  "verification_finale": {
+    "bruts_proteges": 2646,
+    "bruts_modifies": [],
+    "sorties_etape1_comparees": 11,
+    "sorties_etape1_differentes": [],
+    "sorties_recalcul_comparees": 18,
+    "sorties_recalcul_differentes": []
+  },
+  "rejeu_notebook": {
+    "cellules_executees": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "sorties_comparees": 18,
+    "sorties_differentes": []
+  },
+  "tests": {
+    "commande": "python -B -m unittest discover -s tests",
+    "tests_passes": 99,
+    "echecs": 0
+  },
+  "notes_avant_hors_depot": "C:\\Users\\josue\\.codex\\visualizations\\2026\\09\\05\\01a0708c-acb3-72c2-885a-9b76b6070a14\\cloture_etape2_20260908\\before"
+}
