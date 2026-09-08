@@ -1013,7 +1013,8 @@
     "BRK.B est interroge sous le symbole BRK-B ; la correspondance figure dans la colonne symbole_yahoo.",
     "Meta Platforms ne publie pas de nombre d actions a une date dans cette interface ; seule une moyenne ponderee est disponible.",
     "Les nombres d actions sont declares sans retraitement des divisions, contrairement aux prix.",
-    "Les metadonnees descriptives sont un etat au jour de la collecte : devise, place et denomination peuvent changer sans que les prix bougent."
+    "Les metadonnees descriptives sont un etat au jour de la collecte : devise, place et denomination peuvent changer sans que les prix bougent.",
+    "Le taux sans risque est reporte de la veille sur les cinq seances absentes de la source ; c'est un niveau, non un rendement."
   ],
   "revisions": [
     {
@@ -1218,6 +1219,13 @@
       "motif": "Ajout des seules 4 nouvelles lignes ; 136 lignes antérieures conservées.",
       "sha256_precedent": "4fe6cf49e6e2c19cdd7f00c7a7346af55d8238b3dc57023de0fbdaa99d409385",
       "sha256_courant": "1d849df9c40a1e7519dba6a7c42919dda23ca9a452e9b45df95b1bba508e75b2"
+    },
+    {
+      "le": "2026-09-08T12:58:13+00:00",
+      "objet": "taux_sans_risque.csv",
+      "motif": "Collecte pour l'etape 3. Le ratio de Sharpe exige un taux sans risque et un taux constant serait faux : il vaut 6 % en 2000, pres de zero de 2009 a 2015, plus de 5 % en 2023. Sept cotations negatives de mars 2020 sont conservees.",
+      "sha256_precedent": null,
+      "sha256_courant": "8fa4f468d77af8405d413c501f89c1c3a2fceb3372cf397ff350bdd0a0d803f1"
     }
   ],
   "source_metadonnees": "Yahoo Finance, via yfinance, champ history_metadata",
@@ -1238,5 +1246,14 @@
       "collecte_le"
     ],
     "sha256": "1d849df9c40a1e7519dba6a7c42919dda23ca9a452e9b45df95b1bba508e75b2"
+  },
+  "source_taux": "Yahoo Finance, ^IRX, bon du Tresor a treize semaines",
+  "taux_sans_risque": {
+    "fichier": "taux_sans_risque.csv",
+    "lignes": 16655,
+    "debut": "1960-01-04",
+    "fin": "2026-09-08",
+    "unite": "pourcentage annuel",
+    "sha256": "8fa4f468d77af8405d413c501f89c1c3a2fceb3372cf397ff350bdd0a0d803f1"
   }
 }

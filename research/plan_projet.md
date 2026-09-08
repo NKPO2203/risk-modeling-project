@@ -184,4 +184,67 @@ Les nombres instantanés d'actions SEC du cliché commencent le 2009-02-24 et ne
 
 Toute comparaison de l'étape 3 impliquant P4 doit être rapportée deux fois : sur la période complète et sur la sous-période commençant le 19 août 2004, où il compte au moins six entreprises. Les séries comparées sont alignées dans chacune de ces deux lectures, sans modifier leurs historiques conservés. Si les conclusions concordent, la faiblesse de l'effectif initial ne change pas la conclusion de cette comparaison entre les fenêtres retenues. Cela ne démontre pas un effet nul de l'effectif en général. Sinon, la divergence doit être expliquée, en distinguant l'effectif des différences de période et de composition. Cette obligation est inscrite maintenant ; aucune comparaison de risque n'est produite dans cette mise à jour.
 
-La prochaine étape est l'analyse de risque. Les hypothèses testables, les fenêtres communes et le traitement explicite des extrêmes non corroborés devront y être posés avant de conclure. Cette étape n'est pas réalisée par le présent document.
+La prochaine étape est l'analyse de risque.
+
+---
+
+## VI. Étape 3 : mesurer le risque, ses sources et son comportement en crise
+
+Sept phases, trente-sept tâches. Les décisions de la phase 0 se ferment avant que la phase 1 produise le moindre chiffre : une option choisie après avoir vu son effet n'est plus une décision, c'est une sélection. Les travaux sont menés dans `src/mesurer_risque.ipynb`.
+
+### Phase 0. Les décisions : close
+
+**Tâche 1, la fréquence de mesure : les deux, systématiquement.** La volatilité annualisée depuis le quotidien dépasse celle annualisée depuis le mensuel de 14 % en médiane sur les vingt-cinq séries, et de 27 % sur `SPY`, 19,11 % contre 15,01 %. La cause est mesurée : l'autocorrélation quotidienne est négative sur les vingt-cinq séries, de −0,01 à −0,10, alors que la multiplication par racine de 252 suppose l'indépendance.
+
+Le rapport n'est pas uniforme, de 0,967 sur `P4` conservé à 1,353 sur `P8` conservé. En quotidien, `P4` conservé paraît 33 % plus volatil que `P8` conservé ; en mensuel, 87 %. **La fréquence ne déplace donc pas seulement le niveau du risque, elle déforme les comparaisons entre portefeuilles**, ce qu'une étude comparative ne peut pas se permettre. Toute mesure sensible à la fréquence est publiée aux deux. Le quotidien reste la base pour les queues de distribution : à 99 %, 6 708 jours donnent 67 observations dans la queue, 320 mois en donnent 3. Deux interdits : ne jamais comparer un chiffre annualisé depuis le quotidien à un chiffre annualisé depuis le mensuel, et ne jamais présenter un écart entre deux portefeuilles sans dire à quelle fréquence il est mesuré.
+
+**Tâche 2, les mesures retenues.** Une mesure entre dans l'étude si elle répond à l'une des six questions de recherche. Neuf sont retenues : volatilité annualisée, semi-volatilité des rendements négatifs, repli maximal avec sa durée et son temps de récupération, asymétrie et aplatissement, VaR historique, perte moyenne au-delà de la VaR, ratio de Sharpe, ratio de Sortino, bêta au marché.
+
+Trois familles sont écartées. La VaR gaussienne sera calculée une fois, à côté de la VaR historique, pour mesurer de combien l'hypothèse de normalité se trompe ; elle ne sera pas utilisée ensuite. Les modèles de volatilité conditionnelle sont au-dessus du standard du projet et deviennent une limite écrite, non un chantier. Les ratios supplémentaires n'ajoutent rien que les neuf ne disent déjà, et chacun ajouté après coup serait une occasion de retenir celui qui flatte. Les neuf mesures sont calculées pour les vingt-cinq séries, à chaque fois.
+
+**Tâche 3, les fenêtres d'estimation : trois lectures.** La période complète donne un chiffre de référence comparable entre séries. La fenêtre glissante de 252 séances donne l'évolution, et c'est elle qui montrera si le risque a monté à mesure que la concentration se formait. La fenêtre de 756 séances sert de contrôle de robustesse, tâche 31.
+
+La mesure justifie ce découpage. Sur `P1` rééquilibré, la volatilité de période complète vaut 21,73 %, tandis que la glissante sur 252 séances va de 8,91 % à 47,37 %, avec une médiane de 17,53 %. Un rapport de un à cinq, alors que l'erreur relative d'estimation ne vaut que 4,45 % sur 252 observations et 2,57 % sur 756 : **la variation est du signal, pas du bruit**. Le chiffre de période complète est par ailleurs supérieur à la médiane glissante, parce qu'il est tiré vers le haut par les crises. Tout chiffre de période complète est donc publié à côté de la médiane glissante. Les fenêtres glissantes de `RSP` et de `^SPXEW`, qui commencent en 2003 et 2006, couvrent moins de terrain ; les comparaisons glissantes les impliquant sont restreintes à la période commune et le disent.
+
+**Tâche 4, la définition d'un épisode de tension.** Un épisode est un repli de `SPY` d'au moins 15 % depuis son plus haut ; il commence au sommet et finit au creux. La date de retour au sommet est enregistrée séparément et sert au temps de récupération, sans faire partie de l'épisode. Aucune date n'est écrite à la main : la règle s'applique à n'importe quelle série sans connaître la suite. Tous les portefeuilles sont évalués sur les mêmes épisodes, faute de quoi chacun serait jugé pendant ses pires moments à lui.
+
+Six épisodes en résultent, du 24 mars 2000 au 9 octobre 2002 pour −47,3 %, du 9 octobre 2007 au 9 mars 2009 pour −54,9 %, du 20 septembre au 24 décembre 2018 pour −19,1 %, du 19 février au 23 mars 2020 pour −33,7 %, du 3 janvier au 12 octobre 2022 pour −24,4 %, et du 19 février au 8 avril 2025 pour −18,7 %. Quatre dépassent 20 % et sont marqués majeurs. Mille trois cent quinze séances sont en tension sur 6 709, soit 19,6 % ; le reste est la période calme, ce qui laisse assez d'observations des deux côtés pour la tâche 22. Les épisodes sont enregistrés dans `data/processed/episodes_tension.csv`.
+
+Le seuil de 15 % est retenu parce que 20 % ne laisserait que quatre observations et que 10 % ajouterait des reculs de treize jours qu'aucun détenteur n'appellerait une crise. Les deux listes étant mécaniques, en publier deux n'est pas un choix opportuniste. **Ces six épisodes ne sont pas comparables entre eux** : 1 670 séances pour le premier, 88 pour le dernier. Ils seront traités un par un, avec leur durée affichée, sans moyenne. Le premier commence quand `P4` ne compte que quatre entreprises, ce qui rend la double lecture de `P4` prioritaire à cet endroit.
+
+**Tâche 5, l'annualisation.** Les rendements sont annualisés géométriquement, à partir de la valeur finale. La moyenne arithmétique multipliée par 252 s'écarte de 0,82 point par an sur `P1` rééquilibré, 1,50 sur `SPY` et 3,71 sur `P5` conservé. L'écart croît avec la volatilité, approximativement comme la moitié de la variance : **la convention arithmétique flatterait systématiquement les portefeuilles les plus volatils, c'est à dire précisément ceux que l'étude examine**.
+
+Les volatilités sont annualisées par racine de 252 en quotidien et racine de 12 en mensuel. Une exception assumée : le ratio de Sharpe utilise par définition la moyenne arithmétique des rendements excédentaires ; c'est correct pour un rapport, mais son numérateur ne sera jamais présenté comme un rendement. Les années sont comptées en séances divisées par 252, alors que la période contient 251,56 séances par année calendaire ; l'écart de 0,17 % relatif est écrit plutôt que passé sous silence.
+
+**Tâche 6, le taux sans risque.** `^IRX`, le bon du Trésor à treize semaines, collecté dans `data/raw/taux_sans_risque.csv` et inscrit au manifeste avec son empreinte. Il couvre la période avec une moyenne de 1,92 %, un minimum de −0,10 % et un maximum de 6,22 %. Un taux constant serait faux : il valait 6 % en 2000, près de zéro de 2009 à 2015, plus de 5 % en 2023. Les sept cotations négatives de mars 2020 sont réelles et conservées. Cinq séances absentes de la source sont reportées de la veille, ce qui est légitime pour un niveau de taux et ne l'aurait pas été pour un prix.
+
+**Tâche 7, le niveau de confiance de la VaR.** Quatre-vingt-quinze et quatre-vingt-dix-neuf pour cent, tous deux en quotidien. Le premier est le chiffre de comparaison, avec 335 observations dans la queue ; le second décrit la queue avec 67 observations et sa fragilité annoncée. En mensuel, 95 % seulement et à titre indicatif, ses 16 observations étant peu, tandis que 99 % n'en laisserait que 3 et ne sera pas calculé. La VaR est toujours accompagnée de la perte moyenne au-delà : seule, elle dit où commence le danger sans dire ce qu'on y trouve. Elle est exprimée en perte positive.
+
+**Tâche 8, ce que je m'interdis de conclure.** Aucune performance présentée comme réalisable, l'univers étant établi en 2026 et appliqué depuis 2000. Aucune causalité : je mesure des associations, sans contrefactuel. L'écart entre gestion conservée et rééquilibrée n'est pas baptisé effet de la concentration, puisqu'il contient aussi les opérations et les frais. Aucun prix déclaré validé, quatre-vingt-deux variations extrêmes restant non corroborées et neuf divergences non arbitrées. Des poids égaux ne signifient pas une exposition égale, les degrés étant non quantifiés. Aucune conclusion tirée d'une seule fréquence, d'une seule fenêtre ou d'un seul épisode. Aucun portefeuille déclaré diversifié parce qu'il contient beaucoup de titres, ce que les tâches 15 et 18 doivent établir. Aucune extrapolation vers l'avenir. Aucune comparaison entre un chiffre annualisé depuis le quotidien et un depuis le mensuel, ni aucune moyenne arithmétique présentée comme un rendement. Aucune mesure ajoutée ni décision de phase 0 révisée après un résultat sans que ce soit daté et motivé ici.
+
+Leur contrepartie positive : je peux dire combien de risque ces portefeuilles ont porté, d'où il venait en séparant l'effet du nombre de titres de celui de leur mouvement commun, comment ils se sont comportés pendant six épisodes identifiés mécaniquement, et comment ils se comparent au marché sur les mêmes dates.
+
+### Phase 1. Le risque de base : à faire
+
+Tâche 9, volatilité annualisée par série et par fenêtre. Tâche 10, forme de la distribution, asymétrie, aplatissement et écart à la loi normale. Tâche 11, replis maximaux, durée et temps de récupération. Tâche 12, ratios de Sharpe et de Sortino. Tâche 13, comparaison avec `SPY` et `RSP`.
+
+### Phase 2. D'où vient le risque : à faire
+
+Tâche 14, corrélation moyenne dans chaque portefeuille. Tâche 15, décomposition de la volatilité en une part due au nombre de titres et une part due à leur corrélation. Tâche 16, contribution de chaque titre au risque total. Tâche 17, concentration des poids contre concentration du risque. Tâche 18, analyse en composantes principales. Tâche 19, décomposition par maillon de chaîne.
+
+### Phase 3. Le comportement en crise : à faire
+
+Tâche 20, identification des épisodes selon la règle de la tâche 4. Tâche 21, rendement et volatilité par épisode. Tâche 22, corrélations en tension contre corrélations en période calme. Tâche 23, bêta conditionnel à la hausse et à la baisse. Tâche 24, VaR historique et perte moyenne au-delà. Tâche 25, tests de dépassement.
+
+### Phase 4. Le risque de concentration : à faire
+
+Tâche 26, évolution du poids maximal et de l'indice de concentration. Tâche 27, risque marginal du plus gros titre. Tâche 28, choc simulé sur ce titre. Tâche 29, gestion conservée contre rééquilibrée sur le risque et non sur le rendement.
+
+### Phase 5. Les contrôles : à faire
+
+Tâche 30, robustesse à la fréquence. Tâche 31, robustesse à la fenêtre. Tâche 32, robustesse à la période, avec la double lecture de `P4`. Tâche 33, sensibilité aux quatre-vingt-deux variations extrêmes non corroborées, imposée par la réserve de l'audit. Tâche 34, tests unitaires des fonctions de risque.
+
+### Phase 6. Documentation et clôture : à faire
+
+Tâche 35, écriture des résultats. Tâche 36, écriture des limites. Tâche 37, commit.
+ Les hypothèses testables, les fenêtres communes et le traitement explicite des extrêmes non corroborés devront y être posés avant de conclure. Cette étape n'est pas réalisée par le présent document.
