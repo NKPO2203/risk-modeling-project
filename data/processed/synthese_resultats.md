@@ -14,8 +14,8 @@ Les limites et la règle de lecture figurent dans `research/selection_rule.md`.
 
 | Catégorie | Nombre |
 |---|---:|
-| ENTRE | 130 |
-| SORT | 370 |
+| ENTRE | 134 |
+| SORT | 366 |
 
 ## canaux_retenus
 
@@ -23,21 +23,21 @@ Les limites et la règle de lecture figurent dans `research/selection_rule.md`.
 |---|---:|
 | depense | 4 |
 | depense et vend | 6 |
-| fournit | 86 |
+| fournit | 90 |
 | vend | 34 |
 
 ## degres_retenus
 
 | Catégorie | Nombre |
 |---|---:|
-| non_quantifie | 130 |
+| non_quantifie | 134 |
 
 ## maturites_retenues
 
 | Catégorie | Nombre |
 |---|---:|
-| engagement_ou_developpement_documente | 21 |
-| etablie | 109 |
+| engagement_ou_developpement_documente | 24 |
+| etablie | 110 |
 
 ## secteurs_retenus
 
@@ -45,31 +45,31 @@ Les limites et la règle de lecture figurent dans `research/selection_rule.md`.
 |---|---:|
 | Communication Services | 3 |
 | Consumer Discretionary | 3 |
-| Energy | 6 |
-| Financials | 3 |
+| Energy | 8 |
+| Financials | 4 |
 | Industrials | 28 |
 | Information Technology | 48 |
 | Materials | 8 |
 | Real Estate | 8 |
-| Utilities | 23 |
+| Utilities | 24 |
 
 ## mouvements_comptables
 
 | Catégorie | Nombre |
 |---|---:|
-| doublement observe | 57 |
+| doublement observe | 58 |
 | non evaluable | 7 |
-| progression inferieure au seuil | 65 |
-| recul des mesures disponibles | 1 |
+| progression inferieure au seuil | 67 |
+| recul des mesures disponibles | 2 |
 
 ## couverture_comptable
 
 | Catégorie | Nombre |
 |---|---:|
 | aucune comparaison | 7 |
-| observation partielle | 55 |
+| observation partielle | 59 |
 | trois mesures comparables | 68 |
 
-- replis_de_reference : 42
+- replis_de_reference : 43
 - alertes_qualite : 3724
 - entreprises_avec_alerte : 482

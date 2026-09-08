@@ -13,9 +13,9 @@
 
 ## 0. OÙ J'EN SUIS MAINTENANT
 
-Les étapes 1 et 2 sont closes pour la version du 8 septembre 2026 selon la règle d'arrêt écrite dans `research/plan_projet.md`. Les 500 dossiers ont un verdict documenté : 130 ENTRE, 370 SORT, aucun en attente. L'univers contient 131 titres, dont deux classes d'Alphabet. Dix groupes produisent vingt séries rétrospectives. Les réserves de données et d'interprétation restent écrites ; close ne signifie pas prix intégralement certifiés.
+Les étapes 1 et 2 sont closes pour la version du 8 septembre 2026 selon la règle d'arrêt écrite dans `research/plan_projet.md`. Les 500 dossiers ont un verdict documenté : 134 ENTRE, 366 SORT, aucun en attente. L'univers contient 135 titres, dont deux classes d'Alphabet. Dix groupes produisent vingt séries rétrospectives. Les réserves de données et d'interprétation restent écrites ; close ne signifie pas prix intégralement certifiés.
 
-La règle III de sélection n'a pas changé. La finition, les sources et les résultats actuels figurent dans `research/finition_etapes_1_et_2.md`, `research/portefeuilles.md` et `data/processed/etat_projet.json`. La prochaine étape est l'analyse de risque, non commencée. Les deux options réservées à l'auteur sont une pondération par capitalisation et un éventuel départ retardé de P4. Aucun arbitrage n'a été pris à sa place.
+La règle III reçoit l'amendement A-08 autorisé le 8 septembre 2026 : engagement dans le corpus, attribution possible sur source officielle extérieure. La finition, les sources et les résultats actuels figurent dans `research/finition_etapes_1_et_2.md`, `research/portefeuilles.md` et `data/processed/etat_projet.json`. La prochaine étape est l'analyse de risque, non commencée. L'auteur refuse la pondération par capitalisation. P4 reste calculé depuis 2000 et toute comparaison future l'impliquant sera présentée sur la période complète et depuis le 19 août 2004. Ces décisions et la revue des 20 exclusions sont consignées dans `research/decisions_auteur_2026-09-08.md`.
 
 Les sections pédagogiques anciennes sont conservées comme histoire du raisonnement. Elles ne remplacent pas cet état courant ni les règles de construction datées.
 
@@ -852,9 +852,9 @@ Ces pistes ne sont pas utilisées dans le bloc 1 finalisé. Elles restent dispon
 
 ## 47. ÉTAT EXACT DU PROJET (project_state)
 
-Les étapes 1 et 2 sont closes pour la version du 8 septembre 2026 selon la règle d'arrêt écrite dans `research/plan_projet.md`. Les 500 dossiers ont un verdict documenté : 130 ENTRE, 370 SORT, aucun en attente. L'univers contient 131 titres, dont deux classes d'Alphabet. Dix groupes produisent vingt séries rétrospectives. Les réserves de données et d'interprétation restent écrites ; close ne signifie pas prix intégralement certifiés.
+Les étapes 1 et 2 sont closes pour la version du 8 septembre 2026 selon la règle d'arrêt écrite dans `research/plan_projet.md`. Les 500 dossiers ont un verdict documenté : 134 ENTRE, 366 SORT, aucun en attente. L'univers contient 135 titres, dont deux classes d'Alphabet. Dix groupes produisent vingt séries rétrospectives. Les réserves de données et d'interprétation restent écrites ; close ne signifie pas prix intégralement certifiés.
 
-La règle III de sélection n'a pas changé. La finition, les sources et les résultats actuels figurent dans `research/finition_etapes_1_et_2.md`, `research/portefeuilles.md` et `data/processed/etat_projet.json`. La prochaine étape est l'analyse de risque, non commencée. Les deux options réservées à l'auteur sont une pondération par capitalisation et un éventuel départ retardé de P4. Aucun arbitrage n'a été pris à sa place.
+La règle III reçoit l'amendement A-08 autorisé le 8 septembre 2026 : engagement dans le corpus, attribution possible sur source officielle extérieure. La finition, les sources et les résultats actuels figurent dans `research/finition_etapes_1_et_2.md`, `research/portefeuilles.md` et `data/processed/etat_projet.json`. La prochaine étape est l'analyse de risque, non commencée. L'auteur refuse la pondération par capitalisation. P4 reste calculé depuis 2000 et toute comparaison future l'impliquant sera présentée sur la période complète et depuis le 19 août 2004. Ces décisions et la revue des 20 exclusions sont consignées dans `research/decisions_auteur_2026-09-08.md`.
 
 Le bloc 1 du Research Charter est rédigé. La formulation testable des blocs suivants accompagne la préparation de l’étape 3. La construction des portefeuilles est faite ; l’optimisation, les scénarios, les couvertures et le rapport LaTeX ne sont pas commencés.
 

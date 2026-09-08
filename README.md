@@ -48,7 +48,7 @@ Le pipeline vérifie d'abord les empreintes du corpus, puis reconstruit le class
 
 Les CSV sont encodés en UTF-8. Le CIK doit être lu comme du texte de dix caractères. Une entreprise peut avoir plusieurs symboles. Dans les comptes, la clé est le CIK et la date de clôture ; l'année civile majoritaire est informative et peut se répéter.
 
-Le schéma accepte `ENTRE`, `SORT`, `DOUTEUX` et `A_EXAMINER`. La version close ne contient que 130 ENTRE et 370 SORT. Après lecture, une preuve insuffisante a été motivée en SORT selon la consigne de clôture. Une preuve devenue introuvable lors d’un futur recalcul est toujours remise à examiner, sans exclusion automatique. Les décisions sont éditées dans le registre de revue, jamais dans un classement généré.
+Le schéma accepte `ENTRE`, `SORT`, `DOUTEUX` et `A_EXAMINER`. La version close ne contient que 134 ENTRE et 366 SORT. Après lecture, une preuve insuffisante a été motivée en SORT selon la consigne de clôture. Une preuve devenue introuvable lors d’un futur recalcul est toujours remise à examiner, sans exclusion automatique. Les décisions sont éditées dans le registre de revue, jamais dans un classement généré.
 
 Les montants non rapprochés restent visibles avec un statut. Une valeur manquante n'est pas zéro. Le fichier `corroboration_details.csv` contient les montants, périodes, périmètres et sources de chaque comparaison ; `corroboration.csv` sépare le mouvement de la couverture.
 
@@ -110,7 +110,7 @@ Les tests contrôlent des erreurs précises et la cohérence des artefacts. Ils 
 
 ## Étape 2 : reconstruction des portefeuilles
 
-L’univers courant comprend 130 entreprises et 131 titres. Les étapes 1 et 2 sont closes pour cette version, selon la règle d’arrêt de l’auteur et sous les limites écrites. Dix groupes sont calculés dans deux modes de gestion. Le [rapport de finition](research/finition_etapes_1_et_2.md) donne les décisions, les bornes d’historique et les contrôles définitifs.
+L’univers courant comprend 134 entreprises et 135 titres. Les étapes 1 et 2 sont closes pour cette version, selon la règle d’arrêt de l’auteur et sous les limites écrites. Dix groupes sont calculés dans deux modes de gestion. Le [rapport de finition](research/finition_etapes_1_et_2.md) conserve l'état avant A-08. L’[application des décisions du 8 septembre](research/decisions_auteur_2026-09-08.md) donne l'état courant après réexamen et reconstruction.
 
 Les règles courantes sont dans [Portefeuilles](research/portefeuilles.md), la progression dans [Plan du projet](research/plan_projet.md). Le notebook de construction appelle le même traitement local que ces commandes, sans collecte :
 

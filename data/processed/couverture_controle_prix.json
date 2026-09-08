@@ -246,6 +246,11 @@
       "structure_verifiee": true
     },
     {
+      "fichier": "EQT.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
       "fichier": "ETN.csv",
       "lignes": 13679,
       "structure_verifiee": true
@@ -391,6 +396,16 @@
       "structure_verifiee": true
     },
     {
+      "fichier": "KMI.csv",
+      "lignes": 3914,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "L.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
       "fichier": "LDOS.csv",
       "lignes": 5002,
       "structure_verifiee": true
@@ -518,6 +533,11 @@
     {
       "fichier": "ORCL.csv",
       "lignes": 10200,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "PEG.csv",
+      "lignes": 11765,
       "structure_verifiee": true
     },
     {
@@ -977,6 +997,12 @@
       "comparaisons": 6554
     },
     {
+      "fichier": "EQT.csv",
+      "additif": 0.0005503119630358988,
+      "multiplicatif": 1.5544664997424462e-06,
+      "comparaisons": 11712
+    },
+    {
       "fichier": "ETN.csv",
       "additif": 0.036708793799160144,
       "multiplicatif": 1.7801540999062837e-06,
@@ -1151,6 +1177,18 @@
       "comparaisons": 11569
     },
     {
+      "fichier": "KMI.csv",
+      "additif": 0.0007455980189479128,
+      "multiplicatif": 1.0012519160440547e-06,
+      "comparaisons": 3913
+    },
+    {
+      "fichier": "L.csv",
+      "additif": 0.00019990594634333725,
+      "multiplicatif": 1.734497059979745e-06,
+      "comparaisons": 11712
+    },
+    {
       "fichier": "LDOS.csv",
       "additif": 0.0031204119016468024,
       "multiplicatif": 8.491324132720024e-07,
@@ -1305,6 +1343,12 @@
       "additif": 0.0001508023511673784,
       "multiplicatif": 1.2569703016218625e-06,
       "comparaisons": 10199
+    },
+    {
+      "fichier": "PEG.csv",
+      "additif": 0.0008102615548520875,
+      "multiplicatif": 1.5717336037113228e-06,
+      "comparaisons": 11764
     },
     {
       "fichier": "PH.csv",
@@ -1501,18 +1545,18 @@
   ],
   "tests": {
     "date en double": 0,
-    "anteriorite au calendrier": 69,
+    "anteriorite au calendrier": 72,
     "seance absente": 14,
     "date hors calendrier": 0,
-    "variation quotidienne extreme": 145,
+    "variation quotidienne extreme": 146,
     "barre incoherente": 1,
     "prix nul ou negatif": 0,
     "valeur manquante": 1,
     "ajustement incoherent": 0,
     "division non confirmee": 20,
-    "reference de cotation absente": 53,
+    "reference de cotation absente": 56,
     "premiere cotation discordante": 0,
-    "historique tronque": 21,
+    "historique tronque": 22,
     "metadonnees absentes": 0,
     "devise non usd": 0,
     "fuseau inattendu": 0,
@@ -1522,8 +1566,8 @@
     "fin de serie anticipee": 0,
     "denomination divergente": 7,
     "seance sans transaction": 117,
-    "prix fige": 8637
+    "prix fige": 8642
   },
-  "signalements": 9085,
+  "signalements": 9098,
   "limite": "Un zéro signifie absence de détection sur les comparaisons calculables, pas validation externe."
 }

@@ -1,0 +1,59 @@
+[
+  {
+    "dossier": "EQT",
+    "url": "https://www.altagas.ca/newsroom/news-releases/altagas-retain-mvp-long-term-investment-announces-400-million-bought-deal",
+    "fichier": "data/review/sources_attribution_A08_2026-09-08/EQT.html",
+    "sha256": "06bae0c6f3d3fbcf056b1697c90ff057f20b3bfeeff655aaa912d87d548da40d",
+    "octets": 47450,
+    "consulte_le": "2026-09-08",
+    "statut": "copie_http"
+  },
+  {
+    "dossier": "L",
+    "url": "https://bwpipelines.com/project/kosciusko-junction-pipeline-project",
+    "fichier": "data/review/sources_attribution_A08_2026-09-08/L.html",
+    "sha256": "cc9f0cdfcb7c4976e3e744f91f819e3c87dfc8b8ca643c50a34e53f745d36268",
+    "octets": 169671,
+    "consulte_le": "2026-09-08",
+    "statut": "copie_http"
+  },
+  {
+    "dossier": "PEG",
+    "url": "https://corporate.pseg.com/-/media/pseg/corporate/mprp-documents/needed-project-that-benefits-marylanders.ashx",
+    "statut": "copie_http_editeur_PJM",
+    "erreur": "403 Client Error: Forbidden for url: https://corporate.pseg.com/-/media/pseg/corporate/mprp-documents/needed-project-that-benefits-marylanders.ashx",
+    "consulte_le": "2026-09-08",
+    "fichier": "data/review/sources_attribution_A08_2026-09-08/PEG.pdf",
+    "sha256": "de74cec70b221591c15c769525c287285ca112541faa6009673582b3a5d94c63",
+    "octets": 168408,
+    "url_copie": "https://www.pjm.com/-/media/DotCom/about-pjm/newsroom/fact-sheets/md-piedmont-reliability-project-fact-sheet.pdf",
+    "note": "Même note PJM du 13 janvier 2025 ; copie depuis le site de son auteur, l’hébergement PSEG refusant le téléchargement direct."
+  },
+  {
+    "dossier": "KMI",
+    "url": "https://ir.kindermorgan.com/files/doc_financials/2024/q4/KMI-2024-Q4-8-K-Ex-99-1-for-IR.pdf",
+    "fichier": "data/review/sources_attribution_A08_2026-09-08/KMI.pdf",
+    "sha256": "919ec9f62ecfc139f6f7730c30ca0df7064d4985c68635f567cb2e89dd156c50",
+    "octets": 195498,
+    "consulte_le": "2026-09-08",
+    "statut": "copie_http"
+  },
+  {
+    "dossier": "EQT_scission",
+    "url": "https://ir.eqt.com/investor-relations/news/news-release-details/2019/EQT-Reports-Fourth-Quarter-and-Year-End-2018-Results/default.aspx",
+    "fichier": "data/review/sources_attribution_A08_2026-09-08/EQT_scission.html",
+    "sha256": "c2bad61757fabe4d4a1863c285c04b43b056daa2f288e498748e00c2eacb3949",
+    "octets": 376038,
+    "consulte_le": "2026-09-08",
+    "statut": "copie_http"
+  },
+  {
+    "dossier": "L_echange",
+    "url": "https://media.corporate-ir.net/media_files/irol/10/102789/LTR_061008.pdf",
+    "fichier": "data/review/sources_attribution_A08_2026-09-08/L_echange.pdf",
+    "sha256": "7be361339a550d1909ab4c703bf1c4552ba4723625cfb4b4a081a0f94034ca5e",
+    "octets": 78653,
+    "consulte_le": "2026-09-08",
+    "statut": "copie_http"
+  }
+]

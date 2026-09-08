@@ -478,5 +478,37 @@
     "sha256": "034fc22d0a695a7d0535a147c0fb4278eb512c4ef83694d7f2b234d2486138d7",
     "lignes": 2514,
     "total_annonce": 2514
+  },
+  {
+    "titre": "EQT",
+    "source": "https://api.nasdaq.com/api/quote/EQT/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_EQT.json",
+    "sha256": "ea78ee471895ce2af04bc79beaeebb9363b75a45d8f3b56d8ecc1017ebbcf350",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "KMI",
+    "source": "https://api.nasdaq.com/api/quote/KMI/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_KMI.json",
+    "sha256": "ce831d6a406114265dfdb5b2c52b7c158af7d5738e4bbc9592976e4ff6e09103",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "L",
+    "source": "https://api.nasdaq.com/api/quote/L/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_L.json",
+    "sha256": "ce629dd9ec993a73402fb5c5de98ae05bdbc96f39fc7658bed053ed4a0311aa9",
+    "lignes": 2514,
+    "total_annonce": 2514
+  },
+  {
+    "titre": "PEG",
+    "source": "https://api.nasdaq.com/api/quote/PEG/historical?assetclass=stocks&fromdate=2000-01-03&todate=2026-09-04&limit=99999",
+    "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_PEG.json",
+    "sha256": "6dfb3b51380cd12d97a45a093522e279ef3fbcd400d3819410f56bec0115d54f",
+    "lignes": 2514,
+    "total_annonce": 2514
   }
 ]

@@ -1,0 +1,635 @@
+{
+  "date_utc": "2026-09-08T11:43:15.688868+00:00",
+  "objet": "Application des décisions auteur A-08, refus de capitalisation et double lecture future de P4",
+  "version_precedente": "2f784615d362958ea02c5a54b3c06d7b6ca3578b",
+  "dossiers_reperes": 20,
+  "dossiers_reexamines": 20,
+  "bascules": [
+    "EQT",
+    "KMI",
+    "L",
+    "PEG"
+  ],
+  "maintenus_sort": 16,
+  "verification": {
+    "verifie_le": "2026-09-08T11:35:07.965851+00:00",
+    "python": "3.13.9",
+    "fichiers_proteges_inchanges": 2663,
+    "registre_lignes": 500,
+    "preuves_sha_positions": 500,
+    "decisions_anterieures_preservees": 495,
+    "entreprises": 134,
+    "sorties": 366,
+    "partition_maturite": true,
+    "partition_chaine": true,
+    "series_identite": 20,
+    "ecart_identite_relu": 1.169203622808368e-15,
+    "tests": 103,
+    "replay": {
+      "debut": "2026-09-08T11:32:51.838506+00:00",
+      "fin": "2026-09-08T11:33:53.848791+00:00",
+      "python": "3.12.14",
+      "cellules_executees": 4,
+      "sorties_identiques": 18,
+      "notebook_sha256": "5592cc07a704915c32c9466063631a93e31230eaeed11611e5e86e793055a159"
+    }
+  },
+  "verification_documents": {
+    "documents": [
+      {
+        "fichier": "research/portefeuilles.md",
+        "tableaux": 2
+      },
+      {
+        "fichier": "research/plan_projet.md",
+        "tableaux": 3
+      },
+      {
+        "fichier": "research/controle_donnees_prix.md",
+        "tableaux": 3
+      },
+      {
+        "fichier": "research/audit_etape_2.md",
+        "tableaux": 3
+      },
+      {
+        "fichier": "research/univers_selection.md",
+        "tableaux": 4
+      }
+    ],
+    "tableaux": 15,
+    "valeurs_numeriques_tableaux": 486,
+    "compositions_verifiees": 10,
+    "groupes_sans_nouveau_membre_inchanges": [
+      "P4",
+      "P5",
+      "P7",
+      "P8",
+      "P9"
+    ],
+    "dates_inchangees": true,
+    "sources_exterieures_archivees": 6
+  },
+  "verification_excel": {
+    "feuilles": 5,
+    "entreprises_par_vue": 134,
+    "total_recapitulatif": 134,
+    "cellules_rapprochees_aux_entrees": 5628,
+    "controle_erreurs": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+    "apercus_verifies": 5,
+    "sha256": "a5e02be2a828d31e3640dc13a095d5b57d0267417f47580a07e07ec00168aeb8"
+  },
+  "code_cellules_notebook_inchange": true,
+  "etape_3_commencee": false,
+  "commandes": [
+    "python -X utf8 -B src/run_pipeline.py",
+    "python -X utf8 -B -m src.construire_portefeuilles",
+    "python -X utf8 -B -m src.recouper_prix",
+    "rejeu des quatre cellules du carnet dans un processus neuf",
+    "python -X utf8 -B src/run_pipeline.py --check-only",
+    "python -X utf8 -B -m src.construire_portefeuilles --check-only",
+    "python -B -m unittest discover -s tests"
+  ],
+  "portee_historique": "Les anciens rapports et relevés datés gardent les chiffres des versions qu’ils décrivent. Le présent manifeste est celui de l’application A-08.",
+  "modifications": [
+    {
+      "fichier": "README.md",
+      "statut": "modifie",
+      "sha256_avant": "d08be0fdd0a48d437854b80d9979c67a0e352e8956f1e46b2867d4038e16d049",
+      "sha256_apres": "8bf22b14ca1b53fee60cc7eea4b60d671e2c09821668a3795f6732a6f66b526e",
+      "octets": 9688
+    },
+    {
+      "fichier": "data/processed/appartenance.csv",
+      "statut": "modifie",
+      "sha256_avant": "9566554ca39a53445ddf978be8a0ad7013bab6950f5468aa9d2d6856e9f66801",
+      "sha256_apres": "975884ea81a86da8ed873cea279d50f305dca7a419d496f396b9f779e0e41151",
+      "octets": 14539
+    },
+    {
+      "fichier": "data/processed/classification_manuelle.csv",
+      "statut": "modifie",
+      "sha256_avant": "4ef22a725ae90416a7b2014ea27511308fd4736a40795c9ba45aa96c37f4818e",
+      "sha256_apres": "d864a7a0c074d137e3ce1973f1d205c0be63e2655ec99a00f18d6765a2d9368d",
+      "octets": 667297
+    },
+    {
+      "fichier": "data/processed/controle_divisions_sec.csv",
+      "statut": "modifie",
+      "sha256_avant": "b9acfad62cc46ca0c63cb79445f471f0228997c804537812cd1cc09a11b485ea",
+      "sha256_apres": "5d876086c439266e8dc253776ac3691e3893342b7c70debb7fa6947d97d957b2",
+      "octets": 5494
+    },
+    {
+      "fichier": "data/processed/controle_prix.csv",
+      "statut": "modifie",
+      "sha256_avant": "24b70d200a15b5b23ee9e9f1e470cc291a11801d66162b2aab43aa20a02d0689",
+      "sha256_apres": "93133c0eb17c25847c8447c463595f43805ce4f8c27d3ae64c822f1a6e4f51b3",
+      "octets": 352741
+    },
+    {
+      "fichier": "data/processed/controles_portefeuilles.json",
+      "statut": "modifie",
+      "sha256_avant": "8b67c072d0734b5afd232bd326b228f20ea48baafff2de3696be9ec80fadcc07",
+      "sha256_apres": "314a2af4d1d506d2affd1bd2d9f860acf37436b52aa4b95abd9eec4fdc3f1ed0",
+      "octets": 387
+    },
+    {
+      "fichier": "data/processed/corroboration.csv",
+      "statut": "modifie",
+      "sha256_avant": "8f3932635d0688f6958ba952c99e0fd2c1cacf23dc98c8860247b598644cf526",
+      "sha256_apres": "dd8e53961253a1ad4dc73ad5fb97fc8a4b1cb35a67f6215cc524128f055036b9",
+      "octets": 103211
+    },
+    {
+      "fichier": "data/processed/corroboration_details.csv",
+      "statut": "modifie",
+      "sha256_avant": "1fa71c4896bd0b94201d9d1521049625c029bfed8ee0ac2e748d8313ad690af1",
+      "sha256_apres": "4825902e86102f605d3ef0b228f145a31f60710c9e58235d20675b07f944ddae",
+      "octets": 427820
+    },
+    {
+      "fichier": "data/processed/corroboration_sensibilite.csv",
+      "statut": "modifie",
+      "sha256_avant": "69821a07e3bb761840f7eab7c362ac1fb9d97cc776a59272cd50080dcf0e6b43",
+      "sha256_apres": "1b0cb295c52da45326454056dee4bfba357bb34989a5c320916ba684c137a132",
+      "octets": 398
+    },
+    {
+      "fichier": "data/processed/couverture_controle_prix.json",
+      "statut": "modifie",
+      "sha256_avant": "f8d49c04d76308388364d00f46e1b7696d24194ef2b3cf0ecf7b923e2600ce5d",
+      "sha256_apres": "9544d5eaec6705562b2144bbe38b0c9734a9e570dcb14de85c08dca4e46a4b36",
+      "octets": 36889
+    },
+    {
+      "fichier": "data/processed/dividendes.csv",
+      "statut": "modifie",
+      "sha256_avant": "565a73728aa142edb21b1686370901bc089e5e3f87ee0bfab0600e37784f9d40",
+      "sha256_apres": "39af8f65265f9354c2b1234d4b545906516612124857f2d68429620037ab11f1",
+      "octets": 3457209
+    },
+    {
+      "fichier": "data/processed/etat_projet.json",
+      "statut": "modifie",
+      "sha256_avant": "71ca07e41770e9a29f3e0f8ec0b86f7b1897e02241019af463168e41cbb39c7e",
+      "sha256_apres": "f5d7e49fbfe6bd242f7fff3b0df7d1b1f12ae04d562b060be49e00bbfaefcde6",
+      "octets": 1750
+    },
+    {
+      "fichier": "data/processed/journal_portefeuilles.csv",
+      "statut": "modifie",
+      "sha256_avant": "7199ef8a86e54042c306ad6107cb2baf3802573b2feac2397de0ab69f06daa7f",
+      "sha256_apres": "35cb31616bfdfff1a9debd6747fbb077d3ecdb0d5f6c02a3547263852ec31444",
+      "octets": 16667283
+    },
+    {
+      "fichier": "data/processed/mesures_portefeuilles.csv",
+      "statut": "modifie",
+      "sha256_avant": "79bff3d2c2bc3d06bb2ddbac0a464f04f96bf261c135f1b61be2436cb5bec30e",
+      "sha256_apres": "78d5f4868386e82e246d8e6739976990936f2c121b427b8037c09fafe0f0ea74",
+      "octets": 2191
+    },
+    {
+      "fichier": "data/processed/pipeline_manifest.json",
+      "statut": "modifie",
+      "sha256_avant": "3a6f2ed6faf9af030756d927fc3676e33031d1a95df7a846fd31793c30b59351",
+      "sha256_apres": "74d740d560a9e92324bc16c5e2c2162a5562e0d0dd6ecb40ad68e49ca4f32b9a",
+      "octets": 4052
+    },
+    {
+      "fichier": "data/processed/pipeline_portefeuilles.json",
+      "statut": "modifie",
+      "sha256_avant": "381d8f1300126062970a8d548e68778638ac5d1ca557703b41a649d1bdcf7715",
+      "sha256_apres": "235cb58d7104d970ebe3d7de7cb945f9c1baabab4e1d1c0d28f2784e89f0f266",
+      "octets": 18639
+    },
+    {
+      "fichier": "data/processed/pipeline_status.json",
+      "statut": "modifie",
+      "sha256_avant": "d210d5e188cece170a5ab598c49b0c9b710c425e6ef45ce9e4f90710d1ee575d",
+      "sha256_apres": "fdadab7a06e5c9ba9b6294b72798a7eeca8a097d15cbee274a48828ff33ba2bc",
+      "octets": 61
+    },
+    {
+      "fichier": "data/processed/poids_cibles.csv",
+      "statut": "modifie",
+      "sha256_avant": "a300025092a4efd3ad8e2eda4a42fe36f2b5630feafd3551e41e425819a333e9",
+      "sha256_apres": "8b19eeeed039a058b60d2a664ed64be176c2a4051a91bff23b5ad969f111ee5e",
+      "octets": 1155207
+    },
+    {
+      "fichier": "data/processed/poids_mensuels.csv",
+      "statut": "modifie",
+      "sha256_avant": "5314f3e1470f3e82ea5fe23ee13856336b28ec0f159c70c71ddf9de9687451e8",
+      "sha256_apres": "f79e81f9636cf2bbc56e34539bdb85b9e7158e61d634f788bd6a714a6b868493",
+      "octets": 11400491
+    },
+    {
+      "fichier": "data/processed/rendements_prix.csv",
+      "statut": "modifie",
+      "sha256_avant": "afc7a3a8a988f9764bec6cf9b71a7facc009546452036ad83260bddab02d1c99",
+      "sha256_apres": "1a1ed33c31f1c1202ea2ced8b417a2604f0207bd6eff325f9c8a62f699122055",
+      "octets": 16616482
+    },
+    {
+      "fichier": "data/processed/rendements_valorisation.csv",
+      "statut": "modifie",
+      "sha256_avant": "cbdd57c61ca055de77cdd4d06a992a17f5bcdfe1c453a232e9472988a80c5ff0",
+      "sha256_apres": "b092ef883b70cee664d6582bd260f040232ecad52880a05fd1f75c07d0c02f85",
+      "octets": 16617324
+    },
+    {
+      "fichier": "data/processed/resume_controle_prix.csv",
+      "statut": "modifie",
+      "sha256_avant": "7808e4b2bbfe2e655119d0ff2dfd6ae567bc7e2a08c70a9387657c6afb66ad7f",
+      "sha256_apres": "2c6568d49749fd61615830558f6b41f2ed07a75448cc4ea1b31f90b2d5ba8561",
+      "octets": 586
+    },
+    {
+      "fichier": "data/processed/synthese_resultats.md",
+      "statut": "modifie",
+      "sha256_avant": "5b9def6274118bb696ea906c9e9d6f171386650c24ebcd801520757bf15d305d",
+      "sha256_apres": "f216a5af041392eda9e6d897cd817d15b35aaa86e0f419cc0105be80be1f667c",
+      "octets": 1559
+    },
+    {
+      "fichier": "data/processed/univers_retenu.csv",
+      "statut": "modifie",
+      "sha256_avant": "1e8fa1ef43e49a2fb67f9988a4b1b47ae8cb75477f1a5999171c5cd2d43be5c5",
+      "sha256_apres": "626748aaceb0a33e6b3e814aa30c586e6b64313f2a5db33d3206f70fbfc3809f",
+      "octets": 171949
+    },
+    {
+      "fichier": "data/processed/valeurs_portefeuilles.csv",
+      "statut": "modifie",
+      "sha256_avant": "9b44dd283e0a9905dea5eac9dd7e8415a91999f1bb83c7d8a409baee8fd3fded",
+      "sha256_apres": "18e82ddd544d1e1442ce1cf9244d28f4c8b0d2709637aa4b24a3c73e66f9e54b",
+      "octets": 2548370
+    },
+    {
+      "fichier": "data/raw/metadonnees_titres.csv",
+      "statut": "modifie",
+      "sha256_avant": "4fe6cf49e6e2c19cdd7f00c7a7346af55d8238b3dc57023de0fbdaa99d409385",
+      "sha256_apres": "1d849df9c40a1e7519dba6a7c42919dda23ca9a452e9b45df95b1bba508e75b2",
+      "octets": 11824
+    },
+    {
+      "fichier": "data/raw/prix/EQT.csv",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "cb357a2cb2f042300a4c80a3806290041db84b3985cfc7a04bea30e74bd14c48",
+      "octets": 1620213
+    },
+    {
+      "fichier": "data/raw/prix/KMI.csv",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "8268f5e0725c37f6f39033e90a559c858a7d926ed410cb33d3ae4918161bd7f6",
+      "octets": 539030
+    },
+    {
+      "fichier": "data/raw/prix/L.csv",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "44dc7549dbb0f3faf88a1841bc7ba582ba1a17a40ce32cc8c3a43a5a5920948e",
+      "octets": 1526589
+    },
+    {
+      "fichier": "data/raw/prix/PEG.csv",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "5a19f6d80dbe451d0dfb91bdb9fa0d9444acb5b5b1b3acbf021ea6ceb2ac3198",
+      "octets": 1429383
+    },
+    {
+      "fichier": "data/raw/prix_manifest.json",
+      "statut": "modifie",
+      "sha256_avant": "50ec0819f1af820f870965f1d45787c0b9d2f9cde75af1828d0f67993885650a",
+      "sha256_apres": "81875b9cb629bf84873a090da38b191d0dde7f4c7b13bbd74bde70b9516d3192",
+      "octets": 39732
+    },
+    {
+      "fichier": "data/review/comptabilite_controle_manifest.json",
+      "statut": "modifie",
+      "sha256_avant": "3a6a3a2f500697d355c67e9d2eda42631d675c59338d0c80d3d99fd69f834086",
+      "sha256_apres": "fedb17ac17b84a24478e07816b45332f8d9475f49eae79f0ce2b87214e5fffa4",
+      "octets": 1330
+    },
+    {
+      "fichier": "data/review/continuite_examinee_2026-09-08.csv",
+      "statut": "modifie",
+      "sha256_avant": "03f9f547c5ce119bcf3e72a57155247aff5a1c339bda1cb9cf1dbdba20789a24",
+      "sha256_apres": "1fddb9adb9863680e2475ed0f19484b0755ad1e0e229f10bbbaed29dabb99733",
+      "octets": 52746
+    },
+    {
+      "fichier": "data/review/decisions_attribution_A08_2026-09-08.csv",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "e1fb9619805d19a7efc202ec3b1c2ac2d33a9a70dc0e64fa786f4b5606cd8213",
+      "octets": 18752
+    },
+    {
+      "fichier": "data/review/decisions_selection.csv",
+      "statut": "modifie",
+      "sha256_avant": "d4525cca43078fce28bd192ad3b6ca364707bcd0d830dc495251920101bcf779",
+      "sha256_apres": "3ea223cf8d23cf746e57187e3c603620727eee0189c156dcecd1882e42ff9b6c",
+      "octets": 630803
+    },
+    {
+      "fichier": "data/review/divergences_finition_2026-09-08.csv",
+      "statut": "modifie",
+      "sha256_avant": "63e6a3cedb593bf00506e83014ad33703411d0315ed6f451ff4d91a694818931",
+      "sha256_apres": "2ccb4083db2cec06c488598614d8e23a12e90853ae8cafedb9973550fbdd3d25",
+      "octets": 4857
+    },
+    {
+      "fichier": "data/review/evenements_prix_documentes.csv",
+      "statut": "modifie",
+      "sha256_avant": "fd12c5a2631df083286fbdab95ec55600bc718bf0d26f0fa8d3c7243428fbcdb",
+      "sha256_apres": "3240ee6f56f6262b42139138d35c8bcf6bb3977808fedf4dd9c9696f7b8ae395",
+      "octets": 11836
+    },
+    {
+      "fichier": "data/review/sources_attribution_A08_2026-09-08/.gitattributes",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "f6fdc04b6a34b1dbd10e4e8d7861b570e0308a6d6f3c316ed9cc9af21f790d28",
+      "octets": 91
+    },
+    {
+      "fichier": "data/review/sources_attribution_A08_2026-09-08/EQT.html",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "06bae0c6f3d3fbcf056b1697c90ff057f20b3bfeeff655aaa912d87d548da40d",
+      "octets": 47450
+    },
+    {
+      "fichier": "data/review/sources_attribution_A08_2026-09-08/EQT_scission.html",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "c2bad61757fabe4d4a1863c285c04b43b056daa2f288e498748e00c2eacb3949",
+      "octets": 376038
+    },
+    {
+      "fichier": "data/review/sources_attribution_A08_2026-09-08/KMI.pdf",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "919ec9f62ecfc139f6f7730c30ca0df7064d4985c68635f567cb2e89dd156c50",
+      "octets": 195498
+    },
+    {
+      "fichier": "data/review/sources_attribution_A08_2026-09-08/L.html",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "cc9f0cdfcb7c4976e3e744f91f819e3c87dfc8b8ca643c50a34e53f745d36268",
+      "octets": 169671
+    },
+    {
+      "fichier": "data/review/sources_attribution_A08_2026-09-08/L_echange.pdf",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "7be361339a550d1909ab4c703bf1c4552ba4723625cfb4b4a081a0f94034ca5e",
+      "octets": 78653
+    },
+    {
+      "fichier": "data/review/sources_attribution_A08_2026-09-08/PEG.pdf",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "de74cec70b221591c15c769525c287285ca112541faa6009673582b3a5d94c63",
+      "octets": 168408
+    },
+    {
+      "fichier": "data/review/sources_attribution_A08_2026-09-08/manifest.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "72fc6eec9eb628af7024ebb7d23e497927092d0eabda639230aea5b459415736",
+      "octets": 2836
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/bilan.json",
+      "statut": "modifie",
+      "sha256_avant": "3cabba469fee58375dc9fe2cd985dcd3307c14aaea5d5b47a11c7f6fd036a658",
+      "sha256_apres": "aac48f2d23c110bd87b39a5ae962416da3427f53f8f9d717e91b0bc39dca682e",
+      "octets": 384
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/comparaison_cours.csv",
+      "statut": "modifie",
+      "sha256_avant": "76161bc636290b973f80d95d5b8316901148cbe5c539e05d9b9186d15d7570a2",
+      "sha256_apres": "4a4dc96df971f10e76c0c0c0485c139d74aa2856038c979483f72ff01b87af88",
+      "octets": 20474905
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/couverture.csv",
+      "statut": "modifie",
+      "sha256_avant": "1dea7f7b5f6d4240c4bb49b0c1c75e465d7860eef365b32ef8278aa9feea00ee",
+      "sha256_apres": "33fd88de869764e4e1ec86c00119b26322c9c959d7b98513afe4b74ab1c2015e",
+      "octets": 5712
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/divergences.csv",
+      "statut": "modifie",
+      "sha256_avant": "88e3da5ff97ed3cc9d5f116e60b9762d273686c7c623edfd36cbd4d660c5f90e",
+      "sha256_apres": "fa12ade17ed51433a9a72834ab92ec0be4903d88e6719e2c5571f78e0c434413",
+      "octets": 4065
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_EQT.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "ea78ee471895ce2af04bc79beaeebb9363b75a45d8f3b56d8ecc1017ebbcf350",
+      "octets": 520788
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_KMI.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "ce831d6a406114265dfdb5b2c52b7c158af7d5738e4bbc9592976e4ff6e09103",
+      "octets": 519119
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_L.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "ce629dd9ec993a73402fb5c5de98ae05bdbc96f39fc7658bed053ed4a0311aa9",
+      "octets": 513931
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_PEG.json",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "6dfb3b51380cd12d97a45a093522e279ef3fbcd400d3819410f56bec0115d54f",
+      "octets": 516644
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/nasdaq_manifest.json",
+      "statut": "modifie",
+      "sha256_avant": "48080e085a76ba0a0d5c0cd52b44214c11b934674a42adb970d85a130783f09c",
+      "sha256_apres": "4d4afd8b69e9043a6906a5b6cdc1b68eb323bfe81c1eeacc4aa09787e425e16a",
+      "octets": 23801
+    },
+    {
+      "fichier": "data/review/sources_cloture_2026-09-08/variations_examines.csv",
+      "statut": "modifie",
+      "sha256_avant": "7e6386136c86794371a757571eb0039b3887d8c8f809181d1edb2c705288ac8d",
+      "sha256_apres": "ec11539727a71b1897e3dc4ea75006cd88795a93747484f2d3da027d4feaf378",
+      "octets": 11261
+    },
+    {
+      "fichier": "data/review/variations_finition_2026-09-08.csv",
+      "statut": "modifie",
+      "sha256_avant": "d3257d84a8afd545f9fe4c82d198a58922f8dc10320cfb9541eab358048c7d16",
+      "sha256_apres": "07aba9d2489a5fd82b4088f3061dc43fcf040b5bf585f31ef541183a3ca1de7c",
+      "octets": 11851
+    },
+    {
+      "fichier": "outputs/01a0708c-acb3-72c2-885a-9b76b6070a14/apercus/Lecture_et_sources.png",
+      "statut": "modifie",
+      "sha256_avant": "0dd2f4653071f78b8ffe8294b8d5ce5ccf3348f5f161fee3dddf70ec06b6c6d0",
+      "sha256_apres": "8d3570712d898cd922599a6dc184f1f4066b90dd7efa7c5d0a9dbdb75cf465e6",
+      "octets": 67867
+    },
+    {
+      "fichier": "outputs/01a0708c-acb3-72c2-885a-9b76b6070a14/apercus/Par_anciennete.png",
+      "statut": "modifie",
+      "sha256_avant": "46b66564386b80721c3ec1a3e01c4b0a6983a5022aa114dd51694916346ae0e7",
+      "sha256_apres": "807f5f88e1534cbc71714e0838d845bd4d7af4f466ce9037b2e9e805ecde7cad",
+      "octets": 48517
+    },
+    {
+      "fichier": "outputs/01a0708c-acb3-72c2-885a-9b76b6070a14/apercus/Par_canal.png",
+      "statut": "modifie",
+      "sha256_avant": "e722e4fbdc91288b9adcb817ce1ea289403f475d4a28b0ac42904b21ed9e3592",
+      "sha256_apres": "d2593a9870e2479dbd482f0f0c9634efbd3d78087ab402f834dc6bec41c89d38",
+      "octets": 55160
+    },
+    {
+      "fichier": "outputs/01a0708c-acb3-72c2-885a-9b76b6070a14/apercus/Par_secteur.png",
+      "statut": "modifie",
+      "sha256_avant": "acbe2e98b02e424328b09f444ec129b482e90992cb154009c56b42eb0bd161f7",
+      "sha256_apres": "b55f9564577c748760f2cd80cddb4cf6b377f1877e33bbf3fa687496f296e249",
+      "octets": 54263
+    },
+    {
+      "fichier": "outputs/01a0708c-acb3-72c2-885a-9b76b6070a14/apercus/Recapitulatif.png",
+      "statut": "modifie",
+      "sha256_avant": "078896c3511d872f2088e6467399567ea161a29c73b480a3004c71caaf9d7bb9",
+      "sha256_apres": "7696f63944d87bbba6122ff0e1a99dfc4b2bfdeba8249f335c99fc0cdf1ecb37",
+      "octets": 55368
+    },
+    {
+      "fichier": "outputs/01a0708c-acb3-72c2-885a-9b76b6070a14/univers_retenu.json",
+      "statut": "modifie",
+      "sha256_avant": "f98d789270a55209fe09bad3a2ce2d7e9503d60fe53e1623c192ea8ae9ab4e38",
+      "sha256_apres": "c1d137e2b0478579499e5ba3e973a0f2e501cd8543ac9447de993a513d37d1e9",
+      "octets": 526598
+    },
+    {
+      "fichier": "outputs/01a0708c-acb3-72c2-885a-9b76b6070a14/univers_retenu.xlsx",
+      "statut": "modifie",
+      "sha256_avant": "3c1e5004211fcb019e0d2dd185f5ffa1a53b30d4b060ee0a4036e637f3c16539",
+      "sha256_apres": "a5e02be2a828d31e3640dc13a095d5b57d0267417f47580a07e07ec00168aeb8",
+      "octets": 117077
+    },
+    {
+      "fichier": "outputs/01a0708c-acb3-72c2-885a-9b76b6070a14/univers_retenu.xlsx.inspect.ndjson",
+      "statut": "modifie",
+      "sha256_avant": "b85b5050b762f0e74242bd050210f622fd31087e8145862a63de6c0338dc153d",
+      "sha256_apres": "a7bc2ef348181c2ba9f81ae3cd2a32890c9ee888b5b3646e466d012244c1415d",
+      "octets": 4130544
+    },
+    {
+      "fichier": "outputs/01a0708c-acb3-72c2-885a-9b76b6070a14/verification_livraison.json",
+      "statut": "modifie",
+      "sha256_avant": "bc294ca9580345a91267d2ac9d1707f00524de1bfd870736947c7fb096df5a09",
+      "sha256_apres": "3c6128663cd14e6440e87d17d2a7c8896a5e7e7bdda7cca49e4d1921832ca9b7",
+      "octets": 2784
+    },
+    {
+      "fichier": "research/audit_etape_2.md",
+      "statut": "modifie",
+      "sha256_avant": "82d913444110ce776a317bf11f4537ff9aacf280efbd48db7af5927bae9bdbb4",
+      "sha256_apres": "cf3dfbf91fcbf97bdacf834de376c1d52155d0569e4a7fe6bd607dbce8fb2324",
+      "octets": 9911
+    },
+    {
+      "fichier": "research/controle_donnees_prix.md",
+      "statut": "modifie",
+      "sha256_avant": "d36a22cb418b305a16a2ffc6d19a00640acbc18a3562b22e65d5fe334af7b1b8",
+      "sha256_apres": "a5355642aa8b1c17cfe763bbee45c7ccb4de2c01598f54f0766da2d7ee7f96e5",
+      "octets": 6978
+    },
+    {
+      "fichier": "research/decisions_auteur_2026-09-08.md",
+      "statut": "ajoute",
+      "sha256_avant": null,
+      "sha256_apres": "82a188ed5536228226d4bd8c7432273b66c55427bb2ba5d9926bc19c4e769268",
+      "octets": 10743
+    },
+    {
+      "fichier": "research/finition_etapes_1_et_2.md",
+      "statut": "modifie",
+      "sha256_avant": "5454669fe57c95aaaf59a4aab2dec4e7b46edad6880e6dc59c58ec63c852e164",
+      "sha256_apres": "57bf425abb0da25d4aa335ff16a4392e422187319445a6eb7a0d55bed908ffb2",
+      "octets": 53527
+    },
+    {
+      "fichier": "research/journal_verification_etape_2.md",
+      "statut": "modifie",
+      "sha256_avant": "5e97da20be6bdb91e14b014755f32154c1404105464dfa18f96fcd16b797cc86",
+      "sha256_apres": "b8fd35fc7b2e43a332d059c8728d5d2d5c05c787afeba91c6b7ea9ea1c2cd376",
+      "octets": 31634
+    },
+    {
+      "fichier": "research/master_context.md",
+      "statut": "modifie",
+      "sha256_avant": "a5f3478d5c69fbde86ca499ced195886e2a6a12d0f6693ab9025a9fffc6dcc2e",
+      "sha256_apres": "edc4714ee5740201775531ffc31637cac1f9a710f5a7ab18ef8359fe4bf5ac15",
+      "octets": 50167
+    },
+    {
+      "fichier": "research/plan_projet.md",
+      "statut": "modifie",
+      "sha256_avant": "80e74b59522ad8f81cf76947df09415fd2cec637956c5843efbedb4077aba0c0",
+      "sha256_apres": "5cf3188f54c837aa94bbe41d3d315cb1cdbbef53ae7025db9e84c67745403010",
+      "octets": 15028
+    },
+    {
+      "fichier": "research/portefeuilles.md",
+      "statut": "modifie",
+      "sha256_avant": "91a1ab4e29ee240b2412df2d5dc8e8c6d2f6db25370293ce15b1bfacdd010e72",
+      "sha256_apres": "049ea655b4fd4f93fa9628355535cee30029b1f3b4d0ede56b4907db018da15e",
+      "octets": 24019
+    },
+    {
+      "fichier": "research/selection_rule.md",
+      "statut": "modifie",
+      "sha256_avant": "98c1956ebabdc9f5768ff1b715e286f35bbcdb47a0d65eaf9631210171f16d6f",
+      "sha256_apres": "8c4b89ae20603959e75e714604557985128d98323e921608626d528555d92fef",
+      "octets": 17618
+    },
+    {
+      "fichier": "research/univers_selection.md",
+      "statut": "modifie",
+      "sha256_avant": "a681f22df55bf7de9fc0d22fa8d9f1c106377d3dd2086b6dbb5d2d5040fae934",
+      "sha256_apres": "2def512158dfcf3dcb473df20a9beee00633ebc61a08cec2c9bf1603c36f72ae",
+      "octets": 3754
+    },
+    {
+      "fichier": "src/construire_portefeuille.ipynb",
+      "statut": "modifie",
+      "sha256_avant": "be8f2d49beeedb5a68361323c26aa864200c33a29406cb5c38599709f9a79fa5",
+      "sha256_apres": "5592cc07a704915c32c9466063631a93e31230eaeed11611e5e86e793055a159",
+      "octets": 14224
+    },
+    {
+      "fichier": "src/export_univers_excel.mjs",
+      "statut": "modifie",
+      "sha256_avant": "0e506170bed3c1518c6175145cfeed5c8c547d3a23690b813a712c88975fc329",
+      "sha256_apres": "778f716b2dbda469c950b5ec4c118a3df497bc1bfe8d8bc357ead36ed59de01a",
+      "octets": 9572
+    }
+  ]
+}
