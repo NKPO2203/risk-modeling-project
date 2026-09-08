@@ -1,0 +1,1529 @@
+{
+  "fichiers": [
+    {
+      "fichier": "GSPC.csv",
+      "lignes": 24787,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "RSP.csv",
+      "lignes": 5875,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "SP500TR.csv",
+      "lignes": 9742,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "SPXEW.csv",
+      "lignes": 4951,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "SPY.csv",
+      "lignes": 8458,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "ACN.csv",
+      "lignes": 6320,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "ADI.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "AEE.csv",
+      "lignes": 7213,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "AEP.csv",
+      "lignes": 16278,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "AES.csv",
+      "lignes": 8862,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "AKAM.csv",
+      "lignes": 6753,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "AMAT.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "AMD.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "AME.csv",
+      "lignes": 10615,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "AMT.csv",
+      "lignes": 7175,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "AMZN.csv",
+      "lignes": 7373,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "ANET.csv",
+      "lignes": 3081,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "APD.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "APH.csv",
+      "lignes": 8767,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "APP.csv",
+      "lignes": 1355,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "ARES.csv",
+      "lignes": 3105,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "AVGO.csv",
+      "lignes": 4297,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "BKR.csv",
+      "lignes": 9930,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "BRK-B.csv",
+      "lignes": 7630,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "CARR.csv",
+      "lignes": 1625,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "CAT.csv",
+      "lignes": 16278,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "CBRE.csv",
+      "lignes": 5595,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "CDNS.csv",
+      "lignes": 9885,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "CDW.csv",
+      "lignes": 3318,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "CEG.csv",
+      "lignes": 1162,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "CIEN.csv",
+      "lignes": 7440,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "CMI.csv",
+      "lignes": 13499,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "CMS.csv",
+      "lignes": 13499,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "CNP.csv",
+      "lignes": 16278,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "COHR.csv",
+      "lignes": 9805,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "CRH.csv",
+      "lignes": 9356,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "CSCO.csv",
+      "lignes": 9204,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "CVX.csv",
+      "lignes": 16278,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "D.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "DELL.csv",
+      "lignes": 2527,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "DLR.csv",
+      "lignes": 5497,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "DOV.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "DOW.csv",
+      "lignes": 1877,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "DTE.csv",
+      "lignes": 16278,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "DUK.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "ECL.csv",
+      "lignes": 13499,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "EME.csv",
+      "lignes": 7967,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "EMR.csv",
+      "lignes": 13679,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "EQIX.csv",
+      "lignes": 6555,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "ETN.csv",
+      "lignes": 13679,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "ETR.csv",
+      "lignes": 13679,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "EVRG.csv",
+      "lignes": 13499,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "EXPD.csv",
+      "lignes": 10567,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "FAST.csv",
+      "lignes": 9835,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "FE.csv",
+      "lignes": 7249,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "FIX.csv",
+      "lignes": 7343,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "FLEX.csv",
+      "lignes": 8171,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "FSLR.csv",
+      "lignes": 4979,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "GD.csv",
+      "lignes": 16278,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "GEV.csv",
+      "lignes": 613,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "GLW.csv",
+      "lignes": 11260,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "GNRC.csv",
+      "lignes": 4167,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "GOOG.csv",
+      "lignes": 5547,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "GOOGL.csv",
+      "lignes": 5547,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "HAL.csv",
+      "lignes": 13679,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "HD.csv",
+      "lignes": 11330,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "HPE.csv",
+      "lignes": 2736,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "HUBB.csv",
+      "lignes": 13557,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "HWM.csv",
+      "lignes": 2474,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "IBM.csv",
+      "lignes": 16278,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "IEX.csv",
+      "lignes": 9384,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "INTC.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "IRM.csv",
+      "lignes": 7698,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "ITW.csv",
+      "lignes": 13485,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "JBL.csv",
+      "lignes": 8394,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "JCI.csv",
+      "lignes": 9809,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "KEYS.csv",
+      "lignes": 2987,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "KLAC.csv",
+      "lignes": 11570,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "LDOS.csv",
+      "lignes": 5002,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "LII.csv",
+      "lignes": 6818,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "LITE.csv",
+      "lignes": 2797,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "LNT.csv",
+      "lignes": 13499,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "LRCX.csv",
+      "lignes": 10667,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "MCHP.csv",
+      "lignes": 8424,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "META.csv",
+      "lignes": 3595,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "MLM.csv",
+      "lignes": 8191,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "MMM.csv",
+      "lignes": 16278,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "MPWR.csv",
+      "lignes": 5482,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "MRVL.csv",
+      "lignes": 6584,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "MSFT.csv",
+      "lignes": 10199,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "MU.csv",
+      "lignes": 10648,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "NDAQ.csv",
+      "lignes": 6085,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "NDSN.csv",
+      "lignes": 11712,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "NEE.csv",
+      "lignes": 13499,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "NI.csv",
+      "lignes": 13499,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "NOW.csv",
+      "lignes": 3566,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "NRG.csv",
+      "lignes": 5726,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "NTAP.csv",
+      "lignes": 7747,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "NUE.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "NVDA.csv",
+      "lignes": 6948,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "NXPI.csv",
+      "lignes": 4045,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "O.csv",
+      "lignes": 8024,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "ON.csv",
+      "lignes": 6626,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "ORCL.csv",
+      "lignes": 10200,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "PH.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "PLD.csv",
+      "lignes": 7240,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "PNW.csv",
+      "lignes": 13499,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "PPL.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "PWR.csv",
+      "lignes": 7185,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "Q.csv",
+      "lignes": 216,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "QCOM.csv",
+      "lignes": 8743,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "SBAC.csv",
+      "lignes": 6848,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "SLB.csv",
+      "lignes": 11260,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "SMCI.csv",
+      "lignes": 4891,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "SNDK.csv",
+      "lignes": 392,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "SNPS.csv",
+      "lignes": 8693,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "SO.csv",
+      "lignes": 11260,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "SRE.csv",
+      "lignes": 7091,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "STLD.csv",
+      "lignes": 7492,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "STX.csv",
+      "lignes": 5971,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "SWKS.csv",
+      "lignes": 10580,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "TDY.csv",
+      "lignes": 6736,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "TEL.csv",
+      "lignes": 4838,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "TER.csv",
+      "lignes": 13499,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "TPL.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "TSLA.csv",
+      "lignes": 4072,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "TT.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "TXN.csv",
+      "lignes": 13679,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "VMC.csv",
+      "lignes": 13499,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "VRT.csv",
+      "lignes": 2034,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "VST.csv",
+      "lignes": 2493,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "WDC.csv",
+      "lignes": 12060,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "WEC.csv",
+      "lignes": 11713,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "WMB.csv",
+      "lignes": 11260,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "XEL.csv",
+      "lignes": 13499,
+      "structure_verifiee": true
+    },
+    {
+      "fichier": "XYL.csv",
+      "lignes": 3745,
+      "structure_verifiee": true
+    }
+  ],
+  "comparaisons_ajustement": [
+    {
+      "fichier": "GSPC.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 24786
+    },
+    {
+      "fichier": "RSP.csv",
+      "additif": 0.0003460043967435933,
+      "multiplicatif": 1.2484353211217325e-06,
+      "comparaisons": 5874
+    },
+    {
+      "fichier": "SP500TR.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 9741
+    },
+    {
+      "fichier": "SPXEW.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 4950
+    },
+    {
+      "fichier": "SPY.csv",
+      "additif": 0.0002518903134985928,
+      "multiplicatif": 1.6977797789863303e-06,
+      "comparaisons": 8457
+    },
+    {
+      "fichier": "ACN.csv",
+      "additif": 0.0005041911764473994,
+      "multiplicatif": 8.893277277932654e-07,
+      "comparaisons": 6319
+    },
+    {
+      "fichier": "ADI.csv",
+      "additif": 0.0008706499785124944,
+      "multiplicatif": 1.4975075361967072e-06,
+      "comparaisons": 11712
+    },
+    {
+      "fichier": "AEE.csv",
+      "additif": 0.0007356101667933546,
+      "multiplicatif": 1.3680968367069113e-06,
+      "comparaisons": 7212
+    },
+    {
+      "fichier": "AEP.csv",
+      "additif": 0.0008890031529331655,
+      "multiplicatif": 1.8428677260873272e-06,
+      "comparaisons": 16277
+    },
+    {
+      "fichier": "AES.csv",
+      "additif": 0.0010333054887625703,
+      "multiplicatif": 1.0126652428832372e-06,
+      "comparaisons": 8861
+    },
+    {
+      "fichier": "AKAM.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 6752
+    },
+    {
+      "fichier": "AMAT.csv",
+      "additif": 0.0002700166326767839,
+      "multiplicatif": 1.2485852938226571e-06,
+      "comparaisons": 11712
+    },
+    {
+      "fichier": "AMD.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 11712
+    },
+    {
+      "fichier": "AME.csv",
+      "additif": 0.0009395516095280776,
+      "multiplicatif": 3.7774926812339515e-05,
+      "comparaisons": 10614
+    },
+    {
+      "fichier": "AMT.csv",
+      "additif": 0.0002606813023982024,
+      "multiplicatif": 1.0275349233701547e-06,
+      "comparaisons": 7174
+    },
+    {
+      "fichier": "AMZN.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 7372
+    },
+    {
+      "fichier": "ANET.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 3080
+    },
+    {
+      "fichier": "APD.csv",
+      "additif": 0.00039756016177072695,
+      "multiplicatif": 1.5969028308582267e-06,
+      "comparaisons": 11712
+    },
+    {
+      "fichier": "APH.csv",
+      "additif": 0.00043567928508991827,
+      "multiplicatif": 1.406612434307064e-06,
+      "comparaisons": 8766
+    },
+    {
+      "fichier": "APP.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 1354
+    },
+    {
+      "fichier": "ARES.csv",
+      "additif": 0.0016689376802563327,
+      "multiplicatif": 8.490712039010972e-07,
+      "comparaisons": 3104
+    },
+    {
+      "fichier": "AVGO.csv",
+      "additif": 0.0004319904597567259,
+      "multiplicatif": 1.0193145638659473e-06,
+      "comparaisons": 4296
+    },
+    {
+      "fichier": "BKR.csv",
+      "additif": 0.02212423812942843,
+      "multiplicatif": 1.6200488057727114e-06,
+      "comparaisons": 9929
+    },
+    {
+      "fichier": "BRK-B.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 7629
+    },
+    {
+      "fichier": "CARR.csv",
+      "additif": 0.0001462767590143521,
+      "multiplicatif": 5.483461059663242e-07,
+      "comparaisons": 1624
+    },
+    {
+      "fichier": "CAT.csv",
+      "additif": 0.0006405218897558296,
+      "multiplicatif": 1.7655955109052712e-06,
+      "comparaisons": 16277
+    },
+    {
+      "fichier": "CBRE.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 5594
+    },
+    {
+      "fichier": "CDNS.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 9884
+    },
+    {
+      "fichier": "CDW.csv",
+      "additif": 0.0003681170033738024,
+      "multiplicatif": 8.204619152962778e-07,
+      "comparaisons": 3317
+    },
+    {
+      "fichier": "CEG.csv",
+      "additif": 0.00016149216266614363,
+      "multiplicatif": 4.042105179458133e-07,
+      "comparaisons": 1161
+    },
+    {
+      "fichier": "CIEN.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 7439
+    },
+    {
+      "fichier": "CMI.csv",
+      "additif": 0.000487890160435267,
+      "multiplicatif": 1.8518596617278504e-06,
+      "comparaisons": 13498
+    },
+    {
+      "fichier": "CMS.csv",
+      "additif": 0.0016560708857897843,
+      "multiplicatif": 1.397213541087794e-06,
+      "comparaisons": 13498
+    },
+    {
+      "fichier": "CNP.csv",
+      "additif": 0.01781691982505773,
+      "multiplicatif": 2.569880623193299e-06,
+      "comparaisons": 16277
+    },
+    {
+      "fichier": "COHR.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 9804
+    },
+    {
+      "fichier": "CRH.csv",
+      "additif": 0.0108006793169515,
+      "multiplicatif": 8.676735058221752e-07,
+      "comparaisons": 9355
+    },
+    {
+      "fichier": "CSCO.csv",
+      "additif": 0.0004523125383806281,
+      "multiplicatif": 1.0471541944667706e-06,
+      "comparaisons": 9203
+    },
+    {
+      "fichier": "CVX.csv",
+      "additif": 0.00123956833973482,
+      "multiplicatif": 1.9677701028619765e-06,
+      "comparaisons": 16277
+    },
+    {
+      "fichier": "D.csv",
+      "additif": 0.000574207244708802,
+      "multiplicatif": 1.697052709248581e-06,
+      "comparaisons": 11712
+    },
+    {
+      "fichier": "DELL.csv",
+      "additif": 0.0003242111628114497,
+      "multiplicatif": 5.249396889395186e-07,
+      "comparaisons": 2526
+    },
+    {
+      "fichier": "DLR.csv",
+      "additif": 0.0011390880202202247,
+      "multiplicatif": 1.0636414675690986e-06,
+      "comparaisons": 5496
+    },
+    {
+      "fichier": "DOV.csv",
+      "additif": 0.0006611539302836533,
+      "multiplicatif": 1.853867435119838e-06,
+      "comparaisons": 11712
+    },
+    {
+      "fichier": "DOW.csv",
+      "additif": 0.001074981658019114,
+      "multiplicatif": 5.792809636417928e-07,
+      "comparaisons": 1876
+    },
+    {
+      "fichier": "DTE.csv",
+      "additif": 0.0017515682294685364,
+      "multiplicatif": 1.9061779574780502e-06,
+      "comparaisons": 16277
+    },
+    {
+      "fichier": "DUK.csv",
+      "additif": 0.0014249019892805803,
+      "multiplicatif": 1.609197830543252e-06,
+      "comparaisons": 11712
+    },
+    {
+      "fichier": "ECL.csv",
+      "additif": 0.0003213523312196598,
+      "multiplicatif": 4.319434472321859e-05,
+      "comparaisons": 13498
+    },
+    {
+      "fichier": "EME.csv",
+      "additif": 8.300953067497119e-05,
+      "multiplicatif": 1.250653437478988e-06,
+      "comparaisons": 7966
+    },
+    {
+      "fichier": "EMR.csv",
+      "additif": 0.0004330887721081256,
+      "multiplicatif": 1.64056230689269e-06,
+      "comparaisons": 13678
+    },
+    {
+      "fichier": "EQIX.csv",
+      "additif": 0.0009472223861104467,
+      "multiplicatif": 1.0103285510432158e-06,
+      "comparaisons": 6554
+    },
+    {
+      "fichier": "ETN.csv",
+      "additif": 0.036708793799160144,
+      "multiplicatif": 1.7801540999062837e-06,
+      "comparaisons": 13678
+    },
+    {
+      "fichier": "ETR.csv",
+      "additif": 0.0023032592573754007,
+      "multiplicatif": 1.6937707087993914e-06,
+      "comparaisons": 13678
+    },
+    {
+      "fichier": "EVRG.csv",
+      "additif": 0.0024681120020537684,
+      "multiplicatif": 1.647407785076993e-06,
+      "comparaisons": 13498
+    },
+    {
+      "fichier": "EXPD.csv",
+      "additif": 0.00026784198333773546,
+      "multiplicatif": 1.0168294592993732e-06,
+      "comparaisons": 10566
+    },
+    {
+      "fichier": "FAST.csv",
+      "additif": 0.00029419957097376326,
+      "multiplicatif": 1.2651892542514531e-06,
+      "comparaisons": 9834
+    },
+    {
+      "fichier": "FE.csv",
+      "additif": 0.0008223025399201056,
+      "multiplicatif": 1.1771583687814058e-06,
+      "comparaisons": 7248
+    },
+    {
+      "fichier": "FIX.csv",
+      "additif": 0.0002997304390633948,
+      "multiplicatif": 1.1068395406876874e-06,
+      "comparaisons": 7342
+    },
+    {
+      "fichier": "FLEX.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 8170
+    },
+    {
+      "fichier": "FSLR.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 4978
+    },
+    {
+      "fichier": "GD.csv",
+      "additif": 0.0028600829648729453,
+      "multiplicatif": 1.919464416522132e-06,
+      "comparaisons": 16277
+    },
+    {
+      "fichier": "GEV.csv",
+      "additif": 2.2657635093903394e-05,
+      "multiplicatif": 2.931868654520997e-07,
+      "comparaisons": 612
+    },
+    {
+      "fichier": "GLW.csv",
+      "additif": 0.002176483287633424,
+      "multiplicatif": 1.4839464940186176e-06,
+      "comparaisons": 11259
+    },
+    {
+      "fichier": "GNRC.csv",
+      "additif": 0.037420327566522804,
+      "multiplicatif": 1.5598741032185615e-07,
+      "comparaisons": 4166
+    },
+    {
+      "fichier": "GOOG.csv",
+      "additif": 5.030918609594259e-05,
+      "multiplicatif": 4.801163928647156e-07,
+      "comparaisons": 5546
+    },
+    {
+      "fichier": "GOOGL.csv",
+      "additif": 5.165611622082178e-05,
+      "multiplicatif": 4.894817134948326e-07,
+      "comparaisons": 5546
+    },
+    {
+      "fichier": "HAL.csv",
+      "additif": 0.0006956865197511597,
+      "multiplicatif": 1.8557148331321827e-06,
+      "comparaisons": 13678
+    },
+    {
+      "fichier": "HD.csv",
+      "additif": 0.000970293828013391,
+      "multiplicatif": 1.487906963304475e-06,
+      "comparaisons": 11329
+    },
+    {
+      "fichier": "HPE.csv",
+      "additif": 0.0004976783894667935,
+      "multiplicatif": 6.775300471772994e-07,
+      "comparaisons": 2735
+    },
+    {
+      "fichier": "HUBB.csv",
+      "additif": 0.006408760332253127,
+      "multiplicatif": 4.827455445166606e-06,
+      "comparaisons": 13554
+    },
+    {
+      "fichier": "HWM.csv",
+      "additif": 0.0002956187325895421,
+      "multiplicatif": 7.494437250787911e-07,
+      "comparaisons": 2473
+    },
+    {
+      "fichier": "IBM.csv",
+      "additif": 0.000614851383794246,
+      "multiplicatif": 2.370532959927729e-06,
+      "comparaisons": 16277
+    },
+    {
+      "fichier": "IEX.csv",
+      "additif": 0.00029639161788685975,
+      "multiplicatif": 1.3146343522674186e-06,
+      "comparaisons": 9383
+    },
+    {
+      "fichier": "INTC.csv",
+      "additif": 0.0005794052201495425,
+      "multiplicatif": 1.6229116146515565e-06,
+      "comparaisons": 11712
+    },
+    {
+      "fichier": "IRM.csv",
+      "additif": 0.002662024748806502,
+      "multiplicatif": 1.1447460481761595e-06,
+      "comparaisons": 7697
+    },
+    {
+      "fichier": "ITW.csv",
+      "additif": 0.0007533499013281375,
+      "multiplicatif": 1.564178794932758e-06,
+      "comparaisons": 13484
+    },
+    {
+      "fichier": "JBL.csv",
+      "additif": 0.0021180249068757373,
+      "multiplicatif": 1.048312077589486e-06,
+      "comparaisons": 8393
+    },
+    {
+      "fichier": "JCI.csv",
+      "additif": 0.0812208622162256,
+      "multiplicatif": 1.438157196442802e-06,
+      "comparaisons": 9808
+    },
+    {
+      "fichier": "KEYS.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 2986
+    },
+    {
+      "fichier": "KLAC.csv",
+      "additif": 0.0010142546274268804,
+      "multiplicatif": 1.2029090757925687e-06,
+      "comparaisons": 11569
+    },
+    {
+      "fichier": "LDOS.csv",
+      "additif": 0.0031204119016468024,
+      "multiplicatif": 8.491324132720024e-07,
+      "comparaisons": 5001
+    },
+    {
+      "fichier": "LII.csv",
+      "additif": 0.0004203579148733816,
+      "multiplicatif": 1.4378902430944862e-06,
+      "comparaisons": 6817
+    },
+    {
+      "fichier": "LITE.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 2796
+    },
+    {
+      "fichier": "LNT.csv",
+      "additif": 0.0008099222580355558,
+      "multiplicatif": 1.4833500621147522e-06,
+      "comparaisons": 13498
+    },
+    {
+      "fichier": "LRCX.csv",
+      "additif": 0.0012110194912711147,
+      "multiplicatif": 1.062396586481995e-06,
+      "comparaisons": 10666
+    },
+    {
+      "fichier": "MCHP.csv",
+      "additif": 0.0007499525550994646,
+      "multiplicatif": 1.3901863054055497e-06,
+      "comparaisons": 8423
+    },
+    {
+      "fichier": "META.csv",
+      "additif": 4.42217146814361e-05,
+      "multiplicatif": 5.06899057839405e-07,
+      "comparaisons": 3594
+    },
+    {
+      "fichier": "MLM.csv",
+      "additif": 0.00036850508640573487,
+      "multiplicatif": 1.3476893530040002e-06,
+      "comparaisons": 8190
+    },
+    {
+      "fichier": "MMM.csv",
+      "additif": 0.001309432997903981,
+      "multiplicatif": 1.9271166491474645e-06,
+      "comparaisons": 16277
+    },
+    {
+      "fichier": "MPWR.csv",
+      "additif": 0.0005288962309872858,
+      "multiplicatif": 8.798911571572532e-07,
+      "comparaisons": 5481
+    },
+    {
+      "fichier": "MRVL.csv",
+      "additif": 0.00029755436368628096,
+      "multiplicatif": 1.1447569367994959e-06,
+      "comparaisons": 6583
+    },
+    {
+      "fichier": "MSFT.csv",
+      "additif": 0.0019107129699769132,
+      "multiplicatif": 1.1767961318742692e-06,
+      "comparaisons": 10198
+    },
+    {
+      "fichier": "MU.csv",
+      "additif": 0.00010446383905227119,
+      "multiplicatif": 8.210419326637464e-07,
+      "comparaisons": 10647
+    },
+    {
+      "fichier": "NDAQ.csv",
+      "additif": 0.0004892667049767319,
+      "multiplicatif": 9.404234467824679e-07,
+      "comparaisons": 6084
+    },
+    {
+      "fichier": "NDSN.csv",
+      "additif": 0.0004676703884169964,
+      "multiplicatif": 1.652804292540111e-06,
+      "comparaisons": 11711
+    },
+    {
+      "fichier": "NEE.csv",
+      "additif": 0.00046200776515070707,
+      "multiplicatif": 1.489919515984539e-06,
+      "comparaisons": 13498
+    },
+    {
+      "fichier": "NI.csv",
+      "additif": 0.0010130408500192978,
+      "multiplicatif": 1.560563537505999e-06,
+      "comparaisons": 13498
+    },
+    {
+      "fichier": "NOW.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 3565
+    },
+    {
+      "fichier": "NRG.csv",
+      "additif": 0.0005341383670023347,
+      "multiplicatif": 1.0501212615032784e-06,
+      "comparaisons": 5725
+    },
+    {
+      "fichier": "NTAP.csv",
+      "additif": 0.0005243248552240232,
+      "multiplicatif": 1.013891954171342e-06,
+      "comparaisons": 7746
+    },
+    {
+      "fichier": "NUE.csv",
+      "additif": 0.000719484070406784,
+      "multiplicatif": 1.5734488276741843e-06,
+      "comparaisons": 11712
+    },
+    {
+      "fichier": "NVDA.csv",
+      "additif": 9.298142402136556e-05,
+      "multiplicatif": 1.051652084527177e-06,
+      "comparaisons": 6947
+    },
+    {
+      "fichier": "NXPI.csv",
+      "additif": 0.00023050327699625228,
+      "multiplicatif": 8.514932499092964e-07,
+      "comparaisons": 4044
+    },
+    {
+      "fichier": "O.csv",
+      "additif": 0.0005652354021028483,
+      "multiplicatif": 3.0199684690757067e-06,
+      "comparaisons": 8023
+    },
+    {
+      "fichier": "ON.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 6625
+    },
+    {
+      "fichier": "ORCL.csv",
+      "additif": 0.0001508023511673784,
+      "multiplicatif": 1.2569703016218625e-06,
+      "comparaisons": 10199
+    },
+    {
+      "fichier": "PH.csv",
+      "additif": 0.00046463066866886393,
+      "multiplicatif": 1.460560224986196e-06,
+      "comparaisons": 11712
+    },
+    {
+      "fichier": "PLD.csv",
+      "additif": 0.0018619710553720026,
+      "multiplicatif": 1.2338171965220468e-06,
+      "comparaisons": 7239
+    },
+    {
+      "fichier": "PNW.csv",
+      "additif": 0.001150869264231691,
+      "multiplicatif": 1.5937805641907943e-06,
+      "comparaisons": 13498
+    },
+    {
+      "fichier": "PPL.csv",
+      "additif": 0.002015713117023754,
+      "multiplicatif": 1.616860233921713e-06,
+      "comparaisons": 11712
+    },
+    {
+      "fichier": "PWR.csv",
+      "additif": 2.7454929141912388e-05,
+      "multiplicatif": 1.008979434669044e-06,
+      "comparaisons": 7184
+    },
+    {
+      "fichier": "Q.csv",
+      "additif": 1.8346149635251052e-05,
+      "multiplicatif": 2.2283570200176683e-07,
+      "comparaisons": 215
+    },
+    {
+      "fichier": "QCOM.csv",
+      "additif": 0.0008738557702050453,
+      "multiplicatif": 1.2934908095729725e-06,
+      "comparaisons": 8742
+    },
+    {
+      "fichier": "SBAC.csv",
+      "additif": 0.0001803255327347264,
+      "multiplicatif": 7.517818413349531e-07,
+      "comparaisons": 6847
+    },
+    {
+      "fichier": "SLB.csv",
+      "additif": 0.009758960230400682,
+      "multiplicatif": 1.5172993761414233e-06,
+      "comparaisons": 11259
+    },
+    {
+      "fichier": "SMCI.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 4890
+    },
+    {
+      "fichier": "SNDK.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 391
+    },
+    {
+      "fichier": "SNPS.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 8692
+    },
+    {
+      "fichier": "SO.csv",
+      "additif": 0.0005225323221030864,
+      "multiplicatif": 1.640296150684506e-06,
+      "comparaisons": 11259
+    },
+    {
+      "fichier": "SRE.csv",
+      "additif": 0.0026712492538549792,
+      "multiplicatif": 1.0420141658418203e-06,
+      "comparaisons": 7090
+    },
+    {
+      "fichier": "STLD.csv",
+      "additif": 0.0011010146446153168,
+      "multiplicatif": 1.1506090569213256e-06,
+      "comparaisons": 7491
+    },
+    {
+      "fichier": "STX.csv",
+      "additif": 0.0013223807723063974,
+      "multiplicatif": 1.0200523332670741e-06,
+      "comparaisons": 5970
+    },
+    {
+      "fichier": "SWKS.csv",
+      "additif": 0.0003963933099280226,
+      "multiplicatif": 1.1357044513715664e-06,
+      "comparaisons": 10579
+    },
+    {
+      "fichier": "TDY.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 6735
+    },
+    {
+      "fichier": "TEL.csv",
+      "additif": 0.0013841629326956095,
+      "multiplicatif": 8.742529498118046e-07,
+      "comparaisons": 4837
+    },
+    {
+      "fichier": "TER.csv",
+      "additif": 6.418169748978464e-05,
+      "multiplicatif": 1.011465525113664e-06,
+      "comparaisons": 13498
+    },
+    {
+      "fichier": "TPL.csv",
+      "additif": 0.001553662822655566,
+      "multiplicatif": 9.77854012207402e-07,
+      "comparaisons": 11712
+    },
+    {
+      "fichier": "TSLA.csv",
+      "additif": 0.0,
+      "multiplicatif": 0.0,
+      "comparaisons": 4071
+    },
+    {
+      "fichier": "TT.csv",
+      "additif": 0.0016034083085334494,
+      "multiplicatif": 1.849103044349043e-06,
+      "comparaisons": 11712
+    },
+    {
+      "fichier": "TXN.csv",
+      "additif": 0.0006647096254372986,
+      "multiplicatif": 1.9213762392222833e-06,
+      "comparaisons": 13678
+    },
+    {
+      "fichier": "VMC.csv",
+      "additif": 0.00222496041539455,
+      "multiplicatif": 1.549505208364721e-06,
+      "comparaisons": 13498
+    },
+    {
+      "fichier": "VRT.csv",
+      "additif": 2.4961407097956467e-05,
+      "multiplicatif": 5.136583685061424e-07,
+      "comparaisons": 2033
+    },
+    {
+      "fichier": "VST.csv",
+      "additif": 0.002347855896494666,
+      "multiplicatif": 8.82515093003633e-07,
+      "comparaisons": 2492
+    },
+    {
+      "fichier": "WDC.csv",
+      "additif": 0.0011061691604867807,
+      "multiplicatif": 9.359784729490173e-07,
+      "comparaisons": 12059
+    },
+    {
+      "fichier": "WEC.csv",
+      "additif": 0.0004947947050593093,
+      "multiplicatif": 1.5445297127936186e-06,
+      "comparaisons": 11712
+    },
+    {
+      "fichier": "WMB.csv",
+      "additif": 0.0037244401643428127,
+      "multiplicatif": 1.657980802205472e-06,
+      "comparaisons": 11259
+    },
+    {
+      "fichier": "XEL.csv",
+      "additif": 0.000871794768110723,
+      "multiplicatif": 1.94201785941317e-06,
+      "comparaisons": 13498
+    },
+    {
+      "fichier": "XYL.csv",
+      "additif": 0.00023703035455024946,
+      "multiplicatif": 9.355095428320581e-07,
+      "comparaisons": 3744
+    }
+  ],
+  "tests": {
+    "date en double": 0,
+    "anteriorite au calendrier": 69,
+    "seance absente": 14,
+    "date hors calendrier": 0,
+    "variation quotidienne extreme": 145,
+    "barre incoherente": 1,
+    "prix nul ou negatif": 0,
+    "valeur manquante": 1,
+    "ajustement incoherent": 0,
+    "division non confirmee": 20,
+    "reference de cotation absente": 53,
+    "premiere cotation discordante": 0,
+    "historique tronque": 21,
+    "metadonnees absentes": 0,
+    "devise non usd": 0,
+    "fuseau inattendu": 0,
+    "type inattendu": 0,
+    "decalage horaire inattendu": 0,
+    "premiere transaction discordante": 0,
+    "fin de serie anticipee": 0,
+    "denomination divergente": 7,
+    "seance sans transaction": 117,
+    "prix fige": 8637
+  },
+  "signalements": 9085,
+  "limite": "Un zéro signifie absence de détection sur les comparaisons calculables, pas validation externe."
+}

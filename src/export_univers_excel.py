@@ -7,6 +7,7 @@ permet de préparer les données sans ce moteur optionnel.
 """
 from pathlib import Path
 import argparse
+import hashlib
 import json
 import os
 import subprocess
@@ -31,6 +32,8 @@ def construire():
                        "base_periodes_ventes", "base_periodes_capex", "base_periodes_recherche"]
     t = univers.merge(infos, on="cik", how="left", validate="one_to_one")
     t = t.merge(corro.reindex(columns=colonnes_comptes), on="cik", how="left", validate="one_to_one")
+    plusieurs = t.symboles.str.contains("|", regex=False)
+    t.loc[plusieurs, "nom"] = t.loc[plusieurs, "nom"].str.replace(r"\s*\(Class [A-Z]\)$", "", regex=True)
     t["ticker"] = t.symboles.str.split("|", regex=False).str[0]
     dates = lire("data/raw/premieres_cotations.csv")
     if dates.ticker.duplicated().any():
@@ -74,9 +77,12 @@ def payload():
     for nom, cles in tris.items():
         tri = t.sort_values(cles, ascending=nom != "Par anciennete", na_position="last")
         sheets[nom] = json.loads(tri.to_json(orient="values", force_ascii=False))
+    registre = RACINE / "data/review/decisions_selection.csv"
+    sha_registre = hashlib.sha256(registre.read_bytes()).hexdigest()
     return {"columns": list(t.columns), "sheets": sheets,
             "summary": json.loads((RACINE / "data/processed/etat_projet.json").read_text(encoding="utf-8")),
-            "snapshot": "2026-09-05", "input_workbook": str(RACINE / "univers_82.xlsx")}
+            "snapshot": "registre " + sha_registre[:12], "registre_sha256": sha_registre,
+            "input_workbook": str(RACINE / "univers_82.xlsx")}
 
 
 def main():

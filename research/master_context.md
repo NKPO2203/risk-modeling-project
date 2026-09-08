@@ -13,17 +13,11 @@
 
 ## 0. OÙ J'EN SUIS MAINTENANT
 
-Je construis un univers documenté d'entreprises du S&P 500 exposées à la chaîne des infrastructures de calcul liées à l'IA. Cet univers servira ensuite à construire et comparer plusieurs portefeuilles. Il n'oblige pas à détenir toutes les entreprises retenues et il ne fixe aucune pondération.
+Les étapes 1 et 2 sont closes pour la version du 8 septembre 2026 selon la règle d'arrêt écrite dans `research/plan_projet.md`. Les 500 dossiers ont un verdict documenté : 130 ENTRE, 370 SORT, aucun en attente. L'univers contient 131 titres, dont deux classes d'Alphabet. Dix groupes produisent vingt séries rétrospectives. Les réserves de données et d'interprétation restent écrites ; close ne signifie pas prix intégralement certifiés.
 
-La règle actuelle est la version III de `research/selection_rule.md`. Les résultats se trouvent dans `research/univers_selection.md`, les corrections expliquées dans `research/corrections_2026-09-05.md`, et les chiffres recalculés dans `data/processed/etat_projet.json`.
+La règle III de sélection n'a pas changé. La finition, les sources et les résultats actuels figurent dans `research/finition_etapes_1_et_2.md`, `research/portefeuilles.md` et `data/processed/etat_projet.json`. La prochaine étape est l'analyse de risque, non commencée. Les deux options réservées à l'auteur sont une pondération par capitalisation et un éventuel départ retardé de P4. Aucun arbitrage n'a été pris à sa place.
 
-Le bloc 1, **Phenomenon of Interest**, est maintenant finalisé dans [le Research Charter](research_charter.md). Il distingue le contexte de concentration du marché et les activités documentées dans la chaîne de calcul. Les blocs 2 et 3, problème de recherche et question testable, restent à formuler.
-
-J'ai repris la sélection par CIK, la traçabilité des preuves, les différences de notions comptables et les changements de périmètre. Je distingue maintenant l'exposition documentée, le mouvement dans les comptes et la couverture des données. Je n'en déduis pas encore un risque boursier commun.
-
-Les sections pédagogiques suivantes gardent leur utilité. Les options discutées le 4 septembre restent l'histoire du raisonnement ; les états d'avancement et décisions opérationnelles de cette section, du §47 et de la règle version III les remplacent lorsqu'ils ont changé. Les hypothèses de performance, les mesures de risque et les phases de couverture demeurent à travailler.
-
-Une ambition personnelle évoquée à côté du projet ne constitue ni un objectif de performance ni une hypothèse de cette recherche. Je veux pouvoir obtenir un résultat qui contredit mon intuition.
+Les sections pédagogiques anciennes sont conservées comme histoire du raisonnement. Elles ne remplacent pas cet état courant ni les règles de construction datées.
 
 ---
 
@@ -232,7 +226,7 @@ Le classement de vocabulaire aide à lire les dossiers ; il ne décide pas des e
 
 Les comptes décrivent l'évolution de l'entreprise à périmètre comparable. Ils ne prouvent pas que cette évolution vient de l'IA et ne servent pas de second filtre.
 
-La version III de `research/selection_rule.md` définit les cas, les preuves, la maturité de l'exposition et les limites. La question de la sélection est donc opérationnelle ; celle de la construction des portefeuilles reste ouverte.
+La version III de `research/selection_rule.md` définit les cas, les preuves, la maturité de l'exposition et les limites. La question de la sélection est donc opérationnelle ; celle de la construction est désormais fixée pour la version décrite dans portefeuilles.md.
 
 ---
 
@@ -858,44 +852,11 @@ Ces pistes ne sont pas utilisées dans le bloc 1 finalisé. Elles restent dispon
 
 ## 47. ÉTAT EXACT DU PROJET (project_state)
 
-**Date : 5 septembre 2026. Étape : univers économique documenté et description comptable, après correction méthodologique.**
+Les étapes 1 et 2 sont closes pour la version du 8 septembre 2026 selon la règle d'arrêt écrite dans `research/plan_projet.md`. Les 500 dossiers ont un verdict documenté : 130 ENTRE, 370 SORT, aucun en attente. L'univers contient 131 titres, dont deux classes d'Alphabet. Dix groupes produisent vingt séries rétrospectives. Les réserves de données et d'interprétation restent écrites ; close ne signifie pas prix intégralement certifiés.
 
-J'ai dépassé le stade où aucune donnée et aucun code n'existaient. La composition locale de l'indice, les rapports SEC, leurs passages, les comptes et un registre de revue sont présents. La règle de sélection a été rendue explicite et ses erreurs connues sont corrigées ou signalées.
+La règle III de sélection n'a pas changé. La finition, les sources et les résultats actuels figurent dans `research/finition_etapes_1_et_2.md`, `research/portefeuilles.md` et `data/processed/etat_projet.json`. La prochaine étape est l'analyse de risque, non commencée. Les deux options réservées à l'auteur sont une pondération par capitalisation et un éventuel départ retardé de P4. Aucun arbitrage n'a été pris à sa place.
 
-**Ce qui est fait :**
-
-- sauvegarde des documents, scripts et données antérieurs, avec empreintes ;
-- classement textuel reproductible et revue conservant tous les CIK ;
-- décisions rattachées à une preuve documentaire, avec un statut lorsque la preuve manque ;
-- retraitement des notions et périmètres comptables connus, sans remplir artificiellement les lacunes ;
-- description des comptes avec dates de référence par mesure et couverture séparée ;
-- contrôles automatiques, tests et manifeste reliant les résultats à leurs entrées ;
-- documentation réécrite pour distinguer faits, choix exploratoires et hypothèses ;
-- bloc 1 du Research Charter finalisé et sourcé, avec remplacement de l'ancien squelette au §45.
-
-Les effectifs courants doivent être lus dans `data/processed/etat_projet.json` ou dans la note sur l'univers. Les anciens nombres ne sont plus les résultats de référence.
-
-**Ce qui reste limité :**
-
-La revue documentaire porte sur les passages extraits et les lectures complémentaires consignées, pas sur un audit intégral de tous les rapports. Les cas `DOUTEUX` et `A_EXAMINER` restent visibles. Les alertes comptables appellent une lecture ; leur présence ne signifie pas que toutes les valeurs sont fausses. La composition d'indice issue d'une source secondaire reste à rapprocher d'une source officielle datée.
-
-La photographie actuelle n'est pas un univers historique disponible sans anticipation. Les comptes peuvent avoir été retraités après leur période. La contribution propre de l'IA et la réaction des cours ne sont pas encore mesurées.
-
-**La question de cadrage a évolué :**
-
-L'ancien choix entre « concentration des mégacapitalisations dans l'indice » et « portefeuille d'entreprises IA » n'est plus un blocage préalable à toute donnée. Le travail réalisé construit un univers économique lié à l'infrastructure, susceptible d'alimenter plusieurs portefeuilles. La concentration de l'indice peut servir de contexte ou de comparaison, mais elle ne remplace pas silencieusement cet objet.
-
-Je ne suppose pas que toutes les entreprises de l'univers seront dans le même portefeuille. Je n'ai pas encore choisi la taille, les pondérations ni une méthode de simulation. Une éventuelle simulation Monte Carlo devra répondre à une question définie, avec des hypothèses contrôlées.
-
-**La prochaine étape :**
-
-Le bloc 1 étant rédigé, je formule maintenant le problème de recherche (bloc 2), puis la question empirique (bloc 3). Je m'appuie sur la relecture des corrections et des décisions, notamment les changements de sélection et les comparaisons devenues non calculables. Je préciserai ensuite les portefeuilles et les benchmarks. Avant un résultat historique de performance, il faudra définir les périodes, la disponibilité des informations, les règles de rebalancement et les données de prix.
-
-**Ce qui n'a pas commencé :**
-
-L'estimation du risque boursier de cet univers, la construction et l'optimisation des portefeuilles, la simulation de scénarios, l'évaluation des couvertures et le rapport LaTeX.
-
-Le dépôt fait foi. Un assistant peut proposer et contrôler ; il ne doit pas présenter une hypothèse comme ma décision ni un calcul descriptif comme un résultat de portefeuille.
+Le bloc 1 du Research Charter est rédigé. La formulation testable des blocs suivants accompagne la préparation de l’étape 3. La construction des portefeuilles est faite ; l’optimisation, les scénarios, les couvertures et le rapport LaTeX ne sont pas commencés.
 
 ---
 

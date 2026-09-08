@@ -1,0 +1,32 @@
+{
+  "verifie_le": "2026-09-08T10:38:03.142488+00:00",
+  "python": "3.13.9",
+  "fichiers_proteges_inchanges": 2647,
+  "registre_lignes": 500,
+  "preuves_sha_positions": 500,
+  "decisions_anterieures_preservees": 386,
+  "entreprises": 130,
+  "sorties": 370,
+  "partition_maturite": true,
+  "partition_chaine": true,
+  "series_identite": 20,
+  "ecart_identite_relu": 9.280770596475918e-16,
+  "tests": 103,
+  "replay": {
+    "debut": "2026-09-08T10:34:54.798438+00:00",
+    "fin": "2026-09-08T10:36:29.472794+00:00",
+    "python": "3.12.14",
+    "cellules_executees": 4,
+    "sorties_identiques": 18,
+    "notebook_sha256": "be8f2d49beeedb5a68361323c26aa864200c33a29406cb5c38599709f9a79fa5"
+  },
+  "verification_excel": {
+    "feuilles": 5,
+    "entreprises_par_vue": 130,
+    "total_recapitulatif": 130,
+    "cellules_rapprochees_aux_entrees": 5460,
+    "controle_erreurs": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+    "apercus_verifies": 5,
+    "sha256": "3c1e5004211fcb019e0d2dd185f5ffa1a53b30d4b060ee0a4036e637f3c16539"
+  }
+}

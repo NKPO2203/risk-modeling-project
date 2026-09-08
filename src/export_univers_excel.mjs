@@ -83,7 +83,7 @@ recap.getRange("B4").values=[[data.summary.entreprises_composition]];
 recap.getRange("A5").values=[["Rapports archivés"]];
 recap.getRange("B5").values=[[data.summary.rapports_comptes]];
 recap.getRange("A6:C7").merge();
-recap.getRange("A6").values=[["Un univers pour de futurs portefeuilles. Le mouvement des comptes ne démontre ni une causalité IA ni une performance boursière."]];
+recap.getRange("A6").values=[["Univers utilisé par les portefeuilles de l'étude. Le mouvement des comptes ne démontre ni une causalité IA ni une performance boursière."]];
 recap.getRange("A6:C7").format.wrapText=true;
 recap.getRange("A6:C7").format.fill="#FFF2D5";
 let pos=9;
@@ -110,7 +110,7 @@ recap.freezePanes.freezeRows(1);
 const notes=wb.worksheets.getItem("Lecture et sources");
 const lectures=[
 ["Point de lecture","Ce que je peux en déduire","Source ou contrôle"],
-["Périmètre","Entreprises retenues sur leur activité ou leurs engagements dans la chaîne des infrastructures de calcul. Aucun poids de portefeuille n'est fixé.","research/selection_rule.md · version III"],
+["Périmètre","Entreprises retenues sur leur activité ou leurs engagements dans la chaîne des infrastructures de calcul. Les pondérations sont définies séparément dans portefeuilles.md.","research/selection_rule.md · version III"],
 ["Décision","Chaque CIK retenu a une preuve retrouvée. La revue porte sur les passages repérés et les lectures complémentaires consignées.","data/review/decisions_selection.csv ; colonnes Q à S des tableaux"],
 ["Degré non quantifié","La part d'activité liée à l'IA n'est pas isolée. Aucun pourcentage n'est déduit d'une mention.","Registre de sélection"],
 ["Mouvement comptable","Description nominale de mesures comparables. Une croissance peut avoir d'autres causes que l'IA.","data/processed/corroboration_details.csv"],

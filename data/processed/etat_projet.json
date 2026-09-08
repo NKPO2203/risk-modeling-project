@@ -7,47 +7,45 @@
   "rapports_comptes": 499,
   "passages_extraits": 12836,
   "verdicts": {
-    "A_EXAMINER": 76,
-    "DOUTEUX": 38,
-    "ENTRE": 113,
-    "SORT": 273
+    "ENTRE": 130,
+    "SORT": 370
   },
   "canaux_retenus": {
-    "depense": 2,
-    "depense et vend": 4,
-    "fournit": 75,
-    "vend": 32
+    "depense": 4,
+    "depense et vend": 6,
+    "fournit": 86,
+    "vend": 34
   },
   "degres_retenus": {
-    "non_quantifie": 113
+    "non_quantifie": 130
   },
   "maturites_retenues": {
-    "engagement_ou_developpement_documente": 18,
-    "etablie": 95
+    "engagement_ou_developpement_documente": 21,
+    "etablie": 109
   },
   "secteurs_retenus": {
-    "Communication Services": 2,
-    "Consumer Discretionary": 2,
+    "Communication Services": 3,
+    "Consumer Discretionary": 3,
     "Energy": 6,
-    "Financials": 2,
-    "Industrials": 22,
-    "Information Technology": 43,
-    "Materials": 7,
-    "Real Estate": 7,
-    "Utilities": 22
+    "Financials": 3,
+    "Industrials": 28,
+    "Information Technology": 48,
+    "Materials": 8,
+    "Real Estate": 8,
+    "Utilities": 23
   },
   "mouvements_comptables": {
-    "doublement observe": 50,
-    "non evaluable": 6,
-    "progression inferieure au seuil": 56,
+    "doublement observe": 57,
+    "non evaluable": 7,
+    "progression inferieure au seuil": 65,
     "recul des mesures disponibles": 1
   },
   "couverture_comptable": {
-    "aucune comparaison": 6,
-    "observation partielle": 49,
-    "trois mesures comparables": 58
+    "aucune comparaison": 7,
+    "observation partielle": 55,
+    "trois mesures comparables": 68
   },
-  "replis_de_reference": 40,
+  "replis_de_reference": 42,
   "alertes_qualite": 3724,
   "entreprises_avec_alerte": 482,
   "limites": [

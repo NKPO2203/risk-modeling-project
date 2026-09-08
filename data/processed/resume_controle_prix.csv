@@ -1,0 +1,24 @@
+test,cas
+date en double,0
+anteriorite au calendrier,69
+seance absente,14
+date hors calendrier,0
+variation quotidienne extreme,145
+barre incoherente,1
+prix nul ou negatif,0
+valeur manquante,1
+ajustement incoherent,0
+division non confirmee,20
+reference de cotation absente,53
+premiere cotation discordante,0
+historique tronque,21
+metadonnees absentes,0
+devise non usd,0
+fuseau inattendu,0
+type inattendu,0
+decalage horaire inattendu,0
+premiere transaction discordante,0
+fin de serie anticipee,0
+denomination divergente,7
+seance sans transaction,117
+prix fige,8637

@@ -222,9 +222,11 @@ outputs/corrections_2026-09-05/.work/
 
 # ---------------------------------------------------------------------------
 # Cache local des rapports annuels : 2,5 Go de HTML et de texte bruts.
-# Il est reconstruit par `python src/fetch_filings_text.py --refresh`.
-# Ce que le depot doit conserver, ce sont les empreintes et le manifeste, qui
-# suffisent a prouver quel document a ete lu :
+# Une nouvelle collecte peut être tentée avec fetch_filings_text.py --refresh,
+# mais ne garantit pas la reproduction exacte d'un ancien corpus.
+# Les empreintes identifient les fichiers attendus ; sans les caches elles
+# ne permettent pas de relire la preuve ni de rejouer le pipeline hors réseau.
+# Les références conservées comprennent :
 #   data/raw/filings_manifest.json
 #   data/raw/filings_termes.csv  (colonnes texte_sha256 et html_sha256)
 data/raw/filings_text/

@@ -21,6 +21,7 @@ AES.csv,anteriorite au calendrier,1991-06-26,404 seances avant 1993-01-29
 AMAT.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
 AMD.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
 AME.csv,anteriorite au calendrier,1984-07-19,2157 seances avant 1993-01-29
+APD.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
 APH.csv,anteriorite au calendrier,1991-11-08,309 seances avant 1993-01-29
 BKR.csv,anteriorite au calendrier,1987-04-06,1472 seances avant 1993-01-29
 CAT.csv,anteriorite au calendrier,1962-01-02,7820 seances avant 1993-01-29
@@ -37,17 +38,21 @@ DOV.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
 DTE.csv,anteriorite au calendrier,1962-01-02,7820 seances avant 1993-01-29
 DUK.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
 ECL.csv,anteriorite au calendrier,1973-02-21,5041 seances avant 1993-01-29
+EMR.csv,anteriorite au calendrier,1972-06-01,5221 seances avant 1993-01-29
 ETN.csv,anteriorite au calendrier,1972-06-01,5221 seances avant 1993-01-29
 ETR.csv,anteriorite au calendrier,1972-06-01,5221 seances avant 1993-01-29
 EVRG.csv,anteriorite au calendrier,1973-02-21,5041 seances avant 1993-01-29
+EXPD.csv,anteriorite au calendrier,1984-09-26,2109 seances avant 1993-01-29
 FAST.csv,anteriorite au calendrier,1987-08-20,1377 seances avant 1993-01-29
 GD.csv,anteriorite au calendrier,1962-01-02,7820 seances avant 1993-01-29
 GLW.csv,anteriorite au calendrier,1981-12-31,2802 seances avant 1993-01-29
 HAL.csv,anteriorite au calendrier,1972-06-01,5221 seances avant 1993-01-29
+HD.csv,anteriorite au calendrier,1981-09-22,2872 seances avant 1993-01-29
 HUBB.csv,anteriorite au calendrier,1972-06-05,5099 seances avant 1993-01-29
 IBM.csv,anteriorite au calendrier,1962-01-02,7820 seances avant 1993-01-29
 IEX.csv,anteriorite au calendrier,1989-06-02,926 seances avant 1993-01-29
 INTC.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
+ITW.csv,anteriorite au calendrier,1973-03-13,5027 seances avant 1993-01-29
 JCI.csv,anteriorite au calendrier,1987-09-28,1351 seances avant 1993-01-29
 KLAC.csv,anteriorite au calendrier,1980-10-08,3112 seances avant 1993-01-29
 LNT.csv,anteriorite au calendrier,1973-02-21,5041 seances avant 1993-01-29
@@ -55,11 +60,15 @@ LRCX.csv,anteriorite au calendrier,1984-05-04,2209 seances avant 1993-01-29
 MMM.csv,anteriorite au calendrier,1962-01-02,7820 seances avant 1993-01-29
 MSFT.csv,anteriorite au calendrier,1986-03-13,1741 seances avant 1993-01-29
 MU.csv,anteriorite au calendrier,1984-06-01,2190 seances avant 1993-01-29
+NDSN.csv,anteriorite au calendrier,1980-03-18,3254 seances avant 1993-01-29
+NEE.csv,anteriorite au calendrier,1973-02-21,5041 seances avant 1993-01-29
 NI.csv,anteriorite au calendrier,1973-02-21,5041 seances avant 1993-01-29
 NUE.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
 ORCL.csv,anteriorite au calendrier,1986-03-12,1742 seances avant 1993-01-29
+PH.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
 PNW.csv,anteriorite au calendrier,1973-02-21,5041 seances avant 1993-01-29
 PPL.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
+QCOM.csv,anteriorite au calendrier,1991-12-13,285 seances avant 1993-01-29
 SLB.csv,anteriorite au calendrier,1981-12-31,2802 seances avant 1993-01-29
 SNPS.csv,anteriorite au calendrier,1992-02-26,235 seances avant 1993-01-29
 SO.csv,anteriorite au calendrier,1981-12-31,2802 seances avant 1993-01-29
@@ -95,6 +104,8 @@ AMT.csv,variation quotidienne extreme,2002-11-18,+34.7 %
 AMZN.csv,variation quotidienne extreme,2001-04-09,+33.6 %
 AMZN.csv,variation quotidienne extreme,2001-11-14,+30.2 %
 AMZN.csv,variation quotidienne extreme,2001-11-26,+34.5 %
+APP.csv,variation quotidienne extreme,2022-05-12,+34.7 %
+APP.csv,variation quotidienne extreme,2024-11-07,+46.3 %
 BKR.csv,variation quotidienne extreme,1987-10-19,-36.5 %
 CBRE.csv,variation quotidienne extreme,2008-11-13,+43.0 %
 CBRE.csv,variation quotidienne extreme,2008-11-24,+45.0 %
@@ -130,13 +141,18 @@ FIX.csv,variation quotidienne extreme,1999-10-05,-44.4 %
 FIX.csv,variation quotidienne extreme,2001-05-10,+30.0 %
 FLEX.csv,variation quotidienne extreme,2018-10-26,-35.0 %
 FLEX.csv,variation quotidienne extreme,2026-05-06,+39.7 %
+FSLR.csv,variation quotidienne extreme,2007-11-08,+34.3 %
+FSLR.csv,variation quotidienne extreme,2008-02-13,+30.1 %
+FSLR.csv,variation quotidienne extreme,2013-04-09,+45.5 %
 GLW.csv,variation quotidienne extreme,1987-10-19,-30.6 %
 GLW.csv,variation quotidienne extreme,2002-07-31,-35.2 %
 HAL.csv,variation quotidienne extreme,2001-12-07,-42.4 %
 HAL.csv,variation quotidienne extreme,2020-03-09,-37.6 %
+HD.csv,variation quotidienne extreme,1981-10-20,+32.9 %
 HUBB.csv,variation quotidienne extreme,1994-10-31,+885.9 %
 HUBB.csv,barre incoherente,2021-05-05,O=195.98 H=198.64 L=196.21 C=198.13
 HUBB.csv,valeur manquante,1977-08-08,
+ITW.csv,variation quotidienne extreme,1987-10-19,-32.9 %
 JBL.csv,variation quotidienne extreme,1995-12-15,-42.0 %
 JBL.csv,variation quotidienne extreme,1996-01-31,-33.8 %
 JBL.csv,variation quotidienne extreme,2009-03-25,+36.5 %
@@ -165,10 +181,21 @@ ORCL.csv,variation quotidienne extreme,1990-03-28,-31.0 %
 ORCL.csv,variation quotidienne extreme,1992-12-23,+43.9 %
 ORCL.csv,variation quotidienne extreme,1999-06-16,+31.1 %
 ORCL.csv,variation quotidienne extreme,2025-09-10,+35.9 %
+PH.csv,variation quotidienne extreme,1981-09-08,-33.5 %
 PLD.csv,variation quotidienne extreme,2008-11-12,-30.1 %
 PNW.csv,variation quotidienne extreme,1989-12-07,+90.7 %
 PWR.csv,variation quotidienne extreme,2002-07-02,-68.1 %
 PWR.csv,variation quotidienne extreme,2003-08-06,-30.8 %
+QCOM.csv,variation quotidienne extreme,1992-09-30,+30.9 %
+QCOM.csv,variation quotidienne extreme,1999-04-21,+38.7 %
+QCOM.csv,variation quotidienne extreme,1999-12-29,+31.0 %
+SBAC.csv,variation quotidienne extreme,2002-02-25,-35.3 %
+SBAC.csv,variation quotidienne extreme,2002-03-07,+45.5 %
+SBAC.csv,variation quotidienne extreme,2002-06-17,+32.2 %
+SBAC.csv,variation quotidienne extreme,2002-10-04,-48.8 %
+SBAC.csv,variation quotidienne extreme,2002-11-04,+34.2 %
+SBAC.csv,variation quotidienne extreme,2002-11-19,+36.4 %
+SBAC.csv,variation quotidienne extreme,2002-11-25,+33.9 %
 SMCI.csv,variation quotidienne extreme,2018-10-04,-41.1 %
 SMCI.csv,variation quotidienne extreme,2022-05-04,+31.2 %
 SMCI.csv,variation quotidienne extreme,2024-01-19,+35.9 %
@@ -209,12 +236,12 @@ DTE.csv,division non confirmee,2021-07-01,"annonce 1.175, mesure 1.000"
 DUK.csv,division non confirmee,2012-07-03,"annonce 0.333333, mesure 0.526"
 FLEX.csv,division non confirmee,2024-01-03,"annonce 1.327, mesure 0.969"
 HPE.csv,division non confirmee,2017-04-03,"annonce 1.3348, mesure 0.991"
-HPE.csv,division non confirmee,2017-09-01,"annonce 1.289, mesure 0.986"
-IBM.csv,division non confirmee,2021-11-04,"annonce 1.046, mesure 1.001"
+HPE.csv,division non confirmee,2017-09-01,"annonce 1.289, mesure 0.970"
+IBM.csv,division non confirmee,2021-11-04,"annonce 1.046, mesure 1.003"
 IRM.csv,division non confirmee,2014-09-26,"annonce 1.082, mesure 1.003"
 JCI.csv,division non confirmee,2012-10-01,"annonce 2.01167, mesure 1.013"
 JCI.csv,division non confirmee,2016-09-06,"annonce 0.955, mesure 2.198"
-MMM.csv,division non confirmee,2024-04-01,"annonce 1.196, mesure 1.001"
+MMM.csv,division non confirmee,2024-04-01,"annonce 1.196, mesure 0.994"
 NI.csv,division non confirmee,2015-07-02,"annonce 2.545, mesure 1.002"
 O.csv,division non confirmee,2021-11-15,"annonce 1.032, mesure 1.463"
 PPL.csv,division non confirmee,2015-06-02,"annonce 1.07365, mesure 1.003"
@@ -222,12 +249,15 @@ TT.csv,division non confirmee,2013-12-02,"annonce 1.252, mesure 0.965"
 TT.csv,division non confirmee,2020-03-02,"annonce 1.289, mesure 1.003"
 WDC.csv,division non confirmee,2025-02-24,"annonce 1.323, mesure 1.003"
 WMB.csv,division non confirmee,2012-01-03,"annonce 1.22669, mesure 1.005"
+ACN.csv,reference de cotation absente,2001-07-19,
 ADI.csv,reference de cotation absente,1980-03-17,
 AEE.csv,historique tronque,1998-01-02,entree dans l'indice le 1991-09-19
 AEP.csv,historique tronque,1962-01-02,entree dans l'indice le 1957-03-04
 AMAT.csv,reference de cotation absente,1980-03-17,
 AME.csv,reference de cotation absente,1984-07-19,
+APD.csv,reference de cotation absente,1980-03-17,
 APH.csv,reference de cotation absente,1991-11-08,
+APP.csv,reference de cotation absente,2021-04-15,
 ARES.csv,reference de cotation absente,2014-05-02,
 BKR.csv,reference de cotation absente,1987-04-06,
 BRK-B.csv,reference de cotation absente,1996-05-09,
@@ -245,28 +275,42 @@ DOW.csv,reference de cotation absente,2019-03-20,
 DTE.csv,historique tronque,1962-01-02,entree dans l'indice le 1957-03-04
 DUK.csv,historique tronque,1980-03-17,entree dans l'indice le 1976-06-30
 ECL.csv,reference de cotation absente,1973-02-21,
+EMR.csv,reference de cotation absente,1972-06-01,
+EMR.csv,historique tronque,1972-06-01,entree dans l'indice le 1965-03-31
 ETN.csv,historique tronque,1972-06-01,entree dans l'indice le 1957-03-04
 ETR.csv,historique tronque,1972-06-01,entree dans l'indice le 1957-03-04
+EXPD.csv,reference de cotation absente,1984-09-26,
 FAST.csv,reference de cotation absente,1987-08-20,
+FSLR.csv,reference de cotation absente,2006-11-17,
 GD.csv,reference de cotation absente,1962-01-02,
 GD.csv,historique tronque,1962-01-02,entree dans l'indice le 1957-03-04
 GOOGL.csv,reference de cotation absente,2004-08-19,
 HAL.csv,reference de cotation absente,1972-06-01,
 HAL.csv,historique tronque,1972-06-01,entree dans l'indice le 1957-03-04
+HD.csv,reference de cotation absente,1981-09-22,
 HWM.csv,historique tronque,2016-11-01,entree dans l'indice le 2016-10-21
 IBM.csv,reference de cotation absente,1962-01-02,
 IBM.csv,historique tronque,1962-01-02,entree dans l'indice le 1957-03-04
 INTC.csv,historique tronque,1980-03-17,entree dans l'indice le 1976-12-31
+ITW.csv,reference de cotation absente,1973-03-13,
 JCI.csv,reference de cotation absente,1987-09-28,
 KLAC.csv,reference de cotation absente,1980-10-08,
+LDOS.csv,reference de cotation absente,2006-10-17,
 LII.csv,reference de cotation absente,1999-07-29,
 MLM.csv,reference de cotation absente,1994-02-17,
 MMM.csv,reference de cotation absente,1962-01-02,
 MMM.csv,historique tronque,1962-01-02,entree dans l'indice le 1957-03-04
 MPWR.csv,reference de cotation absente,2004-11-19,
+NDAQ.csv,reference de cotation absente,2002-07-01,
+NDSN.csv,reference de cotation absente,1980-03-18,
+NOW.csv,reference de cotation absente,2012-06-29,
 NUE.csv,reference de cotation absente,1980-03-17,
+NXPI.csv,reference de cotation absente,2010-08-06,
 O.csv,reference de cotation absente,1994-10-18,
 ON.csv,reference de cotation absente,2000-05-02,
+PH.csv,reference de cotation absente,1980-03-17,
+QCOM.csv,reference de cotation absente,1991-12-13,
+SBAC.csv,reference de cotation absente,1999-06-16,
 SLB.csv,reference de cotation absente,1981-12-31,
 SLB.csv,historique tronque,1981-12-31,entree dans l'indice le 1957-03-04
 SO.csv,historique tronque,1981-12-31,entree dans l'indice le 1957-03-04
@@ -285,6 +329,7 @@ SLB.csv,denomination divergente,,SLB N.V. contre Schlumberger
 SMCI.csv,denomination divergente,,"Super Micro Computer, Inc. contre Supermicro"
 SO.csv,denomination divergente,,The Southern Company contre Southern Company
 WMB.csv,denomination divergente,,"The Williams Companies, Inc. contre Williams Companies"
+HD.csv,denomination divergente,,"The Home Depot, Inc. contre Home Depot (The)"
 AMAT.csv,prix fige,1981-08-10,0.1543
 AMD.csv,prix fige,1982-10-05,4.4375
 AMD.csv,prix fige,2015-01-02,2.6700
@@ -2495,6 +2540,7 @@ EME.csv,prix fige,1998-01-16,5.0000
 EME.csv,prix fige,1998-08-10,4.6562
 EME.csv,prix fige,1998-10-22,3.6875
 EME.csv,prix fige,1998-12-11,4.1094
+EMR.csv,prix fige,1975-04-11,2.7188
 ETN.csv,prix fige,1975-04-11,1.2955
 ETR.csv,prix fige,1975-04-11,6.5625
 EVRG.csv,prix fige,1973-03-30,12.3125
@@ -2502,6 +2548,91 @@ EVRG.csv,prix fige,1973-05-29,12.0625
 EVRG.csv,prix fige,1974-02-22,10.2500
 EVRG.csv,prix fige,1975-04-11,8.0000
 EVRG.csv,prix fige,1983-07-15,13.0625
+EXPD.csv,prix fige,1984-10-03,0.1641
+EXPD.csv,prix fige,1984-10-05,0.1589
+EXPD.csv,prix fige,1984-10-10,0.1562
+EXPD.csv,prix fige,1984-10-15,0.1510
+EXPD.csv,prix fige,1984-11-02,0.1693
+EXPD.csv,prix fige,1984-11-06,0.1667
+EXPD.csv,prix fige,1984-11-07,0.1667
+EXPD.csv,prix fige,1984-11-16,0.1589
+EXPD.csv,prix fige,1984-11-19,0.1589
+EXPD.csv,prix fige,1984-11-20,0.1589
+EXPD.csv,prix fige,1984-11-23,0.1562
+EXPD.csv,prix fige,1984-12-03,0.1536
+EXPD.csv,prix fige,1984-12-07,0.1536
+EXPD.csv,prix fige,1984-12-10,0.1536
+EXPD.csv,prix fige,1984-12-11,0.1536
+EXPD.csv,prix fige,1984-12-14,0.1510
+EXPD.csv,prix fige,1984-12-19,0.1536
+EXPD.csv,prix fige,1984-12-20,0.1536
+EXPD.csv,prix fige,1984-12-26,0.1510
+EXPD.csv,prix fige,1985-01-11,0.1536
+EXPD.csv,prix fige,1985-01-14,0.1536
+EXPD.csv,prix fige,1985-01-15,0.1536
+EXPD.csv,prix fige,1985-03-12,0.2370
+EXPD.csv,prix fige,1985-03-27,0.2135
+EXPD.csv,prix fige,1985-03-28,0.2135
+EXPD.csv,prix fige,1985-04-08,0.2031
+EXPD.csv,prix fige,1985-05-29,0.2057
+EXPD.csv,prix fige,1985-06-10,0.1927
+EXPD.csv,prix fige,1985-08-16,0.2240
+EXPD.csv,prix fige,1985-10-07,0.2214
+EXPD.csv,prix fige,1985-10-11,0.2214
+EXPD.csv,prix fige,1985-11-22,0.2422
+EXPD.csv,prix fige,1986-01-21,0.2578
+EXPD.csv,prix fige,1986-10-06,0.3438
+EXPD.csv,prix fige,1987-05-06,0.4688
+EXPD.csv,prix fige,1987-09-16,0.5547
+EXPD.csv,prix fige,1987-10-09,0.5859
+EXPD.csv,prix fige,1987-11-27,0.3906
+EXPD.csv,prix fige,1988-01-26,0.4688
+EXPD.csv,prix fige,1988-02-09,0.4297
+EXPD.csv,prix fige,1988-07-29,0.5078
+EXPD.csv,prix fige,1988-08-18,0.4922
+EXPD.csv,prix fige,1988-08-25,0.5078
+EXPD.csv,prix fige,1988-09-16,0.5273
+EXPD.csv,prix fige,1988-10-26,0.5234
+EXPD.csv,prix fige,1988-12-23,0.4922
+EXPD.csv,prix fige,1989-07-17,0.6992
+EXPD.csv,prix fige,1989-08-30,0.8047
+EXPD.csv,prix fige,1989-09-20,0.8359
+EXPD.csv,prix fige,1989-09-27,0.8438
+EXPD.csv,prix fige,1989-09-29,0.8359
+EXPD.csv,prix fige,1989-10-04,0.8477
+EXPD.csv,prix fige,1989-11-07,0.8555
+EXPD.csv,prix fige,1989-12-20,0.8125
+EXPD.csv,prix fige,1990-04-26,0.7344
+EXPD.csv,prix fige,1990-06-28,0.8047
+EXPD.csv,prix fige,1990-07-09,0.8086
+EXPD.csv,prix fige,1990-07-18,0.8281
+EXPD.csv,prix fige,1990-09-18,0.5859
+EXPD.csv,prix fige,1990-09-25,0.5547
+EXPD.csv,prix fige,1990-10-15,0.5078
+EXPD.csv,prix fige,1990-10-19,0.5000
+EXPD.csv,prix fige,1990-10-31,0.4844
+EXPD.csv,prix fige,1991-01-10,0.5781
+EXPD.csv,prix fige,1991-03-13,0.7578
+EXPD.csv,prix fige,1991-05-03,0.8125
+EXPD.csv,prix fige,1991-07-12,0.8828
+EXPD.csv,prix fige,1991-07-24,0.8984
+EXPD.csv,prix fige,1991-07-25,0.8984
+EXPD.csv,prix fige,1991-10-04,0.8125
+EXPD.csv,prix fige,1991-12-03,0.8438
+EXPD.csv,prix fige,1991-12-06,0.8398
+EXPD.csv,prix fige,1992-06-02,1.0391
+EXPD.csv,prix fige,1992-08-06,1.0000
+EXPD.csv,prix fige,1992-10-20,0.9922
+EXPD.csv,prix fige,1992-10-26,1.0000
+EXPD.csv,prix fige,1992-12-17,0.9688
+EXPD.csv,prix fige,1992-12-29,0.9688
+EXPD.csv,prix fige,1992-12-30,0.9688
+EXPD.csv,prix fige,1993-01-27,1.0781
+EXPD.csv,prix fige,1993-07-21,0.8203
+EXPD.csv,prix fige,1993-08-09,0.7773
+EXPD.csv,prix fige,1993-09-14,0.9062
+EXPD.csv,prix fige,1995-10-18,1.7109
+EXPD.csv,prix fige,1996-01-18,1.5000
 FAST.csv,prix fige,1987-11-18,0.0319
 FAST.csv,prix fige,1987-11-19,0.0319
 FAST.csv,prix fige,1987-11-20,0.0319
@@ -8143,6 +8274,92 @@ IRM.csv,prix fige,1997-01-10,5.5681
 IRM.csv,prix fige,1997-01-31,5.1573
 IRM.csv,prix fige,1997-05-07,4.3815
 IRM.csv,prix fige,1997-11-28,6.9373
+ITW.csv,prix fige,1973-04-03,0.9883
+ITW.csv,prix fige,1973-06-29,0.8164
+ITW.csv,prix fige,1973-07-30,1.0234
+ITW.csv,prix fige,1973-09-28,0.8984
+ITW.csv,prix fige,1973-10-30,1.0391
+ITW.csv,prix fige,1973-11-01,1.0391
+ITW.csv,prix fige,1974-01-02,0.7656
+ITW.csv,prix fige,1974-01-10,0.7031
+ITW.csv,prix fige,1974-01-15,0.7188
+ITW.csv,prix fige,1974-02-06,0.7578
+ITW.csv,prix fige,1974-04-11,0.7422
+ITW.csv,prix fige,1974-04-24,0.7266
+ITW.csv,prix fige,1974-05-13,0.7266
+ITW.csv,prix fige,1974-05-14,0.7266
+ITW.csv,prix fige,1974-05-16,0.7344
+ITW.csv,prix fige,1974-06-10,0.8555
+ITW.csv,prix fige,1974-07-22,0.8672
+ITW.csv,prix fige,1974-11-07,0.7578
+ITW.csv,prix fige,1975-03-06,0.6445
+ITW.csv,prix fige,1975-03-13,0.6250
+ITW.csv,prix fige,1975-04-11,0.7891
+ITW.csv,prix fige,1975-06-19,0.8438
+ITW.csv,prix fige,1975-08-18,0.8281
+ITW.csv,prix fige,1975-08-28,0.7812
+ITW.csv,prix fige,1975-09-03,0.8008
+ITW.csv,prix fige,1975-09-04,0.8008
+ITW.csv,prix fige,1975-09-12,0.7969
+ITW.csv,prix fige,1975-09-30,0.7227
+ITW.csv,prix fige,1975-10-01,0.7227
+ITW.csv,prix fige,1975-10-02,0.7227
+ITW.csv,prix fige,1975-10-08,0.7266
+ITW.csv,prix fige,1975-11-18,0.7617
+ITW.csv,prix fige,1975-11-20,0.7656
+ITW.csv,prix fige,1975-12-01,0.7500
+ITW.csv,prix fige,1975-12-15,0.7266
+ITW.csv,prix fige,1975-12-18,0.7109
+ITW.csv,prix fige,1975-12-24,0.6641
+ITW.csv,prix fige,1976-01-29,0.7852
+ITW.csv,prix fige,1976-02-02,0.7812
+ITW.csv,prix fige,1976-02-27,0.9062
+ITW.csv,prix fige,1976-05-25,0.7891
+ITW.csv,prix fige,1976-06-23,0.8516
+ITW.csv,prix fige,1976-07-19,0.8672
+ITW.csv,prix fige,1976-07-20,0.8672
+ITW.csv,prix fige,1976-08-13,0.8203
+ITW.csv,prix fige,1976-08-18,0.8203
+ITW.csv,prix fige,1976-09-14,0.7734
+ITW.csv,prix fige,1976-10-05,0.7734
+ITW.csv,prix fige,1976-10-06,0.7734
+ITW.csv,prix fige,1976-10-08,0.7656
+ITW.csv,prix fige,1976-10-11,0.7656
+ITW.csv,prix fige,1976-10-18,0.7305
+ITW.csv,prix fige,1977-02-28,0.7812
+ITW.csv,prix fige,1977-03-04,0.7617
+ITW.csv,prix fige,1977-03-16,0.7656
+ITW.csv,prix fige,1977-03-29,0.7305
+ITW.csv,prix fige,1977-05-04,0.7109
+ITW.csv,prix fige,1977-05-12,0.7031
+ITW.csv,prix fige,1977-06-30,0.7070
+ITW.csv,prix fige,1977-07-22,0.7227
+ITW.csv,prix fige,1977-07-27,0.7227
+ITW.csv,prix fige,1977-08-17,0.7188
+ITW.csv,prix fige,1977-09-22,0.6758
+ITW.csv,prix fige,1977-09-26,0.6602
+ITW.csv,prix fige,1977-10-17,0.6328
+ITW.csv,prix fige,1977-10-31,0.6328
+ITW.csv,prix fige,1977-12-05,0.6445
+ITW.csv,prix fige,1978-02-14,0.6406
+ITW.csv,prix fige,1978-03-08,0.6016
+ITW.csv,prix fige,1978-06-28,0.7188
+ITW.csv,prix fige,1978-06-29,0.7188
+ITW.csv,prix fige,1978-10-05,0.7812
+ITW.csv,prix fige,1978-10-09,0.7812
+ITW.csv,prix fige,1978-12-12,0.7344
+ITW.csv,prix fige,1979-12-24,0.7930
+ITW.csv,prix fige,1980-09-10,0.8398
+ITW.csv,prix fige,1981-08-07,0.9297
+ITW.csv,prix fige,1981-10-20,0.8906
+ITW.csv,prix fige,1981-10-27,0.8867
+ITW.csv,prix fige,1981-11-16,0.8945
+ITW.csv,prix fige,1981-11-18,0.8906
+ITW.csv,prix fige,1981-11-20,0.8945
+ITW.csv,prix fige,1982-12-31,1.2344
+ITW.csv,prix fige,1983-06-03,1.4922
+ITW.csv,prix fige,1984-03-01,1.5820
+ITW.csv,prix fige,1984-03-08,1.5586
 JBL.csv,prix fige,1994-09-26,0.7188
 JBL.csv,prix fige,1994-09-28,0.6875
 JBL.csv,prix fige,1994-10-03,0.7188
@@ -8170,10 +8387,204 @@ MCHP.csv,seance sans transaction,1993-08-17,
 MLM.csv,prix fige,1996-06-12,24.1250
 MLM.csv,prix fige,1996-07-05,24.7500
 MLM.csv,prix fige,1996-08-07,23.1250
+NDAQ.csv,prix fige,2002-07-11,5.1667
+NDAQ.csv,prix fige,2002-07-26,3.3833
+NDAQ.csv,prix fige,2002-08-02,3.9333
+NDAQ.csv,prix fige,2002-11-08,2.5000
+NDAQ.csv,prix fige,2002-12-03,3.3833
+NDAQ.csv,prix fige,2002-12-24,3.6000
+NDAQ.csv,prix fige,2002-12-27,3.5000
+NDAQ.csv,prix fige,2003-03-05,2.6000
+NDAQ.csv,prix fige,2003-04-02,2.3333
+NDAQ.csv,prix fige,2003-10-02,2.7000
+NDAQ.csv,prix fige,2003-12-12,2.8667
+NDAQ.csv,prix fige,2004-04-02,2.8533
+NDAQ.csv,prix fige,2004-04-20,2.5167
+NDAQ.csv,prix fige,2004-04-30,2.5000
+NDAQ.csv,prix fige,2004-05-13,2.5200
+NDAQ.csv,prix fige,2004-06-07,2.4333
+NDAQ.csv,prix fige,2004-06-16,2.3000
+NDAQ.csv,prix fige,2004-09-01,2.0567
+NDAQ.csv,prix fige,2004-10-11,2.5500
+NDSN.csv,seance sans transaction,1983-10-18,
+NDSN.csv,seance sans transaction,1983-12-06,
+NDSN.csv,prix fige,1980-03-25,1.3333
+NDSN.csv,prix fige,1980-03-26,1.3333
+NDSN.csv,prix fige,1980-04-09,1.3333
+NDSN.csv,prix fige,1980-04-10,1.3333
+NDSN.csv,prix fige,1980-04-15,1.3333
+NDSN.csv,prix fige,1980-04-18,1.2222
+NDSN.csv,prix fige,1980-04-22,1.1944
+NDSN.csv,prix fige,1980-04-25,1.2222
+NDSN.csv,prix fige,1980-04-28,1.2222
+NDSN.csv,prix fige,1980-05-01,1.2222
+NDSN.csv,prix fige,1980-05-02,1.2222
+NDSN.csv,prix fige,1980-05-05,1.2222
+NDSN.csv,prix fige,1980-05-12,1.2222
+NDSN.csv,prix fige,1980-05-14,1.2222
+NDSN.csv,prix fige,1980-05-15,1.2222
+NDSN.csv,prix fige,1980-05-16,1.2222
+NDSN.csv,prix fige,1980-05-21,1.2222
+NDSN.csv,prix fige,1980-06-02,1.2222
+NDSN.csv,prix fige,1980-06-05,1.2222
+NDSN.csv,prix fige,1980-06-10,1.2222
+NDSN.csv,prix fige,1980-06-18,1.2222
+NDSN.csv,prix fige,1980-06-19,1.2222
+NDSN.csv,prix fige,1980-06-30,1.2500
+NDSN.csv,prix fige,1980-07-08,1.2500
+NDSN.csv,prix fige,1980-07-14,1.2500
+NDSN.csv,prix fige,1980-07-15,1.2500
+NDSN.csv,prix fige,1980-07-25,1.2778
+NDSN.csv,prix fige,1980-08-11,1.2778
+NDSN.csv,prix fige,1980-08-12,1.2778
+NDSN.csv,prix fige,1980-08-13,1.2778
+NDSN.csv,prix fige,1980-08-15,1.2778
+NDSN.csv,prix fige,1980-12-31,1.9444
+NDSN.csv,prix fige,1981-01-12,2.1111
+NDSN.csv,prix fige,1981-01-27,2.1389
+NDSN.csv,prix fige,1981-02-25,1.9167
+NDSN.csv,prix fige,1981-05-07,1.8889
+NDSN.csv,prix fige,1981-05-15,1.8889
+NDSN.csv,prix fige,1981-05-22,1.8889
+NDSN.csv,prix fige,1981-05-26,1.8889
+NDSN.csv,prix fige,1981-07-01,1.7500
+NDSN.csv,prix fige,1981-07-02,1.7500
+NDSN.csv,prix fige,1981-07-15,1.5833
+NDSN.csv,prix fige,1981-07-30,1.4722
+NDSN.csv,prix fige,1981-08-06,1.5000
+NDSN.csv,prix fige,1981-08-10,1.3611
+NDSN.csv,prix fige,1981-08-27,1.1111
+NDSN.csv,prix fige,1981-09-04,1.1111
+NDSN.csv,prix fige,1981-09-23,1.0833
+NDSN.csv,prix fige,1981-11-06,1.0833
+NDSN.csv,prix fige,1981-11-12,1.0833
+NDSN.csv,prix fige,1981-11-13,1.0833
+NDSN.csv,prix fige,1981-11-16,1.0833
+NDSN.csv,prix fige,1982-02-02,1.2222
+NDSN.csv,prix fige,1982-02-19,1.0556
+NDSN.csv,prix fige,1982-02-26,1.0278
+NDSN.csv,prix fige,1982-03-10,1.0000
+NDSN.csv,prix fige,1982-03-18,0.9722
+NDSN.csv,prix fige,1982-03-19,0.9722
+NDSN.csv,prix fige,1982-03-31,1.1111
+NDSN.csv,prix fige,1982-04-02,1.1111
+NDSN.csv,prix fige,1982-04-14,1.1111
+NDSN.csv,prix fige,1982-04-21,1.1389
+NDSN.csv,prix fige,1982-04-27,1.1111
+NDSN.csv,prix fige,1982-05-06,1.0833
+NDSN.csv,prix fige,1982-05-11,1.0556
+NDSN.csv,prix fige,1982-05-17,1.0556
+NDSN.csv,prix fige,1982-06-03,1.0000
+NDSN.csv,prix fige,1982-06-14,0.9444
+NDSN.csv,prix fige,1982-06-18,0.9167
+NDSN.csv,prix fige,1982-06-21,0.9167
+NDSN.csv,prix fige,1982-06-22,0.9167
+NDSN.csv,prix fige,1982-06-25,0.9444
+NDSN.csv,prix fige,1982-06-29,0.9444
+NDSN.csv,prix fige,1982-07-01,0.9444
+NDSN.csv,prix fige,1982-07-13,0.9722
+NDSN.csv,prix fige,1982-07-15,0.9722
+NDSN.csv,prix fige,1982-07-16,0.9722
+NDSN.csv,prix fige,1982-08-03,0.9167
+NDSN.csv,prix fige,1982-08-09,0.8889
+NDSN.csv,prix fige,1982-08-12,0.8889
+NDSN.csv,prix fige,1982-08-17,0.8889
+NDSN.csv,prix fige,1982-08-24,0.9167
+NDSN.csv,prix fige,1983-07-28,1.7083
+NDSN.csv,prix fige,1983-10-11,1.7222
+NDSN.csv,prix fige,1983-10-27,1.7083
+NDSN.csv,prix fige,1983-11-07,1.6667
+NDSN.csv,prix fige,1983-11-29,1.6528
+NDSN.csv,prix fige,1984-01-17,1.4583
+NDSN.csv,prix fige,1984-01-25,1.4375
+NDSN.csv,prix fige,1984-01-27,1.4167
+NDSN.csv,prix fige,1984-04-09,1.1875
+NDSN.csv,prix fige,1984-04-17,1.2083
+NDSN.csv,prix fige,1984-05-11,1.2083
+NDSN.csv,prix fige,1984-07-05,1.3542
+NDSN.csv,prix fige,1984-07-12,1.3542
+NDSN.csv,prix fige,1984-07-18,1.3750
+NDSN.csv,prix fige,1984-07-20,1.3542
+NDSN.csv,prix fige,1984-07-30,1.3542
+NDSN.csv,prix fige,1984-07-31,1.3542
+NDSN.csv,prix fige,1984-08-10,1.4375
+NDSN.csv,prix fige,1984-08-22,1.5000
+NDSN.csv,prix fige,1984-08-31,1.4583
+NDSN.csv,prix fige,1984-10-01,1.4792
+NDSN.csv,prix fige,1984-10-05,1.4375
+NDSN.csv,prix fige,1984-10-18,1.4375
+NDSN.csv,prix fige,1984-10-19,1.4375
+NDSN.csv,prix fige,1984-10-23,1.4375
+NDSN.csv,prix fige,1984-10-25,1.4375
+NDSN.csv,prix fige,1984-10-31,1.4583
+NDSN.csv,prix fige,1984-11-23,1.5833
+NDSN.csv,prix fige,1984-12-17,1.4583
+NDSN.csv,prix fige,1984-12-24,1.3750
+NDSN.csv,prix fige,1985-01-09,1.4792
+NDSN.csv,prix fige,1985-03-07,1.6458
+NDSN.csv,prix fige,1985-03-11,1.5833
+NDSN.csv,prix fige,1985-03-12,1.5833
+NDSN.csv,prix fige,1985-03-22,1.6250
+NDSN.csv,prix fige,1985-03-26,1.6250
+NDSN.csv,prix fige,1985-04-30,1.6875
+NDSN.csv,prix fige,1985-05-24,1.5417
+NDSN.csv,prix fige,1985-06-13,1.5417
+NDSN.csv,prix fige,1985-06-17,1.5417
+NDSN.csv,prix fige,1985-06-18,1.5417
+NDSN.csv,prix fige,1985-07-12,1.5417
+NDSN.csv,prix fige,1985-08-23,1.3333
+NDSN.csv,prix fige,1985-08-26,1.3333
+NDSN.csv,prix fige,1985-09-06,1.3333
+NDSN.csv,prix fige,1985-09-23,1.2917
+NDSN.csv,prix fige,1985-09-24,1.2917
+NDSN.csv,prix fige,1985-09-25,1.2917
+NDSN.csv,prix fige,1985-10-08,1.3542
+NDSN.csv,prix fige,1985-10-09,1.3542
+NDSN.csv,prix fige,1985-10-30,1.2708
+NDSN.csv,prix fige,1985-11-26,1.4167
+NDSN.csv,prix fige,1985-11-27,1.4167
+NDSN.csv,prix fige,1985-11-29,1.4167
+NDSN.csv,prix fige,1986-01-23,1.5000
+NDSN.csv,prix fige,1986-06-05,2.0000
+NDSN.csv,prix fige,1986-06-26,2.3542
+NDSN.csv,prix fige,1986-07-23,2.3646
+NDSN.csv,prix fige,1986-09-03,2.4167
+NDSN.csv,prix fige,1986-11-21,2.4167
+NDSN.csv,prix fige,1986-12-05,2.4167
+NDSN.csv,prix fige,1988-01-22,3.8125
+NDSN.csv,prix fige,1988-03-25,4.6875
+NDSN.csv,prix fige,1988-09-23,5.2500
+NDSN.csv,prix fige,1988-10-17,5.5938
+NDSN.csv,prix fige,1988-11-10,5.4688
+NDSN.csv,prix fige,1989-01-25,5.8125
+NDSN.csv,prix fige,1989-03-09,6.1250
+NDSN.csv,prix fige,1989-05-30,5.7812
+NDSN.csv,prix fige,1989-07-11,6.0000
+NDSN.csv,prix fige,1989-10-25,6.8125
+NDSN.csv,prix fige,1989-11-07,6.6562
+NDSN.csv,prix fige,1989-11-15,6.5625
+NDSN.csv,prix fige,1990-09-12,4.4688
+NDSN.csv,prix fige,1990-09-21,4.4375
+NDSN.csv,prix fige,1990-09-27,4.6250
+NDSN.csv,prix fige,1990-10-03,4.6250
+NDSN.csv,prix fige,1990-10-05,4.6875
+NDSN.csv,prix fige,1990-11-07,5.0938
+NDSN.csv,prix fige,1991-04-09,6.1250
+NDSN.csv,prix fige,1991-04-16,6.0938
+NDSN.csv,prix fige,1991-04-25,6.0000
+NDSN.csv,prix fige,1991-05-08,6.1562
+NDSN.csv,prix fige,1991-05-31,6.1875
+NDSN.csv,prix fige,1991-07-05,6.5938
+NDSN.csv,prix fige,1991-07-22,6.6562
+NDSN.csv,prix fige,1991-09-18,7.6875
+NDSN.csv,prix fige,1992-11-09,12.0000
+NEE.csv,prix fige,1975-04-11,1.2812
+NEE.csv,prix fige,1978-02-03,1.5781
 NI.csv,prix fige,1975-04-11,2.8733
 NRG.csv,prix fige,2003-12-05,10.1250
 NTAP.csv,prix fige,1996-07-05,1.8125
 PNW.csv,prix fige,1975-04-11,14.0000
+SBAC.csv,prix fige,2017-01-17,105.5700
 SWKS.csv,prix fige,1984-11-14,4.4167
 SWKS.csv,prix fige,1985-01-07,3.5833
 SWKS.csv,prix fige,1988-01-28,1.3333

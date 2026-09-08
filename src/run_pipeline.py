@@ -195,9 +195,11 @@ def main():
         resume = synthese(*verifier_sorties())
         inputs = sorted((RACINE / "data/raw").glob("*.csv"))
         inputs += sorted((RACINE / "data/review").glob("decisions*.csv"))
+        inputs += sorted((RACINE / "data/review/sources_finition_2026-09-08").glob("*"))
         inputs += sorted((RACINE / "data/review").glob("comptabilite_exceptions*.json"))
-        inputs += [p for p in sorted((RACINE / "src").glob("*.py"))
-                   if not p.name.startswith("export_")]
+        # L'étape 1 dépend de ses traitements, pas des moteurs de l'étape 2.
+        inputs += [RACINE / "src" / nom for nom in (*ETAPES, "run_pipeline.py")]
+        inputs += [RACINE / "requirements.txt"]
         inputs += [RACINE / "data/raw/filings_manifest.json"]
         outputs = [PROCESSED / nom for nom in SORTIES]
         outputs += [PROCESSED / "etat_projet.json", PROCESSED / "synthese_resultats.md"]

@@ -1,79 +1,86 @@
 # Contrôle des données de prix
 
-*AI Concentration Risk Research. Phase 2 de l'étape 2. 7 septembre 2026.*
+*Cliché arrêté au 4 septembre 2026 ; revue de finition du 8 septembre 2026.*
 
-## I. Ce que je cherche, et ce que je ne cherche pas
+## I. Couverture réelle
 
-Je n'analyse rien ici. Je n'ai regardé aucune volatilité, aucune corrélation, aucune performance. Je cherche à savoir si les séries que j'ai collectées méritent qu'on calcule quoi que ce soit dessus.
+Le cliché final contient 1202080 lignes dans 136 fichiers : 131 actions, deux fonds et trois indices. Les 17 nouvelles actions ont été acquises avec yfinance sans ajustement automatique, événements inclus, même date de fin. Le symbole, la devise USD, le type EQUITY et la date de première transaction ont été vérifiés. Les anciennes séries sont inchangées. Les ajouts et les métadonnées figurent dans les révisions de `prix_manifest.json`.
 
-La question est celle de l'instrument, pas du phénomène. Le jour où une volatilité sortira à 45 %, je veux pouvoir dire si c'est le marché ou un défaut de fichier. Ce document existe pour que cette réponse soit disponible sans avoir à recommencer.
+## II. Contrôles locaux
 
-## II. Le périmètre
+Les 23 contrôles existants produisent 9085 signalements. Ils portent sur le brut complet, y compris avant 2000 ; un signalement n'est pas une erreur confirmée. Les tests à zéro restent visibles.
 
-Cent treize fichiers d'actions et cinq séries de comparaison, deux fonds et trois indices, soit **1 043 940 lignes de prix quotidiens**. La source est Yahoo Finance, interrogée par `yfinance`, et les fichiers portent chacun leur empreinte dans `data/raw/prix_manifest.json`.
+| Contrôle local | Signalements |
+| --- | --- |
+| date en double | 0 |
+| anteriorite au calendrier | 69 |
+| seance absente | 14 |
+| date hors calendrier | 0 |
+| variation quotidienne extreme | 145 |
+| barre incoherente | 1 |
+| prix nul ou negatif | 0 |
+| valeur manquante | 1 |
+| ajustement incoherent | 0 |
+| division non confirmee | 20 |
+| reference de cotation absente | 53 |
+| premiere cotation discordante | 0 |
+| historique tronque | 21 |
+| metadonnees absentes | 0 |
+| devise non usd | 0 |
+| fuseau inattendu | 0 |
+| type inattendu | 0 |
+| decalage horaire inattendu | 0 |
+| premiere transaction discordante | 0 |
+| fin de serie anticipee | 0 |
+| denomination divergente | 7 |
+| seance sans transaction | 117 |
+| prix fige | 8637 |
 
-Les tests sont écrits dans `src/controler_prix.ipynb`. Chaque bloc réécrit ses propres résultats et laisse intacts ceux des autres, de sorte qu'on peut le relancer seul. Toutes les anomalies aboutissent dans un fichier unique, `data/processed/controle_prix.csv`, une ligne par cas, avec le fichier, le test, la date et un détail.
 
-## III. Vingt-trois tests, huit mille six cent soixante-dix anomalies
+Les séances absentes concernent SPXEW ; les valeurs nulles de volume ne sont pas appliquées comme un filtre aux indices. Les prix figés et les bornes d'identité sont traités séparément en construction. Après ce traitement, 38 valorisations sont portées, sans créer d'observations de rendement nul.
 
-| Test | Cas | Tâche |
-|---|---|---|
-| Date en double | 0 | 13 |
-| Antériorité au calendrier | 59 | 13 |
-| Séance absente | 14 | 13 |
-| Date hors calendrier | 0 | 13 |
-| Variation quotidienne extrême | 126 | 14 |
-| Barre incohérente | 1 | 14 |
-| Prix nul ou négatif | 0 | 14 |
-| Valeur manquante | 1 | 14 |
-| Ajustement incohérent | 0 | 15 |
-| Division non confirmée | 20 | 16 |
-| Référence de cotation absente | 37 | 17 |
-| Première cotation discordante | 0 | 17 |
-| Historique tronqué | 19 | 17 |
-| Métadonnées absentes | 0 | 18 |
-| Devise non USD | 0 | 18 |
-| Fuseau inattendu | 0 | 18 |
-| Type inattendu | 0 | 18 |
-| Décalage horaire inattendu | 0 | 18 |
-| Première transaction discordante | 0 | 18 |
-| Fin de série anticipée | 0 | 19 |
-| Dénomination divergente | 6 | 19 |
-| Séance sans transaction | 115 | 19 |
-| Prix figé | 8 272 | 19 |
+| Titre | Cours portés |
+| --- | --- |
+| AMD | 1 |
+| BKR | 1 |
+| NDAQ | 19 |
+| NRG | 1 |
+| SBAC | 1 |
+| TPL | 13 |
+| VST | 1 |
+| XEL | 1 |
 
-Cent fichiers sur cent dix-huit portent au moins une anomalie. Les zéros comptent autant que le reste : ils disent qu'un test a bien été exécuté et n'a rien relevé.
 
-## IV. Cinq résultats qui changent la suite
 
-**Les lignes de remplissage.** Huit mille deux cent soixante-douze lignes portent un volume nul et quatre cours identiques, égaux à la clôture de la veille. Elles ne décrivent aucune séance. `HUBB` en compte 5 561, soit 41 % de son historique ; `CRH` 1 718, soit 18 %. Elles produiraient des rendements nuls et abaisseraient artificiellement toute volatilité calculée sur les périodes anciennes. Je les ai découvertes en cherchant à comprendre la plus forte variation de la liste, `HUBB` au 31 octobre 1994, à +885,9 %, qui n'est pas un mouvement de marché mais la soudure entre le segment fabriqué et le début des vraies cotations.
+## III. Distributions et seconde source
 
-**La convention d'ajustement.** Le prix ajusté de Yahoo se reconstruit à partir du prix de clôture et des dividendes selon une formule multiplicative, le dividende étant retiré du prix de départ et non ajouté au prix d'arrivée. La formule additive s'écarte jusqu'à 8 % sur `JCI` ; la multiplicative reste sous 5 × 10⁻⁵ sur les 118 fichiers, et tous les écarts de la formule additive tombent sur des jours de détachement. Je sais donc reconstruire la série ajustée à la cinquième décimale.
+Les nouvelles distributions exceptionnelles LDOS sont monétaires selon les dépôts de l'émetteur. APD distribue Versum, et LDOS sépare le nouveau SAIC : leurs facteurs de scission restent documentés sans certification. Le dividende HD répété au 28 novembre 2001 est retiré en mémoire ; le versement officiel du 27 novembre reste présent. Le registre comporte 39 événements et six corrections applicables, dont une hors de l'historique JCI désormais admis.
 
-**Deux natures d'événements dans une même colonne.** La colonne `Stock Splits` mélange les divisions d'actions véritables et les facteurs d'ajustement de prix consécutifs à une scission. Sur 56 divisions déclarées depuis 2010, la SEC en confirme 27 et n'en confirme pas 20. Dans ces vingt cas, le nombre d'actions ne bouge pas de plus de 0,1 % : `MMM` en avril 2024 pour Solventum, `IBM` en novembre 2021 pour Kyndryl. Le facteur cumulé des divisions ne peut donc pas être lu directement dans cette colonne, ce qui concerne la reconstruction des capitalisations.
+Nasdaq apporte 144990 clôtures communes de 60 titres. Les 30 écarts de rendement supérieurs à dix points de base se répartissent ainsi :
 
-**Les dates de début ne sont pas des premières cotations.** Douze séries commencent exactement le 17 mars 1980, neuf le 21 février 1973, huit le 2 janvier 1962. Aucune entreprise n'introduit ses actions le même matin que onze autres. Ce sont les strates de départ de la base de Yahoo. Dix-neuf entreprises étaient d'ailleurs déjà dans le S&P 500 avant la première ligne de prix disponible. Une date de début dit à partir de quand Yahoo parle du titre, pas quand le titre a commencé d'exister.
+| Traitement | Écarts |
+| --- | --- |
+| convention_scission_ou_veille_documentee | 12 |
+| non_arbitree | 9 |
+| hors_historique_admissible | 5 |
+| cours_nasdaq_fige_documente_audit_precedent | 2 |
+| cours_yahoo_porte_et_reprise_cumulee | 2 |
 
-**Le reste des variations extrêmes est du marché.** Sur les 126 variations ajustées de plus de 30 %, soixante-seize tombent dans les années 2000, dont vingt-quatre en 2002 et seize en 2001, et six en 1987. La concentration correspond aux épisodes connus. Je ne les écarte pas.
 
-## V. Ce que ce contrôle ne couvre pas
+Les deux nouveaux écarts SBAC encadrent un cours figé déjà porté par le moteur ; le mouvement cumulé reste pris à la reprise. Le nouvel écart APD correspond à Versum. Les neuf divergences non arbitrées de la vérification précédente restent une limite finie, pas une invitation à recommencer un audit général.
 
-Aucune source externe automatisable n'a pu être mobilisée. Stooq, qui servait des fichiers de cours sans inscription, les protège désormais derrière une vérification anti-robot, et les autres fournisseurs gratuits exigent un compte. Le seul recoupement indépendant obtenu est celui des divisions d'actions contre les dépôts SEC. Le niveau manuel du protocole, un échantillon relevé à la main sur un site public, reste à exécuter.
+Le brut contient 110 extrêmes depuis 2000, dont 8 hors de la portion admissible. Les 102 autres se répartissent entre 20 concordances de prix et 82 non corroborés. Les listes complètes figurent dans `variations_finition_2026-09-08.csv` et `divergences_finition_2026-09-08.csv`.
 
-Le biais du survivant n'est pas mesuré par le test des fins de série. Aucun de nos titres n'a été retiré de la cote, mais c'est une tautologie : la liste des composants est un cliché de 2026, donc une entreprise sortie de l'indice en 2018 n'a jamais eu de fichier.
+## IV. Limites conservées
 
-Un changement de symbole à l'intérieur d'un historique reste invisible. Yahoo sert toute la série sous le symbole d'aujourd'hui, sans marque de rupture.
+L'univers est choisi sur les informations récentes de 2026, puis projeté sur le passé. Il comporte un biais de connaissance a posteriori et de survivance. Les résultats décrivent des paniers actuels ; ils ne prouvent ni une stratégie identifiable à l'époque, ni un risque causé par l'IA. La règle III admet des activités générales de la chaîne : centres de données hors IA, semi-conducteurs, énergie, logistique et équipements. Les 130 degrés restent non quantifiés. La maturité distingue une activité établie d'un engagement, sans mesurer leur intensité.
 
-Les prix ajustés de Yahoo sont réécrits rétroactivement à chaque dividende et chaque division. Une nouvelle collecte ne redonnera pas les mêmes valeurs. Les fichiers conservés et leurs empreintes fixent un cliché daté ; les calculs faits à partir de ce cliché restent reproductibles, la collecte non.
+Yahoo est une source secondaire. Close est déjà retraité des divisions, et Adj Close dépend d'ajustements rétroactifs. Le cliché conservé, ses dividendes et ses facteurs sont reproductibles localement ; une nouvelle collecte ne promet pas les mêmes valeurs. Ce ne sont pas des cours historiques totalement non ajustés. Les nombres d'actions SEC ne doivent pas être multipliés par ces cours sans harmoniser dates, classes et divisions.
 
-Enfin, `data/raw/premieres_cotations.csv` ne couvre que 76 des 113 titres. Il date de l'époque où l'univers en comptait 82 et n'a pas été régénéré.
+Le rapprochement Nasdaq porte maintenant sur 60 titres et 144 990 clôtures, soit 144 930 rendements comparables. L'essentiel de cette couverture commence en septembre 2016. Sur les 102 variations extrêmes du brut situées dans un historique admissible, 82 restent non corroborées et 20 concordent en rendement de prix. Les neuf divergences anciennes non arbitrées restent exactement recensées dans `data/review/divergences_finition_2026-09-08.csv`. Les coefficients de scission ne sont pas certifiés. Toute conclusion de risque appuyée sur ces extrêmes devra expliciter cette réserve. Une identité comptable correcte ne certifie pas les prix.
 
-## VI. Une leçon de méthode
+Les dividendes sont des créances assimilées à des espèces au détachement, réinvesties en janvier. Les dates de paiement des actions ne sont pas collectées. L'ancien contrôle SPY situe l'effet du paiement tardif de décembre à environ 0,04 point par an sur ce fonds ; il ne mesure pas l'effet sur le nouvel univers. Les distributions de titres sont réinvesties synthétiquement dans le parent, sans frais propres à la scission. Il n'existe pas de registre exhaustif des opérations sur titres ni de reproduction d'un compte réellement conservé.
 
-Trois tests ont d'abord échoué de la même façon, et je le consigne parce que le défaut est reproductible.
+Le fichier auxiliaire `premieres_cotations.csv` couvre 78 entreprises et 78 titres parmi les 130 entreprises et 131 titres retenus. Il n'a pas été réécrit. Les métadonnées des nouveaux prix contiennent leur première transaction, ce qui ne certifie pas toutes les anciennes dates d'IPO. Les cas de collecte 11 à 13 restent sans tests d'acquisition importables. Le dernier relevé mensuel est la clôture du 4 septembre 2026, pas une fin de mois. L'étape 2 conserve sa commande séparée de `src/run_pipeline.py`.
 
-Le test des prix négatifs comparait chaque valeur à zéro, et laissait passer la ligne de `HUBB` du 8 août 1977 où tous les prix sont absents : une valeur manquante ne satisfait aucune comparaison. La collecte des métadonnées traitait toute absence d'exception comme un succès, et enregistrait un dictionnaire vide comme une fiche valide. Sa deuxième version traitait toute réponse non vide comme un succès, et a accepté la description d'indices d'options homonymes des fonds `RSP` et `SPY`.
-
-À chaque fois, je vérifiais l'absence de l'échec que j'imaginais au lieu de vérifier la présence du succès attendu. La règle retenue est la seconde.
-
-Un quatrième défaut portait sur la reproductibilité. Le contrôle des divisions donnait deux résultats différents sur deux machines, parce que soixante-six couples entreprise et date de mesure portent deux déclarations distinctes et que le tri par défaut de pandas n'est pas stable entre ex aequo. Corrigé en triant sur la date de dépôt, seule date qui situe une déclaration par rapport à un événement.
+La cotation conditionnelle de SNDK au 13 février 2025 reste retenue. L'ancienne sensibilité d'environ 0,29 point par an sur P1 conservé concernait l'univers précédent et n'est pas une mesure du portefeuille actuel. La liquidité et le coût d'une transaction en cotation conditionnelle ne sont pas démontrés. Aucune de ces limites n'est transformée en chantier supplémentaire dans cette finition.

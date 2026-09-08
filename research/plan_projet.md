@@ -1,262 +1,182 @@
 # Plan du projet et état d'avancement
 
-*AI Concentration Risk Research. 7 septembre 2026.*
-
-Ce document dit où en est le projet, selon quel découpage, et à quelles conditions une étape est considérée comme close. Il existe parce qu'un audit externe a constaté que ce découpage n'apparaissait dans aucun fichier du dépôt : il ne vivait que dans les échanges de travail.
-
----
-
-## I. Les cinq étapes
-
-| | Étape | État |
-|---|---|---|
-| 1 | Construire un univers d'entreprises exposées à la chaîne des infrastructures de calcul | **close**, version exploratoire |
-| 2 | Construire les portefeuilles à partir de cet univers | en cours, phase 1 sur 8 close |
-| 3 | Mesurer le risque, ses sources et son comportement en crise | non commencée |
-| 4 | Étudier la couverture et la diversification | non commencée |
-| 5 | Comparer les stratégies, coûts et risque résiduel | non commencée |
-
-**Ce que « close » veut dire ici.** Une étape est close quand ses livrables existent, se régénèrent dans le schéma annoncé, et que ses limites sont écrites. Cela ne signifie pas que tous les jugements sont définitifs ni que toutes les vérifications imaginables ont été faites.
-
-L'étape 1 est close en ce sens : 113 entreprises retenues, 38 douteuses et 76 en attente d'examen. Sur les 500 dossiers, **482 portent une citation et 18 n'en portent aucune** ; ces 18 sont tous au statut à examiner, ce qui est cohérent avec leur état mais interdit d'écrire que chaque décision est adossée à une citation.
-
----
-
-## II. Le découpage de l'étape 2
-
-Huit phases, cinquante-cinq tâches. La répartition indique qui produit quoi : **A** pour l'auteur, **C** pour l'assistant.
-
-### Phase 0 — Décisions avant collecte — **close**
-
-| | Tâche | | État |
-|---|---|---|---|
-| 1 | Source de prix et écriture de ses limites | A | yfinance retenu |
-| 2 | Méthode de contrôle par seconde source | C | protocole à trois niveaux, écrit en phase 2 |
-| 3 | Traitement des classes d'actions multiples | A | classes conservées séparément à la collecte |
-
-Les deux benchmarks retenus sont `SPY`, réplique du S&P 500 pondéré par capitalisation, et `RSP`, réplique de sa version équipondérée. Trois indices sont collectés en complément pour le contexte et le contrôle.
-
-### Phase 1 — Collecte — **close**
-
-| | Tâche | | État |
-|---|---|---|---|
-| 4 | Correspondance CIK vers symbole | C | faite, `BRK.B` interrogé sous `BRK-B` |
-| 5 | Cours quotidiens bruts | A | 113 séries |
-| 6 | Cours quotidiens ajustés | A | mêmes fichiers |
-| 7 | Dividendes | A | mêmes fichiers |
-| 8 | Divisions d'actions | A | mêmes fichiers |
-| 9 | Nombre d'actions en circulation | A | 8 987 lignes, 112 entreprises |
-| 10 | Séries de comparaison | A | 2 fonds et 3 indices |
-| 11 | Calendrier de bourse | A | 8 458 séances depuis 1993 |
-| 12 | Manifeste de collecte | A | empreintes et limites écrites |
-
-### Phase 2 — Contrôle de la donnée brute — **close**
-
-Les résultats sont écrits dans `data/processed/controle_prix.csv`, une ligne par anomalie, avec le fichier, le test, la date et un détail. Chaque bloc de `src/controler_prix.ipynb` réécrit ses propres tests et laisse les autres intacts, de sorte qu'on peut le relancer seul.
-
-| | Tâche | | État |
-|---|---|---|---|
-| 13 | Trous dans les séries et séances absentes | A | 73 anomalies |
-| 14 | Variations quotidiennes aberrantes | A | 128 anomalies |
-| 15 | Cohérence de l'ajustement | A | aucune anomalie |
-| 16 | Vérification contre une seconde source | A | 20 divisions non confirmées |
-| 17 | Cohérence des dates de première cotation | A | 56 anomalies |
-| 18 | Devise et place de cotation | A | aucune anomalie |
-| 19 | Retraits de cote et changements de symbole | A | 8 393 anomalies |
-| 20 | Remise du rapport de contrôle intégral | A | `research/controle_donnees_prix.md` |
-
-**Tâche 13.** Quatorze séances absentes de `SPXEW` entre 2015 et 2019, et cinquante-neuf séries antérieures au calendrier de bourse, ce dernier ne remontant qu'à 1993.
-
-**Tâche 14.** Cent vingt-six variations ajustées de plus de 30 %, une barre incohérente sur `HUBB` au 5 mai 2021 où l'ouverture est inférieure au minimum, et une ligne sans aucun prix sur `HUBB` au 8 août 1977. Cette dernière n'était pas détectée par le test des prix négatifs : une valeur manquante ne satisfait aucune comparaison. Un test explicite a été ajouté.
-
-**Tâche 15.** Le prix ajusté de Yahoo se reconstruit à partir du prix de clôture et des dividendes selon une convention multiplicative, le dividende étant retiré du prix de départ et non ajouté au prix d'arrivée. La formule additive s'écarte jusqu'à 8 % sur `JCI` ; la formule multiplicative reste sous 5 × 10⁻⁵ sur les 118 fichiers. Tous les écarts de la formule additive tombent sur des jours de détachement, aucun ailleurs.
-
-**Tâche 16.** Aucune source externe automatisable n'a été trouvée sans compte : Stooq sert désormais ses fichiers derrière une vérification anti-robot. Le contrôle retenu confronte les divisions d'actions déclarées par Yahoo au nombre d'actions déposé à la SEC au trimestre suivant, deux collectes d'origines indépendantes. Sur 56 divisions depuis 2010, 9 ne sont pas encadrées par des dépôts et 20 ne sont pas confirmées.
-
-Ces vingt cas ne sont pas des erreurs de collecte. La colonne `Stock Splits` de Yahoo contient deux natures d'événements : les divisions véritables, que la SEC confirme, et les facteurs d'ajustement de prix consécutifs à une scission, où le nombre d'actions ne bouge pas. `MMM` en avril 2024 pour Solventum, `IBM` en novembre 2021 pour Kyndryl. **Conséquence pour la tâche 34** : le facteur cumulé des divisions ne peut pas être lu directement dans cette colonne.
-
-**Tâche 19.** Aucune série ne s'arrête avant la dernière séance du calendrier, ce qui ne prouve rien : la liste des composants étant un cliché de 2026, une entreprise retirée de la cote n'a jamais eu de fichier. Six dénominations divergent entre Yahoo et le S&P 500, toutes des variantes d'écriture sauf Schlumberger, devenu SLB N.V.
-
-En cherchant l'origine de la plus forte variation de la liste, `HUBB` au 31 octobre 1994 à +885,9 %, j'ai trouvé un défaut que le plan n'avait pas prévu de tester. Ce n'est pas un mouvement de marché mais la soudure entre un segment fabriqué et le début des vraies cotations. **Huit mille deux cent soixante-douze lignes portent un volume nul et quatre cours identiques, égaux à la clôture de la veille**, réparties sur 44 fichiers, dont 41 % de l'historique de `HUBB` et 18 % de celui de `CRH`. Elles produiraient des rendements nuls et abaisseraient toute volatilité calculée sur les périodes anciennes. Deux tests ajoutés, séance sans transaction et prix figé.
-
-**Tâche 20.** Rapport intégral dans `research/controle_donnees_prix.md` : vingt-trois tests, huit mille six cent soixante-dix anomalies sur 1 043 940 lignes, cent fichiers concernés sur cent dix-huit. Le rapport liste aussi les tests restés à zéro, que le fichier de contrôle ne peut pas montrer.
-
-**Tâche 17.** Trente-sept fichiers de prix n'ont aucune entrée dans `data/raw/premieres_cotations.csv`, construit du temps où l'univers comptait 82 entreprises et jamais régénéré depuis. Sur les 76 restants les dates concordent, mais ce zéro ne prouve rien : les deux fichiers viennent de la même source.
-
-Le résultat utile vient de la contrainte logique inverse. Dix-neuf entreprises sont entrées dans le S&P 500 avant la première ligne de prix que Yahoo nous donne. Douze séries commencent exactement le 17 mars 1980, neuf le 21 février 1973, huit le 2 janvier 1962. Aucune entreprise n'introduit ses actions le même matin que onze autres : ce sont les strates de départ de la base de Yahoo. **Une date de début de série ne dit pas quand le titre a commencé d'exister, elle dit à partir de quand Yahoo en parle.** À retenir pour les tâches 21 et 27.
-
-**Tâche 18.** Les 118 fichiers sont libellés en dollars, sur des places américaines, avec les seuls décalages horaires de New York. Les métadonnées descriptives sont collectées dans `data/raw/metadonnees_titres.csv`. Aucune anomalie après correction.
-
-Trois versions ont été nécessaires, et les trois échecs relèvent du même défaut de conception. La première interrogeait Yahoo avec la valeur de la colonne `symbole`, qui vaut `BRK.B` dans le fichier de Berkshire alors que la donnée avait été collectée sous `BRK-B` ; Yahoo répond un dictionnaire vide sans lever d'erreur, et le compteur annonçait 118 succès pour 117. La deuxième traitait toute réponse non vide comme un succès ; interrogée avec `^RSP` et `^SPY`, elle a reçu la description d'indices d'options homonymes, réels mais sans historique de prix. La troisième exige une date de première transaction, seule preuve qu'il s'agit d'un instrument négociable.
-
-**La règle qui en sort : vérifier la présence du succès attendu, jamais l'absence de l'échec imaginé.** Le même défaut avait produit la valeur manquante non détectée de la tâche 14.
-
-La colonne `symbole` de `BRK-B.csv` conserve `BRK.B` alors que la collecte s'est faite sous `BRK-B`. Le fichier de prix est correct, son étiquette de provenance ne l'est pas. Écart documenté plutôt que corrigé, pour ne pas invalider l'empreinte du manifeste.
-
-Une première version de ce contrôle donnait deux résultats différents sur deux machines pour `DUK` au 3 juillet 2012. Cause : soixante-six couples entreprise et date de mesure portent deux déclarations distinctes, l'entreprise réexprimant une date déjà publiée après un regroupement, et le tri par défaut de pandas n'est pas stable entre ex aequo. Corrigé en triant explicitement sur la date de dépôt plutôt que sur la date de mesure, une déclaration ne pouvant refléter une division que si elle a été écrite après. Les deux exécutions concordent désormais à la sixième décimale.
-
-`DUK` reste non confirmé pour une raison réelle : le regroupement de juillet 2012 est simultané à l'absorption de Progress Energy, deux événements que le nombre d'actions ne permet pas de séparer.
-
-Un point reste ouvert sur cette phase : le niveau manuel du protocole de seconde source, un échantillon relevé à la main sur un site public, n'a pas encore été exécuté.
-
-### Phase 3 — Décisions en voyant les données — **close**
-
-| | Tâche | | État |
-|---|---|---|---|
-| 21 | Période d'étude | A | **décidée** |
-| 22 | Fréquence des rendements | A | **décidée** |
-| 23 | Rendement total ou de prix | A | **décidée** |
-| 24 | Portefeuilles à construire, donc les poids | A | **décidée**, `research/portefeuilles.md` |
-| 25 | Nombre de titres du portefeuille concentré | A | sans objet, voir tâche 24 |
-| 26 | Règle de rééquilibrage | A | **décidée** |
-| 27 | Traitement des entreprises récemment cotées | A | **décidée** |
-| 28 | Poche de liquidités ou investissement intégral | A | **décidée** |
-| 29 | Coûts de transaction | A | **décidée** |
-| 30 | Portefeuilles par canal d'exposition | A | faite dans la tâche 24 |
-
-**Tâche 21.** Période retenue : **du 1er janvier 2000 au 4 septembre 2026**, chaque titre entrant à sa première cotation réelle, celle qui suit ses éventuelles lignes de remplissage.
-
-Quatre-vingts titres sont présents dès le premier jour, trente-trois arrivent ensuite, jamais plus de cinq la même année. La composition évolue donc, comme celle de l'indice auquel elle sera comparée.
-
-Trois raisons. La période traverse quatre régimes de tension de natures différentes, 2000-2002, 2008, mars 2020 et 2022, là où un départ en 2007 n'en aurait offert que trois. L'éclatement des valeurs technologiques de 2000 est un épisode de concentration technologique qui a mal fini, ce qui le rend directement pertinent pour un sujet portant sur la concentration technologique. Et seules trente lignes de remplissage subsistent après 2000, dans sept fichiers, toutes identifiées dans `data/processed/controle_prix.csv` et donc écartables ligne à ligne plutôt qu'en tronquant une période entière.
-
-Exiger que les 113 titres soient présents sur toute la période aurait ramené l'étude à dix mois, puisque `GEV` et `CEG`, nées de scissions récentes, ne cotent que depuis 2024 et 2022. Ce sont précisément des entreprises que le sujet vise.
-
-**Tâche 22.** Rendements **quotidiens**, soit environ 6 700 observations sur la période.
-
-Le quotidien est retenu parce qu'il se laisse agréger et que l'inverse est impossible : on passe du jour à la semaine ou au mois, jamais du mois au jour. Il donne aussi le nombre d'observations nécessaire pour parler d'événements rares, alors qu'une base mensuelle n'en offrirait que 320 et qu'un krach d'une journée y disparaîtrait.
-
-Sa faiblesse est connue et sera dite : à l'échelle du jour, une part du mouvement relève de la mécanique de marché plutôt que de l'information, et les corrélations quotidiennes sont mécaniquement plus basses que les corrélations réelles. Les résultats principaux seront donc rapportés en quotidien et en mensuel. S'ils divergent, la divergence sera expliquée et non arbitrée.
-
-**Tâche 23.** **Rendement total**, donc la colonne `Adj Close`, pour tous les calculs de performance et de risque. Les deux fonds de comparaison seront pris de la même façon ; `^GSPC`, qui est un indice de prix, ne servira que de repère de contexte et n'entrera dans aucune comparaison de performance.
-
-L'écart entre les deux mesures atteint deux points de rendement annuel en moyenne sur les 112 titres disponibles depuis 2000, six points sur Realty Income, cinq sur Southern, Duke et CenterPoint. Sur Southern, dix mille placés en janvier 2000 deviennent soixante-trois mille au cours seul et deux cent onze mille dividendes réinvestis : les deux tiers du gain sont dans les dividendes.
-
-La raison n'est pas la propreté de la mesure mais l'orientation de son erreur. L'univers contient deux populations, des fabricants de puces qui ne distribuent presque rien et des producteurs d'électricité et des foncières qui distribuent l'essentiel de leur résultat. Un portefeuille pondéré par capitalisation est dominé par les premiers et perdrait peu à ignorer les dividendes ; un portefeuille équipondéré, où les seconds pèsent autant et sont nombreux, en perdrait beaucoup. Mesurer sans les dividendes handicaperait donc systématiquement l'équipondéré, c'est à dire précisément le terme de comparaison qui sert à tester si la concentration ajoute du risque. **Le biais pointerait droit vers la conclusion recherchée.**
-
-Réserve : le rendement total suppose des dividendes réinvestis dans le titre le jour du détachement, sans impôt ni frais. Aucun investisseur n'obtient exactement cela. C'est la convention standard, comparable d'un titre à l'autre, et celle de `^SP500TR`.
-
-**Réserve écrite avant tout calcul.** Les benchmarks équipondérés ne couvrent pas le début de la période : `RSP` commence en mai 2003, `^SPXEW` en décembre 2006. Toute comparaison exigeant l'un d'eux sera restreinte à la sous-période correspondante et le dira. Ces séries ne seront pas prolongées ni reconstruites.
-
-Une première version de cette décision fixait le départ à janvier 2007 pour disposer des deux benchmarks dès le premier jour. L'auteur a objecté que l'indisponibilité d'une seule comparaison ne justifiait pas de tronquer toute l'étude. L'objection est retenue.
-
-**Tâche 25, sans objet.** Le portefeuille concentré n'a pas à être défini séparément : les sept maillons de la tâche 24 couvrent la gamme, de six titres pour les acheteurs à trente-deux pour les vendeurs.
-
-**Tâche 27.** Chaque titre entre à sa **première séance réelle**, sans délai d'observation préalable.
-
-Un délai minimum aurait été justifié si les premières semaines de cotation étaient anormalement agitées. La mesure dit le contraire : sur les trente-trois titres entrant après 2000, la volatilité des soixante premières séances vaut 1,04 fois celle de la suite en médiane, et un seul titre présente une séance sans transaction dans ses deux premiers mois. Les rares cas élevés tiennent à la date d'entrée et non à la nouveauté, `CARR` arrivant le 19 mars 2020 en plein krach et `EQIX` en août 2000 pendant l'éclatement des valeurs technologiques.
-
-**Tâche 30, faite dans la tâche 24.** Les sept maillons de chaîne sont les portefeuilles par canal d'exposition.
-
-**Tâche 29.** **Dix points de base sur le montant échangé**, soit 0,10 %, appliqués à la seule part du portefeuille réellement mouvementée lors d'un rééquilibrage ou de l'entrée d'un titre. La version conservée ne supporte de coût qu'à l'entrée d'un nouveau titre.
-
-Le taux couvre la commission et l'écart entre prix acheteur et prix vendeur. Sur des grandes capitalisations américaines très liquides cet écart vaut aujourd'hui un à cinq points de base et était plus large en 2000 ; dix points de base est une hypothèse prudente.
-
-Un rééquilibrage annuel déplaçant typiquement dix à vingt pour cent du portefeuille, le coût annuel attendu tourne autour de un à deux points de base. S'il se confirme négligeable, l'argument selon lequel le rééquilibrage coûterait trop cher tombe, et l'arbitrage entre les deux versions se joue alors sur le seul risque, ce qui est un résultat en soi.
-
-Deux limites. Le taux est une hypothèse et non une mesure, et il est tenu constant alors que les coûts réels ont fortement baissé depuis 2000. La conclusion sera testée à cinq et à vingt-cinq points de base.
-
-**Tâche 28.** Aucune poche de liquidités permanente. Les dividendes sont **accumulés en trésorerie puis réinvestis à la date annuelle**, répartis selon les poids cibles dans la version rééquilibrée et réinvestis dans le titre qui les a versés dans la version conservée.
-
-Le rendement du dividende de l'univers vaut 1,81 % par an en moyenne depuis 2000, médiane 1,57 %, avec 29 titres au-dessus de 3 %. La trésorerie représente donc environ 0,9 % du portefeuille en moyenne, ce qui est négligeable pour la mesure du risque.
-
-Les deux autres options ont été écartées. Le réinvestissement immédiat, qui était la lecture littérale de la tâche 23, suppose une opération à la seconde qu'aucun investisseur ne réalise. La mise de côté définitive aurait laissé dormir près de la moitié du capital initial au bout de vingt-six ans, abaissant la volatilité pour une raison étrangère au thème et faussant la comparaison avec des fonds intégralement investis.
-
-**Conséquence sur la tâche 23.** La colonne `Adj Close` réinvestit les dividendes le jour du détachement et ne peut donc plus servir pour les portefeuilles. Leurs rendements seront calculés à partir de `Close` et de `Dividends`, selon la convention identifiée à la tâche 15. `Adj Close` reste utilisé pour les benchmarks, qui sont des fonds où le réinvestissement est interne.
-
-**Tâche 26.** Chaque portefeuille est calculé en **deux versions**, l'une rééquilibrée à la première séance de janvier, l'autre jamais rééquilibrée. Vingt séries au lieu de dix.
-
-Ce n'est pas un réglage technique mais le dispositif central de l'étude. Sans rééquilibrage, les titres qui montent prennent seuls une place croissante et le portefeuille se concentre de lui-même, ce qui est précisément le phénomène observé sur le S&P 500 : sa concentration dans les valeurs liées à l'IA n'a été décidée par personne. La version rééquilibrée sert de témoin, le même thème et les mêmes entreprises mais sans laisser la concentration s'installer. L'écart entre les deux mesure ce que la concentration apporte et ce qu'elle coûte en risque.
-
-La fréquence annuelle est retenue parce qu'elle maintient les poids proches de l'égalité tout en limitant les transactions à vingt-six opérations sur la période, contre cent quatre en trimestriel. La fréquence trimestrielle, celle de `RSP`, sera testée en contrôle de robustesse ; si les deux conclusions coïncident, le choix sera déclaré sans effet, sinon la divergence sera expliquée.
-
-Dans la version non rééquilibrée, une entreprise entrant en cours de période reçoit le poids moyen des titres déjà présents, financé par une réduction proportionnelle des autres.
-
-**Tâche 24, décidée.** Composition complète dans `research/portefeuilles.md`, entreprise par entreprise. Onze portefeuilles, tous équipondérés : `P1` les 113 comme thermomètre du thème, `P2` et `P3` qui le recomposent selon le niveau de maturité, `P4` à `P10` qui décomposent la chaîne en sept maillons sommant exactement à 113, et `P11` laissé vide.
-
-Le découpage en maillons suit le champ `canal` de la sélection de l'étape 1 et non la classification GICS. Une première version reposait sur les secteurs boursiers et envoyait Alphabet, Meta, Amazon et Tesla dans un groupe résiduel, la classification GICS les rangeant hors du secteur technologique. C'est le défaut que la section 41 du contexte maître signalait déjà.
-
-Alphabet compte pour une ligne, les poids de ses deux classes d'actions étant additionnés.
-
-`P11`, dit portefeuille d'avenir, est réservé. Il sera constitué à la fin du projet, une fois les résultats connus, et présenté comme le seul portefeuille construit en connaissance de cause, distinct des dix autres définis à l'aveugle.
-
-Sept portefeuilles comptent moins de vingt-cinq titres et `P4` n'en compte que six. Ils seront mécaniquement plus volatils que `P1`, et cet effet de petit nombre devra être isolé à chaque comparaison.
-
-Deux constats matériels ont conduit à cette forme.
-
-Le premier est matériel. Les nombres d'actions déclarés à la SEC commencent le 24 février 2009 et ne couvrent que 54 entreprises cette année-là. Reconstruire une capitalisation quotidienne depuis 2000 est donc impossible avec les données du dépôt, et non pas seulement difficile. Toute pondération par capitalisation portant sur nos propres portefeuilles est écartée sur la majeure partie de la période ; l'effet des poids reste mesuré par `SPY` contre `RSP`, deux fonds réels dont il n'y a rien à reconstruire.
-
-Le second est méthodologique. Une règle de sélection par la taille serait une règle de marché, étrangère au travail de l'étape 1, et elle empilerait un second anachronisme sur le premier : le dix premières capitalisations de 2000 ne contiennent pas les acteurs du calcul IA. La piste retenue construit les portefeuilles sur la classification établie à l'étape 1, canal d'exposition et niveau de maturité, qui ne demande aucun chiffre de marché et reste applicable du premier au dernier jour.
-
-Sept portefeuilles équipondérés sont à l'étude, non validés : les 113 comme thermomètre du thème, les 95 à exposition établie, les 18 à engagement documenté, puis quatre portefeuilles par maillon de chaîne, technologie, industrie, services aux collectivités et immobilier. La concentration s'y mesure par le nombre de titres détenus plutôt que par le poids, ce qui est plus proche de la question posée : un investisseur exposé au thème en détient dix ou vingt, pas cinq cents.
-
-**Discussion ouverte sur le biais de connaissance a posteriori.** L'univers est établi avec des rapports de 2026 et appliqué à des prix antérieurs. Raccourcir la période ne corrige rien, le biais tenant à la sélection et non à la longueur de l'historique. Trois issues ont été posées : commencer en 2026 et attendre, ce qui laisse zéro observation ; conserver l'historique en s'interdisant toute affirmation de performance réalisable et en ne traitant que la structure du risque ; ou refaire la sélection sur un millésime ancien, l'exercice 2018 par exemple, pour tester hors échantillon sur 2019-2026, ce qui règle le problème au prix d'une nouvelle collecte SEC complète. La deuxième issue est proposée pour maintenant, la troisième réservée pour plus tard. **Rien n'est tranché.**
-
-### Phase 4 — Construction — non commencée
-
-| | Tâche | |
-|---|---|---|
-| 31 | Rendements individuels | A |
-| 32 | Alignement des dates | A |
-| 33 | Traitement des valeurs manquantes | A |
-| 34 | Reconstruction des capitalisations | A |
-| 35 | Poids cibles aux dates de rééquilibrage | A |
-| 36 | Dérive des poids entre rééquilibrages | A |
-| 37 | Rendement du portefeuille par période | A |
-| 38 | Série de valeur en base 100 | A |
-| 39 | Entrées et sorties de titres | A |
-| 40 | Coûts de transaction | A |
-| 41 | Portefeuilles de comparaison | A |
-| 42 | Portefeuilles par canal | A |
-
-### Phase 5 — Contrôle des résultats — non commencée
-
-| | Tâche | |
-|---|---|---|
-| 43 | Somme des poids égale à 1 | A |
-| 44 | Aucun poids négatif ni aberrant | A |
-| 45 | Nombre de titres présents par date | A |
-| 46 | Plausibilité des rendements cumulés | A |
-| 47 | Cohérence de l'agrégation | A |
-| 48 | Reconstruction du S&P 500 comparée à l'indice publié | A |
-
-### Phase 6 — Tests — non commencée
-
-| | Tâche | |
-|---|---|---|
-| 49 | Proposition des cas qui doivent faire échouer le code | C |
-| 50 | Écriture des tests | A |
-
-### Phase 7 — Documentation et clôture — non commencée
-
-| | Tâche | |
-|---|---|---|
-| 51 | Règles de construction des portefeuilles | A |
-| 52 | Écriture des limites | A |
-| 53 | Mise à jour des notes | A |
-| 54 | Intégration au pipeline | C |
-| 55 | Commit | A |
-
----
-
-## III. Deux pièges connus, à traiter au moment prévu
-
-**Les capitalisations, tâche 34.** Les prix de Yahoo sont retraités des divisions d'actions ; les nombres d'actions déclarés à la SEC ne le sont pas. Les multiplier tels quels donnerait une capitalisation fausse d'un facteur égal au cumul des divisions. Aucun calcul du dépôt ne fait aujourd'hui cette multiplication. Le contrôle sera simple : une division d'actions ne doit produire aucun saut dans la série de capitalisation.
-
-**Les historiques courts, tâches 21 et 27.** Sur les 113 séries, la plus courte compte 216 séances, depuis le 27 octobre 2025. Exiger les 113 simultanément réduirait la période à dix mois.
-
-Cette fenêtre n'est pas calme pour autant. Le S&P 500 y enregistre un repli maximal de 8,89 %, entre le sommet du 27 janvier 2026 et le creux du 30 mars 2026. L'argument contre une période aussi courte n'est donc pas l'absence de tension, mais le manque de profondeur et de diversité des régimes de marché traversés. Les seuils définissant un épisode de stress restent à établir, et ils le seront avant toute comparaison.
-
-Le benchmark équipondéré `RSP` ne remonte par ailleurs qu'à 2003.
-
----
-
-## IV. Limites qui traversent tout le projet
-
-**Connaissance a posteriori.** L'univers est sélectionné avec des rapports de 2026 et sera appliqué à des prix antérieurs. Toute performance calculée décrit le passé d'un panier constitué aujourd'hui ; elle ne décrit pas une stratégie qu'un investisseur aurait pu suivre.
-
-**Composition d'indice figée.** La liste des composants du S&P 500 est celle d'une date donnée. Les entreprises sorties de l'indice n'y figurent pas.
-
-**Source de prix non officielle.** Yahoo Finance réécrit rétroactivement ses prix ajustés à chaque dividende et chaque division. Une nouvelle collecte ne redonnera pas les mêmes valeurs. Les fichiers conservés et leurs empreintes fixent un cliché daté ; les calculs faits à partir de ce cliché restent reproductibles.
-
-**Univers provisoire.** Soixante-seize dossiers restent à examiner. La composition peut donc encore changer.
+*État final de cette version au 8 septembre 2026.*
+
+## I. Règle d'arrêt et avancement
+
+Je déclare une étape close lorsque les livrables demandés existent, que les calculs et leurs dépendances se reproduisent sur le cliché conservé, et que les limites sont écrites. Cette définition s'applique de la même manière aux deux premières étapes. Elle ne signifie pas validation intégrale de chaque prix ou de chaque interprétation.
+
+L'étape 1 est close : les 500 dossiers sont tranchés, 130 ENTRE et 370 SORT, sans dossier en attente. L'étape 2 est close pour les dix groupes et leurs vingt séries construits, sous les limites finies décrites ci-dessous. Les étapes 3, 4 et 5 ne sont pas commencées. Aucune mesure nouvelle de risque ni couverture n'a été entreprise dans cette finition.
+
+## II. Les huit phases de l'étape 2
+
+### Phase 0. Décisions avant collecte : close sous les limites écrites
+
+1. **Source de prix et écriture de ses limites** : fait et vérifié sur le cliché final.
+2. **Méthode de contrôle par seconde source** : fait et vérifié sur le cliché final.
+3. **Traitement des classes d'actions multiples** : fait et vérifié sur le cliché final.
+
+### Phase 1. Collecte : close sous les limites écrites
+
+4. **Correspondance CIK vers symbole** : fait et vérifié sur le cliché final.
+5. **Cours quotidiens bruts** : fait et vérifié sur le cliché final.
+6. **Cours quotidiens ajustés** : fait et vérifié sur le cliché final.
+7. **Dividendes** : fait et vérifié sur le cliché final.
+8. **Divisions d'actions** : fait et vérifié sur le cliché final.
+9. **Nombre d'actions en circulation** : couverture auxiliaire partielle écrite.
+10. **Séries de comparaison** : fait et vérifié sur le cliché final.
+11. **Calendrier de bourse** : fait et vérifié sur le cliché final.
+12. **Manifeste de collecte** : fait et vérifié sur le cliché final.
+
+### Phase 2. Contrôle des données : close sous les limites écrites
+
+13. **Trous dans les séries et séances absentes** : fait et vérifié sur le cliché final.
+14. **Variations quotidiennes aberrantes** : fait et vérifié sur le cliché final.
+15. **Cohérence de l'ajustement** : fait et vérifié sur le cliché final.
+16. **Vérification contre une seconde source** : seconde source rapprochée, réserves finies écrites.
+17. **Cohérence des dates de première cotation** : couverture auxiliaire partielle écrite.
+18. **Devise et place de cotation** : fait et vérifié sur le cliché final.
+19. **Retraits de cote et changements de symbole** : fait et vérifié sur le cliché final.
+20. **Remise du rapport de contrôle intégral** : fait et vérifié sur le cliché final.
+
+### Phase 3. Règles de construction : close sous les limites écrites
+
+21. **Période d'étude** : fait et vérifié sur le cliché final.
+22. **Fréquence des rendements** : fait et vérifié sur le cliché final.
+23. **Rendement total ou de prix** : fait et vérifié sur le cliché final.
+24. **Portefeuilles à construire, donc les poids** : fait et vérifié sur le cliché final.
+25. **Nombre de titres du portefeuille concentré** : sans objet dans les dix groupes retenus.
+26. **Règle de rééquilibrage** : fait et vérifié sur le cliché final.
+27. **Traitement des entreprises récemment cotées** : fait et vérifié sur le cliché final.
+28. **Poche de liquidités ou investissement intégral** : fait et vérifié sur le cliché final.
+29. **Coûts de transaction** : fait et vérifié sur le cliché final.
+30. **Portefeuilles par canal d'exposition** : fait et vérifié sur le cliché final.
+
+### Phase 4. Construction : close sous les limites écrites
+
+31. **Rendements individuels** : fait et vérifié sur le cliché final.
+32. **Alignement des dates** : fait et vérifié sur le cliché final.
+33. **Traitement des valeurs manquantes** : fait et vérifié sur le cliché final.
+34. **Reconstruction des capitalisations** : option réservée à l’auteur.
+35. **Poids cibles aux dates de rééquilibrage** : fait et vérifié sur le cliché final.
+36. **Dérive des poids entre rééquilibrages** : fait et vérifié sur le cliché final.
+37. **Rendement du portefeuille par période** : fait et vérifié sur le cliché final.
+38. **Série de valeur en base 100** : fait et vérifié sur le cliché final.
+39. **Entrées et sorties de titres** : fait et vérifié sur le cliché final.
+40. **Coûts de transaction** : fait et vérifié sur le cliché final.
+41. **Portefeuilles de comparaison** : fait et vérifié sur le cliché final.
+42. **Portefeuilles par canal** : fait et vérifié sur le cliché final.
+
+### Phase 5. Contrôle des résultats : close sous les limites écrites
+
+43. **Somme des poids égale à 1** : fait et vérifié sur le cliché final.
+44. **Aucun poids négatif ni aberrant** : fait et vérifié sur le cliché final.
+45. **Nombre de titres présents par date** : fait et vérifié sur le cliché final.
+46. **Plausibilité des rendements cumulés** : fait et vérifié sur le cliché final.
+47. **Cohérence de l'agrégation** : fait et vérifié sur le cliché final.
+48. **Reconstruction comparée aux indices publiés** : comparaison sous conventions et couverture écrites.
+
+### Phase 6. Tests : close sous les limites écrites
+
+49. **Proposition des cas qui doivent faire échouer le code** : treize cas proposés, trois limites de collecte écrites.
+50. **Écriture des tests** : 103 tests passent, dont 48 de l’étape 2.
+
+### Phase 7. Documentation et clôture : close sous les limites écrites
+
+51. **Règles de construction des portefeuilles** : fait et vérifié sur le cliché final.
+52. **Écriture des limites** : fait et vérifié sur le cliché final.
+53. **Mise à jour des notes** : fait et vérifié sur le cliché final.
+54. **Intégration au pipeline** : commande séparée et manifeste vérifié.
+55. **Commit** : commit de finition, identifié dans le rapport final.
+
+## III. Résultats définitifs de cette version
+
+| Groupe | Entreprises initiales | Entreprises finales | Titres finaux |
+| --- | --- | --- | --- |
+| P1 | 87 | 130 | 131 |
+| P2 | 68 | 109 | 110 |
+| P3 | 19 | 21 | 21 |
+| P4 | 4 | 10 | 11 |
+| P5 | 19 | 34 | 34 |
+| P6 | 20 | 23 | 23 |
+| P7 | 20 | 28 | 28 |
+| P8 | 3 | 7 | 7 |
+| P9 | 8 | 13 | 13 |
+| P10 | 13 | 15 | 15 |
+
+
+Le calcul comporte 6709 niveaux, 6708 rendements, 321 relevés mensuels et 258726 lignes de poids, y compris les poids nuls. Les 38 cours portés restent marqués. L'écart maximal de somme des poids vaut 4.441e-16, celui de l'identité quotidienne 7.685e-16. Les frais se raccordent aux montants échangés sur les vingt séries.
+
+| Série | Base 100 finale | Annualisé | Rotation annuelle | Effet des frais, pb/an | Repli maximal |
+| --- | --- | --- | --- | --- | --- |
+| P1_reeq | 9 991,06 | 18,88 % | 25,07 % | 2,98 | -51,69 % |
+| P1_cons | 10 018,86 | 18,90 % | 4,60 % | 0,55 | -53,07 % |
+| P10_reeq | 3 662,96 | 14,49 % | 18,41 % | 2,11 | -56,82 % |
+| P10_cons | 5 626,77 | 16,35 % | 2,64 % | 0,31 | -62,18 % |
+| P2_reeq | 10 990,93 | 19,31 % | 25,97 % | 3,10 | -55,54 % |
+| P2_cons | 10 903,34 | 19,27 % | 4,81 % | 0,57 | -55,10 % |
+| P3_reeq | 3 917,48 | 14,77 % | 17,27 % | 1,98 | -44,82 % |
+| P3_cons | 4 357,12 | 15,23 % | 3,45 % | 0,40 | -51,54 % |
+| P4_reeq | 47 977,33 | 26,10 % | 36,25 % | 4,57 | -70,60 % |
+| P4_cons | 5 902,89 | 16,56 % | 7,02 % | 0,82 | -86,53 % |
+| P5_reeq | 15 476,45 | 20,85 % | 30,49 % | 3,69 | -72,64 % |
+| P5_cons | 25 576,60 | 23,16 % | 4,91 % | 0,60 | -73,08 % |
+| P6_reeq | 2 032,55 | 11,98 % | 13,06 % | 1,46 | -44,99 % |
+| P6_cons | 1 923,69 | 11,75 % | 4,33 % | 0,48 | -44,62 % |
+| P7_reeq | 7 656,17 | 17,70 % | 17,21 % | 2,03 | -54,02 % |
+| P7_cons | 7 419,05 | 17,56 % | 3,82 % | 0,45 | -53,75 % |
+| P8_reeq | 6 731,43 | 17,13 % | 25,63 % | 3,00 | -64,52 % |
+| P8_cons | 2 588,94 | 13,00 % | 8,56 % | 0,97 | -59,65 % |
+| P9_reeq | 5 007,99 | 15,84 % | 23,51 % | 2,72 | -72,34 % |
+| P9_cons | 2 284,38 | 12,47 % | 4,19 % | 0,47 | -73,13 % |
+
+
+Les poids maximaux sont ceux des relevés mensuels, pas des maxima certifiés à chaque instant :
+
+| Série | Titre | Date du relevé | Poids maximal relevé |
+| --- | --- | --- | --- |
+| P10_cons | TPL | 2024-11-29 | 73,66 % |
+| P10_reeq | WMB | 2003-10-31 | 19,05 % |
+| P1_cons | NVDA | 2025-07-31 | 25,24 % |
+| P1_reeq | FSLR | 2007-12-31 | 7,37 % |
+| P2_cons | NVDA | 2025-07-31 | 29,04 % |
+| P2_reeq | SBAC | 2003-07-31 | 7,92 % |
+| P3_cons | TPL | 2024-11-29 | 67,97 % |
+| P3_reeq | FSLR | 2007-12-31 | 30,37 % |
+| P4_cons | TSLA | 2022-09-30 | 62,02 % |
+| P4_reeq | SBAC | 2003-07-31 | 62,56 % |
+| P5_cons | NVDA | 2024-11-29 | 61,66 % |
+| P5_reeq | NVDA | 2001-12-31 | 18,90 % |
+| P6_cons | VST | 2025-07-31 | 20,49 % |
+| P6_reeq | VST | 2024-11-29 | 12,60 % |
+| P7_cons | GNRC | 2021-10-29 | 21,63 % |
+| P7_reeq | PWR | 2000-06-30 | 13,87 % |
+| P8_cons | O | 2002-09-30 | 61,02 % |
+| P8_reeq | EQIX | 2003-12-31 | 50,87 % |
+| P9_cons | FSLR | 2008-07-31 | 61,00 % |
+| P9_reeq | FSLR | 2007-12-31 | 53,53 % |
+
+
+## IV. Limites qui ne rouvrent pas la finition
+
+L'univers est choisi sur les informations récentes de 2026, puis projeté sur le passé. Il comporte un biais de connaissance a posteriori et de survivance. Les résultats décrivent des paniers actuels ; ils ne prouvent ni une stratégie identifiable à l'époque, ni un risque causé par l'IA. La règle III admet des activités générales de la chaîne : centres de données hors IA, semi-conducteurs, énergie, logistique et équipements. Les 130 degrés restent non quantifiés. La maturité distingue une activité établie d'un engagement, sans mesurer leur intensité.
+
+Yahoo est une source secondaire. Close est déjà retraité des divisions, et Adj Close dépend d'ajustements rétroactifs. Le cliché conservé, ses dividendes et ses facteurs sont reproductibles localement ; une nouvelle collecte ne promet pas les mêmes valeurs. Ce ne sont pas des cours historiques totalement non ajustés. Les nombres d'actions SEC ne doivent pas être multipliés par ces cours sans harmoniser dates, classes et divisions.
+
+Le rapprochement Nasdaq porte maintenant sur 60 titres et 144 990 clôtures, soit 144 930 rendements comparables. L'essentiel de cette couverture commence en septembre 2016. Sur les 102 variations extrêmes du brut situées dans un historique admissible, 82 restent non corroborées et 20 concordent en rendement de prix. Les neuf divergences anciennes non arbitrées restent exactement recensées dans `data/review/divergences_finition_2026-09-08.csv`. Les coefficients de scission ne sont pas certifiés. Toute conclusion de risque appuyée sur ces extrêmes devra expliciter cette réserve. Une identité comptable correcte ne certifie pas les prix.
+
+Les dividendes sont des créances assimilées à des espèces au détachement, réinvesties en janvier. Les dates de paiement des actions ne sont pas collectées. L'ancien contrôle SPY situe l'effet du paiement tardif de décembre à environ 0,04 point par an sur ce fonds ; il ne mesure pas l'effet sur le nouvel univers. Les distributions de titres sont réinvesties synthétiquement dans le parent, sans frais propres à la scission. Il n'existe pas de registre exhaustif des opérations sur titres ni de reproduction d'un compte réellement conservé.
+
+Le fichier auxiliaire `premieres_cotations.csv` couvre 78 entreprises et 78 titres parmi les 130 entreprises et 131 titres retenus. Il n'a pas été réécrit. Les métadonnées des nouveaux prix contiennent leur première transaction, ce qui ne certifie pas toutes les anciennes dates d'IPO. Les cas de collecte 11 à 13 restent sans tests d'acquisition importables. Le dernier relevé mensuel est la clôture du 4 septembre 2026, pas une fin de mois. L'étape 2 conserve sa commande séparée de `src/run_pipeline.py`.
+
+La cotation conditionnelle de SNDK au 13 février 2025 reste retenue. L'ancienne sensibilité d'environ 0,29 point par an sur P1 conservé concernait l'univers précédent et n'est pas une mesure du portefeuille actuel. La liquidité et le coût d'une transaction en cotation conditionnelle ne sont pas démontrés. Aucune de ces limites n'est transformée en chantier supplémentaire dans cette finition.
+
+## V. Les deux décisions laissées à l'auteur
+
+Aucun portefeuille de cet univers n'est pondéré par capitalisation. Le contraste SPY/RSP concerne le marché entier ; la comparaison conservé/rééquilibré mêle dérive, opérations et frais. Elle n'isole pas un effet pur de concentration des poids.
+
+**Option de capitalisation, à décider par l'auteur.** Les nombres instantanés SEC du cliché commencent le 2009-02-24 et couvrent 54 entreprises en 2009. Une variante à partir d'une date commune demanderait de collecter les actions manquantes, vérifier chaque classe et retraiter les divisions sans anticipation. Coût indicatif : plusieurs journées de préparation et de validation, davantage pour un historique complet depuis 2000. Aucun poids de cette nature n'est ajouté.
+
+**Option de départ retardé de P4, à décider par l'auteur.** P4 compte maintenant 4 entreprises à la première date, contre trois avant l'ajout de SBA Communications, et 10 à la fin. Retarder son départ atténuerait le problème d'effectif, tout en retirant une partie des crises et en raccourcissant la comparaison. Les autres séries et benchmarks devraient être ramenés à la même fenêtre. Coût indicatif : une demi-journée pour un scénario de départ arrêté par l'auteur, recalcul et rédaction compris. Aucune nouvelle date n'est fixée ici.
+
+La prochaine étape est l'analyse de risque. Les hypothèses testables, les fenêtres communes et le traitement explicite des extrêmes non corroborés devront y être posés avant de conclure. Cette étape n'est pas réalisée par le présent document.
