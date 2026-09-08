@@ -202,6 +202,10 @@ Le rapport n'est pas uniforme, de 0,967 sur `P4` conservé à 1,353 sur `P8` con
 
 Trois familles sont écartées. La VaR gaussienne sera calculée une fois, à côté de la VaR historique, pour mesurer de combien l'hypothèse de normalité se trompe ; elle ne sera pas utilisée ensuite. Les modèles de volatilité conditionnelle sont au-dessus du standard du projet et deviennent une limite écrite, non un chantier. Les ratios supplémentaires n'ajoutent rien que les neuf ne disent déjà, et chacun ajouté après coup serait une occasion de retenir celui qui flatte. Les neuf mesures sont calculées pour les vingt-cinq séries, à chaque fois.
 
+**Correction de la tâche 2, datée du 8 septembre 2026.** La semi-volatilité y était définie comme l'écart-type des seuls rendements négatifs. C'est une définition courante mais fausse au sens strict : elle ne divise que par le nombre de jours négatifs et surestime donc la dispersion à la baisse. La définition retenue est celle de Sortino, la racine de la moyenne des carrés des écarts sous le seuil calculée sur toutes les observations, les jours au-dessus du seuil comptant zéro. Le seuil est le taux sans risque, pour rester cohérent avec le numérateur du ratio.
+
+L'écart entre les deux conventions vaut 3 à 12 % selon la série, et il n'est pas uniforme : le rapport va de 0,879 sur `RSP` à 0,972 sur `P5` rééquilibré. Changer de convention déplace donc le classement entre portefeuilles, comme le fait le changement de fréquence. La correction est faite avant tout usage du ratio de Sortino dans une conclusion.
+
 **Tâche 3, les fenêtres d'estimation : trois lectures.** La période complète donne un chiffre de référence comparable entre séries. La fenêtre glissante de 252 séances donne l'évolution, et c'est elle qui montrera si le risque a monté à mesure que la concentration se formait. La fenêtre de 756 séances sert de contrôle de robustesse, tâche 31.
 
 La mesure justifie ce découpage. Sur `P1` rééquilibré, la volatilité de période complète vaut 21,73 %, tandis que la glissante sur 252 séances va de 8,91 % à 47,37 %, avec une médiane de 17,53 %. Un rapport de un à cinq, alors que l'erreur relative d'estimation ne vaut que 4,45 % sur 252 observations et 2,57 % sur 756 : **la variation est du signal, pas du bruit**. Le chiffre de période complète est par ailleurs supérieur à la médiane glissante, parce qu'il est tiré vers le haut par les crises. Tout chiffre de période complète est donc publié à côté de la médiane glissante. Les fenêtres glissantes de `RSP` et de `^SPXEW`, qui commencent en 2003 et 2006, couvrent moins de terrain ; les comparaisons glissantes les impliquant sont restreintes à la période commune et le disent.
@@ -224,27 +228,43 @@ Les volatilités sont annualisées par racine de 252 en quotidien et racine de 1
 
 Leur contrepartie positive : je peux dire combien de risque ces portefeuilles ont porté, d'où il venait en séparant l'effet du nombre de titres de celui de leur mouvement commun, comment ils se sont comportés pendant six épisodes identifiés mécaniquement, et comment ils se comparent au marché sur les mêmes dates.
 
-### Phase 1. Le risque de base : à faire
+### Phase 1. Le risque de base : close
 
 Tâche 9, volatilité annualisée par série et par fenêtre. Tâche 10, forme de la distribution, asymétrie, aplatissement et écart à la loi normale. Tâche 11, replis maximaux, durée et temps de récupération. Tâche 12, ratios de Sharpe et de Sortino. Tâche 13, comparaison avec `SPY` et `RSP`.
 
-### Phase 2. D'où vient le risque : à faire
+### Phase 2. D'où vient le risque : close
 
 Tâche 14, corrélation moyenne dans chaque portefeuille. Tâche 15, décomposition de la volatilité en une part due au nombre de titres et une part due à leur corrélation. Tâche 16, contribution de chaque titre au risque total. Tâche 17, concentration des poids contre concentration du risque. Tâche 18, analyse en composantes principales. Tâche 19, décomposition par maillon de chaîne.
 
-### Phase 3. Le comportement en crise : à faire
+### Phase 3. Le comportement en crise : close
 
 Tâche 20, identification des épisodes selon la règle de la tâche 4. Tâche 21, rendement et volatilité par épisode. Tâche 22, corrélations en tension contre corrélations en période calme. Tâche 23, bêta conditionnel à la hausse et à la baisse. Tâche 24, VaR historique et perte moyenne au-delà. Tâche 25, tests de dépassement.
 
-### Phase 4. Le risque de concentration : à faire
+### Phase 4. Le risque de concentration : close
 
 Tâche 26, évolution du poids maximal et de l'indice de concentration. Tâche 27, risque marginal du plus gros titre. Tâche 28, choc simulé sur ce titre. Tâche 29, gestion conservée contre rééquilibrée sur le risque et non sur le rendement.
 
-### Phase 5. Les contrôles : à faire
+### Phase 5. Les contrôles : close
 
 Tâche 30, robustesse à la fréquence. Tâche 31, robustesse à la fenêtre. Tâche 32, robustesse à la période, avec la double lecture de `P4`. Tâche 33, sensibilité aux quatre-vingt-deux variations extrêmes non corroborées, imposée par la réserve de l'audit. Tâche 34, tests unitaires des fonctions de risque.
 
-### Phase 6. Documentation et clôture : à faire
+### Phase 6. Documentation et clôture : en cours, résultats et limites écrits
 
-Tâche 35, écriture des résultats. Tâche 36, écriture des limites. Tâche 37, commit.
+Tâche 35, écriture des résultats : faite, `research/resultats_risque.md`. Tâche 36, écriture des limites : faite, section X du même document. Tâche 37, commit : à faire.
+
+**Ce que l'étape 3 établit.** Le portefeuille du thème est 1,14 fois plus volatil que le marché, 21,73 % contre 19,11 %, et ses maillons vont de 0,97 à 1,84 fois le marché : le thème n'est pas un bloc. Sa distribution n'est normale sur aucune des vingt-cinq séries, ce qui fait sous-estimer une VaR gaussienne de 13 % à 21,5 %.
+
+La diversification par le nombre est épuisée. Avec une corrélation moyenne de 0,338, les 135 lignes de `P1` réduisent le risque autant que 2,92 titres indépendants, et il ne reste que quarante-deux centièmes de point à gagner en ajoutant des entreprises. L'analyse en composantes principales confirme par une autre voie, le premier facteur expliquant 27,6 % de la variance.
+
+Le risque du thème vient des semi-conducteurs : ils détiennent 45 % de l'argent de `P1` et portent 77 % du risque, tandis que l'électricité en détient 14 % et en porte 2 %. Élargir l'univers a dilué le poids sans diluer le risque.
+
+La concentration s'est formée en six ans et non en vingt-six : le nombre effectif de lignes de `P1` conservé passe de 78 en 2000 à 54 en 2019, puis à 11,6 en 2026. La version rééquilibrée termine à 106,9.
+
+En période de tension, la corrélation interne monte dans les dix portefeuilles sans exception et `P1` perd un tiers de sa diversification effective. La VaR à 99 % est dépassée 1,4 à 1,8 fois trop souvent, et le test de Kupiec la rejette sur les vingt-cinq séries, `SPY` compris.
+
+**L'arbitrage de gestion.** Le rendement brut ne tranche pas, six victoires sur dix, et ce compte tombe à quatre en excluant les années 2000 à 2004. Les mesures de risque tranchent toutes dans le même sens, sept à dix victoires sur dix, dont dix sur dix pour la perte moyenne au-delà de la VaR. La formulation retenue est que le rééquilibrage réduit le risque sur huit portefeuilles aux deux fréquences, que `P5` fait exception et que `P6` est indécidable. L'avantage n'est pas continu : il n'apparaît que dans 64 % des fenêtres glissantes de trois ans, et se concentre dans les épisodes où une ligne prend une place démesurée.
+
+**Ce que les contrôles ont montré.** Les verdicts de volatilité sont identiques aux deux fréquences sur les dix portefeuilles, et le retrait des 82 variations extrêmes non corroborées par l'audit n'en change aucun. La réserve sur l'effectif initial de `P4` est levée. En revanche la conclusion sur le rendement dépend de l'inclusion de 2000 à 2004, ce qui justifie rétrospectivement la décision de la tâche 21 de commencer en 2000.
+
+**Les fonctions de mesure** vivent dans `src/risque.py` et sont couvertes par vingt-huit cas dans `tests/test_risque.py`, dont un qui vérifie que la règle des épisodes de tension ne regarde pas l'avenir. La suite complète compte 131 tests.
  Les hypothèses testables, les fenêtres communes et le traitement explicite des extrêmes non corroborés devront y être posés avant de conclure. Cette étape n'est pas réalisée par le présent document.
