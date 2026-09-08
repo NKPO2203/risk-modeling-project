@@ -99,20 +99,20 @@ Une première version de ce contrôle donnait deux résultats différents sur de
 
 Un point reste ouvert sur cette phase : le niveau manuel du protocole de seconde source, un échantillon relevé à la main sur un site public, n'a pas encore été exécuté.
 
-### Phase 3 — Décisions en voyant les données — en cours, 3 tâches sur 10
+### Phase 3 — Décisions en voyant les données — **close**
 
 | | Tâche | | État |
 |---|---|---|---|
 | 21 | Période d'étude | A | **décidée** |
 | 22 | Fréquence des rendements | A | **décidée** |
 | 23 | Rendement total ou de prix | A | **décidée** |
-| 24 | Portefeuilles à construire, donc les poids | A |
-| 25 | Nombre de titres du portefeuille concentré | A |
-| 26 | Règle de rééquilibrage | A |
-| 27 | Traitement des entreprises récemment cotées | A |
-| 28 | Poche de liquidités ou investissement intégral | A |
-| 29 | Coûts de transaction | A |
-| 30 | Portefeuilles par canal d'exposition | A |
+| 24 | Portefeuilles à construire, donc les poids | A | **décidée**, `research/portefeuilles.md` |
+| 25 | Nombre de titres du portefeuille concentré | A | sans objet, voir tâche 24 |
+| 26 | Règle de rééquilibrage | A | **décidée** |
+| 27 | Traitement des entreprises récemment cotées | A | **décidée** |
+| 28 | Poche de liquidités ou investissement intégral | A | **décidée** |
+| 29 | Coûts de transaction | A | **décidée** |
+| 30 | Portefeuilles par canal d'exposition | A | faite dans la tâche 24 |
 
 **Tâche 21.** Période retenue : **du 1er janvier 2000 au 4 septembre 2026**, chaque titre entrant à sa première cotation réelle, celle qui suit ses éventuelles lignes de remplissage.
 
@@ -140,7 +140,49 @@ Réserve : le rendement total suppose des dividendes réinvestis dans le titre l
 
 Une première version de cette décision fixait le départ à janvier 2007 pour disposer des deux benchmarks dès le premier jour. L'auteur a objecté que l'indisponibilité d'une seule comparaison ne justifiait pas de tronquer toute l'étude. L'objection est retenue.
 
-**Tâche 24, en cours de discussion, rien de décidé.** Deux constats sont acquis.
+**Tâche 25, sans objet.** Le portefeuille concentré n'a pas à être défini séparément : les sept maillons de la tâche 24 couvrent la gamme, de six titres pour les acheteurs à trente-deux pour les vendeurs.
+
+**Tâche 27.** Chaque titre entre à sa **première séance réelle**, sans délai d'observation préalable.
+
+Un délai minimum aurait été justifié si les premières semaines de cotation étaient anormalement agitées. La mesure dit le contraire : sur les trente-trois titres entrant après 2000, la volatilité des soixante premières séances vaut 1,04 fois celle de la suite en médiane, et un seul titre présente une séance sans transaction dans ses deux premiers mois. Les rares cas élevés tiennent à la date d'entrée et non à la nouveauté, `CARR` arrivant le 19 mars 2020 en plein krach et `EQIX` en août 2000 pendant l'éclatement des valeurs technologiques.
+
+**Tâche 30, faite dans la tâche 24.** Les sept maillons de chaîne sont les portefeuilles par canal d'exposition.
+
+**Tâche 29.** **Dix points de base sur le montant échangé**, soit 0,10 %, appliqués à la seule part du portefeuille réellement mouvementée lors d'un rééquilibrage ou de l'entrée d'un titre. La version conservée ne supporte de coût qu'à l'entrée d'un nouveau titre.
+
+Le taux couvre la commission et l'écart entre prix acheteur et prix vendeur. Sur des grandes capitalisations américaines très liquides cet écart vaut aujourd'hui un à cinq points de base et était plus large en 2000 ; dix points de base est une hypothèse prudente.
+
+Un rééquilibrage annuel déplaçant typiquement dix à vingt pour cent du portefeuille, le coût annuel attendu tourne autour de un à deux points de base. S'il se confirme négligeable, l'argument selon lequel le rééquilibrage coûterait trop cher tombe, et l'arbitrage entre les deux versions se joue alors sur le seul risque, ce qui est un résultat en soi.
+
+Deux limites. Le taux est une hypothèse et non une mesure, et il est tenu constant alors que les coûts réels ont fortement baissé depuis 2000. La conclusion sera testée à cinq et à vingt-cinq points de base.
+
+**Tâche 28.** Aucune poche de liquidités permanente. Les dividendes sont **accumulés en trésorerie puis réinvestis à la date annuelle**, répartis selon les poids cibles dans la version rééquilibrée et réinvestis dans le titre qui les a versés dans la version conservée.
+
+Le rendement du dividende de l'univers vaut 1,81 % par an en moyenne depuis 2000, médiane 1,57 %, avec 29 titres au-dessus de 3 %. La trésorerie représente donc environ 0,9 % du portefeuille en moyenne, ce qui est négligeable pour la mesure du risque.
+
+Les deux autres options ont été écartées. Le réinvestissement immédiat, qui était la lecture littérale de la tâche 23, suppose une opération à la seconde qu'aucun investisseur ne réalise. La mise de côté définitive aurait laissé dormir près de la moitié du capital initial au bout de vingt-six ans, abaissant la volatilité pour une raison étrangère au thème et faussant la comparaison avec des fonds intégralement investis.
+
+**Conséquence sur la tâche 23.** La colonne `Adj Close` réinvestit les dividendes le jour du détachement et ne peut donc plus servir pour les portefeuilles. Leurs rendements seront calculés à partir de `Close` et de `Dividends`, selon la convention identifiée à la tâche 15. `Adj Close` reste utilisé pour les benchmarks, qui sont des fonds où le réinvestissement est interne.
+
+**Tâche 26.** Chaque portefeuille est calculé en **deux versions**, l'une rééquilibrée à la première séance de janvier, l'autre jamais rééquilibrée. Vingt séries au lieu de dix.
+
+Ce n'est pas un réglage technique mais le dispositif central de l'étude. Sans rééquilibrage, les titres qui montent prennent seuls une place croissante et le portefeuille se concentre de lui-même, ce qui est précisément le phénomène observé sur le S&P 500 : sa concentration dans les valeurs liées à l'IA n'a été décidée par personne. La version rééquilibrée sert de témoin, le même thème et les mêmes entreprises mais sans laisser la concentration s'installer. L'écart entre les deux mesure ce que la concentration apporte et ce qu'elle coûte en risque.
+
+La fréquence annuelle est retenue parce qu'elle maintient les poids proches de l'égalité tout en limitant les transactions à vingt-six opérations sur la période, contre cent quatre en trimestriel. La fréquence trimestrielle, celle de `RSP`, sera testée en contrôle de robustesse ; si les deux conclusions coïncident, le choix sera déclaré sans effet, sinon la divergence sera expliquée.
+
+Dans la version non rééquilibrée, une entreprise entrant en cours de période reçoit le poids moyen des titres déjà présents, financé par une réduction proportionnelle des autres.
+
+**Tâche 24, décidée.** Composition complète dans `research/portefeuilles.md`, entreprise par entreprise. Onze portefeuilles, tous équipondérés : `P1` les 113 comme thermomètre du thème, `P2` et `P3` qui le recomposent selon le niveau de maturité, `P4` à `P10` qui décomposent la chaîne en sept maillons sommant exactement à 113, et `P11` laissé vide.
+
+Le découpage en maillons suit le champ `canal` de la sélection de l'étape 1 et non la classification GICS. Une première version reposait sur les secteurs boursiers et envoyait Alphabet, Meta, Amazon et Tesla dans un groupe résiduel, la classification GICS les rangeant hors du secteur technologique. C'est le défaut que la section 41 du contexte maître signalait déjà.
+
+Alphabet compte pour une ligne, les poids de ses deux classes d'actions étant additionnés.
+
+`P11`, dit portefeuille d'avenir, est réservé. Il sera constitué à la fin du projet, une fois les résultats connus, et présenté comme le seul portefeuille construit en connaissance de cause, distinct des dix autres définis à l'aveugle.
+
+Sept portefeuilles comptent moins de vingt-cinq titres et `P4` n'en compte que six. Ils seront mécaniquement plus volatils que `P1`, et cet effet de petit nombre devra être isolé à chaque comparaison.
+
+Deux constats matériels ont conduit à cette forme.
 
 Le premier est matériel. Les nombres d'actions déclarés à la SEC commencent le 24 février 2009 et ne couvrent que 54 entreprises cette année-là. Reconstruire une capitalisation quotidienne depuis 2000 est donc impossible avec les données du dépôt, et non pas seulement difficile. Toute pondération par capitalisation portant sur nos propres portefeuilles est écartée sur la majeure partie de la période ; l'effet des poids reste mesuré par `SPY` contre `RSP`, deux fonds réels dont il n'y a rien à reconstruire.
 

@@ -26,6 +26,7 @@ BKR.csv,anteriorite au calendrier,1987-04-06,1472 seances avant 1993-01-29
 CAT.csv,anteriorite au calendrier,1962-01-02,7820 seances avant 1993-01-29
 CDNS.csv,anteriorite au calendrier,1987-06-10,1427 seances avant 1993-01-29
 CMI.csv,anteriorite au calendrier,1973-02-21,5041 seances avant 1993-01-29
+CMS.csv,anteriorite au calendrier,1973-02-21,5041 seances avant 1993-01-29
 CNP.csv,anteriorite au calendrier,1962-01-02,7820 seances avant 1993-01-29
 COHR.csv,anteriorite au calendrier,1987-10-02,1347 seances avant 1993-01-29
 CRH.csv,anteriorite au calendrier,1989-07-13,898 seances avant 1993-01-29
@@ -107,6 +108,7 @@ CIEN.csv,variation quotidienne extreme,1998-09-09,-30.2 %
 CIEN.csv,variation quotidienne extreme,1998-09-22,+41.5 %
 CIEN.csv,variation quotidienne extreme,1998-10-19,+30.2 %
 CIEN.csv,variation quotidienne extreme,2001-08-16,-30.2 %
+CMS.csv,variation quotidienne extreme,1987-10-19,-30.6 %
 CNP.csv,variation quotidienne extreme,2002-07-23,-42.2 %
 CNP.csv,variation quotidienne extreme,2002-07-24,-31.6 %
 CNP.csv,variation quotidienne extreme,2002-07-25,+63.0 %
@@ -235,6 +237,7 @@ CAT.csv,historique tronque,1962-01-02,entree dans l'indice le 1957-03-04
 CBRE.csv,reference de cotation absente,2004-06-10,
 CDW.csv,reference de cotation absente,2013-06-27,
 CMI.csv,historique tronque,1973-02-21,entree dans l'indice le 1965-03-31
+CMS.csv,historique tronque,1973-02-21,entree dans l'indice le 1957-03-04
 CRH.csv,reference de cotation absente,1989-07-13,
 CVX.csv,reference de cotation absente,1962-01-02,
 CVX.csv,historique tronque,1962-01-02,entree dans l'indice le 1957-03-04
@@ -300,6 +303,7 @@ CMI.csv,prix fige,1975-04-11,2.6094
 CMI.csv,prix fige,1975-08-22,2.4844
 CMI.csv,prix fige,1975-09-09,2.5938
 CMI.csv,prix fige,1975-09-23,2.5469
+CMS.csv,prix fige,1975-04-11,14.8750
 CNP.csv,seance sans transaction,1963-03-26,
 CNP.csv,prix fige,1963-08-13,12.2235
 COHR.csv,prix fige,1988-01-28,0.2656
