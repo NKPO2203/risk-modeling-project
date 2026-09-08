@@ -1,5 +1,7 @@
 # Journal de vérification et de correction : finition
 
+*État historique de la finition avant l'amendement A-08 : les chiffres ci-dessous décrivent l'univers alors validé de 130 entreprises. L’[ajout du 8 septembre 2026](decisions_auteur_2026-09-08.md) consigne les décisions désormais tranchées et le recalcul courant sur 134 entreprises. Les anciennes options ci-dessous ne sont plus réservées.*
+
 *8 septembre 2026. Le journal antérieur est conservé intégralement dans `archive/2026-09-08_avant_finition/journal_verification_etape_2.md`.*
 
 ## I. Ordre des travaux

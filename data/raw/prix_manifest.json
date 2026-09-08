@@ -919,6 +919,34 @@
       "debut": "1999-06-16",
       "fin": "2026-09-04",
       "sha256": "804f3a01fc984b16514a58797ba974eb9b7378fde60d5eec58d3922023fd1855"
+    },
+    {
+      "fichier": "EQT.csv",
+      "lignes": 11713,
+      "debut": "1980-03-17",
+      "fin": "2026-09-04",
+      "sha256": "cb357a2cb2f042300a4c80a3806290041db84b3985cfc7a04bea30e74bd14c48"
+    },
+    {
+      "fichier": "KMI.csv",
+      "lignes": 3914,
+      "debut": "2011-02-11",
+      "fin": "2026-09-04",
+      "sha256": "8268f5e0725c37f6f39033e90a559c858a7d926ed410cb33d3ae4918161bd7f6"
+    },
+    {
+      "fichier": "L.csv",
+      "lignes": 11713,
+      "debut": "1980-03-17",
+      "fin": "2026-09-04",
+      "sha256": "44dc7549dbb0f3faf88a1841bc7ba582ba1a17a40ce32cc8c3a43a5a5920948e"
+    },
+    {
+      "fichier": "PEG.csv",
+      "lignes": 11765,
+      "debut": "1980-01-02",
+      "fin": "2026-09-04",
+      "sha256": "5a19f6d80dbe451d0dfb91bdb9fa0d9444acb5b5b1b3acbf021ea6ceb2ac3198"
     }
   ],
   "benchmarks": [
@@ -1148,12 +1176,54 @@
       "motif": "Ajout des seules 17 nouvelles lignes ; 119 lignes antérieures conservées.",
       "sha256_precedent": "f063deb634528787570de1feb272a23e4ffa9c6c2105585e5aaa1ec1862c2309",
       "sha256_courant": "4fe6cf49e6e2c19cdd7f00c7a7346af55d8238b3dc57023de0fbdaa99d409385"
+    },
+    {
+      "le": "2026-09-08T11:23:08.920081+00:00",
+      "objet": "4 nouveaux fichiers de prix",
+      "motif": "Application de l’amendement A-08 aux exclusions concernées. Ajout uniquement des 4 nouvelles entrantes, historique complet arrêté au même cliché du 4 septembre 2026, sans réécrire les séries précédentes.",
+      "fichiers": [
+        {
+          "fichier": "EQT.csv",
+          "lignes": 11713,
+          "debut": "1980-03-17",
+          "fin": "2026-09-04",
+          "sha256": "cb357a2cb2f042300a4c80a3806290041db84b3985cfc7a04bea30e74bd14c48"
+        },
+        {
+          "fichier": "KMI.csv",
+          "lignes": 3914,
+          "debut": "2011-02-11",
+          "fin": "2026-09-04",
+          "sha256": "8268f5e0725c37f6f39033e90a559c858a7d926ed410cb33d3ae4918161bd7f6"
+        },
+        {
+          "fichier": "L.csv",
+          "lignes": 11713,
+          "debut": "1980-03-17",
+          "fin": "2026-09-04",
+          "sha256": "44dc7549dbb0f3faf88a1841bc7ba582ba1a17a40ce32cc8c3a43a5a5920948e"
+        },
+        {
+          "fichier": "PEG.csv",
+          "lignes": 11765,
+          "debut": "1980-01-02",
+          "fin": "2026-09-04",
+          "sha256": "5a19f6d80dbe451d0dfb91bdb9fa0d9444acb5b5b1b3acbf021ea6ceb2ac3198"
+        }
+      ]
+    },
+    {
+      "le": "2026-09-08T11:23:08.920081+00:00",
+      "objet": "metadonnees_titres.csv",
+      "motif": "Ajout des seules 4 nouvelles lignes ; 136 lignes antérieures conservées.",
+      "sha256_precedent": "4fe6cf49e6e2c19cdd7f00c7a7346af55d8238b3dc57023de0fbdaa99d409385",
+      "sha256_courant": "1d849df9c40a1e7519dba6a7c42919dda23ca9a452e9b45df95b1bba508e75b2"
     }
   ],
   "source_metadonnees": "Yahoo Finance, via yfinance, champ history_metadata",
   "metadonnees": {
     "fichier": "metadonnees_titres.csv",
-    "titres": 136,
+    "titres": 140,
     "collecte_le": "2026-09-08",
     "champs": [
       "fichier",
@@ -1167,6 +1237,6 @@
       "premiere_transaction",
       "collecte_le"
     ],
-    "sha256": "4fe6cf49e6e2c19cdd7f00c7a7346af55d8238b3dc57023de0fbdaa99d409385"
+    "sha256": "1d849df9c40a1e7519dba6a7c42919dda23ca9a452e9b45df95b1bba508e75b2"
   }
 }

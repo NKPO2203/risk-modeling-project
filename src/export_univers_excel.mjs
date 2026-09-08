@@ -110,7 +110,7 @@ recap.freezePanes.freezeRows(1);
 const notes=wb.worksheets.getItem("Lecture et sources");
 const lectures=[
 ["Point de lecture","Ce que je peux en déduire","Source ou contrôle"],
-["Périmètre","Entreprises retenues sur leur activité ou leurs engagements dans la chaîne des infrastructures de calcul. Les pondérations sont définies séparément dans portefeuilles.md.","research/selection_rule.md · version III"],
+["Périmètre","Entreprises retenues sur leur activité ou leurs engagements dans la chaîne des infrastructures de calcul. Les pondérations sont définies séparément dans portefeuilles.md.","research/selection_rule.md · version III, amendement A-08 du 8 septembre 2026"],
 ["Décision","Chaque CIK retenu a une preuve retrouvée. La revue porte sur les passages repérés et les lectures complémentaires consignées.","data/review/decisions_selection.csv ; colonnes Q à S des tableaux"],
 ["Degré non quantifié","La part d'activité liée à l'IA n'est pas isolée. Aucun pourcentage n'est déduit d'une mention.","Registre de sélection"],
 ["Mouvement comptable","Description nominale de mesures comparables. Une croissance peut avoir d'autres causes que l'IA.","data/processed/corroboration_details.csv"],

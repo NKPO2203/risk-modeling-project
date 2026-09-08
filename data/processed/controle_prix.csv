@@ -39,6 +39,7 @@ DTE.csv,anteriorite au calendrier,1962-01-02,7820 seances avant 1993-01-29
 DUK.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
 ECL.csv,anteriorite au calendrier,1973-02-21,5041 seances avant 1993-01-29
 EMR.csv,anteriorite au calendrier,1972-06-01,5221 seances avant 1993-01-29
+EQT.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
 ETN.csv,anteriorite au calendrier,1972-06-01,5221 seances avant 1993-01-29
 ETR.csv,anteriorite au calendrier,1972-06-01,5221 seances avant 1993-01-29
 EVRG.csv,anteriorite au calendrier,1973-02-21,5041 seances avant 1993-01-29
@@ -55,6 +56,7 @@ INTC.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
 ITW.csv,anteriorite au calendrier,1973-03-13,5027 seances avant 1993-01-29
 JCI.csv,anteriorite au calendrier,1987-09-28,1351 seances avant 1993-01-29
 KLAC.csv,anteriorite au calendrier,1980-10-08,3112 seances avant 1993-01-29
+L.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
 LNT.csv,anteriorite au calendrier,1973-02-21,5041 seances avant 1993-01-29
 LRCX.csv,anteriorite au calendrier,1984-05-04,2209 seances avant 1993-01-29
 MMM.csv,anteriorite au calendrier,1962-01-02,7820 seances avant 1993-01-29
@@ -65,6 +67,7 @@ NEE.csv,anteriorite au calendrier,1973-02-21,5041 seances avant 1993-01-29
 NI.csv,anteriorite au calendrier,1973-02-21,5041 seances avant 1993-01-29
 NUE.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
 ORCL.csv,anteriorite au calendrier,1986-03-12,1742 seances avant 1993-01-29
+PEG.csv,anteriorite au calendrier,1980-01-02,3307 seances avant 1993-01-29
 PH.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
 PNW.csv,anteriorite au calendrier,1973-02-21,5041 seances avant 1993-01-29
 PPL.csv,anteriorite au calendrier,1980-03-17,3255 seances avant 1993-01-29
@@ -137,6 +140,7 @@ EQIX.csv,variation quotidienne extreme,2002-09-27,+32.0 %
 EQIX.csv,variation quotidienne extreme,2003-01-07,+36.5 %
 EQIX.csv,variation quotidienne extreme,2003-05-05,+32.8 %
 EQIX.csv,variation quotidienne extreme,2010-10-06,-33.1 %
+EQT.csv,variation quotidienne extreme,2020-03-13,+37.3 %
 FIX.csv,variation quotidienne extreme,1999-10-05,-44.4 %
 FIX.csv,variation quotidienne extreme,2001-05-10,+30.0 %
 FLEX.csv,variation quotidienne extreme,2018-10-26,-35.0 %
@@ -277,6 +281,7 @@ DUK.csv,historique tronque,1980-03-17,entree dans l'indice le 1976-06-30
 ECL.csv,reference de cotation absente,1973-02-21,
 EMR.csv,reference de cotation absente,1972-06-01,
 EMR.csv,historique tronque,1972-06-01,entree dans l'indice le 1965-03-31
+EQT.csv,reference de cotation absente,1980-03-17,
 ETN.csv,historique tronque,1972-06-01,entree dans l'indice le 1957-03-04
 ETR.csv,historique tronque,1972-06-01,entree dans l'indice le 1957-03-04
 EXPD.csv,reference de cotation absente,1984-09-26,
@@ -295,6 +300,8 @@ INTC.csv,historique tronque,1980-03-17,entree dans l'indice le 1976-12-31
 ITW.csv,reference de cotation absente,1973-03-13,
 JCI.csv,reference de cotation absente,1987-09-28,
 KLAC.csv,reference de cotation absente,1980-10-08,
+KMI.csv,reference de cotation absente,2011-02-11,
+L.csv,reference de cotation absente,1980-03-17,
 LDOS.csv,reference de cotation absente,2006-10-17,
 LII.csv,reference de cotation absente,1999-07-29,
 MLM.csv,reference de cotation absente,1994-02-17,
@@ -308,6 +315,7 @@ NUE.csv,reference de cotation absente,1980-03-17,
 NXPI.csv,reference de cotation absente,2010-08-06,
 O.csv,reference de cotation absente,1994-10-18,
 ON.csv,reference de cotation absente,2000-05-02,
+PEG.csv,historique tronque,1980-01-02,entree dans l'indice le 1957-03-04
 PH.csv,reference de cotation absente,1980-03-17,
 QCOM.csv,reference de cotation absente,1991-12-13,
 SBAC.csv,reference de cotation absente,1999-06-16,
@@ -2541,6 +2549,7 @@ EME.csv,prix fige,1998-08-10,4.6562
 EME.csv,prix fige,1998-10-22,3.6875
 EME.csv,prix fige,1998-12-11,4.1094
 EMR.csv,prix fige,1975-04-11,2.7188
+EQT.csv,prix fige,1982-06-07,1.0988
 ETN.csv,prix fige,1975-04-11,1.2955
 ETR.csv,prix fige,1975-04-11,6.5625
 EVRG.csv,prix fige,1973-03-30,12.3125
@@ -8380,6 +8389,10 @@ KLAC.csv,prix fige,1982-06-23,0.0750
 KLAC.csv,prix fige,1982-07-19,0.0750
 KLAC.csv,prix fige,1982-08-06,0.0771
 KLAC.csv,prix fige,1983-07-28,0.3562
+L.csv,prix fige,1981-10-22,0.9694
+L.csv,prix fige,1983-06-06,1.8778
+L.csv,prix fige,1983-10-13,1.7611
+L.csv,prix fige,1983-11-28,1.8500
 LNT.csv,prix fige,1975-04-11,4.0625
 LNT.csv,prix fige,1975-08-04,4.3125
 LRCX.csv,prix fige,1990-10-16,0.0833

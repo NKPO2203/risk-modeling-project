@@ -1,13 +1,13 @@
 seuil_progression,niveau,nombre
 1.5,non evaluable,7
-1.5,progression inferieure au seuil,35
-1.5,recul des mesures disponibles,1
-1.5,seuil atteint,87
-2.0,doublement observe,57
+1.5,progression inferieure au seuil,37
+1.5,recul des mesures disponibles,2
+1.5,seuil atteint,88
+2.0,doublement observe,58
 2.0,non evaluable,7
-2.0,progression inferieure au seuil,65
-2.0,recul des mesures disponibles,1
+2.0,progression inferieure au seuil,67
+2.0,recul des mesures disponibles,2
 2.5,non evaluable,7
-2.5,progression inferieure au seuil,81
-2.5,recul des mesures disponibles,1
-2.5,seuil atteint,41
+2.5,progression inferieure au seuil,83
+2.5,recul des mesures disponibles,2
+2.5,seuil atteint,42

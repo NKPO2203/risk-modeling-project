@@ -42,6 +42,7 @@ EQIX.csv,variation quotidienne extreme,2002-09-27,+32.0 %,EQIX,,,,,,non_corrobor
 EQIX.csv,variation quotidienne extreme,2003-01-07,+36.5 %,EQIX,,,,,,non_corroboré,True
 EQIX.csv,variation quotidienne extreme,2003-05-05,+32.8 %,EQIX,,,,,,non_corroboré,True
 EQIX.csv,variation quotidienne extreme,2010-10-06,-33.1 %,EQIX,,,,,,non_corroboré,True
+EQT.csv,variation quotidienne extreme,2020-03-13,+37.3 %,EQT,9.53,9.529999732971191,0.3731988472622476,0.3731987974634188,4.979882883837661e-08,rendement_prix_concordant,True
 FIX.csv,variation quotidienne extreme,2001-05-10,+30.0 %,FIX,,,,,,non_corroboré,True
 FLEX.csv,variation quotidienne extreme,2018-10-26,-35.0 %,FLEX,5.1573,5.342878818511963,-0.35013041999017125,-0.35013743309590317,7.013105731923375e-06,rendement_prix_concordant,True
 FLEX.csv,variation quotidienne extreme,2026-05-06,+39.7 %,FLEX,134.73,134.72999572753906,0.39688958009331254,0.39688957999489616,9.841638615171178e-11,rendement_prix_concordant,True

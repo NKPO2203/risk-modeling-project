@@ -1,6 +1,6 @@
 # Règle de sélection de l'univers de recherche
 
-*AI Concentration Risk Research. Version III, 5 septembre 2026.*
+*AI Concentration Risk Research. Version III, 5 septembre 2026 ; amendement A-08 autorisé le 8 septembre 2026.*
 *Les versions précédentes sont conservées dans `research/archive/2026-09-05_avant_corrections/`.*
 
 ## I. Pourquoi j'ai repris la règle
@@ -143,6 +143,10 @@ A-06 et A-07 ont modifié la corroboration après observation de cas qui contred
 La version III ajoute une revue explicite par CIK, des preuves vérifiables, une extraction sans plafond arbitraire, des rapprochements comptables par notion et par périmètre, des références propres à chaque mesure et une séparation entre mouvement et couverture.
 
 Le journal détaillé des erreurs constatées et des corrections se trouve dans `research/corrections_2026-09-05.md`. Les anciens documents et données sont archivés pour que l'évolution soit contrôlable.
+
+**A-08. Exception d'attribution sur source officielle extérieure, 8 septembre 2026.** J'accepte qu'une source officielle extérieure au corpus établisse l'attribution à l'IA lorsque le rapport annuel documente déjà l'engagement d'infrastructure sous-jacent. L'engagement doit venir du corpus ; seule son attribution peut venir d'ailleurs. Les deux pièces doivent porter sur le même engagement. Une annonce extérieure ne peut pas remplacer un engagement absent du rapport, ni rattacher arbitrairement un investissement global à un projet particulier. Le lien peut passer par les infrastructures de calcul, sous la limite déjà écrite en section III : leur activité ne relève pas nécessairement toute de l'IA.
+
+La raison est le cas NextEra : le rapport annuel documente le contrat de 25 ans sur Duane Arnold, tandis que le nom de Google vient d'un communiqué officiel extérieur. J'autorise cette attribution et j'applique la même possibilité aux exclusions présentant cette forme documentaire. Le registre conserve la citation et l'empreinte du rapport ; la revue complémentaire distingue l'engagement, la source extérieure, leur raccordement et ses limites. L'absence de raccordement suffisant maintient SORT. Cet amendement ne réintroduit aucun critère comptable et ne modifie ni le degré d'exposition ni les poids à partir d'une simple mention d'IA.
 
 ## XIV. Les contrôles
 

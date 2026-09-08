@@ -1,5 +1,7 @@
 # Finition des étapes 1 et 2
 
+*État historique de la finition avant l'amendement A-08 : les chiffres ci-dessous décrivent l'univers alors validé de 130 entreprises. L’[ajout du 8 septembre 2026](decisions_auteur_2026-09-08.md) consigne les décisions désormais tranchées et le recalcul courant sur 134 entreprises. Les anciennes options ci-dessous ne sont plus réservées.*
+
 *AI Concentration Risk Research. 8 septembre 2026.*
 
 ## I. Travail 1 : fermer l'univers
