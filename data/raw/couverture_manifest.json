@@ -38,6 +38,26 @@
       "fichier": "PUT.csv",
       "lignes": 6957,
       "sha256": "ef40ec45b6d4bfb370c9461d7e354c279d4b2233790d543217c092f222e729c6"
+    },
+    {
+      "symbole": "PPUT",
+      "description": "Indice CBOE S&P 500 5% Put Protection : S&P 500 couvert par l'achat mensuel de puts a 95 % du cours. Source officielle du CBOE, et non Yahoo Finance.",
+      "fichier": "PPUT_cboe.csv",
+      "lignes": 10134,
+      "debut": "1986-06-30",
+      "fin": "2026-09-28",
+      "source": "https://cdn.cboe.com/api/global/us_indices/daily_prices/PPUT_History.csv",
+      "format": "DATE au format MM/DD/YYYY, niveau de l'indice en colonne PPUT, fichier conserve tel que servi",
+      "sha256": "067dae1d54b9ec6490d797b00a48ca2b999b4d8bc07ffcc9f1f2e04ee82c1bc6"
+    }
+  ],
+  "revisions": [
+    {
+      "le": "2026-09-28T22:45:56+00:00",
+      "objet": "PPUT_cboe.csv",
+      "motif": "Ajout demande pour calibrer le cout des puts de l'etape 4. Telecharge directement depuis le serveur de donnees du CBOE, qui redirige vers cdn-api.cboe.com ; aucune verification anti-robot rencontree. Premiere donnee du projet issue d'une source officielle plutot que de Yahoo Finance. La collecte depasse la date du cliche des prix, le 4 septembre 2026 : les seances posterieures ne doivent pas entrer dans les calculs.",
+      "sha256_precedent": null,
+      "sha256_courant": "067dae1d54b9ec6490d797b00a48ca2b999b4d8bc07ffcc9f1f2e04ee82c1bc6"
     }
   ]
 }
