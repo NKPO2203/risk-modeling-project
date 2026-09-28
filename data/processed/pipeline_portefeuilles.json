@@ -177,7 +177,7 @@
     "src/controler_prix.ipynb": "cff7aef35bbdd06523954944bffd8d6c09dc6fc1c3f795ea4e1f902ebb6d3c1f",
     "tests/test_portefeuille.py": "8c69ad6f7f03d3c4f4bd8e9d3b64701cb22a2bb5ba1e1eeeb2a3aa487db8d758",
     "tests/test_audit_portefeuilles.py": "432e35e3323bbd20062849fc15cd60791d6dc16de8cbe24954de33093bbb8608",
-    "research/portefeuilles.md": "57dcb8adc3128468cba272cb1a5f383920d6f49a2ef23d02e711400ea49c4b36",
+    "research/portefeuilles.md": "78789a20fb693f421c27483da7a7ba91fe1d4c21a80f66c59b352762737d9241",
     "tests/test_pipeline_portefeuilles.py": "f1f545e3b34198a61c7db365fe89e30cb63435692c67f56a3a85d7c0cf514f0a",
     "src/corrections_prix.py": "98195c67d65b759b1cdbfd55c2a73b48b229676dbc20a8db1e8449977778f8c6",
     "src/recouper_prix.py": "2d2e343fecd16818619745572e86e39bc7d239049f0480e27fb11e91f93d6293",
