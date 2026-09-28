@@ -17,6 +17,7 @@
     "data/raw/sec_facts_raw.csv": "5a056ba9c930e02dde8c019df4ae4f6f6ae9499b415972ab05a722631a6096c7",
     "data/raw/sec_fetch_log.csv": "7d9ba3fec0d2f162852860c53c62b45cf95e0ceb044faae6b8f2f12c98dc78a7",
     "data/raw/sp500_constituents.csv": "2490c658bb3437868cc51f01203ddc288981a3ad2039163809cf503c4692e7c3",
+    "data/raw/taux_sans_risque.csv": "8fa4f468d77af8405d413c501f89c1c3a2fceb3372cf397ff350bdd0a0d803f1",
     "data/review/decisions_attribution_A08_2026-09-08.csv": "e1fb9619805d19a7efc202ec3b1c2ac2d33a9a70dc0e64fa786f4b5606cd8213",
     "data/review/decisions_finition_2026-09-08.csv": "1bd328dacc205588d251581400fce3d6c83610c7d006a33c3461ab1598af6d78",
     "data/review/decisions_selection.csv": "3ea223cf8d23cf746e57187e3c603620727eee0189c156dcecd1882e42ff9b6c",
@@ -28,8 +29,8 @@
     "src/build_screening_base.py": "f991d6f2c3c5b566a42ceea9189ca52784651289a7ea12e5e3859eaa97b95c29",
     "src/controle_qualite.py": "7b91e2cfaa7aa811cbbd2634bd787554a3ae665f0a7d67db4b63a27bece64996",
     "src/corroboration.py": "8c7bf362aaf4d49b870c6574a4be8dedd65c2031c61eef4590c873d71bb93680",
-    "src/run_pipeline.py": "52e4b7d5742920de7700f827f04da915c31a306d054c752899a4bddea2509fbc",
-    "requirements.txt": "ba5bf40776afc26aa81f2b60a110e6918342fd2ddfc6bad74cb47107d54a481e",
+    "src/run_pipeline.py": "7e86751b11afff8813bcb1bafc1b783940907d8272eb85288ac6759db1c12414",
+    "requirements.txt": "a9ab80d95a68a197611e847ee2e4e4d18fcd40f11f93a7910540affd3e99d26d",
     "data/raw/filings_manifest.json": "c698efcea2e63b43eec36aaa64093d791cb3a551a4750bf9ad8e6902a4e7a8ef"
   },
   "sorties_sha256": {
