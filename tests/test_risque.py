@@ -184,13 +184,21 @@ class EpisodesTests(unittest.TestCase):
         niveau = pd.Series([100.0, 95.0, 98.0, 105.0], index=jours(4))
         self.assertEqual(len(episodes_de_tension(niveau, 0.15)), 0)
 
-    def test_la_regle_ne_regarde_pas_l_avenir(self):
-        # tronquer la serie apres le creux ne doit pas changer l'episode detecte
-        niveau = pd.Series([100.0, 90.0, 80.0, 95.0, 105.0], index=jours(5))
+    def test_le_creux_n_est_connu_qu_apres_coup(self):
+        # a la troisieme seance, 80 semble etre le creux ; la suite le dement
+        niveau = pd.Series([100.0, 90.0, 80.0, 85.0, 70.0, 105.0], index=jours(6))
         complet = episodes_de_tension(niveau, 0.15)
-        tronque = episodes_de_tension(niveau.iloc[:3], 0.15)
-        self.assertEqual(complet.creux.iloc[0], tronque.creux.iloc[0])
-        self.assertAlmostEqual(complet.repli.iloc[0], tronque.repli.iloc[0], places=12)
+        tronque = episodes_de_tension(niveau.iloc[:4], 0.15)
+        self.assertEqual(tronque.creux.iloc[0], niveau.index[2])
+        self.assertEqual(complet.creux.iloc[0], niveau.index[4])
+
+    def test_duree_de_la_tension_et_duree_jusqu_au_retour(self):
+        # sommet 100, creux 80 a la troisieme seance, retour au sommet a la cinquieme
+        niveau = pd.Series([100.0, 90.0, 80.0, 95.0, 105.0], index=jours(5))
+        e = episodes_de_tension(niveau, 0.15).iloc[0]
+        self.assertEqual(e.seances_repli, 3)
+        self.assertEqual(e.seances, 4)
+        self.assertEqual(e.retour, niveau.index[4])
 
 
 if __name__ == "__main__":

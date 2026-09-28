@@ -59,7 +59,7 @@ La formulation exacte est donc : **le rééquilibrage réduit le risque sur huit
 
 ## IV. Que devient le portefeuille en marché défavorable
 
-Six épisodes de tension sont identifiés mécaniquement, comme un repli de `SPY` d'au moins 15 % depuis son plus haut. Ils couvrent 1 315 séances sur 6 709, soit 19,6 % de la période. Aucune date n'est choisie à la main.
+Six épisodes de tension sont identifiés mécaniquement, comme un repli de `SPY` d'au moins 15 % depuis son plus haut. Du sommet au creux, ils couvrent 1 315 séances sur 6 709, soit 19,6 % de la période. Aucune date n'est choisie à la main.
 
 **Le pire moment n'est pas le même pour tout le monde.** Les maillons liés aux puces ont leur repli maximal en 2000-2002, où ils perdent 65 % à 87 %. Les autres, et le marché, l'ont en 2008-2009, avec 52 % à 58 %. Un investisseur qui aurait mesuré le risque de ce thème en 2007 en regardant les cinq années précédentes n'aurait rien vu venir.
 
@@ -121,7 +121,7 @@ Aucune performance n'est présentée comme réalisable. Aucune causalité n'est 
 
 ## X. Les limites propres à cette étape
 
-**Les six épisodes ne sont pas comparables entre eux.** Le premier dure 1 670 séances et le dernier 88. Ils sont traités un par un, sans moyenne, et aucune statistique n'est calculée sur leur ensemble.
+**Les six épisodes ne sont pas comparables entre eux.** Du sommet au creux, le premier dure 638 séances et le dernier 35 ; jusqu'au retour au sommet, 1 670 et 88. Ils sont traités un par un, sans moyenne, et aucune statistique n'est calculée sur leur ensemble.
 
 **La covariance des tâches 16 à 19 et 27 à 28 est estimée sur les 252 dernières séances.** Les hiérarchies qu'elle produit décrivent l'état au 4 septembre 2026, pas une propriété permanente. La domination de `SNDK` et de `TPL` reflète leur agitation récente.
 

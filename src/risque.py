@@ -155,9 +155,13 @@ def herfindahl(parts):
 def episodes_de_tension(niveau, seuil=0.15):
     """Replis du niveau de reference d'au moins `seuil` depuis son plus haut.
 
-    Un episode va du sommet au creux ; la date de retour au sommet est
-    enregistree separement et n'en fait pas partie. La regle s'applique sans
-    connaitre la suite de la serie.
+    La periode de tension va du sommet au creux, bornes comprises ; sa longueur
+    est `seances_repli`. `seances` compte du sommet a la veille du retour au
+    sommet, recuperation comprise : ce n'est pas la duree de la tension.
+
+    La regle est mecanique mais retrospective. Le creux n'est connu qu'une
+    fois le retour au sommet observe : a une date donnee, on ne sait pas si
+    le point bas atteint sera le creux de l'episode.
     """
     if not 0 < seuil < 1:
         raise ValueError("Le seuil doit etre strictement compris entre 0 et 1.")
@@ -171,7 +175,9 @@ def episodes_de_tension(niveau, seuil=0.15):
             dernier = segment.index[-1]
             retour = (niveau.index[niveau.index.get_loc(dernier) + 1]
                       if dernier != niveau.index[-1] else None)
-            lignes.append({"debut": segment.index[0], "creux": repli.idxmin(),
+            creux = repli.idxmin()
+            lignes.append({"debut": segment.index[0], "creux": creux,
                            "repli": float(repli.min()), "retour": retour,
-                           "seances": len(segment)})
+                           "seances": len(segment),
+                           "seances_repli": segment.index.get_loc(creux) + 1})
     return pd.DataFrame(lignes)
