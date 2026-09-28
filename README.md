@@ -11,6 +11,10 @@ Je construis un univers documenté de 134 entreprises du S&P 500 exposées à la
 3. **Le risque du thème est celui des puces.** Les semi-conducteurs détiennent 45 % de l'argent et portent 77 % du risque ; l'électricité détient 14 % et en porte 2 %.
 4. **Sans rééquilibrage, le portefeuille se concentre en six ans.** De fin 2019 à 2026, son nombre effectif de lignes passe de 54 à 11,6.
 5. **Le rééquilibrage réduit le risque, mais son avantage de rendement ajusté n'est pas établi.** La baisse de volatilité est significative sur huit portefeuilles sur dix, l'écart de Sharpe sur un seul.
+6. **À risque égal, seules les obligations du Trésor intermédiaires ont fait mieux qu'une simple vente d'actions, et seulement jusqu'en 2021.** Les contrats à terme sur l'indice n'ajoutent rien à risque égal ; le verdict sur les puts dépend d'un prix d'option que je n'observe pas.
+7. **La couverture par l'indice ne couvre pas le thème.** Une fois le marché retiré, les puces portent 82 % du risque restant de `P1`.
+
+Le rapport d'ensemble est [research/rapport_final.md](research/rapport_final.md). Les étapes 4 et 5 et le portefeuille P11 ont été menés sur des décisions déléguées par l'auteur, écrites comme des propositions à relire.
 
 | | |
 |---|---|
@@ -31,6 +35,8 @@ python -B -m unittest discover -s tests -v
 ```
 
 Les carnets de l'étape 3 s'exécutent ensuite dans Jupyter, dans cet ordre : `src/mesurer_risque.ipynb`, `src/robustesse_statistique.ipynb`, `src/figures.ipynb`. Ils appellent les fonctions testées de `src/risque.py`.
+
+L'étape 4 demande une collecte (`python -B -m src.collecter_couverture`, déjà faite : les fichiers présents ne sont pas retéléchargés), puis `src/couvrir_diversifier.ipynb`. L'étape 5 et P11 s'exécutent ensuite : `src/comparer_strategies.ipynb`, `src/portefeuille_avenir.ipynb`. Ils appellent `src/couverture.py`, testé dans `tests/test_couverture.py`.
 
 Les empreintes des fichiers sont vérifiées aux fins de ligne près : un dépôt extrait sous Windows, macOS ou Linux passe les mêmes contrôles (`src/empreintes.py`).
 

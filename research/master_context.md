@@ -860,6 +860,10 @@ Le bloc 1 du Research Charter est rédigé. La formulation testable des blocs su
 
 ---
 
+**Mise à jour du 28 septembre 2026.** L'étape 3 est close, avec témoin, bootstrap et correction de Forbes et Rigobon. Les étapes 4, couverture et diversification, et 5, comparaison des stratégies, sont faites, ainsi que le portefeuille P11, sur des décisions déléguées par l'auteur et écrites comme des propositions à relire (`research/plan_projet.md`, sections VII et VIII ; `research/portefeuilles.md`, section VII). Le rapport final est `research/rapport_final.md`. Restent ouverts : la relecture de ces décisions par l'auteur, la revue de littérature, la validation des blocs 2 et 3 du Research Charter, la régénération du manifeste de l'étape 1 sur la machine qui détient le corpus, et le test prospectif de P11 après 252 séances postérieures au 4 septembre 2026.
+
+---
+
 ## 48. COMMENT REPRENDRE AVEC MOI
 
 Ne me fais pas un résumé géant de ce document. Dis simplement que tu as compris où nous en sommes, puis reprends à la **tâche immédiate en attente** du §47.
