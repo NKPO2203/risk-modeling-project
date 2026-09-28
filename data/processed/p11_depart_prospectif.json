@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-04",
+  "P11": 2442.1390530045223,
+  "P1_reeq": 9597.07209379358,
+  "cible_en_vigueur_depuis_2026-01-02": {
+    "acheteurs": 0.072994,
+    "vendeurs": 0.053245,
+    "electricite": 0.126019,
+    "equipement": 0.081357,
+    "immobilier": 0.108342,
+    "amont des puces": 0.060747,
+    "matieres et energie": 0.097296,
+    "obligations": 0.2,
+    "liquidites": 0.2
+  },
+  "predictions": [
+    "vol quotidienne P11 <= 0,65 x vol P1_reeq sur 252 seances",
+    "part des puces dans le risque des actions de P11 <= 50 %",
+    "repli maximal P11 moins profond que celui de P1_reeq"
+  ],
+  "sorties_sha256": {
+    "p11_valeurs.csv": "1ce951964efdffdab2595d2341caaa71f0b41ccc1b5808ac946e1e107532c256",
+    "p11_cibles.csv": "e6fcd7bd9ace9851eefea77fbfefd02027a6a44ff5defc6286b03ec36e82f4f3",
+    "p11_mesures.csv": "976607893a4d9b39275ba3b92036ac09c32b8e4b1372df210e3b44053b138f16"
+  }
+}
