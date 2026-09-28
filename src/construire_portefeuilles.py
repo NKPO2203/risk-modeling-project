@@ -5,7 +5,6 @@ Contrôle des empreintes : python -m src.construire_portefeuilles --check-only
 """
 from pathlib import Path
 import argparse
-import hashlib
 import importlib.metadata
 import json
 import re
@@ -19,13 +18,10 @@ import pandas as pd
 
 from src.portefeuille import COUT, poids_cibles, preparer_prix, simuler
 from src.corrections_prix import corriger_prix, lire_corrections
+from src.empreintes import correspond, empreinte
 
 RACINE = Path(__file__).resolve().parents[1]
 DEBUT = "2000-01-03"
-
-
-def empreinte(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def ecrire_json(path, contenu):
@@ -44,13 +40,13 @@ def verifier_bruts(racine):
             raise ValueError(f"Fichier répété dans le manifeste : {groupe}")
         for e in m[groupe]:
             p = raw / groupe / e["fichier"]
-            if p.parent.resolve() != (raw / groupe).resolve() or empreinte(p) != e["sha256"]:
+            if p.parent.resolve() != (raw / groupe).resolve() or not correspond(p, e["sha256"]):
                 raise ValueError(f"Empreinte brute invalide : {p.name}")
             sources.append(p)
     for groupe in ("calendrier", "actions", "metadonnees"):
         e = m[groupe]
         p = raw / e["fichier"]
-        if p.parent.resolve() != raw.resolve() or empreinte(p) != e["sha256"]:
+        if p.parent.resolve() != raw.resolve() or not correspond(p, e["sha256"]):
             raise ValueError(f"Empreinte invalide : {groupe}")
         sources.append(p)
     return sources
@@ -101,6 +97,68 @@ def annualise(valeurs):
     return float((v.iloc[-1] / v.iloc[0]) ** (252 / (len(v) - 1)) - 1) if len(v) > 1 else None
 
 
+def simuler_groupe(pf, groupe, dates, annuel, fins, dispo, premiers, r, d, cout,
+                   cibles_lignes, valeurs, photos, journaux, resumes, reports, ponderer=poids_cibles):
+    """Simule les deux gestions d'un groupe et complète les listes de résultats.
+
+    `ponderer(groupe, admis)` renvoie les poids cibles des titres admis ; par
+    défaut, l'équipondération des entreprises de l'étape 2.
+    """
+    titres = sorted(groupe.titre)
+    entreprises = groupe.set_index("titre").cik.to_dict()
+    evenements, annuel_effectif = set(), set()
+    for demande in sorted(annuel | {premiers[t] for t in titres}):
+        # Aucune vente à un cours absent. Toute l'opération est
+        # reportée à la première séance où les positions sont négociables.
+        effectif = None
+        for jour in dates[dates >= demande]:
+            admis = [t for t in titres if premiers[t] <= jour]
+            if dispo.loc[jour, admis].all():
+                effectif = jour
+                break
+        if effectif is None:
+            raise ValueError(f"Opération impossible avant la fin de série : {pf}, {demande}")
+        evenements.add(effectif)
+        if demande in annuel:
+            annuel_effectif.add(effectif)
+        if effectif != demande:
+            reports.append({"portefeuille": pf, "date_prevue": demande, "date_effective": effectif,
+                            "motif": "cotation absente, aucune opération au cours porté"})
+    evenements = sorted(evenements)
+    cibles = []
+    for jour in evenements:
+        admis = [t for t in titres if premiers[t] <= jour]
+        if not dispo.loc[jour, admis].all():
+            raise ValueError(f"Cotation absente lors d'une opération : {pf}, {jour}")
+        w = ponderer(groupe, admis)
+        if not w:
+            raise ValueError(f"Portefeuille sans titre initial : {pf}")
+        cibles.append({t: w.get(t, 0.0) for t in titres})
+        for t, poids in w.items():
+            cibles_lignes.append({"portefeuille": pf, "date": jour, "titre": t,
+                "entreprise": groupe.set_index("titre").at[t, "entreprise"],
+                "poids": poids, "motif": "annuel" if jour in annuel_effectif else "entree"})
+    cible = pd.DataFrame(cibles, index=evenements, columns=titres)
+    for reeq, suffixe in [(True, "reeq"), (False, "cons")]:
+        nom = pf + "_" + suffixe
+        journal = []
+        v, rotation, photo = simuler(r, d, titres, cible, dates, annuel_effectif, reeq, cout,
+            fins_de_mois=fins, disponibilite=dispo, entreprises=entreprises, journal=journal)
+        valeurs[nom] = 100 * v / v.iloc[0]
+        ph = photo.rename_axis("date").reset_index().melt("date", var_name="titre", value_name="poids")
+        ph["serie"] = nom
+        photos.append(ph[["date", "serie", "titre", "poids"]])
+        j = pd.DataFrame(journal)
+        j["serie"] = nom
+        journaux.append(j)
+        brut, _, _ = simuler(r, d, titres, cible, dates, annuel_effectif, reeq, 0,
+            disponibilite=dispo, entreprises=entreprises)
+        resumes.append({"serie": nom, "base100": valeurs[nom].iloc[-1],
+            "annualise": annualise(v), "rotation_annuelle": rotation,
+            "cout_annualise_pb": 10000 * (annualise(brut) - annualise(v)),
+            "repli_maximal": float((v / v.cummax() - 1).min())})
+
+
 def construire(racine=RACINE, sortie=None, cout=COUT, controles_prix=True):
     racine = Path(racine).resolve()
     sortie = Path(sortie or racine / "data/processed").resolve()
@@ -141,59 +199,8 @@ def construire(racine=RACINE, sortie=None, cout=COUT, controles_prix=True):
     premiers = {t: dispo.index[dispo[t]][0] for t in dispo}
     cibles_lignes, valeurs, photos, journaux, resumes, reports = [], {}, [], [], [], []
     for pf, groupe in membres.groupby("portefeuille", sort=True):
-        titres = sorted(groupe.titre)
-        entreprises = groupe.set_index("titre").cik.to_dict()
-        evenements, annuel_effectif = set(), set()
-        for demande in sorted(annuel | {premiers[t] for t in titres}):
-            # Aucune vente à un cours absent. Toute l'opération est
-            # reportée à la première séance où les positions sont négociables.
-            effectif = None
-            for jour in dates[dates >= demande]:
-                admis = [t for t in titres if premiers[t] <= jour]
-                if dispo.loc[jour, admis].all():
-                    effectif = jour
-                    break
-            if effectif is None:
-                raise ValueError(f"Opération impossible avant la fin de série : {pf}, {demande}")
-            evenements.add(effectif)
-            if demande in annuel:
-                annuel_effectif.add(effectif)
-            if effectif != demande:
-                reports.append({"portefeuille": pf, "date_prevue": demande, "date_effective": effectif,
-                                "motif": "cotation absente, aucune opération au cours porté"})
-        evenements = sorted(evenements)
-        cibles = []
-        for jour in evenements:
-            admis = [t for t in titres if premiers[t] <= jour]
-            if not dispo.loc[jour, admis].all():
-                raise ValueError(f"Cotation absente lors d'une opération : {pf}, {jour}")
-            w = poids_cibles(groupe, admis)
-            if not w:
-                raise ValueError(f"Portefeuille sans titre initial : {pf}")
-            cibles.append({t: w.get(t, 0.0) for t in titres})
-            for t, poids in w.items():
-                cibles_lignes.append({"portefeuille": pf, "date": jour, "titre": t,
-                    "entreprise": groupe.set_index("titre").at[t, "entreprise"],
-                    "poids": poids, "motif": "annuel" if jour in annuel_effectif else "entree"})
-        cible = pd.DataFrame(cibles, index=evenements, columns=titres)
-        for reeq, suffixe in [(True, "reeq"), (False, "cons")]:
-            nom = pf + "_" + suffixe
-            journal = []
-            v, rotation, photo = simuler(r, d, titres, cible, dates, annuel_effectif, reeq, cout,
-                fins_de_mois=fins, disponibilite=dispo, entreprises=entreprises, journal=journal)
-            valeurs[nom] = 100 * v / v.iloc[0]
-            ph = photo.rename_axis("date").reset_index().melt("date", var_name="titre", value_name="poids")
-            ph["serie"] = nom
-            photos.append(ph[["date", "serie", "titre", "poids"]])
-            j = pd.DataFrame(journal)
-            j["serie"] = nom
-            journaux.append(j)
-            brut, _, _ = simuler(r, d, titres, cible, dates, annuel_effectif, reeq, 0,
-                disponibilite=dispo, entreprises=entreprises)
-            resumes.append({"serie": nom, "base100": valeurs[nom].iloc[-1],
-                "annualise": annualise(v), "rotation_annuelle": rotation,
-                "cout_annualise_pb": 10000 * (annualise(brut) - annualise(v)),
-                "repli_maximal": float((v / v.cummax() - 1).min())})
+        simuler_groupe(pf, groupe, dates, annuel, fins, dispo, premiers, r, d, cout,
+                       cibles_lignes, valeurs, photos, journaux, resumes, reports)
     valeurs = pd.DataFrame(valeurs, index=dates)
     photos, journal = pd.concat(photos, ignore_index=True), pd.concat(journaux, ignore_index=True)
     sommes = photos.groupby(["date", "serie"]).poids.sum()
@@ -290,11 +297,11 @@ def verifier(sortie, racine=RACINE):
         raise ValueError("Manifeste incomplet.")
     for nom, attendu in manifeste["entrees_sha256"].items():
         p = (racine / nom).resolve()
-        if not p.is_relative_to(racine.resolve()) or empreinte(p) != attendu:
+        if not p.is_relative_to(racine.resolve()) or not correspond(p, attendu):
             raise ValueError(f"Entrée modifiée depuis le calcul : {nom}")
     for nom, attendu in manifeste["sorties_sha256"].items():
         p = (sortie / nom).resolve()
-        if p.parent != sortie.resolve() or empreinte(p) != attendu:
+        if p.parent != sortie.resolve() or not correspond(p, attendu):
             raise ValueError(f"Sortie modifiée depuis le calcul : {nom}")
     return True
 

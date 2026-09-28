@@ -1,0 +1,28 @@
+{
+  "statut": "termine",
+  "produit_le": "2026-09-28T19:01:05+00:00",
+  "commande": "python -m src.construire_temoin",
+  "cout": 0.001,
+  "titres": 368,
+  "entreprises": 366,
+  "parts_sectorielles_p1": {
+    "Information Technology": 0.358209,
+    "Industrials": 0.208955,
+    "Utilities": 0.179104,
+    "Materials": 0.059701,
+    "Energy": 0.059701,
+    "Real Estate": 0.059701,
+    "Financials": 0.029851,
+    "Consumer Discretionary": 0.022388,
+    "Communication Services": 0.022388
+  },
+  "seances_completees": 1,
+  "variations_extremes": 38,
+  "sorties_sha256": {
+    "temoin_valeurs.csv": "8215a9c229ecb0b00192bb2aa5481968fa4fc8d44056ba74778d453113a392c4",
+    "temoin_mesures.csv": "43ae6dbd38b1d6faf1d02a84f6ec0565ce2c9de910b8f5a3f50a1be1dc2ec342",
+    "temoin_qualite.csv": "69b3083ab1a6f3ece6823f5edcced9bdb8f272f5e6cbc46bb7f0468bbbd032b4",
+    "temoin_comparaison.csv": "7429a2c2b61306bfb54b3239bb76b42cd5b7dffda303980cf12cb9a2c22c4fc8",
+    "temoin_correlations.csv": "b682cf9f8cdf8c986f31e2da03a610d1148ab06e3a7453866ea4e2951adce50c"
+  }
+}

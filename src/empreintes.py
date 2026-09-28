@@ -1,0 +1,36 @@
+"""Empreintes SHA-256 et leur vérification indépendante des fins de ligne.
+
+Git convertit les fins de ligne des fichiers texte : un CSV écrit sous Windows
+avec CRLF est stocké avec LF, puis rendu avec LF sous Linux ou macOS. Une
+empreinte calculée sur les octets bruts échoue alors sur une machine qui n'a
+pas produit le fichier, alors que le contenu est identique.
+
+La vérification accepte donc, pour un fichier texte, l'empreinte des octets
+tels qu'ils sont, puis celle du même contenu en fins de ligne LF, puis en CRLF.
+Un fichier binaire n'est comparé que sur ses octets. Les empreintes écrites
+dans les manifestes restent celles des octets bruts : les manifestes existants
+restent valides sans être recalculés.
+"""
+import hashlib
+
+TEXTE = {".csv", ".json", ".md", ".txt", ".py", ".ipynb", ".html", ".htm"}
+
+
+def empreinte(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def variantes(contenu):
+    """Le contenu brut, puis en fins de ligne LF, puis en CRLF."""
+    yield contenu
+    lf = contenu.replace(b"\r\n", b"\n")
+    yield lf
+    yield lf.replace(b"\n", b"\r\n")
+
+
+def correspond(path, attendu):
+    """Vrai si le fichier a l'empreinte attendue, aux fins de ligne près pour un texte."""
+    contenu = path.read_bytes()
+    if path.suffix.lower() not in TEXTE:
+        return hashlib.sha256(contenu).hexdigest() == attendu
+    return any(hashlib.sha256(v).hexdigest() == attendu for v in variantes(contenu))

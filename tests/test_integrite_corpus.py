@@ -14,6 +14,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
+# Le cache de 2,5 Go est exclu du dépôt : sans lui, ces contrôles ne peuvent
+# pas être faits et sont signalés comme ignorés, non comme réussis.
+CACHE = RAW / "filings_text"
+SANS_CACHE = "cache documentaire data/raw/filings_text absent de cette copie"
 
 
 def sha256_bytes(contenu):
@@ -49,6 +53,7 @@ class IntegriteCorpusTests(unittest.TestCase):
         complets = sum(ligne["couverture"] == "vocabulaire_complet" for ligne in self.termes)
         self.assertEqual(complets, self.manifest["rapports_complets"])
 
+    @unittest.skipUnless(CACHE.is_dir(), SANS_CACHE)
     def test_sources_cachees_et_identites_correspondent_aux_empreintes(self):
         for ligne in self.termes:
             if ligne["couverture"] != "vocabulaire_complet":
@@ -69,6 +74,7 @@ class IntegriteCorpusTests(unittest.TestCase):
                     self.assertEqual(identite["cik"], ligne["source_cik"])
                     self.assertEqual(identite["source_url"], ligne["source_verification_url"])
 
+    @unittest.skipUnless(CACHE.is_dir(), SANS_CACHE)
     def test_chaque_citation_et_ses_repetitions_existent_aux_offsets_declares(self):
         @lru_cache(maxsize=4)
         def texte_du_cik(cik):
