@@ -344,3 +344,9 @@ Phase 1, collecte de `VFITX`, `VUSTX` et `^VIX` dans `data/raw/couverture/`, ave
 **Tâche 4, le risque résiduel.** Pour chaque stratégie appliquée à `P1`, trois mesures de ce qui reste : la part de la variance que le marché n'explique pas, la pire perte par épisode, et la perte moyenne au-delà de la VaR à 99 % calculée sur les seules séances de tension. Le risque résiduel est aussi décomposé par maillon pour la couverture par contrats à terme, afin de dire si ce qui reste est encore le risque des puces.
 
 **Tâche 5, ce que je m'interdis.** Aucune stratégie optimale, aucun poids optimisé. Aucune conclusion tirée de la seule sous-période depuis 2022. Aucun classement unique mêlant rendement et risque par une pondération que je choisirais.
+
+### État de l'étape 4 au 28 septembre 2026 : close
+
+Les six phases sont faites. Collecte : `VFITX`, `VUSTX`, `^VIX` et, pour un contrôle ajouté en cours de route, l'indice `^PUT`, avec leur manifeste. Construction et mesure : douze stratégies sur vingt et une séries, dans `src/couvrir_diversifier.ipynb`. Contrôles : identité des mélanges, positivité des valeurs, ordre de grandeur des primes, et niveau des prix d'option confronté à l'indice CBOE PutWrite. Tests : douze cas dans `tests/test_couverture.py`. Résultats : `research/resultats_couverture.md`.
+
+Deux décisions ont été prises après la phase 0 et sont datées dans le carnet : le bêta estimé dès 63 séances et fixé à un avant, écrit avant tout résultat ; la variante de prix d'option à trois points sous le `VIX`, ajoutée après le contrôle PutWrite, qui a montré que le modèle surévalue les puts à la monnaie d'environ 3,8 points de volatilité, à rebours de ce que la phase 0 annonçait. Des trois hypothèses écrites avant calcul, deux sont confirmées et la troisième, sur la couverture par l'indice en 2000 à 2002, est contredite.

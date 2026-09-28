@@ -1,0 +1,43 @@
+{
+  "produit_le": "2026-09-28T19:42:51+00:00",
+  "commande": "python -m src.collecter_couverture",
+  "source": "Yahoo Finance, via la bibliotheque yfinance",
+  "debut": "1999-01-01",
+  "fin": "2026-09-04",
+  "limites": [
+    "Yahoo Finance n est pas une source officielle ; aucune seconde source.",
+    "Adj Close des fonds est la valeur liquidative ajustee des distributions ; les frais de gestion y sont deja deduits.",
+    "Le VIX est un indice, pas un prix d option : il sert a evaluer des options par un modele.",
+    "Une nouvelle collecte ne promet pas les memes valeurs ajustees."
+  ],
+  "instruments": [
+    {
+      "symbole": "VFITX",
+      "description": "Vanguard Intermediate-Term Treasury Fund, parts Investor : obligations du Tresor a echeance intermediaire",
+      "fichier": "VFITX.csv",
+      "lignes": 6961,
+      "sha256": "d39ece8de475265c6c8eb68326b17f746e831b27cb7a7b6a746e463f5af27c02"
+    },
+    {
+      "symbole": "VUSTX",
+      "description": "Vanguard Long-Term Treasury Fund, parts Investor : obligations du Tresor longues",
+      "fichier": "VUSTX.csv",
+      "lignes": 6961,
+      "sha256": "5e691ba99afbf5e4e81af88be0b46899f5364e1f46bc94ccf358afbe446dd6a0"
+    },
+    {
+      "symbole": "^VIX",
+      "description": "Indice de volatilite implicite a trente jours du S&P 500, CBOE",
+      "fichier": "VIX.csv",
+      "lignes": 6962,
+      "sha256": "e639943a09d7895f4d54f24f9f42f94d1695b5bd59169385e53da9b38ad92d54"
+    },
+    {
+      "symbole": "^PUT",
+      "description": "Indice CBOE S&P 500 PutWrite : vente mensuelle de puts a la monnaie garantie par des bons du Tresor ; sert au controle du modele de prix des options, ajoute le 28 septembre 2026",
+      "fichier": "PUT.csv",
+      "lignes": 6957,
+      "sha256": "ef40ec45b6d4bfb370c9461d7e354c279d4b2233790d543217c092f222e729c6"
+    }
+  ]
+}
