@@ -1,0 +1,16 @@
+{
+  "produit_par": "src/comparer_strategies.ipynb",
+  "criteres": "research/plan_projet.md, section VIII",
+  "coupure_moities": "2013-05-01",
+  "bloc": 63,
+  "tirages": 2000,
+  "entree_sha256": {
+    "couverture_manifest.json": "1bc421b8e9d5c0616b6dc4e4c95216df0345fc0ef71e94bcbe9d305ba72c3230"
+  },
+  "sorties_sha256": {
+    "strategies_risque_egal.csv": "7e084893a66a8df97fe7f0fe3e093df89852a76925383970916eeb2ffe2d15d5",
+    "strategies_cout.csv": "2334080175d3dc59b9e8f36976d3c0cc9ca0ad599b67c15ee5e2b01d047622cb",
+    "strategies_risque_residuel.csv": "02806402fca295f8ba81681f6e6eae32679208ac54489cd4af45152e98a8d227",
+    "strategies_residuel_maillon.csv": "31bc34123a65dbda3c1a229ee0925d23daaeb35251aa2703b9fdae6917befcd8"
+  }
+}
