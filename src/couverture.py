@@ -216,3 +216,51 @@ def vente_puts_garantie(S, sigma, r, q, rendement_liquide, fins, niveau=1.0):
             dette = n * prime
         valeurs[i] = L - dette
     return pd.Series(valeurs, index=rendement_liquide.index)
+
+
+def melange_multiple(rendements, cibles, cout=COUT_MELANGE):
+    """Plusieurs poches ramenées à leurs poids cibles aux dates de `cibles`, dérive entre elles.
+
+    `rendements` est un tableau de rendements quotidiens, une colonne par poche.
+    `cibles` associe à chaque date de rééquilibrage une série de poids qui
+    somment à un ; la première date du tableau doit y figurer. Le coût vaut
+    `cout` fois le montant total échangé, prélevé avant la remise aux cibles,
+    sauf à la constitution. Renvoie la valeur et le total des frais.
+    """
+    r = np.nan_to_num(rendements.to_numpy(dtype=float))
+    colonnes = list(rendements.columns)
+    dates = [str(d) for d in rendements.index]
+    if dates[0] not in cibles:
+        raise ValueError("La première date doit porter des poids cibles.")
+    for w in cibles.values():
+        if not np.isclose(sum(w.values) if hasattr(w, "values") else sum(w), 1) or min(w) < 0:
+            raise ValueError("Les poids cibles doivent être positifs et sommer à un.")
+    poches = 100.0 * cibles[dates[0]].reindex(colonnes).to_numpy(dtype=float)
+    valeurs, frais = np.empty(len(dates)), 0.0
+    for i, jour in enumerate(dates):
+        if i > 0:
+            poches = poches * (1 + r[i])
+            if jour in cibles:
+                w = cibles[jour].reindex(colonnes).to_numpy(dtype=float)
+                V = poches.sum()
+                paye = cout * np.abs(w * V - poches).sum()
+                frais += paye
+                poches = w * (V - paye)
+        valeurs[i] = poches.sum()
+    return pd.Series(valeurs, index=rendements.index), frais
+
+
+def poids_inverse_volatilite(rendements, fenetre=SEANCES, minimum=63):
+    """Poids inversement proportionnels à la volatilité des poches sur la fenêtre.
+
+    Les poches dont l'historique est trop court reçoivent la volatilité
+    médiane des autres. Ce n'est une égalité des contributions au risque que
+    si les corrélations entre poches sont égales.
+    """
+    bloc = rendements.iloc[-fenetre:]
+    vol = bloc.std().where(bloc.count() >= minimum)
+    if vol.isna().all():
+        return pd.Series(1 / len(vol), index=vol.index)
+    vol = vol.fillna(vol.median())
+    inverse = 1 / vol
+    return inverse / inverse.sum()

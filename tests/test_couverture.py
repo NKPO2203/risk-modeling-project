@@ -137,3 +137,32 @@ def test_vente_de_puts_garantie():
     # Nominal : 100 / 100 = 1 put ; à l'échéance, le vendeur paie 100 - 80 = 20.
     assert v.iloc[0] == pytest.approx(100.0)
     assert v.iloc[2] == pytest.approx(100 + prime - 20)
+
+
+def test_melange_multiple_egal_au_melange_a_deux():
+    idx = jours(600)
+    rng = np.random.default_rng(6)
+    a = pd.Series(rng.normal(0, 0.01, 600), index=idx)
+    b = pd.Series(rng.normal(0, 0.003, 600), index=idx)
+    annuel = c.premieres_seances_annee(idx)
+    deux, frais2 = c.melange(a, b, 0.7, annuel)
+    w = pd.Series({"a": 0.7, "b": 0.3})
+    plusieurs, frais = c.melange_multiple(pd.DataFrame({"a": a, "b": b}), {d: w for d in annuel})
+    assert np.allclose(deux, plusieurs) and frais == pytest.approx(frais2)
+
+
+def test_melange_multiple_refuse_des_poids_invalides():
+    idx = jours(3)
+    df = pd.DataFrame({"a": 0.0, "b": 0.0}, index=idx)
+    with pytest.raises(ValueError):
+        c.melange_multiple(df, {idx[0]: pd.Series({"a": 0.8, "b": 0.3})})
+    with pytest.raises(ValueError):
+        c.melange_multiple(df, {idx[1]: pd.Series({"a": 0.5, "b": 0.5})})
+
+
+def test_poids_inverse_volatilite():
+    idx = jours(300)
+    rng = np.random.default_rng(7)
+    df = pd.DataFrame({"calme": rng.normal(0, 0.01, 300), "agite": rng.normal(0, 0.03, 300)}, index=idx)
+    w = c.poids_inverse_volatilite(df)
+    assert w.sum() == pytest.approx(1) and w["calme"] == pytest.approx(0.75, abs=0.03)
