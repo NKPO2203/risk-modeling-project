@@ -5,7 +5,6 @@ publié qu'après les étapes et contrôles ; un échec laisse un statut explici
 """
 from pathlib import Path
 import argparse
-import hashlib
 import importlib.metadata
 import json
 import subprocess
@@ -13,6 +12,8 @@ import sys
 
 import numpy as np
 import pandas as pd
+
+from empreintes import correspond, empreinte
 
 RACINE = Path(__file__).resolve().parents[1]
 PROCESSED = RACINE / "data" / "processed"
@@ -38,17 +39,13 @@ def ecrire_json(path, obj):
     temp.replace(path)
 
 
-def empreinte(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
-
-
 def verifier_sources_locales():
     raw = RACINE / "data/raw"
     manifeste = json.loads((raw / "filings_manifest.json").read_text(encoding="utf-8"))
     if set(manifeste["files"]) != {"filings_termes.csv", "filings_phrases.csv", "filings_log.csv"}:
         raise ValueError("Le manifeste documentaire ne décrit pas les trois CSV attendus.")
     for nom, info in manifeste["files"].items():
-        if empreinte(raw / nom) != info["sha256"]:
+        if not correspond(raw / nom, info["sha256"]):
             raise ValueError(f"Corpus incomplet ou modifié après publication : {nom}")
     termes = pd.read_csv(raw / "filings_termes.csv", dtype={"cik": str}, keep_default_na=False)
     for _, ligne in termes[termes.couverture == "vocabulaire_complet"].iterrows():
@@ -60,7 +57,7 @@ def verifier_sources_locales():
             if meta[cle] != ligne[cle]:
                 raise ValueError(f"Métadonnées incohérentes : {ligne.cik} {cle}")
         for ext, cle in ((".txt", "texte_sha256"), (".html", "html_sha256")):
-            if empreinte(path.with_suffix(ext)) != ligne[cle]:
+            if not correspond(path.with_suffix(ext), ligne[cle]):
                 raise ValueError(f"Cache documentaire altéré : {ligne.cik} {ext}")
 
 
@@ -72,7 +69,7 @@ def verifier_manifeste():
     for groupe in ("entrees_sha256", "sorties_sha256"):
         for nom, attendu in manifeste[groupe].items():
             chemin = (RACINE / nom).resolve()
-            if not chemin.is_relative_to(RACINE.resolve()) or not chemin.is_file() or empreinte(chemin) != attendu:
+            if not chemin.is_relative_to(RACINE.resolve()) or not chemin.is_file() or not correspond(chemin, attendu):
                 raise ValueError(f"Le fichier a changé depuis le calcul : {nom}. Relancer le pipeline.")
 
 

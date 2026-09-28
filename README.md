@@ -1,21 +1,60 @@
 # AI Concentration Risk Research
 
-Je construis et compare des portefeuilles à partir d'un univers documenté d'entreprises exposées à la chaîne des infrastructures de calcul liées à l'IA, issu de la composition locale du S&P 500.
+Je construis un univers documenté de 134 entreprises du S&P 500 exposées à la chaîne des infrastructures de calcul liées à l'IA, puis je mesure le risque des portefeuilles qu'on peut en tirer depuis 2000 et je le compare à celui des 366 autres entreprises de l'indice construites de la même façon.
 
-L'étape 1 prépare les sources, les décisions et les comptes. L'étape 2 produit maintenant des trajectoires rétrospectives et leurs contrôles. Le [complément de vérification](research/verification_etape_2.md) donne les corrections de prix, la comparaison Nasdaq et sa couverture réelle. L'analyse des sources du risque et des couvertures reste à faire.
+## Ce que le projet établit
+
+![Le thème, son témoin et le marché](figures/1_valeurs.png)
+
+1. **Le thème est plus risqué que le reste du marché, à secteurs égaux.** Sa volatilité dépasse de 2,2 points celle d'un témoin de 366 entreprises repondéré aux mêmes secteurs ; l'écart est significatif.
+2. **Il n'est pas démontré qu'il rémunère mieux ce risque.** Son ratio de Sharpe ne se distingue pas de celui du témoin, et l'essentiel de sa performance face à `SPY` se retrouve chez le témoin : c'est le biais de survie d'un univers choisi en 2026, pas l'IA.
+3. **Le risque du thème est celui des puces.** Les semi-conducteurs détiennent 45 % de l'argent et portent 77 % du risque ; l'électricité détient 14 % et en porte 2 %.
+4. **Sans rééquilibrage, le portefeuille se concentre en six ans.** De fin 2019 à 2026, son nombre effectif de lignes passe de 54 à 11,6.
+5. **Le rééquilibrage réduit le risque, mais son avantage de rendement ajusté n'est pas établi.** La baisse de volatilité est significative sur huit portefeuilles sur dix, l'écart de Sharpe sur un seul.
+
+| | |
+|---|---|
+| ![Risque par maillon](figures/3_risque_par_maillon.png) | ![Concentration](figures/4_concentration.png) |
+| ![Replis](figures/2_replis.png) | ![Bootstrap](figures/6_bootstrap_sharpe.png) |
+
+Le détail, les chiffres et leurs limites sont dans [les résultats de l'étape 3](research/resultats_risque.md), section XI pour le témoin et les tests statistiques. La question de recherche proposée est dans le [Research Charter](research/research_charter.md), blocs 2 et 3, à valider.
+
+**Ce que ces résultats ne disent pas.** Aucune performance n'est réalisable : l'univers n'était pas connaissable en 2000. Aucune causalité n'est établie entre l'IA et le risque mesuré. Un risque mesuré est un risque passé.
+
+## Reproduire les résultats
+
+```powershell
+python -m pip install -r requirements.txt
+python -B -m src.construire_portefeuilles --check-only   # vérifie l'étape 2 sans recalcul
+python -B -m src.construire_temoin                        # groupe témoin, hors réseau
+python -B -m unittest discover -s tests -v
+```
+
+Les carnets de l'étape 3 s'exécutent ensuite dans Jupyter, dans cet ordre : `src/mesurer_risque.ipynb`, `src/robustesse_statistique.ipynb`, `src/figures.ipynb`. Ils appellent les fonctions testées de `src/risque.py`.
+
+Les empreintes des fichiers sont vérifiées aux fins de ligne près : un dépôt extrait sous Windows, macOS ou Linux passe les mêmes contrôles (`src/empreintes.py`).
+
+**Le corpus des rapports SEC n'est pas dans le dépôt.** `data/raw/filings_text/` pèse 2,5 Go et reste exclu par `.gitignore`. Il n'est nécessaire qu'à l'étape 1 (`src/run_pipeline.py` et `tests/test_integrite_corpus.py`) ; les étapes 2 et 3 se reproduisent sans lui. Pour le rendre accessible, le déposer compressé sur [Zenodo](https://zenodo.org), qui attribue un DOI citable, ou en pièce jointe d'une Release GitHub ; `data/raw/filings_manifest.json` et les empreintes de `filings_termes.csv` permettent de vérifier qu'il s'agit du bon corpus.
+
+## Historique du projet
+
+L'étape 1 prépare les sources, les décisions et les comptes. L'étape 2 produit les trajectoires rétrospectives et leurs contrôles ; le [complément de vérification](research/verification_etape_2.md) donne les corrections de prix, la comparaison Nasdaq et sa couverture réelle. L'étape 3 mesure le risque, ses sources et son comportement en crise.
 
 ## Lire le projet
 
-- [Contexte et état actuel](research/master_context.md)
-- [Research Charter — bloc 1 finalisé et sourcé](research/research_charter.md)
+- [Résultats de l'étape 3 : risque, témoin et tests statistiques](research/resultats_risque.md)
+- [Research Charter — bloc 1 sourcé, blocs 2 et 3 proposés](research/research_charter.md)
+- [Règles de construction des portefeuilles](research/portefeuilles.md)
+- [Plan du projet et décisions datées](research/plan_projet.md)
 - [Règle de sélection, version III](research/selection_rule.md)
 - [Univers et interprétation des résultats](research/univers_selection.md)
 - [Erreurs rencontrées et raisons des corrections](research/corrections_2026-09-05.md)
 - [Chiffres recalculés](data/processed/synthese_resultats.md)
+- [Notes de travail et contexte pédagogique](research/master_context.md)
 
 La rédaction de recherche explique mon raisonnement. Les nombres courants sont produits depuis les fichiers ; les anciens états sont conservés dans `research/archive/2026-09-05_avant_corrections/`.
 
-## Reproduire les calculs sans réseau
+## Étape 1 : reproduire les calculs sans réseau
 
 Environnement de référence actuel : Python 3.13.9 ; le replay de l'étape 2 a aussi été vérifié sous Python 3.12.14. Les versions des bibliothèques sont fixées dans `requirements.txt`. Les collectes SEC utilisent la bibliothèque standard Python, celle des prix utilise yfinance ; les tests utilisent `unittest`.
 
@@ -105,7 +144,6 @@ Une exposition économique documentée ne démontre ni une corrélation boursiè
 
 Les tests contrôlent des erreurs précises et la cohérence des artefacts. Ils ne remplacent pas la lecture critique des sources et ne certifient pas l'absence de toute erreur.
 
-`main.py` et `risk_analysis.ipynb` restent les exercices initiaux du workflow, distincts du traitement de recherche dans `src/`.
 
 
 ## Étape 2 : reconstruction des portefeuilles

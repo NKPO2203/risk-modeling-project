@@ -181,3 +181,51 @@ def episodes_de_tension(niveau, seuil=0.15):
                            "seances": len(segment),
                            "seances_repli": segment.index.get_loc(creux) + 1})
     return pd.DataFrame(lignes)
+
+
+def forbes_rigobon(rho, delta):
+    """Correlation de crise corrigee de la hausse de variance du marche.
+
+    Une correlation mesuree quand la volatilite du marche augmente est
+    mecaniquement plus elevee, meme si le lien entre les titres n'a pas change
+    (Forbes et Rigobon, 2002). `delta` est la hausse relative de la variance
+    du marche entre periode calme et periode de tension. La correction
+    suppose que la hausse de variance vient du marche commun.
+    """
+    if delta <= -1:
+        raise ValueError("La variance de tension doit rester positive.")
+    return float(rho / np.sqrt(1 + delta * (1 - rho ** 2)))
+
+
+def indices_blocs(n, longueur, tirages, graine=0):
+    """Indices du bootstrap circulaire par blocs de longueur fixe.
+
+    Des blocs contigus conservent l'agregation des jours agites que le tirage
+    jour par jour detruirait, et donc l'incertitude reelle d'un ratio.
+    """
+    if not 1 <= longueur <= n:
+        raise ValueError("La longueur des blocs doit etre comprise entre 1 et n.")
+    rng = np.random.default_rng(graine)
+    blocs = -(-n // longueur)
+    departs = rng.integers(0, n, size=(tirages, blocs))
+    indices = (departs[:, :, None] + np.arange(longueur)) % n
+    return indices.reshape(tirages, -1)[:, :n]
+
+
+def ecart_bootstrap(a, b, statistique, longueur=63, tirages=2000, graine=0):
+    """Ecart statistique(a) - statistique(b) et son intervalle a 95 %.
+
+    Les deux series sont tirees aux memes dates, ce qui conserve leur
+    correlation : l'incertitude porte sur l'ecart, pas sur chaque niveau.
+    La probabilite bilaterale est la part des tirages du mauvais cote de zero,
+    doublee.
+    """
+    a, b = np.asarray(a, dtype=float), np.asarray(b, dtype=float)
+    if a.shape != b.shape or a.ndim != 1:
+        raise ValueError("Deux series de meme longueur sont attendues.")
+    observe = statistique(a) - statistique(b)
+    idx = indices_blocs(len(a), longueur, tirages, graine)
+    tires = np.array([statistique(a[i]) - statistique(b[i]) for i in idx])
+    p = 2 * min((tires <= 0).mean(), (tires >= 0).mean())
+    return {"ecart": float(observe), "bas": float(np.quantile(tires, 0.025)),
+            "haut": float(np.quantile(tires, 0.975)), "p_bilaterale": float(min(p, 1.0))}

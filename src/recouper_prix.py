@@ -5,11 +5,11 @@ Une concordance de rendements ne certifie ni les unités historiques ni la
 liquidité. Une réponse vide et une paire de dates différentes restent absentes.
 """
 from pathlib import Path
-import hashlib
 import json
 import numpy as np
 import pandas as pd
 from src.construire_portefeuilles import lire_prix
+from src.empreintes import correspond
 
 ROOT = Path(__file__).resolve().parents[1]
 DOSSIER = Path('data/review/sources_cloture_2026-09-08')
@@ -40,7 +40,7 @@ def recouper(root=ROOT):
     rows, couverture = [], []
     for e in manifeste:
         f = (root/e['fichier']).resolve()
-        if f.parent != dossier.resolve() or hashlib.sha256(f.read_bytes()).hexdigest() != e['sha256']:
+        if f.parent != dossier.resolve() or not correspond(f, e['sha256']):
             raise ValueError(f"Preuve Nasdaq modifiée : {e['titre']}")
         z = json.loads(f.read_text(encoding='utf-8'))
         data = z.get('data') or {}

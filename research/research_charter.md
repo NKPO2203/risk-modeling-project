@@ -36,6 +36,36 @@ Le nombre d'entreprises retenues est un résultat de cette sélection, pas une p
 
 Le bloc 1 est désormais rédigé et sourcé. La vérification de la composition locale de l'indice et les revues encore ouvertes restent des tâches concernant les données ; elles ne sont pas utilisées comme preuves dans ce paragraphe.
 
-## Blocs 2 et 3 — Prochaine étape
+## Blocs 2 et 3 — Proposition du 28 septembre 2026, à valider
 
-Je dois maintenant formuler le **Research Problem**, puis la **Research Question** testable. Le premier expliquera la difficulté que ces constats soulèvent ; la seconde précisera ce que les données et les comparaisons de portefeuilles permettront de trancher. Ces deux blocs ne sont pas encore finalisés.
+*Ces deux blocs sont proposés, pas adoptés. Ils ne deviennent la question du projet qu'après décision datée de l'auteur. Ils sont écrits après les résultats de l'étape 3 : une question formulée après avoir vu les chiffres risque d'être taillée pour eux. La proposition réduit ce risque de deux façons : elle ne reprend que des comparaisons déjà fixées avant tout calcul dans la phase 0 de l'étape 3, et elle ajoute un test prospectif sur des données que personne n'a encore vues.*
+
+### Bloc 2 — Research Problem
+
+Le bloc 1 pose deux constats : la concentration du marché américain est historiquement élevée, et des entreprises de métiers très différents, semi-conducteurs, équipement, électricité, immobilier, déclarent une activité dans la chaîne des infrastructures de calcul.
+
+La difficulté est que ces deux constats ne disent rien, à eux seuls, du risque d'un investisseur. Une exposition documentée dans un rapport annuel est une relation économique ; elle n'implique ni que les cours de ces entreprises bougent ensemble, ni qu'un portefeuille qui les rassemble soit plus risqué qu'un autre. Inversement, un portefeuille peut devenir concentré sans que personne n'ait choisi de le concentrer, par la seule dérive des poids. Trois obstacles empêchent de trancher par simple observation :
+
+1. **Le biais de sélection.** Un univers défini avec les rapports de 2026 et appliqué depuis 2000 ne contient que des survivants. Toute performance mesurée mélange l'effet du thème et celui de la survie.
+2. **La confusion entre thème, secteur et pondération.** Un portefeuille du thème est surpondéré en technologie et en services aux collectivités, et il est équipondéré. Comparé au marché, il diffère sur ces trois points à la fois.
+3. **Le bruit d'échantillonnage.** Sur vingt-six ans de données quotidiennes, des écarts de ratio de Sharpe de l'ordre de 0,05 sont du même ordre que leur incertitude.
+
+Le problème est donc d'isoler ce que l'exposition documentée à cette chaîne ajoute au risque, une fois neutralisés le biais de survie, le mélange sectoriel et la pondération, et de distinguer ce qui relève de la sélection des entreprises de ce qui relève de la gestion des poids.
+
+### Bloc 3 — Research Question
+
+**Question principale.** À biais de survie, pondération et répartition sectorielle identiques, un portefeuille d'entreprises du S&P 500 ayant une exposition documentée à la chaîne des infrastructures de calcul liées à l'IA présente-t-il, entre 2000 et 2026, une volatilité, une queue de distribution et un rendement ajusté du risque différents de ceux des autres entreprises de l'indice ?
+
+**Question secondaire.** Pour ces portefeuilles, le rééquilibrage annuel vers l'équipondération réduit-il le risque et améliore-t-il le rendement ajusté du risque par rapport à une gestion qui laisse les poids dériver ?
+
+**Comment chacune est tranchée.**
+
+| Question | Comparaison | Mesure | Critère |
+|---|---|---|---|
+| Principale | `P1` contre `T1S`, gestion rééquilibrée | Volatilité, perte moyenne au-delà de la VaR à 99 %, Sharpe | Intervalle à 95 % du bootstrap par blocs d'un trimestre excluant zéro |
+| Secondaire | Chaque `Pi` rééquilibré contre sa version conservée | Volatilité, Sharpe | Même critère, portefeuille par portefeuille |
+| Prospective | `P1` contre `T1S` après le 4 septembre 2026, dernière séance du cliché, sur des données non encore observées | Volatilité | Écart de même signe qu'en rétrospectif, mesuré après au moins 252 séances |
+
+**Ce que la question ne demande pas.** Elle ne demande pas si l'IA cause le risque, ni si une stratégie aurait été rentable : l'univers n'était pas connaissable en 2000. Elle ne porte pas sur la concentration de l'indice par capitalisation, que l'auteur a exclue le 8 septembre 2026 ; la concentration du bloc 1 reste un contexte.
+
+**Réponse actuelle, à titre indicatif.** Sur la période rétrospective, la volatilité du thème dépasse celle du témoin de 2,2 points, écart significatif ; son Sharpe ne s'en distingue pas. Le rééquilibrage réduit significativement la volatilité de huit portefeuilles sur dix, mais n'améliore significativement le Sharpe que d'un seul. Voir la section XI de `research/resultats_risque.md`.

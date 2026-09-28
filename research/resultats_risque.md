@@ -6,6 +6,8 @@ Ce document rapporte ce que la mesure établit, question par question. Les huit 
 
 Je réponds dans l'ordre des six questions de la section 8 du contexte maître.
 
+> **Mise à jour du 28 septembre 2026.** Trois contrôles ont été ajoutés après la rédaction initiale : un groupe témoin construit avec les 366 entreprises SORT, un bootstrap des écarts entre gestions, et la correction de Forbes et Rigobon sur la corrélation de crise. Ils confirment les résultats sur la volatilité et la concentration du risque, mais en affaiblissent trois : l'avantage de Sharpe du rééquilibrage, la montée de la corrélation en crise, et le caractère propre au thème d'une diversification épuisée. Les passages concernés renvoient à la section XI, qui donne les chiffres.
+
 ---
 
 ## I. La concentration apporte-t-elle un supplément de rendement
@@ -18,7 +20,7 @@ Sur `P1`, le thermomètre du thème, l'écart annualisé vaut **huit centièmes 
 
 Ce classement a changé de sens trois fois au cours du projet, au fil des corrections du moteur de construction. Il ne peut pas porter une conclusion.
 
-**Les niveaux eux-mêmes ne sont pas interprétables.** Les portefeuilles ressortent entre 11,0 % et 21,7 % par an quand `SPY` fait 8,35 %. Cet écart n'est pas un résultat sur l'intelligence artificielle, c'est la taille du biais de connaissance a posteriori : l'univers a été établi avec des rapports de 2026 puis appliqué à des prix depuis 2000. Aucune performance de ce document ne décrit une stratégie qu'un investisseur aurait pu suivre.
+**Les niveaux eux-mêmes ne sont pas interprétables.** Les portefeuilles ressortent entre 11,0 % et 21,7 % par an quand `SPY` fait 8,35 %. Cet écart n'est pas un résultat sur l'intelligence artificielle, c'est la taille du biais de connaissance a posteriori : l'univers a été établi avec des rapports de 2026 puis appliqué à des prix depuis 2000. Aucune performance de ce document ne décrit une stratégie qu'un investisseur aurait pu suivre. Le groupe témoin chiffre ce biais : les 366 entreprises SORT, construites de la même façon, rapportent 16,07 % par an. Environ 7,7 des 10,4 points d'écart entre `P1` et `SPY` se retrouvent donc hors du thème (section XI).
 
 ## II. Quel risque faut-il supporter
 
@@ -57,6 +59,8 @@ Deux nuances imposées par les contrôles. `P6` est indécidable : ses deux gest
 
 La formulation exacte est donc : **le rééquilibrage réduit le risque sur huit portefeuilles aux deux fréquences, `P5` fait exception, et `P6` est indécidable.**
 
+Le bootstrap de la section XI précise la portée de ces décomptes. La baisse de volatilité est significative à 5 % sur huit portefeuilles sur dix. L'avantage de Sharpe ne l'est que sur `P4` : pour les neuf autres, l'écart observé reste dans ce que le hasard d'échantillonnage produit. Le rééquilibrage réduit donc le risque de façon établie, mais son meilleur rendement ajusté du risque n'est pas démontré.
+
 ## IV. Que devient le portefeuille en marché défavorable
 
 Six épisodes de tension sont identifiés mécaniquement, comme un repli de `SPY` d'au moins 15 % depuis son plus haut. Du sommet au creux, ils couvrent 1 315 séances sur 6 709, soit 19,6 % de la période. Aucune date n'est choisie à la main.
@@ -66,6 +70,8 @@ Six épisodes de tension sont identifiés mécaniquement, comme un repli de `SPY
 **L'électricité est l'amortisseur du thème.** Sur les six épisodes, elle en traverse quatre presque intacte : +4,3 % en 2000-2002 quand le marché perd 47,3 %, −0,3 % en 2018, −8,4 % en 2025. Elle ne souffre que dans les deux épisodes où tout tombe, 2008 et 2020.
 
 **La diversification s'évapore quand elle servirait.** La corrélation interne monte en période de tension dans les **dix portefeuilles sans exception**, de 9 % sur l'électricité à 72 % sur les acheteurs. Traduit avec la formule de décomposition, `P1` passe de **3,21 actifs indépendants équivalents au calme à 2,29 en tension**, et les acheteurs de 2,58 à 1,66.
+
+Cette hausse est brute. La variance de `SPY` est multipliée par 3,73 pendant les épisodes de tension, et une corrélation mesurée quand la variance du marché augmente monte mécaniquement. Après la correction de Forbes et Rigobon, la corrélation de tension devient inférieure à la corrélation de calme dans neuf portefeuilles sur dix et dans le témoin ; seul `P4` garde une hausse, de 0,006. La phrase juste est donc : les titres bougent davantage ensemble en crise parce que le facteur de marché domine, pas parce que leur lien propre se renforce (section XI).
 
 **Les portefeuilles qui paraissent défensifs perdent leur caractère défensif à la baisse.** Le bêta conditionnel de `P10` conservé vaut 0,980 quand le marché monte et **1,103** quand il baisse. Le même écart, positif donc défavorable, se retrouve sur les engagements documentés, l'immobilier et l'électricité. À l'inverse, les maillons des puces, dont le bêta dépasse 1,35, participent moins aux baisses qu'aux hausses.
 
@@ -78,6 +84,8 @@ Par le nombre de titres, non : cette voie est déjà épuisée.
 La corrélation moyenne interne de `P1` vaut **0,338**. En appliquant la décomposition de la volatilité d'un portefeuille équipondéré, ses 135 lignes réduisent le risque autant que le feraient **2,92 titres parfaitement indépendants**. Le plancher, celui qu'atteindrait un portefeuille de taille infinie, vaut 22,69 % contre 22,85 % pour la volatilité prédite : il reste **quarante-deux centièmes de point à gagner** en ajoutant des entreprises. Rien.
 
 Aucun des dix portefeuilles ne dépasse **trois actifs indépendants équivalents**. Passer de vingt-quatre à cent trente-cinq entreprises, soit 5,6 fois plus, achète six dixièmes d'actif indépendant.
+
+Ce plafond n'est pas propre au thème. Les 368 titres du témoin ont une corrélation moyenne de 0,309 et valent 3,21 actifs indépendants, contre 0,338 et 2,92 pour `P1`. La diversification par le nombre est épuisée pour l'ensemble des survivants du S&P 500, et le thème n'y est qu'un peu plus exposé (section XI).
 
 L'analyse en composantes principales confirme par une autre voie. Le premier facteur explique 27,6 % de la variance de `P1`, et son inverse vaut 3,6, du même ordre que le 2,92 obtenu par la corrélation. Deux méthodes indépendantes s'accordent autour de trois. Il faut **22 facteurs pour expliquer 70 %** de la variance de 132 titres, et sur l'électricité un seul facteur en explique **57,8 %**.
 
@@ -132,3 +140,30 @@ Aucune performance n'est présentée comme réalisable. Aucune causalité n'est 
 **Les modèles de volatilité conditionnelle et les lois à queues épaisses ne sont pas employés.** Ils sont au-dessus du standard fixé pour ce projet et deviennent une limite écrite. La VaR historique est donc la seule utilisée, avec son taux de dépassement réel publié à côté.
 
 **Les cinq séries de comparaison n'ont pas de composition.** Les analyses de contribution, de concentration et de maillon portent sur vingt séries de portefeuille et non sur vingt-cinq, parce que la composition ligne à ligne de `SPY` et de `RSP` n'a jamais été collectée.
+
+## XI. Ce que changent le témoin et les tests statistiques
+
+*Ajouté le 28 septembre 2026. Calculs : `src/construire_temoin.py` et `src/robustesse_statistique.ipynb`. Figures : `figures/`.*
+
+**Le groupe témoin.** Les 366 entreprises SORT, soit 368 titres, sont construites avec le même moteur, les mêmes règles d'entrée, le même rééquilibrage de janvier et les mêmes frais que `P1`. Elles partagent avec le thème la composition du S&P 500 de 2026, donc le même biais de survie. `T1` les équipondère ; `T1S` les repondère pour reproduire la répartition sectorielle de `P1`, 35,8 % de technologie, 20,9 % d'industrie, 17,9 % de services aux collectivités, etc. Leurs cours viennent de Yahoo sans seconde source ni correction manuelle ; une séance manquante a été complétée et 38 variations de plus de 50 % en une séance ont été examinées, qui correspondent à des événements réels ou à des scissions déjà compensées par le fournisseur.
+
+| Série, gestion rééquilibrée | Annualisé | Volatilité | Sharpe | Repli maximal | Bêta à `SPY` |
+|---|---|---|---|---|---|
+| `P1`, thème | 18,70 % | 21,73 % | 0,81 | −51,8 % | 1,05 |
+| `T1S`, témoin aux mêmes secteurs | 16,27 % | 19,53 % | 0,77 | −50,4 % | 0,95 |
+| `T1`, témoin équipondéré | 16,07 % | 18,86 % | 0,79 | −51,8 % | 0,92 |
+| `SPY` | 8,35 % | 19,11 % | | −54,9 % | 1,00 |
+
+Trois conclusions en découlent.
+
+1. **La plus grande partie de la performance n'a rien à voir avec l'IA.** Un portefeuille équipondéré de survivants du S&P 500 fait déjà 16 % par an. Le supplément propre au thème, face à `T1S`, vaut 2,5 points de rendement excédentaire, avec un intervalle à 95 % de −1,0 à +6,1 points : il n'est pas significatif (p = 0,17).
+2. **Le thème est plus risqué, et cela est établi.** Sa volatilité dépasse celle de `T1S` de 2,2 points, intervalle de 1,7 à 2,8 points. Même à secteurs égaux, les entreprises du thème bougent davantage.
+3. **Le rendement supplémentaire paie à peu près ce risque supplémentaire, sans plus.** L'écart de Sharpe avec `T1S` vaut 0,04, intervalle de −0,13 à +0,20 (p = 0,70).
+
+**Le bootstrap des deux gestions.** Chaque paire de séries est retirée 2 000 fois par blocs d'un trimestre, aux mêmes dates, ce qui conserve à la fois l'agrégation des jours agités et la corrélation entre les deux gestions. La baisse de volatilité due au rééquilibrage est significative sur huit portefeuilles ; `P8` et `P9` sont les exceptions. L'écart de Sharpe n'est significatif que pour `P4`, les acheteurs d'infrastructure, dont la version conservée a porté la chute de 2000-2002. Le « neuf sur dix » de la section III est un décompte de signes, pas une preuve.
+
+**La corrélation de crise corrigée.** La correction de Forbes et Rigobon divise la corrélation de tension par $\sqrt{1+\delta(1-\rho^2)}$, où $\delta = 2{,}73$ est la hausse relative de la variance de `SPY`. Appliquée à la corrélation moyenne entre titres, c'est une approximation. La corrélation corrigée de `P1` vaut 0,241 en tension contre 0,307 au calme. La hausse disparaît dans dix séries sur onze. Cette correction est elle-même discutée : elle suppose que la hausse de variance vient d'un choc commun et non d'une contagion, et tend donc à conclure à l'absence de contagion. Les deux lectures sont écrites ; aucune n'est retenue seule.
+
+**Le plafond de diversification est celui du marché.** Le témoin atteint 3,21 actifs indépendants avec 368 titres, le thème 2,92 avec 135. Le résultat de la section V reste vrai, mais il décrit les grandes entreprises américaines en général, dont le thème est un sous-ensemble un peu plus corrélé.
+
+**Ce qui résiste.** La concentration du risque dans les puces (figure 3), la concentration qui se forme sans rééquilibrage (figure 4), la baisse de volatilité due au rééquilibrage et le surcroît de volatilité du thème sont confirmés par ces contrôles.

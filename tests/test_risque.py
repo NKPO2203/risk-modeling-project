@@ -10,7 +10,8 @@ import numpy as np
 import pandas as pd
 
 from src.risque import (annualiser_rendement, contributions_au_risque, drawdown,
-                        episodes_de_tension, herfindahl, kupiec, n_effectif,
+                        ecart_bootstrap, episodes_de_tension, forbes_rigobon,
+                        herfindahl, indices_blocs, kupiec, n_effectif,
                         perte_au_dela, rho_implicite, sharpe, sortino,
                         var_historique, volatilite, volatilite_baisse)
 
@@ -199,6 +200,41 @@ class EpisodesTests(unittest.TestCase):
         self.assertEqual(e.seances_repli, 3)
         self.assertEqual(e.seances, 4)
         self.assertEqual(e.retour, niveau.index[4])
+
+
+
+class CorrectionEtBootstrapTests(unittest.TestCase):
+
+    def test_sans_hausse_de_variance_la_correlation_est_inchangee(self):
+        self.assertAlmostEqual(forbes_rigobon(0.4, 0.0), 0.4, places=12)
+
+    def test_la_correction_reduit_une_correlation_de_crise(self):
+        # variance du marche multipliee par trois en tension
+        self.assertLess(forbes_rigobon(0.5, 2.0), 0.5)
+        self.assertAlmostEqual(forbes_rigobon(0.5, 2.0), 0.5 / np.sqrt(1 + 2 * 0.75), places=12)
+
+    def test_une_correlation_parfaite_reste_parfaite(self):
+        self.assertAlmostEqual(forbes_rigobon(1.0, 5.0), 1.0, places=12)
+
+    def test_les_blocs_sont_contigus_et_de_la_bonne_taille(self):
+        idx = indices_blocs(10, 4, 3, graine=1)
+        self.assertEqual(idx.shape, (3, 10))
+        premier = idx[0, :4]
+        self.assertTrue(np.array_equal(np.diff(premier) % 10, np.ones(3)))
+
+    def test_deux_series_identiques_n_ont_aucun_ecart(self):
+        r = np.random.default_rng(0).normal(0, 0.01, 500)
+        res = ecart_bootstrap(r, r, np.std, longueur=20, tirages=200)
+        self.assertEqual(res["ecart"], 0.0)
+        self.assertEqual(res["bas"], 0.0)
+        self.assertEqual(res["haut"], 0.0)
+
+    def test_un_ecart_net_est_significatif(self):
+        rng = np.random.default_rng(0)
+        r = rng.normal(0, 0.01, 2000)
+        res = ecart_bootstrap(2 * r, r, np.std, longueur=20, tirages=500)
+        self.assertLess(res["p_bilaterale"], 0.01)
+        self.assertGreater(res["bas"], 0)
 
 
 if __name__ == "__main__":
