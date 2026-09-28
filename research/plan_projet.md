@@ -6,7 +6,7 @@
 
 Je déclare une étape close lorsque les livrables demandés existent, que les calculs et leurs dépendances se reproduisent sur le cliché conservé, et que les limites sont écrites. Cette définition s'applique de la même manière aux deux premières étapes. Elle ne signifie pas validation intégrale de chaque prix ou de chaque interprétation.
 
-L'étape 1 est close : les 500 dossiers sont tranchés, 134 ENTRE et 366 SORT, sans dossier en attente. L'étape 2 est close pour les dix groupes et leurs vingt séries construits, sous les limites finies décrites ci-dessous. Les étapes 3, 4 et 5 ne sont pas commencées. Aucune mesure nouvelle de risque ni couverture n'a été entreprise dans cette finition.
+L'étape 1 est close : les 500 dossiers sont tranchés, 134 ENTRE et 366 SORT, sans dossier en attente. L'étape 2 est close pour les dix groupes et leurs vingt séries construits, sous les limites finies décrites ci-dessous. L'étape 3 est close le 8 septembre 2026 : trente-sept tâches, sept phases, ses résultats dans `research/resultats_risque.md` et ses limites à la section X du même document. Les étapes 4 et 5 ne sont pas commencées.
 
 ## II. Les huit phases de l'étape 2
 
