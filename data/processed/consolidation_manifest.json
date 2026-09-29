@@ -1,0 +1,13 @@
+{
+  "produit_par": "src/consolider_etape3.ipynb",
+  "decisions": "research/plan_projet.md, section VI ter",
+  "code_sha256": {
+    "src/regles.py": "597f309bbc8b0f47b7c3477015afae29bd1744ad6d2fb498665f30244e789cdf",
+    "src/risque.py": "de5b32d9ae1727aad7b5aadc185f167b44870e08cd4b6260bbf4132809cf8281"
+  },
+  "sorties_sha256": {
+    "consolidation_var.csv": "e03df76729842164bde1f2d1a507c588e77a189bf9cfd20c297b2ea4c9150528",
+    "consolidation_parts_ledoit_wolf.csv": "841bd7b00959242897ce50ebf470686f0157dc9430b4a5121af3951e83d2361f",
+    "consolidation_annualisation.csv": "dab4a7e66f9cba684f95aaa762d5019d97ed71b782181d5a795acfb4f5fcd717"
+  }
+}
