@@ -1,0 +1,34 @@
+{
+  "produit_le": "2026-09-29T01:35:51+00:00",
+  "commande": "python -m src.collecter_fondamentaux",
+  "source": "SEC, interface XBRL companyfacts (data.sec.gov)",
+  "entreprises": 134,
+  "entreprises_sans_faits": [],
+  "etiquettes": {
+    "us-gaap": [
+      "Assets",
+      "GrossProfit",
+      "Revenues",
+      "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "SalesRevenueNet",
+      "CostOfRevenue",
+      "CostOfGoodsAndServicesSold",
+      "CostOfGoodsSold",
+      "NetIncomeLoss",
+      "NetCashProvidedByUsedInOperatingActivities",
+      "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+      "StockholdersEquity",
+      "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    ],
+    "dei": [
+      "EntityPublicFloat"
+    ]
+  },
+  "lignes": 59318,
+  "limites": [
+    "Seuls les rapports annuels 10-K sont gardes ; les 10-K/A et les 10-Q sont exclus.",
+    "Les faits XBRL commencent avec les depots de 2009 et 2010.",
+    "Une entreprise etrangere deposant des 20-F n'a pas de faits 10-K."
+  ],
+  "sha256": "e116b97dabbf808bcaad5a08f7cf70149bd431c6c9a8b8fd94430956e646a5d1"
+}
