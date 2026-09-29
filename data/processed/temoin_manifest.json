@@ -1,6 +1,6 @@
 {
   "statut": "termine",
-  "produit_le": "2026-09-29T00:28:22+00:00",
+  "produit_le": "2026-09-29T00:47:39+00:00",
   "commande": "python -m src.construire_temoin",
   "cout": 0.001,
   "titres": 368,
@@ -23,8 +23,8 @@
     "data/raw/calendrier_bourse.csv": "944874dfea6197c70a164d0d72e0074b6d8afbc5bf041bda82a4d5fd4d81f01f",
     "data/raw/taux_sans_risque.csv": "6c7e1bf61bf2af0ee3a7ff68992a41a9f367e6f62add3b2c28358089f4390d05",
     "data/review/decisions_selection.csv": "0689095e1b16c6d1c080fc5b8845e39f32db03b1dc4b28d0809236a62023dcbc",
-    "data/processed/pipeline_portefeuilles.json": "7ad2e28aa87a98509f3b6d216fde655934767c956e912647e30de1813f977e47",
-    "data/processed/risque_manifest.json": "5e1a1d99ce39033ecedf91048cec3ce3bd2f6042d78d6c3f9d0260877a78ba1b",
+    "data/processed/pipeline_portefeuilles.json": "bf2909c8edf67c241993b764f63fe2f428b0bdffe8f727242a03b87a7ba851b9",
+    "data/processed/risque_manifest.json": "41f87e20e56166966c9c7e32a53f74ed821af7ab5aa9b7705beae116d350d319",
     "src/construire_temoin.py": "a1143d2522aab4ecd94b000f697860d01788e28ec0b2c1036658bf8674110cba",
     "src/construire_portefeuilles.py": "e941d776e0af07b6f7be3d2f990d50971faf1f6d4eb7c583076917b44ce3550e",
     "src/portefeuille.py": "065ce80c2accf9a08dfc5edab65f0dcfb26a937a118186dd5cfef4f860af045c",

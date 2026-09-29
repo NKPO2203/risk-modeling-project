@@ -6,22 +6,19 @@ Je construis un univers documenté de 134 entreprises du S&P 500 exposées à la
 
 ![Le thème, son témoin et le marché](figures/1_valeurs.png)
 
-1. **Le thème est plus risqué que le reste du marché, à secteurs égaux.** Sa volatilité dépasse de 2,2 points celle d'un témoin de 366 entreprises repondéré aux mêmes secteurs ; l'écart est significatif.
-2. **Il n'est pas démontré qu'il rémunère mieux ce risque.** Son ratio de Sharpe ne se distingue pas de celui du témoin, et l'essentiel de sa performance face à `SPY` se retrouve chez le témoin : c'est le biais de survie d'un univers choisi en 2026, pas l'IA.
-3. **Le risque du thème est celui des puces.** Les semi-conducteurs détiennent 45 % de l'argent et portent 77 % du risque ; l'électricité détient 14 % et en porte 2 %.
+1. **Le thème est plus risqué que le reste du marché.** Sa volatilité dépasse de 2,2 points celle d'un témoin de 366 entreprises repondéré aux secteurs du thème de 2026 ; l'écart est significatif. Cette repondération est fixe alors que le thème évolue : une part de l'écart peut encore venir des secteurs.
+2. **Il n'est pas démontré qu'il rémunère mieux ce risque.** Son ratio de Sharpe ne se distingue pas de celui du témoin, et l'essentiel de sa performance face à `SPY` se retrouve aussi chez le témoin. Les deux univers sont choisis en 2026 : cette performance ne peut pas être attribuée à l'IA, sans que le témoin mesure pour autant le biais de survie.
+3. **Le risque du thème est celui des vendeurs à la chaîne.** Ils détiennent 35 % de l'argent et portent 62 % du risque, 77 % avec les fournisseurs technologiques. Ces groupes mêlent semi-conducteurs, réseau, stockage, serveurs, logiciels et services. L'électricité détient 14 % de l'argent et porte 2 % du risque.
 4. **Sans rééquilibrage, le portefeuille se concentre en six ans.** De fin 2019 à 2026, son nombre effectif de lignes passe de 54 à 11,6.
 5. **Le rééquilibrage réduit le risque, mais son avantage de rendement ajusté n'est pas établi.** La baisse de volatilité est significative sur huit portefeuilles sur dix, l'écart de Sharpe sur un seul.
-6. **À risque égal, seules les obligations du Trésor intermédiaires ont fait mieux qu'une simple vente d'actions, et seulement jusqu'en 2021.** Les contrats à terme sur l'indice n'ajoutent rien à risque égal ; le verdict sur les puts dépend d'un prix d'option que je n'observe pas.
-7. **La couverture par l'indice ne couvre pas le thème.** Une fois le marché retiré, les puces portent 82 % du risque restant de `P1`.
-
-Le rapport d'ensemble est [research/rapport_final.md](research/rapport_final.md). Les étapes 4 et 5 et le portefeuille P11 ont été menés sur des décisions déléguées par l'auteur, écrites comme des propositions à relire.
+Les étapes 4 et 5, le portefeuille P11 et le [rapport d'ensemble](research/rapport_final.md) sont des **brouillons non validés**. Ils ont été menés avant que la question de recherche soit fixée, sur des décisions déléguées, et un audit du 29 septembre 2026 y a relevé des erreurs de calendrier des options, de tests statistiques et de présentation. Ils seront refaits ; leurs chiffres ne sont pas repris ici.
 
 | | |
 |---|---|
 | ![Risque par maillon](figures/3_risque_par_maillon.png) | ![Concentration](figures/4_concentration.png) |
 | ![Replis](figures/2_replis.png) | ![Bootstrap](figures/6_bootstrap_sharpe.png) |
 
-Le détail, les chiffres et leurs limites sont dans [les résultats de l'étape 3](research/resultats_risque.md), section XI pour le témoin et les tests statistiques. La question de recherche proposée est dans le [Research Charter](research/research_charter.md), blocs 2 et 3, à valider.
+Le détail, les chiffres et leurs limites sont dans [les résultats de l'étape 3](research/resultats_risque.md), section XI pour le témoin et les tests statistiques. La question de recherche est dans le [Research Charter](research/research_charter.md), bloc 3, adopté le 29 septembre 2026.
 
 **Ce que ces résultats ne disent pas.** Aucune performance n'est réalisable : l'univers n'était pas connaissable en 2000. Aucune causalité n'est établie entre l'IA et le risque mesuré. Un risque mesuré est un risque passé.
 
@@ -30,15 +27,14 @@ Le détail, les chiffres et leurs limites sont dans [les résultats de l'étape 
 ```powershell
 python -m pip install -r requirements.txt
 python -B -m src.construire_portefeuilles --check-only   # vérifie l'étape 2 sans recalcul
-python -B -m src.construire_temoin                        # groupe témoin, hors réseau
 python -B -m unittest discover -s tests -v
 ```
 
-Les carnets de l'étape 3 s'exécutent ensuite dans Jupyter, dans cet ordre : `src/mesurer_risque.ipynb`, `src/robustesse_statistique.ipynb`, `src/figures.ipynb`. Ils appellent les fonctions testées de `src/risque.py`.
+L'étape 3 s'exécute ensuite dans cet ordre : `src/mesurer_risque.ipynb` dans Jupyter, puis `python -B -m src.construire_temoin`, puis `src/robustesse_statistique.ipynb` et `src/figures.ipynb`. Chacun vérifie les empreintes de ce qu'il lit avant de calculer, et écrit un manifeste de ses entrées, de son code et de ses sorties : `risque_manifest.json`, `temoin_manifest.json`, `robustesse_manifest.json`. Les fonctions de calcul sont celles, testées, de `src/risque.py`.
 
 L'étape 4 demande une collecte (`python -B -m src.collecter_couverture`, déjà faite : les fichiers présents ne sont pas retéléchargés), puis `src/couvrir_diversifier.ipynb`. L'étape 5 et P11 s'exécutent ensuite : `src/comparer_strategies.ipynb`, `src/portefeuille_avenir.ipynb`. Ils appellent `src/couverture.py`, testé dans `tests/test_couverture.py`.
 
-Les empreintes des fichiers sont vérifiées aux fins de ligne près : un dépôt extrait sous Windows, macOS ou Linux passe les mêmes contrôles (`src/empreintes.py`).
+Le dépôt stocke et extrait tous ses fichiers texte en fins de ligne LF (`.gitattributes`), et les empreintes des fichiers texte portent sur ce contenu : un dépôt extrait sous Windows, macOS ou Linux passe les mêmes contrôles (`src/empreintes.py`).
 
 **Le corpus des rapports SEC n'est pas dans le dépôt.** `data/raw/filings_text/` pèse 2,5 Go et reste exclu par `.gitignore`. Il n'est nécessaire qu'à l'étape 1 (`src/run_pipeline.py` et `tests/test_integrite_corpus.py`) ; les étapes 2 et 3 se reproduisent sans lui. Pour le rendre accessible, le déposer compressé sur [Zenodo](https://zenodo.org), qui attribue un DOI citable, ou en pièce jointe d'une Release GitHub ; `data/raw/filings_manifest.json` et les empreintes de `filings_termes.csv` permettent de vérifier qu'il s'agit du bon corpus.
 
@@ -49,7 +45,7 @@ L'étape 1 prépare les sources, les décisions et les comptes. L'étape 2 produ
 ## Lire le projet
 
 - [Résultats de l'étape 3 : risque, témoin et tests statistiques](research/resultats_risque.md)
-- [Research Charter — bloc 1 sourcé, blocs 2 et 3 proposés](research/research_charter.md)
+- [Research Charter : bloc 1 sourcé, bloc 3 adopté](research/research_charter.md)
 - [Règles de construction des portefeuilles](research/portefeuilles.md)
 - [Plan du projet et décisions datées](research/plan_projet.md)
 - [Règle de sélection, version III](research/selection_rule.md)

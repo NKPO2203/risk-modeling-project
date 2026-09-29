@@ -1,13 +1,13 @@
 {
   "statut": "termine",
-  "produit_le": "2026-09-29T00:29:16+00:00",
+  "produit_le": "2026-09-29T00:48:28+00:00",
   "commande": "src/robustesse_statistique.ipynb, execute en entier",
   "tirages": 2000,
   "bloc": 63,
   "entrees_sha256": {
-    "data/processed/pipeline_portefeuilles.json": "7ad2e28aa87a98509f3b6d216fde655934767c956e912647e30de1813f977e47",
-    "data/processed/risque_manifest.json": "5e1a1d99ce39033ecedf91048cec3ce3bd2f6042d78d6c3f9d0260877a78ba1b",
-    "data/processed/temoin_manifest.json": "7a49d9fb11857f2fcf63693a3070d9b4c24ca25c95baa59eb0c66c248be7f950",
+    "data/processed/pipeline_portefeuilles.json": "bf2909c8edf67c241993b764f63fe2f428b0bdffe8f727242a03b87a7ba851b9",
+    "data/processed/risque_manifest.json": "41f87e20e56166966c9c7e32a53f74ed821af7ab5aa9b7705beae116d350d319",
+    "data/processed/temoin_manifest.json": "098e56ab19d6a7fdd2819efabc9d037c3360fc346121e5d81da7e9f07d79f358",
     "data/raw/taux_sans_risque.csv": "6c7e1bf61bf2af0ee3a7ff68992a41a9f367e6f62add3b2c28358089f4390d05",
     "data/review/decisions_selection.csv": "0689095e1b16c6d1c080fc5b8845e39f32db03b1dc4b28d0809236a62023dcbc",
     "src/risque.py": "de5b32d9ae1727aad7b5aadc185f167b44870e08cd4b6260bbf4132809cf8281",

@@ -1,5 +1,7 @@
 # AI & Mega-Cap Concentration Risk in U.S. Equities
 
+> **Brouillon non validé, 29 septembre 2026.** Ce document a été écrit le 28 septembre 2026 sur des décisions déléguées, avant que la question de recherche soit fixée. Un audit indépendant y a relevé des erreurs de méthode et de présentation, énumérées à la section VI bis de `research/plan_projet.md` et aux sections VII et VIII du même document. Il sera refait ; ses chiffres ne doivent pas être cités. Ses calculs ont en outre été produits avant la correction de `annualiser_rendement`.
+
 *Rapport final de l'AI Concentration Risk Research. Version du 28 septembre 2026.*
 
 *Ce rapport suit la table des matières de la section 24 du contexte maître. Il rassemble des résultats établis dans les documents de chaque étape, qui en donnent le détail et les calculs : `research/portefeuilles.md` pour la construction, `research/resultats_risque.md` pour le risque, `research/resultats_couverture.md` pour la diversification et la couverture, `research/resultats_strategies.md` pour la comparaison des stratégies. Chaque chiffre est produit par une cellule d'un carnet de `src/`, cité à la fin de chaque chapitre. Les étapes 4 et 5 et le portefeuille P11 ont été menés en un seul tour de travail, sur des décisions que l'auteur m'avait déléguées ; elles sont écrites comme des propositions qu'il pourra renverser.*

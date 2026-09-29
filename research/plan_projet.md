@@ -6,7 +6,7 @@
 
 Je déclare une étape close lorsque les livrables demandés existent, que les calculs et leurs dépendances se reproduisent sur le cliché conservé, et que les limites sont écrites. Cette définition s'applique de la même manière aux deux premières étapes. Elle ne signifie pas validation intégrale de chaque prix ou de chaque interprétation.
 
-L'étape 1 est close : les 500 dossiers sont tranchés, 134 ENTRE et 366 SORT, sans dossier en attente. L'étape 2 est close pour les dix groupes et leurs vingt séries construits, sous les limites finies décrites ci-dessous. L'étape 3 est close le 8 septembre 2026 : trente-sept tâches, sept phases, ses résultats dans `research/resultats_risque.md` et ses limites à la section X du même document. Les étapes 4 et 5 sont closes le 28 septembre 2026 sur des décisions déléguées par l'auteur, écrites aux sections VII et VIII comme des propositions à relire ; le rapport final est `research/rapport_final.md`.
+L'étape 1 est close : les 500 dossiers sont tranchés, 134 ENTRE et 366 SORT, sans dossier en attente. L'étape 2 est close pour les dix groupes et leurs vingt séries construits, sous les limites finies décrites ci-dessous. L'étape 3 est close le 8 septembre 2026 : trente-sept tâches, sept phases, ses résultats dans `research/resultats_risque.md` et ses limites à la section X du même document. Elle a été corrigée le 29 septembre 2026 après un audit indépendant (section VI bis). Les étapes 4 et 5, `P11` et le rapport final, écrits le 28 septembre 2026 sur des décisions déléguées, sont des **brouillons non validés** : ils ont précédé la question de recherche, adoptée le 29 septembre au bloc 3 du Research Charter, et seront refaits.
 
 ## II. Les huit phases de l'étape 2
 
@@ -254,19 +254,19 @@ Tâche 35, écriture des résultats : faite, `research/resultats_risque.md`. Tâ
 
 **Ce que l'étape 3 établit.** Le portefeuille du thème est 1,14 fois plus volatil que le marché, 21,73 % contre 19,11 %, et ses maillons vont de 0,97 à 1,84 fois le marché : le thème n'est pas un bloc. Sa distribution n'est normale sur aucune des vingt-cinq séries, ce qui fait sous-estimer une VaR gaussienne de 13 % à 21,5 %.
 
-La diversification par le nombre est épuisée. Avec une corrélation moyenne de 0,338, les 135 lignes de `P1` réduisent le risque autant que 2,92 titres indépendants, et il ne reste que quarante-deux centièmes de point à gagner en ajoutant des entreprises. L'analyse en composantes principales confirme par une autre voie, le premier facteur expliquant 27,6 % de la variance.
+La diversification par le nombre est épuisée. Avec une corrélation moyenne de 0,338, les 135 lignes de `P1` réduisent le risque autant que 2,92 titres indépendants, et il ne reste que seize centièmes de point de volatilité à gagner en ajoutant des entreprises. L'analyse en composantes principales confirme par une autre voie, le premier facteur expliquant 27,6 % de la variance.
 
-Le risque du thème vient des semi-conducteurs : ils détiennent 45 % de l'argent de `P1` et portent 77 % du risque, tandis que l'électricité en détient 14 % et en porte 2 %. Élargir l'univers a dilué le poids sans diluer le risque.
+Le risque du thème vient des vendeurs à la chaîne : `P5` détient 35 % de l'argent de `P1` et porte 62 % du risque ; avec les fournisseurs technologiques de `P9`, 45 % de l'argent et 77 % du risque. L'électricité en détient 14 % et en porte 2 %. Élargir l'univers a dilué le poids sans diluer le risque. *Corrigé le 29 septembre 2026 : ces groupes étaient appelés « semi-conducteurs », alors qu'ils en débordent largement (section VI bis).*
 
 La concentration s'est formée en six ans et non en vingt-six : le nombre effectif de lignes de `P1` conservé passe de 78 en 2000 à 54 en 2019, puis à 11,6 en 2026. La version rééquilibrée termine à 106,9.
 
-En période de tension, la corrélation interne monte dans les dix portefeuilles sans exception et `P1` perd un tiers de sa diversification effective. La VaR à 99 % est dépassée 1,4 à 1,8 fois trop souvent, et le test de Kupiec la rejette sur les vingt-cinq séries, `SPY` compris.
+En période de tension, la corrélation interne brute monte dans les dix portefeuilles sans exception et `P1` perd un tiers de sa diversification effective ; corrigée de la hausse de variance du marché, cette hausse disparaît dans dix séries sur onze (section XI des résultats). La VaR à 99 % est dépassée 1,4 à 1,8 fois trop souvent, et le test de Kupiec la rejette sur les vingt-cinq séries, `SPY` compris.
 
 **L'arbitrage de gestion.** Le rendement brut ne tranche pas, six victoires sur dix, et ce compte tombe à quatre en excluant les années 2000 à 2004. Les mesures de risque tranchent toutes dans le même sens, sept à dix victoires sur dix, dont dix sur dix pour la perte moyenne au-delà de la VaR. La formulation retenue est que le rééquilibrage réduit le risque sur huit portefeuilles aux deux fréquences, que `P5` fait exception et que `P6` est indécidable. L'avantage n'est pas continu : il n'apparaît que dans 64 % des fenêtres glissantes de trois ans, et se concentre dans les épisodes où une ligne prend une place démesurée.
 
 **Ce que les contrôles ont montré.** Les verdicts de volatilité sont identiques aux deux fréquences sur les dix portefeuilles, et le retrait des 82 variations extrêmes non corroborées par l'audit n'en change aucun. La réserve sur l'effectif initial de `P4` est levée. En revanche la conclusion sur le rendement dépend de l'inclusion de 2000 à 2004, ce qui justifie rétrospectivement la décision de la tâche 21 de commencer en 2000.
 
-**Les fonctions de mesure** vivent dans `src/risque.py` et sont couvertes par trente-cinq cas dans `tests/test_risque.py`.
+**Les fonctions de mesure** vivent dans `src/risque.py` et sont couvertes par trente-sept cas dans `tests/test_risque.py`.
 
 **Corrections du 28 septembre 2026.** `src/mesurer_risque.ipynb` redéfinissait ses propres fonctions au lieu d'appeler `src/risque.py` : les tests portaient sur un code qui ne produisait pas les chiffres publiés. Le notebook appelle désormais le module testé, et sa réexécution redonne les mêmes sorties, à une exception près. La part du temps passée sous le plus haut utilise le seuil du module, un repli strictement négatif, au lieu d'un repli de plus de 0,01 % ; elle augmente d'au plus 0,34 point et reste comprise entre 86 % et 94 %. La ligne `SPXEW` de `risque_beta_conditionnel.csv` change aussi : le fichier avait été produit avec pandas 2, qui comblait les séances absentes avant de calculer un rendement, alors que la référence déclarée est pandas 3, qui ne le fait plus. Le bêta de `SPXEW` passe de 1,038 à 1,033 ; aucun chiffre du rapport n'en dépend.
 
@@ -274,7 +274,7 @@ Le fichier des épisodes distinguait mal deux durées. La colonne `seances` comp
 
 **Ajouts du 28 septembre 2026, après une relecture critique.** Cinq faiblesses ont été relevées et traitées.
 
-1. *Reproductibilité.* Les empreintes de l'étape 2 avaient été calculées sous Windows, sur des fichiers à fins de ligne CRLF ; Git les rend en LF sur les autres systèmes, et `--check-only` échouait sur les 140 fichiers de prix. `src/empreintes.py` vérifie désormais les empreintes aux fins de ligne près. Le manifeste de l'étape 2 était aussi périmé : `prix_manifest.json`, `decisions_selection.csv` et `controle_prix.py` avaient changé après sa production du 8 septembre. L'étape 2 a été reconstruite : ses sorties sont identiques à 10⁻¹² près, et le manifeste a été régénéré. Le manifeste de l'étape 1, `data/processed/pipeline_manifest.json`, est lui aussi périmé : neuf de ses entrées et sorties ont changé depuis sa production, dont `decisions_selection.csv` et `univers_retenu.csv`. Il n'a pas été rafistolé, car sa reconstruction exige le corpus local de 2,5 Go ; il faut relancer `python -B src/run_pipeline.py` sur la machine qui détient ce corpus.
+1. *Reproductibilité.* Les empreintes de l'étape 2 avaient été calculées sous Windows, sur des fichiers à fins de ligne CRLF ; Git les rend en LF sur les autres systèmes, et `--check-only` échouait sur les 140 fichiers de prix. `src/empreintes.py` vérifie désormais les empreintes aux fins de ligne près. Le manifeste de l'étape 2 était aussi périmé : `prix_manifest.json`, `decisions_selection.csv` et `controle_prix.py` avaient changé après sa production du 8 septembre. L'étape 2 a été reconstruite : ses sorties sont identiques à 10⁻¹² près, et le manifeste a été régénéré. Le manifeste de l'étape 1, `data/processed/pipeline_manifest.json`, est lui aussi périmé : neuf de ses entrées et sorties ont changé depuis sa production, dont `decisions_selection.csv` et `univers_retenu.csv`. Il n'a pas été rafistolé, car sa reconstruction exige le corpus local de 2,5 Go ; il faut relancer `python -B src/run_pipeline.py` sur la machine qui détient ce corpus. *Fait le 29 septembre 2026, section VI bis.*
 2. *Groupe témoin.* Les 366 entreprises SORT sont collectées (`src/collecter_temoin.py`) et construites avec le même moteur (`src/construire_temoin.py`), en version équipondérée et en version aux parts sectorielles de `P1`. La boucle de simulation de l'étape 2 a été extraite dans `simuler_groupe` pour être partagée ; la reconstruction de l'étape 2 est identique octet pour octet.
 3. *Significativité.* Un bootstrap circulaire par blocs d'un trimestre éprouve les écarts entre gestions et entre thème et témoin.
 4. *Corrélation de crise.* La correction de Forbes et Rigobon est appliquée et discutée.
@@ -283,9 +283,37 @@ Le fichier des épisodes distinguait mal deux durées. La colonne `seances` comp
 Les résultats et ce qu'ils changent sont dans la section XI de `research/resultats_risque.md`. La suite complète compte désormais 146 tests.
  Les hypothèses testables, les fenêtres communes et le traitement explicite des extrêmes non corroborés devront y être posés avant de conclure. Cette étape n'est pas réalisée par le présent document.
 
+## VI bis. Corrections du 29 septembre 2026, après un audit indépendant
+
+Un audit de la version `3a2affb` a relevé dix-huit problèmes. Ceux qui touchent les étapes 1 à 3 sont corrigés ici. Ceux qui touchent les étapes 4 et 5, `P11` et le rapport final ne le sont pas : ces documents sont déclarés brouillons non validés et seront refaits, et chacun de leurs problèmes deviendra une règle de la nouvelle version. Ceux qui demandent un choix de méthode attendent la revue de littérature.
+
+**Le code de l'étape 3.**
+
+1. `annualiser_rendement` divisait l'exposant par le nombre de niveaux au lieu du nombre de rendements. Sur `P1` rééquilibré, 18,70037 % devient 18,70340 %. Aucun verdict ne change ; l'écart le plus grand vaut 0,004 point.
+2. `rho_implicite` acceptait des titres absents une partie de la période, alors que son identité suppose tous les titres observés aux mêmes dates : deux séries parfaitement corrélées pouvaient sortir à 0,4. La fonction refuse désormais un bloc incomplet, et le carnet ne garde que les titres observés sur toute la fenêtre. Sur toute la période, la corrélation implicite des 90 titres complets vaut 0,339, contre 0,313 avec l'ancien mélange. En fenêtre glissante, la médiane passe de 0,299 à 0,303, et les pics restent ceux de 2009, 2012 et 2020. La moyenne par paires, 0,338, et les 2,92 actifs indépendants ne changent pas : ils ne passaient pas par cette fonction.
+3. `n_effectif` écrit ses hypothèses : poids égaux, volatilités égales, corrélation uniforme. C'est un ordre de grandeur.
+4. L'analyse en composantes principales citée dans les résultats n'avait aucun code dans le dépôt. Sa cellule est ajoutée ; elle reproduit les chiffres publiés sur les 756 dernières séances, et les donne pour les dix portefeuilles dans `risque_composantes.csv`.
+5. Le bootstrap des gestions lit `P4` deux fois, sur la période complète et depuis le 19 août 2004, comme sa règle l'exige. Les deux lectures concordent.
+
+**Les noms et les phrases.** `P5` et `P9` étaient appelés « puces » ou « semi-conducteurs ». `P5` rassemble le canal de vente à la chaîne, qui mêle semi-conducteurs, réseau, stockage, serveurs, IBM, Ecolab et Dow ; `P9` des fournisseurs technologiques, dont Accenture et First Solar. Ils portent désormais leur nom exact, et un vrai périmètre des semi-conducteurs reste une décision à prendre. L'écart entre le thème et le témoin n'est plus présenté comme une mesure du biais de survie, ni comme libéré des secteurs : les parts sectorielles de `T1S` sont celles de 2026, fixes, alors que `P1` évolue. Le scénario de choc n'est plus présenté comme un minorant.
+
+**Les chiffres faux trouvés en vérifiant le texte contre les fichiers.** `SPY` rapporte 8,27 % par an et non 8,35 %. Les portefeuilles vont de 11,7 % à 26,1 % et non de 11,0 % à 21,7 %. Les résultats de l'électricité par épisode mélangeaient ses deux versions. Le plus gros titre de `P1` conservé a atteint 9,7 % avant 2020. L'écart médian de volatilité sur `P1` vaut 1,2 % et non 1,3 %. Il restait seize centièmes de point de volatilité à gagner par la diversification, et non quarante-deux. La section I des résultats inversait le décompte du rendement entre les deux gestions. Tous sont corrigés dans `research/resultats_risque.md`, dont l'encadré du 29 septembre donne la liste.
+
+**La reproductibilité.**
+
+1. Le dépôt fixe une seule convention de fins de ligne, LF, dans l'index comme dans la copie de travail (`.gitattributes`). `empreinte` calcule celle d'un fichier texte sur son contenu en LF. Les tests du corpus comparent le contenu aux fins de ligne près, et la suite passe désormais aussi sous Windows.
+2. Le manifeste de l'étape 1 portait sept empreintes qui ne correspondaient à aucune version des fichiers. L'étape 1 a été reconstruite dans un dossier temporaire à partir du corpus local : ses onze sorties sont identiques, au contenu près, à celles du dépôt. Le manifeste a ensuite été régénéré par cette reconstruction. `classification_manuelle.py` et `controle_qualite.py` vérifient et écrivent leurs empreintes sous la même convention.
+3. Chaque partie de l'étape 3 vérifie les empreintes de ce qu'elle lit avant de calculer, et écrit un manifeste de ses entrées, de son code et de ses sorties : `risque_manifest.json`, `temoin_manifest.json`, `robustesse_manifest.json`. Les figures vérifient les trois. GitHub refait ces vérifications à chaque envoi.
+
+La suite compte 169 tests, dont 37 pour `src/risque.py`.
+
+**Ce qui attend la revue de littérature, et pourquoi.** Reconstruire `T1S` avec des parts sectorielles qui suivent `P1` dans le temps suppose de choisir la neutralisation voulue. Mesurer réellement le biais de survie suppose des compositions historiques de l'indice. Définir un périmètre des semi-conducteurs, graduer l'intensité de l'exposition et former des sous-univers selon la solidité des preuves sont des choix de méthode. Plusieurs scénarios de choc relèvent des tests de résistance. La vérification ciblée des prix extrêmes portera sur les observations qui pèsent sur les conclusions, une fois celles-ci fixées.
+
 ---
 
 ## VII. Étape 4 : couverture et diversification par des actifs extérieurs au thème
+
+> **Brouillon non validé, 29 septembre 2026.** Cette étape a été conçue avant la question de recherche et sur des décisions déléguées. Un audit y a relevé un calendrier des options qui dépend de la fin du fichier, des durées d'options incohérentes avec la convention du `VIX`, et un calibrage des puts qui ne permet pas d'isoler une erreur de prix. Elle sera refaite ; ses chiffres ne doivent pas être cités.
 
 *Phase 0 écrite le 28 septembre 2026, avant la collecte des instruments et avant tout calcul de stratégie. L'auteur m'a délégué ces décisions pour ce tour de travail ; chacune est une proposition qu'il pourra renverser à sa relecture, et chaque renversement devra être daté ici. Les calculs seront menés dans `src/couvrir_diversifier.ipynb`, les fonctions dans `src/couverture.py`, leurs cas de contrôle dans `tests/test_couverture.py`.*
 
@@ -332,6 +360,8 @@ Pour la couverture, deux instruments sur l'indice S&P 500, parce que c'est le se
 Phase 1, collecte de `VFITX`, `VUSTX` et `^VIX` dans `data/raw/couverture/`, avec leur manifeste et leurs empreintes, par `python -m src.collecter_couverture`. Phase 2, construction des douze stratégies sur les vingt séries et le témoin. Phase 3, mesure. Phase 4, contrôles : identités comptables des mélanges, parité et bornes des prix d'option, absence d'information future dans le bêta, sensibilité à la pente de volatilité et aux coûts. Phase 5, tests. Phase 6, écriture des résultats dans `research/resultats_couverture.md`.
 
 ## VIII. Étape 5 : comparaison des stratégies, coûts et risque résiduel
+
+> **Brouillon non validé, 29 septembre 2026.** Un audit y a relevé que la valeur ajoutée publiée compare des rendements géométriques alors que le bootstrap teste des moyennes quotidiennes, que le poids du mélange de référence est estimé une fois et tenu fixe dans les tirages, et que cinq cents comparaisons sont faites sans correction pour leur nombre. Elle sera refaite ; ses chiffres ne doivent pas être cités.
 
 *Critères écrits le 28 septembre 2026, avec la phase 0 de l'étape 4, donc avant tout résultat de couverture. Même statut de proposition renversable.*
 

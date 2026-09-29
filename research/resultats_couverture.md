@@ -1,5 +1,7 @@
 # Résultats de l'étape 4 : diversifier et couvrir avec des actifs extérieurs au thème
 
+> **Brouillon non validé, 29 septembre 2026.** Ce document a été écrit le 28 septembre 2026 sur des décisions déléguées, avant que la question de recherche soit fixée. Un audit indépendant y a relevé des erreurs de méthode et de présentation, énumérées à la section VI bis de `research/plan_projet.md` et aux sections VII et VIII du même document. Il sera refait ; ses chiffres ne doivent pas être cités. Ses calculs ont en outre été produits avant la correction de `annualiser_rendement`.
+
 *AI Concentration Risk Research. 28 septembre 2026.*
 
 Les décisions de cette étape ont été écrites avant tout calcul, dans la section VII de `research/plan_projet.md`. Les calculs sont dans `src/couvrir_diversifier.ipynb`, qui appelle `src/couverture.py` et `src/risque.py` ; les cas de contrôle sont dans `tests/test_couverture.py` ; les sorties commencent par `couverture_` dans `data/processed/`. Toutes les stratégies ont été appliquées aux vingt séries et au témoin `T1`. Je rapporte ici `P1` rééquilibré et `P1` conservé, et les décomptes sur les vingt séries. Les décisions prises en cours de route sont datées dans le carnet et rappelées à la section VIII.

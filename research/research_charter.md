@@ -36,9 +36,9 @@ Le nombre d'entreprises retenues est un résultat de cette sélection, pas une p
 
 Le bloc 1 est désormais rédigé et sourcé. La vérification de la composition locale de l'indice et les revues encore ouvertes restent des tâches concernant les données ; elles ne sont pas utilisées comme preuves dans ce paragraphe.
 
-## Blocs 2 et 3 — Proposition du 28 septembre 2026, à valider
+## Blocs 2 et 3
 
-*Ces deux blocs sont proposés, pas adoptés. Ils ne deviennent la question du projet qu'après décision datée de l'auteur. Ils sont écrits après les résultats de l'étape 3 : une question formulée après avoir vu les chiffres risque d'être taillée pour eux. La proposition réduit ce risque de deux façons : elle ne reprend que des comparaisons déjà fixées avant tout calcul dans la phase 0 de l'étape 3, et elle ajoute un test prospectif sur des données que personne n'a encore vues.*
+*Le bloc 3 est adopté par l'auteur le 29 septembre 2026. Le bloc 2 a été proposé le 28 septembre 2026, avant cette question ; il reste une proposition, à réécrire après la revue de littérature pour poser le problème de la question adoptée.*
 
 ### Bloc 2 — Research Problem
 
@@ -54,18 +54,26 @@ Le problème est donc d'isoler ce que l'exposition documentée à cette chaîne 
 
 ### Bloc 3 — Research Question
 
-**Question principale.** À biais de survie, pondération et répartition sectorielle identiques, un portefeuille d'entreprises du S&P 500 ayant une exposition documentée à la chaîne des infrastructures de calcul liées à l'IA présente-t-il, entre 2000 et 2026, une volatilité, une queue de distribution et un rendement ajusté du risque différents de ceux des autres entreprises de l'indice ?
+**Question principale.** Peut-on construire, à partir des entreprises du S&P 500 exposées à la chaîne des infrastructures de calcul liées à l'IA, un portefeuille qui garde l'essentiel de leur potentiel de hausse tout en limitant ses pertes en crise, et à quel coût ?
 
-**Question secondaire.** Pour ces portefeuilles, le rééquilibrage annuel vers l'équipondération réduit-il le risque et améliore-t-il le rendement ajusté du risque par rapport à une gestion qui laisse les poids dériver ?
+**Trois sous-questions, dans l'ordre.**
 
-**Comment chacune est tranchée.**
+1. **Le portefeuille nu est-il prometteur ?** Son rendement ajusté du risque dépasse-t-il celui du témoin `T1S`, qui porte le même biais de survie ?
+2. **D'où vient son risque ?** Traitée à l'étape 3.
+3. **Quelle protection réduit ce risque, à quel coût, et laquelle est la meilleure selon les critères ci-dessous ?**
 
-| Question | Comparaison | Mesure | Critère |
-|---|---|---|---|
-| Principale | `P1` contre `T1S`, gestion rééquilibrée | Volatilité, perte moyenne au-delà de la VaR à 99 %, Sharpe | Intervalle à 95 % du bootstrap par blocs d'un trimestre excluant zéro |
-| Secondaire | Chaque `Pi` rééquilibré contre sa version conservée | Volatilité, Sharpe | Même critère, portefeuille par portefeuille |
-| Prospective | `P1` contre `T1S` après le 4 septembre 2026, dernière séance du cliché, sur des données non encore observées | Volatilité | Écart de même signe qu'en rétrospectif, mesuré après au moins 252 séances |
+**Critères, fixés avant tout calcul des étapes 4 et 5.** Une stratégie est acceptable si, sur la période rétrospective et frais de protection payés :
 
-**Ce que la question ne demande pas.** Elle ne demande pas si l'IA cause le risque, ni si une stratégie aurait été rentable : l'univers n'était pas connaissable en 2000. Elle ne porte pas sur la concentration de l'indice par capitalisation, que l'auteur a exclue le 8 septembre 2026 ; la concentration du bloc 1 reste un contexte.
+1. son pire drawdown n'est pas plus profond que celui de `T1S` ;
+2. sa perte moyenne au-delà de la VaR à 99 % n'est pas plus forte que celle de `T1S` ;
+3. son rendement annualisé n'est pas inférieur à celui de `T1S`.
 
-**Réponse actuelle, à titre indicatif.** Sur la période rétrospective, la volatilité du thème dépasse celle du témoin de 2,2 points, écart significatif ; son Sharpe ne s'en distingue pas. Le rééquilibrage réduit significativement la volatilité de huit portefeuilles sur dix, mais n'améliore significativement le Sharpe que d'un seul. Voir la section XI de `research/resultats_risque.md`.
+Parmi les stratégies acceptables, la meilleure est celle dont le ratio de Sharpe est le plus élevé. Un écart ne compte que si l'intervalle à 95 % du bootstrap par blocs d'un trimestre exclut zéro. Si aucune stratégie n'est acceptable, c'est une réponse : on le dit, et on indique le critère qui échoue.
+
+**Pourquoi la comparaison entre stratégies reste juste malgré le biais de survie.** La version protégée et la version nue contiennent les mêmes entreprises. Le biais de survie les touche toutes deux, et l'écart entre elles mesure la protection. Le rendement absolu reste flatté ; c'est pourquoi la sous-question 1 compare au témoin `T1S` et non au marché. Le témoin partage ce biais sans forcément en subir le même effet, et ses parts sectorielles sont celles de 2026 : la comparaison est descriptive (section XI de `research/resultats_risque.md`).
+
+**Ce que la question ne demande pas.** Elle ne cherche pas à prédire quelle entreprise deviendra la prochaine grande gagnante : l'univers n'était pas connaissable en 2000, et aucune donnée du projet ne le permet. Elle ne porte pas sur la concentration de l'indice par capitalisation, que l'auteur a exclue le 8 septembre 2026 ; la concentration du bloc 1 reste un contexte.
+
+**Un test prospectif ne commence qu'après la date où son protocole est figé.** Toute prédiction sur des séances futures sera écrite, datée et commitée avant la première séance qu'elle concerne.
+
+*Adopté par l'auteur le 29 septembre 2026.*

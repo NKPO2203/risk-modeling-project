@@ -1,7 +1,7 @@
 {
   "statut": "termine",
-  "produit_le": "2026-09-28T19:09:12.264219+00:00",
-  "python": "3.11.15",
+  "produit_le": "2026-09-29T00:45:15.045392+00:00",
+  "python": "3.13.9",
   "bibliotheques": {
     "pandas": "3.0.0",
     "numpy": "2.4.1"
@@ -15,7 +15,7 @@
     "releves_mensuels": 321,
     "lignes_poids": 266430,
     "ecart_somme_poids": 4.440892098500626e-16,
-    "ecart_identite_quotidienne": 8.98586760555986e-16,
+    "ecart_identite_quotidienne": 8.968520370800093e-16,
     "cours_portes": 38,
     "cout": 0.001,
     "limite": "Identités comptables contrôlées, exactitude des prix non garantie par ces identités."
@@ -177,7 +177,7 @@
     "src/controler_prix.ipynb": "cff7aef35bbdd06523954944bffd8d6c09dc6fc1c3f795ea4e1f902ebb6d3c1f",
     "tests/test_portefeuille.py": "8c69ad6f7f03d3c4f4bd8e9d3b64701cb22a2bb5ba1e1eeeb2a3aa487db8d758",
     "tests/test_audit_portefeuilles.py": "432e35e3323bbd20062849fc15cd60791d6dc16de8cbe24954de33093bbb8608",
-    "research/portefeuilles.md": "78789a20fb693f421c27483da7a7ba91fe1d4c21a80f66c59b352762737d9241",
+    "research/portefeuilles.md": "40d733f3da75b024057e5552911535e856b9da27f0a5fb59a647c1a56edb437e",
     "tests/test_pipeline_portefeuilles.py": "f1f545e3b34198a61c7db365fe89e30cb63435692c67f56a3a85d7c0cf514f0a",
     "src/corrections_prix.py": "98195c67d65b759b1cdbfd55c2a73b48b229676dbc20a8db1e8449977778f8c6",
     "src/recouper_prix.py": "2d2e343fecd16818619745572e86e39bc7d239049f0480e27fb11e91f93d6293",
@@ -203,6 +203,5 @@
     "valeurs_comparaisons.csv": "425cd66aa16eab74e1b299420276e942d8335e31f8731e62a2b723cee99acb0f",
     "valeurs_comparaisons_yahoo.csv": "7bb148d3daee0a95b0575104bcd9e544c005d8e2a8915fb008cf9d0d085d2474",
     "valeurs_portefeuilles.csv": "5faa1f4ce371ca1d65a68bf7b3ec58a94f6c4f17c480688261aac63c7c0b773e"
-  },
-  "note": "Manifeste regenere le 28 septembre 2026 apres reconstruction complete : les sorties recalculees concordent avec les fichiers publies a 1e-12 pres ; les fichiers publies sont conserves et ce sont leurs empreintes qui sont enregistrees."
+  }
 }

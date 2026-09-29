@@ -1,5 +1,7 @@
 # Résultats de l'étape 5 : les stratégies comparées à risque égal, leur coût et le risque qui reste
 
+> **Brouillon non validé, 29 septembre 2026.** Ce document a été écrit le 28 septembre 2026 sur des décisions déléguées, avant que la question de recherche soit fixée. Un audit indépendant y a relevé des erreurs de méthode et de présentation, énumérées à la section VI bis de `research/plan_projet.md` et aux sections VII et VIII du même document. Il sera refait ; ses chiffres ne doivent pas être cités. Ses calculs ont en outre été produits avant la correction de `annualiser_rendement`.
+
 *AI Concentration Risk Research. 28 septembre 2026.*
 
 Les critères de cette étape ont été écrits avant tout résultat de couverture, dans la section VIII de `research/plan_projet.md`. Les calculs sont dans `src/comparer_strategies.ipynb`, qui part des séries produites à l'étape 4 et vérifie leurs empreintes ; les sorties commencent par `strategies_` dans `data/processed/`.

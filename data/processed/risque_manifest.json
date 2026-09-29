@@ -1,9 +1,9 @@
 {
   "statut": "termine",
-  "produit_le": "2026-09-29T00:26:45+00:00",
+  "produit_le": "2026-09-29T00:46:12+00:00",
   "commande": "src/mesurer_risque.ipynb, execute en entier",
   "entrees_sha256": {
-    "data/processed/pipeline_portefeuilles.json": "7ad2e28aa87a98509f3b6d216fde655934767c956e912647e30de1813f977e47",
+    "data/processed/pipeline_portefeuilles.json": "bf2909c8edf67c241993b764f63fe2f428b0bdffe8f727242a03b87a7ba851b9",
     "data/raw/taux_sans_risque.csv": "6c7e1bf61bf2af0ee3a7ff68992a41a9f367e6f62add3b2c28358089f4390d05",
     "data/review/variations_finition_2026-09-08.csv": "858f01c44d96cded530ed27877798ebf8b37899759a252f992aba4bbb6a744f3",
     "src/risque.py": "de5b32d9ae1727aad7b5aadc185f167b44870e08cd4b6260bbf4132809cf8281",
@@ -13,6 +13,7 @@
     "data/processed/risque_arbitrage_gestion.csv": "4bdf314f35937e340ed7adc84819bdf7113695eb0f447b934af95ac6d9e0e488",
     "data/processed/risque_beta_conditionnel.csv": "1325ac2d4316eb7845fc5fb8c5ca19a5bc89b15dcfa855905cbe399ad5e19715",
     "data/processed/risque_choc.csv": "1bdaee331993f3eb77ec886e68afa11e5c158f3505c7f9490d35a1be73a3aacb",
+    "data/processed/risque_composantes.csv": "06a499cc484ecb31ceaef72d4340a48dc38d75e9cb8f6c31eded51a3c1b3e397",
     "data/processed/risque_concentration.csv": "4c9063f6d8db59d1742ae262ce9363a9e20b6fc537f5d70b04b4c22536f546ad",
     "data/processed/risque_concentration_evolution.csv": "c1bcd20ce928dc24bbc600e516f4a49011fea6cbffa4df8194e07c89d50e8608",
     "data/processed/risque_contributions.csv": "b70f19bef4e2634cbf596fd276f6ed1a4f6e755d18c9484f4e35027fa0c58129",

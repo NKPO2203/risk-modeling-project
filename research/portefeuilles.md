@@ -160,6 +160,8 @@ Toute comparaison de l'étape 3 impliquant P4 doit être rapportée deux fois : 
 
 ## VII. P11, le portefeuille d'avenir, construit en connaissance des résultats
 
+> **Brouillon non validé, 29 septembre 2026.** `P11` a été construit sur des décisions déléguées, avant la question de recherche. Un audit y a relevé trois problèmes. Ses « semi-conducteurs » sont les groupes `P5` et `P9`, qui en débordent largement. Les 43,6 % de risque annoncés sont calculés aux poids cibles de janvier ; aux poids réellement détenus le 4 septembre, l'audit trouve 54,2 % par le même calcul. Son protocole prospectif, écrit le 28 septembre, fait commencer le test au 4 septembre : les séances écoulées entre ces deux dates ne peuvent pas être présentées comme inconnues au moment de l'écriture. Un test prospectif ne peut commencer qu'après la date où son protocole est figé. `P11` sera refait avec les étapes 4 et 5 ; ses chiffres ne doivent pas être cités.
+
 *Règle écrite le 28 septembre 2026, avant le calcul de P11, mais après les résultats des étapes 3, 4 et 5. L'auteur m'a délégué cette construction ; c'est une proposition qu'il pourra renverser.*
 
 **Ce que P11 est, et ce qu'il n'est pas.** Les dix premiers portefeuilles ont été définis avant toute mesure de risque. P11 ne l'est pas : je le construis en sachant ce que ces mesures ont montré. Son historique depuis 2000 sera donc calculé, mais il ne prouve rien. Un portefeuille dessiné pour corriger les défauts observés sur une période paraît toujours bon sur cette période. Le seul test qui compte pour lui est prospectif, sur des séances postérieures au 4 septembre 2026 que personne n'a encore vues, et son protocole est écrit ici avant qu'elles existent.
