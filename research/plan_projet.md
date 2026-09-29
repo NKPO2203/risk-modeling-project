@@ -309,6 +309,15 @@ La suite compte 169 tests, dont 37 pour `src/risque.py`.
 
 **Ce qui attend la revue de littérature, et pourquoi.** Reconstruire `T1S` avec des parts sectorielles qui suivent `P1` dans le temps suppose de choisir la neutralisation voulue. Mesurer réellement le biais de survie suppose des compositions historiques de l'indice. Définir un périmètre des semi-conducteurs, graduer l'intensité de l'exposition et former des sous-univers selon la solidité des preuves sont des choix de méthode. Plusieurs scénarios de choc relèvent des tests de résistance. La vérification ciblée des prix extrêmes portera sur les observations qui pèsent sur les conclusions, une fois celles-ci fixées.
 
+## VI ter. Trois contrôles de l'étape 3 tirés de la revue de littérature
+
+*Écrit le 29 septembre 2026, avant leur calcul. La revue analysée dans `research/revue_litterature.md` désigne trois contrôles qui manquent à des résultats déjà publiés. Ils sont menés dans `src/consolider_etape3.ipynb`, sans modifier aucun chiffre de l'étape 3 : ils le confirment ou l'affaiblissent, et le résultat sera écrit dans les deux cas.*
+
+1. **La VaR ajustée de la volatilité**, telle que Morgan Stanley la décrivait dans son 10-K de 2014 et que la revue appelle simulation historique filtrée. Chaque rendement des 252 séances passées est divisé par la volatilité EWMA de son jour, avec λ = 0,94 comme dans RiskMetrics. On lit le quantile, puis on le multiplie par la volatilité EWMA prévue pour le lendemain. Elle est éprouvée à côté de la VaR historique de l'étape 3, sur les vingt-cinq séries, à 99 % et 95 %, par le test de Kupiec (1995) et par le test d'indépendance de Christoffersen (1998), au seuil de 5 %. Attente : la version ajustée réduit le regroupement des dépassements, sans le supprimer sur toutes les séries.
+2. **La part du risque de `P5` et `P9` sous la covariance de Ledoit et Wolf (2004)**, à la place de la covariance empirique de 135 titres sur 252 séances, pour `P1` rééquilibré et conservé. Les deux covariances sont calculées sur le même bloc, les séances absentes valant zéro. Attente : la part reste au-dessus des deux tiers.
+3. **La volatilité annualisée corrigée des autocorrélations**, variance de long terme à noyau de Bartlett sur 21 retards (Newey et West, 1987), à côté des annualisations quotidienne et mensuelle, sur les vingt-cinq séries. Attente : elle se rapproche de la mensuelle, ce qui confirmerait que l'écart entre les deux vient de l'autocorrélation négative.
+
+
 ---
 
 ## VII. Étape 4 : couverture et diversification par des actifs extérieurs au thème
