@@ -33,6 +33,12 @@ class RendementTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             annualiser_rendement(pd.Series([100.0], index=jours(1)))
 
+    def test_annualisation_divise_par_le_nombre_de_rendements(self):
+        # trois niveaux, donc deux rendements de +10 %, soit une annee de deux
+        # periodes : 21 %. Diviser par les trois niveaux donnerait 13,6 %.
+        niveau = pd.Series([100.0, 110.0, 121.0], index=jours(3))
+        self.assertAlmostEqual(annualiser_rendement(niveau, periodes=2), 0.21, places=12)
+
 
 class VolatiliteTests(unittest.TestCase):
 
@@ -142,6 +148,16 @@ class DecompositionTests(unittest.TestCase):
         alea = np.random.default_rng(1).standard_normal((4000, 30)) / 100
         bloc = pd.DataFrame(alea, index=jours(4000))
         self.assertAlmostEqual(rho_implicite(bloc), 0.0, places=1)
+
+    def test_rho_implicite_refuse_un_bloc_incomplet(self):
+        # deux series parfaitement correlees sur leurs dates communes : avec
+        # ces trous, l'ancienne formule renvoyait 0,398 au lieu de 1
+        base = np.random.default_rng(3).standard_normal(400) / 100
+        bloc = pd.DataFrame({"a": base, "b": 2 * base}, index=jours(400))
+        bloc.iloc[:200, 1] = np.nan
+        with self.assertRaises(ValueError):
+            rho_implicite(bloc)
+        self.assertAlmostEqual(rho_implicite(bloc.dropna()), 1.0, places=9)
 
     def test_rho_implicite_retrouve_un_sur_des_series_identiques(self):
         base = np.random.default_rng(2).standard_normal(2000) / 100

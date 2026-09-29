@@ -7,10 +7,13 @@ A_EXAMINER ; une absence de preuve n'est pas une preuve d'absence d'exposition.
 """
 
 from pathlib import Path
-import hashlib
 import re
+import sys
 
 import pandas as pd
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from empreintes import correspond  # noqa: E402
 
 RACINE = Path(__file__).resolve().parents[1]
 REGISTRE = RACINE / "data" / "review" / "decisions_selection.csv"
@@ -19,6 +22,16 @@ CHAMPS_REGISTRE = [
     "cik", "verdict", "canal", "degre", "motif", "depot", "phrase_decisive",
     "source_url", "maturite_exposition", "statut_revue", "limite_preuve", "revue_le",
 ]
+
+
+def lire_texte(fichier):
+    """Texte d'une preuve, en fins de ligne LF quelle que soit la copie de travail.
+
+    Git rend les fichiers texte en CRLF sous Windows et en LF ailleurs ; la
+    recherche des citations normalise deja les espaces, mais le texte charge
+    doit etre le meme sur toutes les machines.
+    """
+    return fichier.read_bytes().replace(b"\r\n", b"\n").decode("utf-8")
 
 
 def normaliser_espaces(texte):
@@ -90,10 +103,9 @@ def charger_textes_verifies(termes, racine=RACINE):
             raise ValueError("Texte cache hors du repertoire des rapports")
         if not fichier.exists():
             continue
-        contenu = fichier.read_bytes()
-        if hashlib.sha256(contenu).hexdigest() != row["texte_sha256"]:
+        if not correspond(fichier, row["texte_sha256"]):
             raise ValueError(f"Empreinte du texte cache incorrecte : {row['cik']}")
-        textes[(str(row["cik"]).zfill(10), row["depot"])] = contenu.decode("utf-8")
+        textes[(str(row["cik"]).zfill(10), row["depot"])] = lire_texte(fichier)
     return textes
 
 
@@ -118,15 +130,14 @@ def charger_complements(termes, racine=RACINE):
         fichier = (racine / s.texte).resolve()
         if not fichier.is_relative_to((racine / "data/review/sources_finition_2026-09-08").resolve()):
             raise ValueError("Complément hors de son dossier de preuves")
-        contenu = fichier.read_bytes()
-        if hashlib.sha256(contenu).hexdigest() != s.texte_sha256:
+        if not correspond(fichier, s.texte_sha256):
             raise ValueError("Empreinte du complément documentaire incorrecte")
         if not s.depot or not s.source_url.startswith(
                 f"https://www.sec.gov/Archives/edgar/data/{int(s.cik)}/{s.depot.replace('-', '')}/"):
             raise ValueError("Le CIK, le dépôt et l'URL du complément ne correspondent pas")
         t.loc[masque, "depot"] = s.depot
         t.loc[masque, "source_url"] = s.source_url
-        textes[(s.cik.zfill(10), s.depot)] = contenu.decode("utf-8")
+        textes[(s.cik.zfill(10), s.depot)] = lire_texte(fichier)
     return t, textes
 
 

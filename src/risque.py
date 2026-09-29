@@ -14,14 +14,17 @@ MOIS = 12
 def annualiser_rendement(niveau, periodes=SEANCES):
     """Rendement geometrique annualise, a partir du premier et du dernier niveau.
 
+    Il y a un rendement de moins que de niveaux : l'exposant divise par le
+    nombre de rendements. Le moteur de l'etape 2 applique la meme convention.
+
     La moyenne arithmetique multipliee par le nombre de periodes s'ecarte de la
     moitie de la variance environ, et cet ecart croit avec la volatilite : elle
     flatterait donc les series les plus agitees.
     """
-    n = len(niveau)
-    if n < 2:
+    rendements = len(niveau) - 1
+    if rendements < 1:
         raise ValueError("Au moins deux niveaux sont necessaires.")
-    return float((niveau.iloc[-1] / niveau.iloc[0]) ** (periodes / n) - 1)
+    return float((niveau.iloc[-1] / niveau.iloc[0]) ** (periodes / rendements) - 1)
 
 
 def volatilite(rendements, periodes=SEANCES):
@@ -109,8 +112,17 @@ def rho_implicite(bloc):
     Identite exacte, qui evite de former une matrice de correlation complete.
     Elle pondere chaque paire par le produit des volatilites, contrairement a
     la moyenne simple des correlations par paires.
+
+    L'identite ne tient que si tous les titres sont observes aux memes dates.
+    Avec des trous, la moyenne quotidienne porterait sur les seuls titres
+    presents alors que le nombre de titres resterait fixe : deux series
+    parfaitement correlees pourraient sortir faiblement correlees. Un bloc
+    incomplet est donc refuse, et c'est a l'appelant de choisir les titres
+    complets sur la periode.
     """
-    ecarts = bloc.std().dropna()
+    if bloc.isna().any().any():
+        raise ValueError("Bloc incomplet : garder les titres observes a toutes les dates.")
+    ecarts = bloc.std()
     n = len(ecarts)
     if n < 2:
         return float("nan")
@@ -123,7 +135,13 @@ def rho_implicite(bloc):
 
 
 def n_effectif(rho, n):
-    """Nombre d'actifs independants donnant la meme reduction de variance."""
+    """Nombre d'actifs independants donnant la meme reduction de variance.
+
+    Lecture sous hypotheses : poids egaux, volatilites egales et correlation
+    uniforme egale a rho entre toutes les paires. Pour un portefeuille reel,
+    dont les poids, les volatilites et les correlations different, c'est un
+    ordre de grandeur et non une mesure exacte.
+    """
     if n < 1:
         raise ValueError("Le nombre de titres doit etre au moins un.")
     return float(1 / (rho + (1 - rho) / n))
