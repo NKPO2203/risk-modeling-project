@@ -1,0 +1,38 @@
+{
+  "produit_par": "src/recherche_regles.ipynb",
+  "decisions": "research/plan_projet.md, section IX",
+  "controles": {
+    "gagnant": "S0-W3-504|VT15-21-obl",
+    "acceptables": 102,
+    "bootstrap_t1s": {
+      "ecart": 0.18924118411443858,
+      "bas": -0.04943327802769187,
+      "haut": 0.40120603938888294,
+      "p_bilaterale": 0.129
+    },
+    "sharpe_deflate": 0.9985162391383465,
+    "seuil_hasard_sharpe_annuel": 0.283219547057819,
+    "pbo": 0.5944055944055944,
+    "white_ecart_max_quotidien": 0.012384024552124055,
+    "white_p": 0.455,
+    "essais": 900
+  },
+  "entrees_sha256": {
+    "faits_10k.csv": "e116b97dabbf808bcaad5a08f7cf70149bd431c6c9a8b8fd94430956e646a5d1",
+    "rendements_valorisation.csv": "5abdc9dcbb3c5e8fd1546620de89208485a8a4c8dfd5054557d677ac745e70e2",
+    "PPUT_cboe.csv": "067dae1d54b9ec6490d797b00a48ca2b999b4d8bc07ffcc9f1f2e04ee82c1bc6",
+    "temoin_valeurs.csv": "8215a9c229ecb0b00192bb2aa5481968fa4fc8d44056ba74778d453113a392c4"
+  },
+  "code_sha256": {
+    "src/regles.py": "597f309bbc8b0f47b7c3477015afae29bd1744ad6d2fb498665f30244e789cdf"
+  },
+  "sorties_sha256": {
+    "regles_valeurs.csv.gz": "ad353670be8924a7c442140785433aa192f5f721a219c57c6a25215d560aea5e",
+    "regles_mesures.csv": "6c55119c7e2a193f052815b74665b50f869f8d5f131ef62da05f132400336ac3",
+    "regles_mesures_depuis_2000.csv": "db6c2083830a36a187a21797ac5bb1be23ab46611787db3eb80a7683614d06ab",
+    "aleatoires_fenetre_2011.csv.gz": "00fafef3dcbfc8ab91c2e5bd26470eb777171d6aa3b7995b4158cc81eb800d8b",
+    "aleatoires_depuis_2000.csv.gz": "dfdcbe60d046b50d6a2f504ba340194c84fb9f2c9f432bf786bb048820cef69c",
+    "regles_selection_contre_s0.csv": "fe5b8d171b8cac5fc0fb1fdd20dc0bdfec187bdeb9fd24a616da9310b6589fa6",
+    "regles_parts_de_risque.csv": "6e0158ec026861b171559812f0d3a3f572fdabfcd5879675448a874632f0e86a"
+  }
+}

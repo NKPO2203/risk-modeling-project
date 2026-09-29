@@ -461,3 +461,7 @@ Le test de White (2000) sur le maximum des écarts de Sharpe avec `T1S` est calc
 **Tâche 10, ce que je m'interdis.** Présenter une règle comme réalisable : l'univers reste choisi avec les rapports de 2026, et la comparaison ne vaut qu'à l'intérieur de cet univers. Publier la seule règle gagnante sans les 899 autres. Changer un paramètre de la grille après un résultat sans l'ajouter aux essais. Dire qu'on sait reconnaître les futurs grands gagnants.
 
 Les calculs seront menés dans `src/recherche_regles.ipynb`, avec les fonctions de `src/regles.py` testées dans `tests/test_regles.py`. Les données comptables sont collectées par `python -m src.collecter_fondamentaux`.
+
+### État de la seconde version au 29 septembre 2026 : calculée, à valider par l'auteur
+
+Les neuf cents règles et les deux fois cent mille portefeuilles aléatoires sont calculés dans `src/recherche_regles.ipynb`. Résultats dans `research/resultats_recherche.md`. Une précision a été datée avant tout résultat de règle : la condition de 252 séances d'historique fait commencer les constructions « depuis 2000 » à la première séance de 2001. Sur 2011 à 2026, 102 règles sont acceptables face à `T1S`. La meilleure échoue au bootstrap contre `T1S`, et la règle fixée d'avance conclut qu'aucune ne se distingue de façon établie. Le Deflated Sharpe Ratio est passé, mais son hypothèse nulle d'un Sharpe nul n'est pas pertinente dans un univers de survivants ; c'est écrit comme une limite du choix de la phase 0, non corrigé après coup.
