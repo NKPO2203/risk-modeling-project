@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from src.empreintes import correspond, empreinte
+from src.empreintes import correspond, ecrire_manifeste, empreinte, verifier_manifeste
 
 
 class EmpreintesTests(unittest.TestCase):
@@ -47,6 +47,34 @@ class EmpreintesTests(unittest.TestCase):
         a = self.ecrire("a.xlsx", b"PK\n")
         b = self.ecrire("b.xlsx", b"PK\r\n")
         self.assertNotEqual(empreinte(a), empreinte(b))
+
+    def test_un_manifeste_intact_est_accepte(self):
+        entree = self.ecrire("entree.csv", b"a\n1\n")
+        sortie = self.ecrire("sortie.csv", b"b\n2\n")
+        ecrire_manifeste(self.racine / "m.json", self.racine, [entree], [sortie])
+        self.assertEqual(verifier_manifeste(self.racine / "m.json", self.racine)["statut"], "termine")
+
+    def test_une_sortie_modifiee_apres_le_calcul_est_refusee(self):
+        entree = self.ecrire("entree.csv", b"a\n1\n")
+        sortie = self.ecrire("sortie.csv", b"b\n2\n")
+        ecrire_manifeste(self.racine / "m.json", self.racine, [entree], [sortie])
+        sortie.write_bytes(b"b\n3\n")
+        with self.assertRaises(ValueError):
+            verifier_manifeste(self.racine / "m.json", self.racine)
+
+    def test_une_entree_modifiee_apres_le_calcul_est_refusee(self):
+        entree = self.ecrire("entree.csv", b"a\n1\n")
+        sortie = self.ecrire("sortie.csv", b"b\n2\n")
+        ecrire_manifeste(self.racine / "m.json", self.racine, [entree], [sortie])
+        entree.write_bytes(b"a\n9\n")
+        with self.assertRaises(ValueError):
+            verifier_manifeste(self.racine / "m.json", self.racine)
+
+    def test_un_manifeste_sans_entrees_est_refuse(self):
+        sortie = self.ecrire("sortie.csv", b"b\n2\n")
+        ecrire_manifeste(self.racine / "m.json", self.racine, [], [sortie])
+        with self.assertRaises(ValueError):
+            verifier_manifeste(self.racine / "m.json", self.racine)
 
     def test_un_fichier_binaire_n_est_pas_normalise(self):
         attendu = hashlib.sha256(b"PK\r\n").hexdigest()

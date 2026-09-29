@@ -1,0 +1,38 @@
+{
+  "statut": "termine",
+  "produit_le": "2026-09-29T00:26:45+00:00",
+  "commande": "src/mesurer_risque.ipynb, execute en entier",
+  "entrees_sha256": {
+    "data/processed/pipeline_portefeuilles.json": "7ad2e28aa87a98509f3b6d216fde655934767c956e912647e30de1813f977e47",
+    "data/raw/taux_sans_risque.csv": "6c7e1bf61bf2af0ee3a7ff68992a41a9f367e6f62add3b2c28358089f4390d05",
+    "data/review/variations_finition_2026-09-08.csv": "858f01c44d96cded530ed27877798ebf8b37899759a252f992aba4bbb6a744f3",
+    "src/risque.py": "de5b32d9ae1727aad7b5aadc185f167b44870e08cd4b6260bbf4132809cf8281",
+    "src/empreintes.py": "d16d5e79355e1009c667918b62fa0a46b267b427c294cef6e70b72c2fb015379"
+  },
+  "sorties_sha256": {
+    "data/processed/risque_arbitrage_gestion.csv": "4bdf314f35937e340ed7adc84819bdf7113695eb0f447b934af95ac6d9e0e488",
+    "data/processed/risque_beta_conditionnel.csv": "1325ac2d4316eb7845fc5fb8c5ca19a5bc89b15dcfa855905cbe399ad5e19715",
+    "data/processed/risque_choc.csv": "1bdaee331993f3eb77ec886e68afa11e5c158f3505c7f9490d35a1be73a3aacb",
+    "data/processed/risque_concentration.csv": "4c9063f6d8db59d1742ae262ce9363a9e20b6fc537f5d70b04b4c22536f546ad",
+    "data/processed/risque_concentration_evolution.csv": "c1bcd20ce928dc24bbc600e516f4a49011fea6cbffa4df8194e07c89d50e8608",
+    "data/processed/risque_contributions.csv": "b70f19bef4e2634cbf596fd276f6ed1a4f6e755d18c9484f4e35027fa0c58129",
+    "data/processed/risque_contributions_detail.csv": "5ebc20fb96cb36860110a34b49f9ec219ae0b25f226decb786718d64f61ccdec",
+    "data/processed/risque_correlation_conditionnelle.csv": "6220dc2ef66546d9876dc1829f113b601d5f78a5c14be1f7745c228183d8d94e",
+    "data/processed/risque_correlation_glissante.csv": "bb5dfeb7d6717a2be04e8435f0b1b77df22e6b58b2075e3738b51f86c711c7a8",
+    "data/processed/risque_correlations.csv": "68d063e82c6b928e77e3d1e9ad4423c963f2d00df6a1256fe0fd118240533e9c",
+    "data/processed/risque_decomposition.csv": "32679d0e50673b8c6c069e79548ef7e07e8898a892cbac811a78fe3a8485be44",
+    "data/processed/risque_depassements.csv": "9174025802d47b8e8df2ce12d75afdfba62bd8c780ecaf170d1fee4d91dd65de",
+    "data/processed/risque_distribution.csv": "cbf8c770f1dd64e015d1a34cb423d2f0e7e44bfb775d8284baeafb0adc31b9d2",
+    "data/processed/risque_fenetre_commune.csv": "646bf20d39f391cc03008c5751d8e556afa8fefd6770f03d47860134eb147561",
+    "data/processed/risque_marginal.csv": "25fd7f1bc85cc4dc50ba53688ef0de978cfef25c96af09ad3c752f3c29d31f4f",
+    "data/processed/risque_par_episode.csv": "703ea11cd4a62a82945aaf0e6c264360b839280252d1c83a0a8e9702bb2d6606",
+    "data/processed/risque_par_maillon.csv": "b6929713cba3714df26fa17ae1ca715cbf8cd83060ad4bee36dc1dba085a223a",
+    "data/processed/risque_ratios.csv": "19d1e6c06964e97b1e07c9583316f2547906adae2c83c779f75f43de7d3095f3",
+    "data/processed/risque_replis.csv": "1950f8561921b6c4ec484223aeee528d6894e7e93025078d953cc6ac5e82a8ef",
+    "data/processed/risque_sensibilite_extremes.csv": "94464c4df6ffb5b478a4c8565fc91a6c338b4800c84de71763cbbbc10898ef6a",
+    "data/processed/risque_stabilite_fenetre.csv": "a195af163a2c922bd70835ff0e6d14337d8de687f61c586e0e40bc781148c571",
+    "data/processed/risque_var.csv": "05184a720fbe6f865fef744480e3e43cd27e856a6dcdf2fb91bf84c72ecd4666",
+    "data/processed/risque_volatilite.csv": "70d0cf0a87706035a7ee9c5042c8e491d5b889125db2255648bda486844d200e",
+    "data/processed/episodes_tension.csv": "07b215d3cfc9a8562679afebf945c5352d374cbbdb4b8d2e9c1fbcee1a7fe01c"
+  }
+}

@@ -1,24 +1,28 @@
 """Groupe témoin : les entreprises SORT, construites comme les portefeuilles du thème.
 
 Exécution : python -m src.construire_temoin
-Prérequis : data/processed de l'étape 2 et episodes_tension.csv de l'étape 3.
+Prérequis : data/processed de l'étape 2, et le manifeste de l'étape 3 pour
+episodes_tension.csv. Les deux sont vérifiés avant tout calcul.
 
-Le thème et le témoin partagent la composition du S&P 500 de 2026, donc le
-même biais de survie, la même équipondération, les mêmes règles d'entrée, de
-rééquilibrage et de frais. L'écart entre les deux isole ce que ces biais
-communs ne peuvent pas expliquer.
+Le thème et le témoin sont tous deux tirés de la composition du S&P 500 de
+2026, avec la même équipondération et les mêmes règles d'entrée, de
+rééquilibrage et de frais. Partager le biais de survie ne veut pas dire en
+subir le même effet : l'écart entre les deux est une comparaison descriptive
+entre deux univers de 2026 reconstitués dans le passé. Il ne mesure isolément
+ni le biais de survie ni l'effet de l'IA.
 
 Deux témoins sont construits :
 - T1, toutes les entreprises SORT à poids égaux, comme P1 ;
-- T1S, les mêmes entreprises repondérées pour reproduire la répartition
-  sectorielle de P1. L'écart P1 - T1S ne doit plus rien au mélange de secteurs.
+- T1S, les mêmes entreprises repondérées selon la répartition sectorielle des
+  134 entreprises retenues en 2026, fixe sur toute la période. P1 change de
+  composition et ses poids dérivent : l'écart P1 - T1S peut encore devoir une
+  partie de sa valeur aux secteurs.
 
 Les cours du témoin n'ont reçu ni seconde source ni correction manuelle.
 Les séances absentes chez Yahoo sont traitées comme des cotations absentes :
 le dernier cours est porté et aucune opération n'y est faite.
 """
 from pathlib import Path
-from datetime import datetime, timezone
 import argparse
 import json
 
@@ -26,8 +30,8 @@ import numpy as np
 import pandas as pd
 
 from src import risque
-from src.construire_portefeuilles import lire_prix, simuler_groupe
-from src.empreintes import correspond, empreinte
+from src.construire_portefeuilles import lire_prix, simuler_groupe, verifier
+from src.empreintes import correspond, ecrire_manifeste, verifier_manifeste
 from src.portefeuille import COUT, poids_cibles, preparer_prix
 
 RACINE = Path(__file__).resolve().parents[1]
@@ -109,6 +113,8 @@ def construire(racine=RACINE, cout=COUT):
     racine = Path(racine).resolve()
     raw, processed = racine / "data/raw", racine / "data/processed"
     verifier_prix(racine)
+    verifier(processed, racine)
+    verifier_manifeste(processed / "risque_manifest.json", racine)
     dates = pd.Index(pd.read_csv(raw / "calendrier_bourse.csv").date.astype(str), name="date")
     dates = dates[dates >= DEBUT]
     annuel = set(pd.Series(dates).groupby(pd.Series(dates).str[:4]).min())
@@ -192,15 +198,18 @@ def construire(racine=RACINE, cout=COUT):
                "temoin_correlations.csv": (correlations, False)}
     for nom, (df, index) in sorties.items():
         df.to_csv(processed / nom, index=index, encoding="utf-8")
-    manifeste = {"statut": "termine", "produit_le": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                 "commande": "python -m src.construire_temoin", "cout": cout,
-                 "titres": len(membres), "entreprises": int(membres.cik.nunique()),
-                 "parts_sectorielles_p1": parts.round(6).to_dict(),
-                 "seances_completees": int(qualite.seances_completees.sum()),
-                 "variations_extremes": int(qualite.variations_extremes.sum()),
-                 "sorties_sha256": {nom: empreinte(processed / nom) for nom in sorties}}
-    (processed / "temoin_manifest.json").write_text(
-        json.dumps(manifeste, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    entrees = [raw / "prix_temoin_manifest.json", raw / "calendrier_bourse.csv",
+               raw / "taux_sans_risque.csv", racine / "data/review/decisions_selection.csv",
+               processed / "pipeline_portefeuilles.json", processed / "risque_manifest.json",
+               *[racine / "src" / nom for nom in ("construire_temoin.py", "construire_portefeuilles.py",
+                                                  "portefeuille.py", "risque.py", "empreintes.py")]]
+    manifeste = ecrire_manifeste(
+        processed / "temoin_manifest.json", racine, entrees, [processed / nom for nom in sorties],
+        commande="python -m src.construire_temoin", cout=cout,
+        titres=len(membres), entreprises=int(membres.cik.nunique()),
+        parts_sectorielles_2026=parts.round(6).to_dict(),
+        seances_completees=int(qualite.seances_completees.sum()),
+        variations_extremes=int(qualite.variations_extremes.sum()))
     return comparaison, correlations, manifeste
 
 
@@ -213,7 +222,7 @@ def main():
     print()
     print(correlations.round(4).to_string(index=False))
     print()
-    print({k: v for k, v in manifeste.items() if k != "sorties_sha256"})
+    print({k: v for k, v in manifeste.items() if not k.endswith("_sha256")})
 
 
 if __name__ == "__main__":

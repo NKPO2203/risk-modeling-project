@@ -1,11 +1,11 @@
 {
   "statut": "termine",
-  "produit_le": "2026-09-28T19:01:05+00:00",
+  "produit_le": "2026-09-29T00:28:22+00:00",
   "commande": "python -m src.construire_temoin",
   "cout": 0.001,
   "titres": 368,
   "entreprises": 366,
-  "parts_sectorielles_p1": {
+  "parts_sectorielles_2026": {
     "Information Technology": 0.358209,
     "Industrials": 0.208955,
     "Utilities": 0.179104,
@@ -18,11 +18,24 @@
   },
   "seances_completees": 1,
   "variations_extremes": 38,
+  "entrees_sha256": {
+    "data/raw/prix_temoin_manifest.json": "6a5dd0e642a0f6107d0561fb4cd5e1bc03ab0553dd4d2fc1e8265d1303007597",
+    "data/raw/calendrier_bourse.csv": "944874dfea6197c70a164d0d72e0074b6d8afbc5bf041bda82a4d5fd4d81f01f",
+    "data/raw/taux_sans_risque.csv": "6c7e1bf61bf2af0ee3a7ff68992a41a9f367e6f62add3b2c28358089f4390d05",
+    "data/review/decisions_selection.csv": "0689095e1b16c6d1c080fc5b8845e39f32db03b1dc4b28d0809236a62023dcbc",
+    "data/processed/pipeline_portefeuilles.json": "7ad2e28aa87a98509f3b6d216fde655934767c956e912647e30de1813f977e47",
+    "data/processed/risque_manifest.json": "5e1a1d99ce39033ecedf91048cec3ce3bd2f6042d78d6c3f9d0260877a78ba1b",
+    "src/construire_temoin.py": "a1143d2522aab4ecd94b000f697860d01788e28ec0b2c1036658bf8674110cba",
+    "src/construire_portefeuilles.py": "e941d776e0af07b6f7be3d2f990d50971faf1f6d4eb7c583076917b44ce3550e",
+    "src/portefeuille.py": "065ce80c2accf9a08dfc5edab65f0dcfb26a937a118186dd5cfef4f860af045c",
+    "src/risque.py": "de5b32d9ae1727aad7b5aadc185f167b44870e08cd4b6260bbf4132809cf8281",
+    "src/empreintes.py": "d16d5e79355e1009c667918b62fa0a46b267b427c294cef6e70b72c2fb015379"
+  },
   "sorties_sha256": {
-    "temoin_valeurs.csv": "8215a9c229ecb0b00192bb2aa5481968fa4fc8d44056ba74778d453113a392c4",
-    "temoin_mesures.csv": "43ae6dbd38b1d6faf1d02a84f6ec0565ce2c9de910b8f5a3f50a1be1dc2ec342",
-    "temoin_qualite.csv": "69b3083ab1a6f3ece6823f5edcced9bdb8f272f5e6cbc46bb7f0468bbbd032b4",
-    "temoin_comparaison.csv": "7429a2c2b61306bfb54b3239bb76b42cd5b7dffda303980cf12cb9a2c22c4fc8",
-    "temoin_correlations.csv": "b682cf9f8cdf8c986f31e2da03a610d1148ab06e3a7453866ea4e2951adce50c"
+    "data/processed/temoin_valeurs.csv": "8215a9c229ecb0b00192bb2aa5481968fa4fc8d44056ba74778d453113a392c4",
+    "data/processed/temoin_mesures.csv": "162afc76a3e5521414659d71ff08c37c84a881604cdde64f12e3bfdc8e4ef676",
+    "data/processed/temoin_qualite.csv": "69b3083ab1a6f3ece6823f5edcced9bdb8f272f5e6cbc46bb7f0468bbbd032b4",
+    "data/processed/temoin_comparaison.csv": "c409e10307ff184ca27ed40a9fc95be1fdd12ddd4c0c0c81058e8daf923cec8c",
+    "data/processed/temoin_correlations.csv": "b682cf9f8cdf8c986f31e2da03a610d1148ab06e3a7453866ea4e2951adce50c"
   }
 }

@@ -1,4 +1,4 @@
-# Relance les tests et le contrôle des empreintes de l'étape 2 à chaque envoi.
+# Relance les tests et le contrôle des empreintes des étapes 2 et 3 à chaque envoi.
 # Le corpus SEC de l'étape 1 n'est pas dans le dépôt : ses deux tests sont ignorés.
 name: tests
 
@@ -18,3 +18,12 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - run: python -B -m unittest discover -s tests -v
       - run: python -B -m src.construire_portefeuilles --check-only
+      - name: Empreintes de l'étape 3, du témoin et de la robustesse
+        run: |
+          python -B -c "
+          from pathlib import Path
+          from src.empreintes import verifier_manifeste
+          for nom in ['risque', 'temoin', 'robustesse']:
+              verifier_manifeste(Path('data/processed') / f'{nom}_manifest.json', Path('.'))
+              print(nom, 'vérifié')
+          "

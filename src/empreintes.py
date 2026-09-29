@@ -15,7 +15,10 @@ sur son contenu en LF. Un manifeste écrit sous Windows porte ainsi les mêmes
 empreintes qu'un manifeste écrit sous Linux. Les manifestes plus anciens,
 écrits sur les octets bruts, restent vérifiables par `correspond`.
 """
+from datetime import datetime, timezone
+from pathlib import Path
 import hashlib
+import json
 
 TEXTE = {".csv", ".json", ".md", ".txt", ".py", ".ipynb", ".html", ".htm"}
 
@@ -42,3 +45,42 @@ def correspond(path, attendu):
     if path.suffix.lower() not in TEXTE:
         return hashlib.sha256(contenu).hexdigest() == attendu
     return any(hashlib.sha256(v).hexdigest() == attendu for v in variantes(contenu))
+
+
+def chemin_relatif(path, racine):
+    return Path(path).resolve().relative_to(Path(racine).resolve()).as_posix()
+
+
+def ecrire_manifeste(chemin, racine, entrees, sorties, **infos):
+    """Manifeste d'une étape : ses entrées, son code et ses sorties, par empreinte.
+
+    Les chemins sont relatifs à la racine du dépôt, en notation POSIX.
+    """
+    manifeste = {"statut": "termine",
+                 "produit_le": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                 **infos,
+                 "entrees_sha256": {chemin_relatif(p, racine): empreinte(Path(p)) for p in entrees},
+                 "sorties_sha256": {chemin_relatif(p, racine): empreinte(Path(p)) for p in sorties}}
+    Path(chemin).write_text(json.dumps(manifeste, ensure_ascii=False, indent=2) + "\n",
+                            encoding="utf-8", newline="\n")
+    return manifeste
+
+
+def verifier_manifeste(chemin, racine):
+    """Refuse un manifeste inachevé, ou dont une entrée ou une sortie a changé.
+
+    À appeler avant de lire les sorties d'une étape : un résultat calculé sur
+    des fichiers qui ne sont plus ceux de l'étape n'est pas reproductible.
+    """
+    racine = Path(racine).resolve()
+    manifeste = json.loads(Path(chemin).read_text(encoding="utf-8"))
+    if manifeste.get("statut") != "termine":
+        raise ValueError(f"Étape inachevée : {Path(chemin).name}")
+    for groupe in ("entrees_sha256", "sorties_sha256"):
+        if not manifeste.get(groupe):
+            raise ValueError(f"Manifeste incomplet, {groupe} absent : {Path(chemin).name}")
+        for nom, attendu in manifeste[groupe].items():
+            p = (racine / nom).resolve()
+            if not p.is_relative_to(racine) or not p.is_file() or not correspond(p, attendu):
+                raise ValueError(f"{nom} a changé depuis {Path(chemin).name} : relancer l'étape qui le produit.")
+    return manifeste
