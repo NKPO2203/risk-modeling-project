@@ -7,6 +7,7 @@ attribution de citation à un mauvais document ou à de mauvais offsets.
 import csv
 import hashlib
 import json
+import sys
 import unittest
 from functools import lru_cache
 from pathlib import Path
@@ -14,6 +15,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
+sys.path.insert(0, str(ROOT))
+from src.empreintes import correspond  # noqa: E402
 # Le cache de 2,5 Go est exclu du dépôt : sans lui, ces contrôles ne peuvent
 # pas être faits et sont signalés comme ignorés, non comme réussis.
 CACHE = RAW / "filings_text"
@@ -22,6 +25,11 @@ SANS_CACHE = "cache documentaire data/raw/filings_text absent de cette copie"
 
 def sha256_bytes(contenu):
     return hashlib.sha256(contenu).hexdigest()
+
+
+def en_lf(contenu):
+    """Le contenu tel que le depot le stocke, quelle que soit la copie de travail."""
+    return contenu.replace(b"\r\n", b"\n")
 
 
 def lignes_csv(chemin):
@@ -42,9 +50,10 @@ class IntegriteCorpusTests(unittest.TestCase):
             "filings_termes.csv", "filings_phrases.csv", "filings_log.csv"})
         for nom, attendu in self.manifest["files"].items():
             with self.subTest(fichier=nom):
-                contenu = (RAW / nom).read_bytes()
-                self.assertEqual(len(contenu), attendu["bytes"])
-                self.assertEqual(sha256_bytes(contenu), attendu["sha256"])
+                # Taille et empreinte portent sur le contenu en LF, convention
+                # du depot : une copie en CRLF n'est pas une modification.
+                self.assertEqual(len(en_lf((RAW / nom).read_bytes())), attendu["bytes"])
+                self.assertTrue(correspond(RAW / nom, attendu["sha256"]))
         self.assertEqual(len(self.termes), self.manifest["entreprises"])
         self.assertEqual(len(self.par_cik), len(self.termes))
         attendus = {ligne["CIK"].zfill(10) for ligne in lignes_csv(RAW / "sp500_constituents.csv")}
@@ -92,13 +101,15 @@ class IntegriteCorpusTests(unittest.TestCase):
                 self.assertEqual(passage["texte_sha256"], ligne["texte_sha256"])
                 self.assertEqual(passage["couverture"], "vocabulaire_complet")
                 texte = texte_du_cik(cik)
+                # le texte en cache est en LF ; une copie CRLF du CSV ne change pas la citation
+                phrase = passage["phrase"].replace("\r\n", "\n")
                 debut, fin = int(passage["debut"]), int(passage["fin"])
                 offsets = json.loads(passage["offsets_json"])
                 self.assertIn([debut, fin], offsets)
                 for gauche, droite in offsets:
                     self.assertTrue(0 <= gauche < droite <= len(texte))
-                    self.assertEqual(texte[gauche:droite], passage["phrase"])
-                attendu = sha256_bytes((depot + "\0" + passage["phrase"]).encode("utf-8"))[:24]
+                    self.assertEqual(texte[gauche:droite], phrase)
+                attendu = sha256_bytes((depot + "\0" + phrase).encode("utf-8"))[:24]
                 self.assertEqual(passage["phrase_id"], attendu)
                 self.assertNotIn((cik, attendu), ids)
                 ids.add((cik, attendu))

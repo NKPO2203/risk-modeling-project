@@ -1,9 +1,9 @@
 {
-  "produit_le": "2026-09-28T22:42:36.364644+00:00",
+  "produit_le": "2026-09-29T00:21:52.580700+00:00",
   "sources_sha256": {
-    "data\\processed\\base_selection.csv": "e2757cfefaf30a385552c0002da7bcc34aad3d32f4e4921255ba4df40f063dab",
-    "data\\raw\\sec_facts_raw.csv": "5a056ba9c930e02dde8c019df4ae4f6f6ae9499b415972ab05a722631a6096c7",
-    "data\\review\\comptabilite_exceptions.json": "ca6a67032cf1d60e2d5861cd8e6cf1f840e4790d2bf07f44aa644553adc85349"
+    "data/processed/base_selection.csv": "26a5bc2586508b57bc62f3fd929ec588863269c7850e0e85f30155cf8ca31737",
+    "data/raw/sec_facts_raw.csv": "5699b89ed87560ed153e5ffecc1cc5138e8468c45650236077e6597ff24552c1",
+    "data/review/comptabilite_exceptions.json": "abe279b79bc30d6bb1a8dcc47221d2919fca6dc05dd24e1cdb1cb5184654af6e"
   },
   "lignes_base": 5707,
   "entreprises_base": 496,

@@ -1,0 +1,6 @@
+# Une seule convention de fins de ligne pour tout le depot : LF, dans l'index
+# comme dans la copie de travail, sous Windows comme sous Linux. Les empreintes
+# des manifestes portent ainsi sur les memes octets sur toutes les machines.
+# Les fichiers binaires sont detectes et laisses tels quels. Un dossier peut
+# declarer ses propres exceptions, comme les pieces sources de l'attribution A-08.
+* text=auto eol=lf

@@ -5,9 +5,12 @@ SHA-256 à la base effectivement examinée, ainsi qu'un registre de couverture.
 """
 from pathlib import Path
 from datetime import datetime, timezone
-import hashlib
 import json
+import sys
 import pandas as pd
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from empreintes import empreinte  # noqa: E402
 
 RACINE = Path(__file__).resolve().parents[1]
 ENTREE = RACINE / 'data/processed/base_selection.csv'
@@ -109,7 +112,7 @@ def main():
     sources = {}
     for path in [ENTREE, RACINE/'data/raw/sec_facts_raw.csv', RACINE/'data/review/comptabilite_exceptions.json']:
         if path.exists():
-            sources[str(path.relative_to(RACINE))] = hashlib.sha256(path.read_bytes()).hexdigest()
+            sources[path.relative_to(RACINE).as_posix()] = empreinte(path)
     manifest = {'produit_le': datetime.now(timezone.utc).isoformat(), 'sources_sha256': sources,
                 'lignes_base': len(b), 'entreprises_base': int(b.cik.nunique()), 'alertes': len(a),
                 'portee': "Vraisemblance et couverture ; ne certifie pas l'exactitude de tous les comptes ni la causalité IA.",
