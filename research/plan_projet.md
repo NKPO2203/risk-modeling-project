@@ -384,3 +384,71 @@ Deux décisions ont été prises après la phase 0 et sont datées dans le carne
 ### État de l'étape 5 au 28 septembre 2026 : close
 
 Les cinq tâches de la section VIII sont faites dans `src/comparer_strategies.ipynb`, et les résultats sont écrits dans `research/resultats_strategies.md`. Trois écarts à la section VIII sont datés du même jour. Les mélanges de liquidités sont retirés des candidats, parce qu'ils sont leurs propres jumeaux. Les puts sont aussi comparés dans la variante calibrée sur l'indice PutWrite. Les moitiés sont lues avec le jumeau de la période complète.
+
+---
+
+## IX. Étapes 4 et 5, seconde version : recherche systématique de règles de construction
+
+*Phase 0 écrite le 29 septembre 2026, avant toute collecte comptable et tout calcul de stratégie. L'auteur a demandé ce jour-là d'utiliser « toutes les combinaisons possibles ». Elles sont 2,2 × 10⁴⁰ pour les seuls sous-ensembles de titres, et le meilleur de ces portefeuilles serait choisi après coup. La décision retenue est donc de tester un grand nombre de règles fixées maintenant, puis de les placer face à 100 000 portefeuilles tirés au hasard, et de corriger le choix du gagnant pour le nombre d'essais. Les choix ci-dessous m'ont été délégués ; ce sont des propositions que l'auteur pourra renverser, avec datation ici. Cette section remplace, pour la suite, les brouillons des sections VII et VIII, sans les effacer.*
+
+**Tâche 1, la question tranchée.** C'est celle du bloc 3 du Research Charter, adoptée le 29 septembre. Une règle est acceptable si, sur la fenêtre d'évaluation, son repli maximal n'est pas plus profond que celui de `T1S` rééquilibré, sa perte moyenne au-delà de la VaR à 99 % n'est pas plus forte, et son rendement annualisé n'est pas plus faible. Parmi les règles acceptables, la meilleure est celle dont le ratio de Sharpe est le plus élevé. Elle n'est retenue que si elle survit aux trois contrôles de la tâche 8.
+
+**Tâche 2, la fenêtre.** Les données comptables de la SEC au format XBRL commencent avec les rapports annuels déposés en 2010. La première date où chaque règle peut être appliquée avec l'information de l'époque est donc la première séance de 2011. La fenêtre d'évaluation commune va du 3 janvier 2011 au 4 septembre 2026, soit environ 15,7 ans, pour toutes les règles, qu'elles emploient ou non les fondamentaux. Les règles qui ne les emploient pas sont aussi construites depuis 2000, en lecture secondaire.
+
+**Tâche 3, les données comptables.** Les faits XBRL de chaque entreprise retenue sont collectés depuis l'interface `companyfacts` de la SEC, avec leur date de dépôt, dans `data/raw/fondamentaux/`, sous manifeste. Seuls les rapports annuels `10-K` sont lus. Un chiffre n'est utilisable qu'à partir du lendemain de sa date de dépôt. Pour chaque fin d'exercice, c'est la première valeur publiée qui compte, et non une révision ultérieure. Cinq critères sont retenus, tirés de la revue de littérature, et calculés sur le dernier rapport annuel déposé avant la date de rééquilibrage :
+
+1. la profitabilité brute, marge brute divisée par l'actif total (Novy-Marx, 2013). La marge brute est `GrossProfit`, ou à défaut le chiffre d'affaires moins le coût des ventes. Plus elle est haute, mieux c'est ;
+2. la qualité des résultats, flux de trésorerie d'exploitation moins bénéfice net, divisé par l'actif (Sloan, 1996). Plus elle est haute, mieux c'est ;
+3. la croissance de l'actif sur un an (Cooper, Gulen et Schill, 2008). Plus elle est basse, mieux c'est ;
+4. le rendement bénéficiaire, bénéfice net divisé par la capitalisation à la date de rééquilibrage (Fama et French, 1992). La capitalisation est le flottant déclaré en dollars dans le rapport annuel, `EntityPublicFloat`, porté à la date de rééquilibrage par le rapport des cours ajustés. Ce rapport ne dépend pas des divisions d'actions, dont les facteurs Yahoo ne sont pas certifiés. Plus il est haut, mieux c'est ;
+5. la solidité du bilan, capitaux propres divisés par l'actif. Plus elle est haute, mieux c'est.
+
+Chaque critère est converti en rang centile **à l'intérieur de chacun des sept groupes de la chaîne**, `P4` à `P10`, qui partitionnent exactement les 134 entreprises de `P1`. Un électricien n'est jamais comparé à un concepteur de puces. Un critère absent vaut 0,5, soit le milieu du groupe. La note d'une entreprise est la moyenne de ses cinq centiles, et ses classes d'actions la partagent.
+
+**Tâche 4, la grille des règles.** Une règle combine une sélection, une pondération et une protection.
+
+- **Quatre sélections**, refaites chaque année :
+  - S0, toutes les entreprises ;
+  - S1, la moitié la mieux notée de chaque groupe, arrondie au supérieur ;
+  - S2, le tiers le mieux noté de chaque groupe, arrondi au supérieur ;
+  - S3, la moitié la mieux notée de tout l'univers, sans contrainte par groupe. S3 mesure ce que coûte l'abandon de la notation par groupe.
+- **Neuf pondérations**. W1 est l'équipondération par entreprise. Les quatre autres sont chacune estimées sur 252 ou sur 504 séances, sur une covariance rétrécie de Ledoit et Wolf (2004) :
+  - W2, l'inverse de la volatilité de chaque titre ;
+  - W3, des contributions au risque égales entre les sept groupes, avec l'équipondération à l'intérieur de chaque groupe ;
+  - W4, des contributions au risque égales entre titres (Maillard, Roncalli et Teïletche, 2010) ;
+  - W5, la variance minimale sans vente à découvert, avec un poids plafonné à 5 %, relevé à 1,5 fois le poids égal quand la sélection compte moins de trente titres.
+- **Vingt-cinq protections** :
+  - P0, aucune ;
+  - seize pilotages de la volatilité. L'exposition vaut le minimum de 1 et de la cible divisée par la volatilité réalisée de la règle sur 21 ou 63 séances. Elle est fixée à chaque fin de mois pour le mois suivant, sans levier, avec quatre cibles de 10, 12, 15 et 18 % et un reste placé en bons du Trésor ou en obligations `VFITX` ;
+  - six mélanges fixes, 80 % ou 60 % d'actions, le reste en bons du Trésor, en `VFITX` ou moitié-moitié, rééquilibrés en janvier ;
+  - deux protections par options au prix réel. Le rendement de la jambe d'options est l'écart quotidien entre l'indice CBOE `PPUT`, S&P 500 plus un put à 5 % hors de la monnaie renouvelé chaque mois, et l'indice de rendement total du S&P 500. Il est appliqué sur la moitié ou la totalité du bêta de la règle, estimé sur 252 séances et fixé en fin de mois.
+
+Cela fait 4 × 9 × 25 = **900 règles**. Aucune ne sera ajoutée après le premier calcul sans être comptée dans les essais et datée ici.
+
+**Tâche 5, les conventions communes.** Les rééquilibrages ont lieu à la première séance de chaque année et les poids dérivent entre deux dates. Tout échange paie 10 points de base, comme à l'étape 2. Les dividendes sont réinvestis le jour du détachement, et non en janvier comme à l'étape 2 : c'est une simplification, dont l'écart avec `P1` rééquilibré sera mesuré en contrôle. Un titre n'est éligible qu'avec un cours à la date de rééquilibrage et au moins 252 séances d'historique. Un titre coté en cours d'année n'entre qu'en janvier suivant. Le choix des groupes rend inutile, pour cette version, la décision encore ouverte sur le périmètre des semi-conducteurs.
+
+**Tâche 6, les 100 000 portefeuilles aléatoires.** Chacun reçoit, une fois pour toutes :
+- une taille tirée uniformément entre 10 titres et le nombre de titres éligibles ;
+- un ordre de priorité aléatoire sur les 135 titres ;
+- un poids brut tiré d'une loi exponentielle pour chaque titre.
+
+Chaque janvier, il détient les titres éligibles les mieux placés dans son ordre, jusqu'à sa taille, avec des poids proportionnels à leurs poids bruts. Il suit les mêmes conventions que les règles, mais sans protection. Les portefeuilles aléatoires sont tirés avec une graine fixe, 20260929, sur la fenêtre commune et depuis 2000. Chaque règle est placée dans leur distribution par son centile de Sharpe. Les règles sans protection le sont aussi pour la volatilité, le repli maximal et la perte au-delà de la VaR.
+
+**Tâche 7, les mesures.** Rendement annualisé géométrique, volatilité, repli maximal, perte moyenne au-delà de la VaR historique à 99 %, ratio de Sharpe sur le taux du bon du Trésor, et bêta à `SPY`. Pour la sélection S0 sans protection, la part du risque portée par `P5` et `P9` est aussi mesurée à chaque date, pour voir ce que la pondération y change.
+
+**Tâche 8, les trois contrôles du gagnant.**
+1. **L'écart de Sharpe avec `T1S`**, par le bootstrap par blocs d'un trimestre, 2 000 tirages ; l'intervalle à 95 % doit exclure zéro.
+2. **Le Deflated Sharpe Ratio** de Bailey et López de Prado (2014), avec 900 essais et la variance des Sharpe observés sur la grille. Il doit dépasser 0,95.
+3. **La probabilité de surapprentissage** de Bailey, Borwein, López de Prado et Zhu (2016), par validation croisée combinatoire sur seize blocs de la fenêtre. Elle est publiée telle quelle.
+
+Le test de White (2000) sur le maximum des écarts de Sharpe avec `T1S` est calculé en complément. Si le gagnant échoue au premier ou au deuxième contrôle, la conclusion est qu'aucune règle ne se distingue du hasard, et elle sera écrite ainsi.
+
+**Tâche 9, ce que j'attends, écrit avant de voir.**
+1. Aucune règle ne passera le Deflated Sharpe Ratio. Serait une contradiction : un gagnant au-dessus de 0,95.
+2. La pondération par groupes, W3, ramènera la part du risque de `P5` et `P9` sous 50 %. Serait une contradiction : une part supérieure à 50 % au 4 septembre 2026.
+3. Les règles acceptables seront surtout des pilotages de la volatilité ou des mélanges. Serait une contradiction : une majorité de règles acceptables sans protection.
+4. La sélection fondamentale, S1 à S3, ne fera pas mieux que S0 à pondération et protection égales, au sens du bootstrap. Serait une contradiction : un écart de Sharpe significatif sur la majorité des 225 paires.
+
+**Tâche 10, ce que je m'interdis.** Présenter une règle comme réalisable : l'univers reste choisi avec les rapports de 2026, et la comparaison ne vaut qu'à l'intérieur de cet univers. Publier la seule règle gagnante sans les 899 autres. Changer un paramètre de la grille après un résultat sans l'ajouter aux essais. Dire qu'on sait reconnaître les futurs grands gagnants.
+
+Les calculs seront menés dans `src/recherche_regles.ipynb`, avec les fonctions de `src/regles.py` testées dans `tests/test_regles.py`. Les données comptables sont collectées par `python -m src.collecter_fondamentaux`.
